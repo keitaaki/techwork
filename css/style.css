@@ -62,6 +62,14 @@ a:hover {
   opacity: 0.7;
 }
 
+ul {
+  list-style: none;
+}
+
+li {
+  list-style: none;
+}
+
 header {
   padding: 10px 10px 30px 10px;
   border-bottom: 3px solid #d60e4c;
@@ -71,9 +79,8 @@ header .header_flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-align: center;
@@ -145,4 +152,170 @@ header .header_flex .header_right .contact_box .contact_box_flex .contact_box_hu
 header .header_flex .header_right .contact_box .contact_box_flex .contact_box_hum .contact_box_hum_message {
   margin-bottom: 5px;
   color: #d60e4c;
+}
+
+.global_nav {
+  margin-top: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.header-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-nav .nav-items a {
+  color: #d60e4c;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+}
+
+.header-nav .nav-items a::after {
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 5px;
+  background: #d60e4c;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+.header-nav .nav-items a:hover::after {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+.main_area {
+  background-image: url(../img/assets/background_pink.png);
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  margin-top: 10px;
+}
+
+.main_area .main_area_back {
+  position: relative;
+  z-index: 1;
+}
+
+.main_area .safe_pay {
+  text-align: center;
+  width: 40%;
+  position: absolute;
+  top: 100px;
+  z-index: 10;
+}
+
+.about {
+  background-image: url(../img/assets/back_yellow.png);
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  padding: 20px;
+}
+
+.about .about_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about .about_flex .about_left {
+  width: 45%;
+}
+
+.about .about_flex .about_right {
+  width: 55%;
+}
+
+.about .about_flex .about_right .about_message {
+  font-weight: bold;
+}
+
+.menu {
+  background-image: url(../img/assets/back_white.png);
+  background-size: cover;
+  background-position: center center;
+  padding: 20px;
+  position: relative;
+}
+
+.menu .menu_massage_picture {
+  position: absolute;
+  top: 20px;
+  right: 350px;
+}
+
+.menu .menu_message_box {
+  background-color: #fff;
+  width: 80%;
+  padding: 20px;
+  margin-top: 100px;
+}
+
+.menu .menu_message_box_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.menu .menu_message_box_flex .menu_message_box_left {
+  width: 57%;
+  font-weight: bold;
+  position: relative;
+}
+
+.menu .menu_message_box_flex .menu_message_box_left .details {
+  width: 50%;
+  margin-left: auto;
+  margin-right: 0px;
+  padding-top: 20px;
+}
+
+.menu .menu_message_box_flex .menu_message_box_left .details .details_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.menu .menu_message_box_flex .menu_message_box_left .details .details_flex a {
+  color: #d60e4c;
+}
+
+.menu .menu_message_box_flex .menu_message_box_right {
+  padding: 0 20px 0;
+  position: relative;
+  width: 30%;
 }

@@ -84,6 +84,14 @@ a {
   }
 }
 
+ul {
+  list-style: none;
+}
+
+li {
+  list-style: none;
+}
+
 // =============================================
 // header 部分
 // =============================================
@@ -94,7 +102,7 @@ header {
 
   .header_flex {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
 
@@ -173,5 +181,160 @@ header {
       }
     }
   }
+}
 
+// =============================================
+// header-nav 部分
+// =============================================
+.global_nav {
+  margin-top: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .nav-items {
+
+    a {
+      color: #d60e4c;
+      font-weight: bold;
+      position: relative;
+      display: inline-block;
+    }
+
+    a::after {
+      position: absolute;
+      bottom: -15px;
+      left: 0;
+      content: '';
+      width: 100%;
+      height: 5px;
+      background: #d60e4c;
+      transform: scale(0, 1);
+      transform-origin: left top;
+      transition: transform .3s;
+    }
+
+    a:hover::after {
+      transform: scale(1, 1);
+    }
+  }
+}
+
+// =============================================
+// main-area 部分
+// =============================================
+
+.main_area {
+  background-image: url(../img/assets/background_pink.png);
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  margin-top: 10px;
+
+  .main_area_back {
+    position: relative;
+    z-index: 1;
+  }
+
+  .safe_pay {
+    text-align: center;
+    width: 40%;
+    position: absolute;
+    top: 100px;
+    z-index: 10;
+  }
+}
+
+// =============================================
+// about 部分
+// =============================================
+
+.about {
+  background-image: url(../img/assets/back_yellow.png);
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  padding: 20px;
+
+  .about_flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+
+    .about_left {
+      width: 45%;
+    }
+
+    .about_right {
+      width: 55%;
+
+      .about_message {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+// =============================================
+// menu 部分
+// =============================================
+.menu {
+  background-image: url(../img/assets/back_white.png);
+  background-size: cover;
+  background-position: center center;
+  padding: 20px;
+  position: relative;
+
+  .menu_massage_picture{
+    position: absolute;
+    top:20px;
+    right: 350px;
+  }
+
+  .menu_message_box {
+    background-color: #fff;
+    width: 80%;
+    padding: 20px;
+    margin-top: 100px;
+  }
+
+  .menu_message_box_flex {
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+
+    .menu_message_box_left {
+      width: 57%;
+      font-weight: bold;
+      position: relative;
+
+      .details {
+        width: 50%;
+        margin-left: auto;
+        margin-right: 0px;
+        padding-top: 20px;
+
+        .details_flex {
+          display: flex;
+          justify-content: space-around;
+
+          a{
+            color: #d60e4c;
+          }
+        }
+      }
+    }
+
+    .menu_message_box_right {
+      padding: 0 20px 0;
+      position: relative;
+      width: 30%;
+    }
+  }
 }
