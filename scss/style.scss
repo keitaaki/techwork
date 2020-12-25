@@ -284,6 +284,10 @@ header {
 // =============================================
 // menu 部分
 // =============================================
+// =============================================
+// 脱毛 部分
+// =============================================
+
 .menu {
   background-image: url(../img/assets/back_white.png);
   background-size: cover;
@@ -291,10 +295,10 @@ header {
   padding: 20px;
   position: relative;
 
-  .menu_massage_picture{
+  .menu_massage_picture {
     position: absolute;
-    top:20px;
-    right: 350px;
+    top: 5%;
+    right: 23%;
   }
 
   .menu_message_box {
@@ -302,6 +306,8 @@ header {
     width: 80%;
     padding: 20px;
     margin-top: 100px;
+    box-shadow: 0 0 8px #d60e4c;
+    border-radius: 10px;
   }
 
   .menu_message_box_flex {
@@ -324,7 +330,7 @@ header {
           display: flex;
           justify-content: space-around;
 
-          a{
+          a {
             color: #d60e4c;
           }
         }
@@ -337,4 +343,210 @@ header {
       width: 30%;
     }
   }
+
+// =============================================
+// BBL 部分
+// =============================================
+.menu_bbl_area{
+  position: relative;
+
+  .menu_message_box_bbl_picture{
+    position: absolute;
+    top: 5%;
+    left:15%;
+  }
+}
+
+  .menu_message_box_bbl {
+    background-color: #fff;
+    width: 70%;
+    padding: 50px 30px;
+    margin-top: 80px;
+    box-shadow: 0 0 8px #d60e4c;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: 0px;
+
+    .menu_message_box_bbl_text {
+      width: 65%;
+      margin-left: auto;
+      margin-right: 0px;
+      font-weight: bold;
+
+      .details {
+        width: 70%;
+        margin-left: auto;
+        margin-right: 0px;
+        padding-top: 20px;
+
+        .details_flex {
+          display: flex;
+          justify-content: space-around;
+
+          a {
+            color: #d60e4c;
+          }
+        }
+      }
+    }
+  }
+}
+
+// =============================================
+// HIFE 部分
+// =============================================
+.hife{
+  background-image: url(../img/assets/back_pink_flower.png);
+  background-size: cover;
+  background-position: center center;
+  padding: 20px;
+  position: relative;
+
+  .menu_massage_picture{
+    position: absolute;
+    top: 5%;
+    right: 23%;
+  }
+
+  .menu_message_box {
+    background-color: #fff;
+    width: 80%;
+    padding: 50px 30px 30px;
+    margin-top: 100px;
+    box-shadow: 0 0 8px #d60e4c;
+    border-radius: 10px;
+  }
+
+  .menu_message_box_flex {
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+
+    .menu_message_box_left {
+      width: 57%;
+      font-weight: bold;
+      position: relative;
+
+      .details {
+        width: 50%;
+        margin-left: auto;
+        margin-right: 0px;
+        padding-top: 20px;
+
+        .details_flex {
+          display: flex;
+          justify-content: space-around;
+
+          a {
+            color: #d60e4c;
+          }
+        }
+      }
+    }
+
+    .menu_message_box_right {
+      padding: 0 20px 0;
+      position: relative;
+      width: 25%;
+      margin-left: 20px;
+    }
+  }
+}
+
+// =============================================
+// mens 部分
+// =============================================
+.mens{
+  background-image: url(../img/assets/back_blue.png);
+  background-size: cover;
+  background-position: center center;
+  padding: 20px;
+  position: relative;
+
+  .mens_picture{
+    position: absolute;
+    top: 10%;
+    left:22%;
+  }
+
+  .mens_box{
+    background-color: #fff;
+    width: 70%;
+    padding: 50px 30px;
+    margin-top: 80px;
+    box-shadow: 0 0 8px #6b8dd9;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: 0px;
+
+    .mens_box_text{
+      width: 65%;
+      margin-left: auto;
+      margin-right: 0px;
+      font-weight: bold;
+
+      .details {
+        width: 70%;
+        margin-left: auto;
+        margin-right: 0px;
+        padding-top: 20px;
+
+        .details_flex {
+          display: flex;
+          justify-content: space-around;
+
+          a {
+            color: #6b8dd9;
+          }
+        }
+      }
+    }
+  }
+}
+
+// =============================================
+// ホワイトニング 部分
+// =============================================
+.whitening{
+  background-image: url(../img/assets/back_white.png);
+  background-size: cover;
+  background-position: center center;
+  padding: 20px 20px 100px;
+  position: relative;
+
+  .whitening_picture{
+    position: absolute;
+    bottom: 10%;
+    right:22%;
+  }
+
+ .whitening_box{
+  background-color: #fff;
+  width: 70%;
+  padding: 50px 30px;
+  margin-top: 80px;
+  box-shadow: 0 0 8px #d60e4c;
+  border-radius: 10px;
+
+  .whitening_box_text{
+    width: 65%;
+    font-weight: bold;
+
+    .details {
+      width: 70%;
+      margin-left: auto;
+      margin-right: 0px;
+      padding-top: 20px;
+
+      .details_flex {
+        display: flex;
+        justify-content: space-around;
+
+        a {
+          color: #d60e4c;
+        }
+      }
+    }
+  }
+ }
 }
