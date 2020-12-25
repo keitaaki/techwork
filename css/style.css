@@ -1,0 +1,148 @@
+@charset "UTF-8";
+@media screen and (max-width: 768px) {
+  .dis-pc {
+    display: none;
+  }
+}
+
+.dis-sp {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .dis-sp {
+    display: block;
+  }
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.inner {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "ヒラギノ明朝 ProN", "Yu Gothic", yugothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", meiryo, "MS Pゴシック", "MS PGothic", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #59493f;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #fff;
+  overflow-x: hidden;
+  overflow-wrap: break-word;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  color: #59493f;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+header {
+  padding: 10px 10px 30px 10px;
+  border-bottom: 3px solid #d60e4c;
+}
+
+header .header_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header_flex .header_right .contact_box {
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.8rem;
+  background-color: #ffdcec;
+  padding: 10px;
+  color: #d60e4c;
+}
+
+header .header_flex .header_right .contact_box .contact_box_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header_flex .header_right .contact_box .contact_box_flex .contact_box_tel {
+  padding: 0 10px;
+}
+
+header .header_flex .header_right .contact_box .contact_box_flex .contact_box_tel .contact_box_tel_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .header_flex .header_right .contact_box .contact_box_flex .contact_box_tel_flex_hour .contact_time span {
+  color: #59493f;
+}
+
+header .header_flex .header_right .contact_box .contact_box_flex .contact_box_tel_flex_hour .contact_box_tel_flex_number {
+  font-size: 1.5rem;
+}
+
+header .header_flex .header_right .contact_box .contact_box_flex .contact_box_com {
+  padding: 0 10px;
+  border-right: 2px solid #f19ec2;
+  border-left: 2px solid #f19ec2;
+}
+
+header .header_flex .header_right .contact_box .contact_box_flex .contact_box_com .contact_box_com_message {
+  color: #d60e4c;
+}
+
+header .header_flex .header_right .contact_box .contact_box_flex .contact_box_home {
+  padding: 0 10px;
+  border-right: 2px solid #f19ec2;
+}
+
+header .header_flex .header_right .contact_box .contact_box_flex .contact_box_home .contact_box_home_message {
+  color: #d60e4c;
+}
+
+header .header_flex .header_right .contact_box .contact_box_flex .contact_box_hum {
+  padding: 0 10px;
+}
+
+header .header_flex .header_right .contact_box .contact_box_flex .contact_box_hum .contact_box_hum_message {
+  margin-bottom: 5px;
+  color: #d60e4c;
+}

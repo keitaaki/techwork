@@ -1,0 +1,177 @@
+// =============================================
+// 共通 部分
+// =============================================
+
+$main-font-color: #59493f;
+$pink-font-color: #df003f;
+
+//メディアクエリの設定
+//マップ型変数breakpointsを定義
+$breakpoints: ( //キー　　値
+  'sm': 'screen and (max-width: 576px)',
+  'md': 'screen and (max-width: 768px)',
+  'lg': 'screen and (max-width: 992px)',
+  'xl': 'screen and (max-width: 1200px)'
+) !default;
+
+//メディアクエリ用のmixinを定義。デフォ値はmd
+@mixin mq($breakpoint: md) {
+
+  //map-get(マップ型変数, キー)で値を取得
+  @media #{map-get($breakpoints, $breakpoint)} {
+    //この中をカスタムできる
+    @content;
+  }
+}
+
+.dis-pc {
+  @include mq() {
+    display: none;
+  }
+}
+
+.dis-sp {
+  display: none;
+
+  @include mq() {
+    display: block;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.inner {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "ヒラギノ明朝 ProN", "Yu Gothic", yugothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", meiryo, "MS Pゴシック", "MS PGothic", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: $main-font-color;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #fff;
+  overflow-x: hidden;
+  overflow-wrap: break-word;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  color: $main-font-color;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+// =============================================
+// header 部分
+// =============================================
+
+header {
+  padding: 10px 10px 30px 10px;
+  border-bottom: 3px solid #d60e4c;
+
+  .header_flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+
+    // ヘッダーの右側
+    .header_right {
+      .contact_box {
+        text-align: center;
+        font-weight: bold;
+        font-size: 0.8rem;
+        background-color: #ffdcec;
+        padding: 10px;
+        color: #d60e4c;
+
+        .contact_box_flex {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+
+          // 電話の部分
+          .contact_box_tel {
+            padding: 0 10px;
+
+            .contact_box_tel_flex {
+              display: flex;
+
+              .contact_box_tel_flex_img {}
+
+            }
+          }
+
+          .contact_box_tel_flex_hour {
+
+            .contact_time {
+
+              span {
+                color: #59493f
+              }
+            }
+
+            .contact_box_tel_flex_number {
+              font-size: 1.5rem;
+            }
+          }
+
+          // ネットで予約の部分
+          .contact_box_com {
+            padding: 0 10px;
+            border-right: 2px solid #f19ec2;
+            border-left: 2px solid #f19ec2;
+
+            .contact_box_com_message {
+              color: #d60e4c;
+            }
+          }
+
+          // アクセスの部分
+          .contact_box_home {
+            padding: 0 10px;
+            border-right: 2px solid #f19ec2;
+
+            .contact_box_home_message {
+              color: #d60e4c;
+            }
+          }
+
+          // ハンバーガーメニューの部分
+          .contact_box_hum {
+            padding: 0 10px;
+
+            .contact_box_hum_message {
+              margin-bottom: 5px;
+              color: #d60e4c;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
