@@ -775,3 +775,89 @@ header {
     }
   }
 }
+
+// =============================================
+// access 部分
+// =============================================
+
+.access {
+  background-image: url(../img/assets/back_sakura.png);
+  background-size: cover;
+  background-position: center center;
+  padding: 20px;
+  position: relative;
+  margin-top: 30px;
+
+  .map_box{
+    width: 25%;
+    position: absolute;
+    top: 0;
+    right: 23%;
+  }
+
+  .iframe-wrap {
+    position: relative;
+    width: 100%;
+    padding-top: 75%;
+  }
+
+  .iframe-wrap iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .inner {
+    padding: 30px 80px 30px;
+  }
+
+  .access_flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-wrap: wrap;
+
+    .access_flex_left {
+      width: 35%;
+      padding: 20px;
+
+      p {
+        font-weight: bold;
+      }
+
+      .access_flex_left_address {
+        margin-bottom: 30px;
+      }
+
+      .access_flex_left_open {
+        padding-bottom: 120px;
+      }
+    }
+
+    .access_flex_right {
+      width: 60%;
+    }
+  }
+}
+
+// =============================================
+// reservation 部分
+// =============================================
+
+.reservation{
+  background-image: url(../img/assets/star.png);
+  background-size: cover;
+  background-position: center center;
+  padding: 20px;
+
+
+  .inner {
+    padding: 30px 80px 30px;
+
+    .reservation_counseling{
+      text-align: center;
+    }
+  }
+}
