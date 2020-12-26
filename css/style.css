@@ -538,3 +538,228 @@ header .header_flex .header_right .contact_box .contact_box_flex .contact_box_hu
 .whitening .whitening_box .whitening_box_text .details .details_flex a {
   color: #d60e4c;
 }
+
+.campaign {
+  background-image: url(../img/assets/back_yellow.png);
+  background-size: cover;
+  background-position: center center;
+  padding: 20px;
+  position: relative;
+}
+
+.campaign .campaign_logo {
+  position: absolute;
+  top: 50%;
+  /*親要素を起点に上から50%*/
+  left: 20%;
+  transform: translateY(-50%);
+  /*要素の大きさの半分ずつを戻す*/
+  -webkit-transform: translateY(-50%);
+}
+
+.campaign .carousel_box {
+  width: 70%;
+  margin-right: 0;
+  margin-left: auto;
+  text-align: center;
+}
+
+.campaign .swiper-button-prev,
+.campaign .swiper-button-next {
+  width: 32px;
+  height: 32px;
+  margin-top: -16px;
+}
+
+.campaign .swiper-button-prev {
+  background: url(https://haniwaman.com/wp-content/uploads/2018/05/swiper3.png) no-repeat center center/contain;
+}
+
+.campaign .swiper-button-prev::after {
+  content: "";
+}
+
+.campaign .swiper-button-next {
+  background: url(https://haniwaman.com/wp-content/uploads/2018/05/swiper4.png) no-repeat center center/contain;
+}
+
+.campaign .swiper-button-next::after {
+  content: "";
+}
+
+.news {
+  background-image: url(../img/assets/background_pink.png);
+  background-size: cover;
+  background-position: center center;
+  padding: 30px;
+  position: relative;
+}
+
+.news .news_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.news .news_logo {
+  width: 20%;
+  text-align: right;
+}
+
+.news .news__items {
+  margin: 60px auto 0;
+  width: 80%;
+  max-width: 100%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+@media (max-width: 767px) {
+  .news .news__items {
+    margin-top: 38px;
+  }
+}
+
+.news .news__item {
+  border-bottom: 1px solid #707070;
+}
+
+.news .news__item:last-child {
+  border: none;
+}
+
+.news .info {
+  padding: 20px 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 767px) {
+  .news .info {
+    display: block;
+    padding: 12px 0;
+  }
+}
+
+.news .info__meta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 185px;
+  padding-top: 2px;
+}
+
+@media (max-width: 767px) {
+  .news .info__meta {
+    width: 100%;
+    padding-top: 0;
+  }
+}
+
+.news .info__published {
+  width: 105px;
+  display: inline-block;
+  padding-top: 3px;
+}
+
+@media (max-width: 767px) {
+  .news .info__published {
+    width: auto;
+  }
+}
+
+.news .info__label {
+  width: 80px;
+}
+
+@media (max-width: 767px) {
+  .news .info__label {
+    width: auto;
+    margin-left: auto;
+  }
+}
+
+.news .info__label a {
+  display: inline-block;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  padding: 8px;
+  background: #e5004f;
+  border-radius: 4px;
+  text-decoration: none;
+  line-height: 1;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+@media (max-width: 767px) {
+  .news .info__label a {
+    padding: 4px 8px;
+  }
+}
+
+.news .info__label.info__label--type01 a {
+  background: #e9578b;
+  text-decoration: none;
+}
+
+.news .info__title {
+  line-height: 1.25;
+  width: calc(100% - 105px - 80px);
+  padding: 5px 0 0 20px;
+}
+
+@media (max-width: 767px) {
+  .news .info__title {
+    width: 100%;
+    margin-top: 6px;
+    padding: 0;
+  }
+}
+
+.news .info__title a {
+  text-decoration: none;
+  color: #333;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.news .news__link {
+  text-align: center;
+  margin-top: 44px;
+}
+
+.news .news__link a {
+  text-decoration: none;
+  color: #e81919;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  font-weight: 700;
+}
+
+.news .details {
+  width: 30%;
+  margin-left: auto;
+  margin-right: 0px;
+  padding-top: 20px;
+}
+
+.news .details .details_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.news .details .details_flex a {
+  color: #d60e4c;
+  font-weight: bold;
+}

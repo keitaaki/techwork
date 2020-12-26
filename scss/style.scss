@@ -344,18 +344,18 @@ header {
     }
   }
 
-// =============================================
-// BBL 部分
-// =============================================
-.menu_bbl_area{
-  position: relative;
+  // =============================================
+  // BBL 部分
+  // =============================================
+  .menu_bbl_area {
+    position: relative;
 
-  .menu_message_box_bbl_picture{
-    position: absolute;
-    top: 5%;
-    left:15%;
+    .menu_message_box_bbl_picture {
+      position: absolute;
+      top: 5%;
+      left: 15%;
+    }
   }
-}
 
   .menu_message_box_bbl {
     background-color: #fff;
@@ -395,14 +395,14 @@ header {
 // =============================================
 // HIFE 部分
 // =============================================
-.hife{
+.hife {
   background-image: url(../img/assets/back_pink_flower.png);
   background-size: cover;
   background-position: center center;
   padding: 20px;
   position: relative;
 
-  .menu_massage_picture{
+  .menu_massage_picture {
     position: absolute;
     top: 5%;
     right: 23%;
@@ -456,20 +456,20 @@ header {
 // =============================================
 // mens 部分
 // =============================================
-.mens{
+.mens {
   background-image: url(../img/assets/back_blue.png);
   background-size: cover;
   background-position: center center;
   padding: 20px;
   position: relative;
 
-  .mens_picture{
+  .mens_picture {
     position: absolute;
     top: 10%;
-    left:22%;
+    left: 22%;
   }
 
-  .mens_box{
+  .mens_box {
     background-color: #fff;
     width: 70%;
     padding: 50px 30px;
@@ -479,7 +479,7 @@ header {
     margin-left: auto;
     margin-right: 0px;
 
-    .mens_box_text{
+    .mens_box_text {
       width: 65%;
       margin-left: auto;
       margin-right: 0px;
@@ -507,46 +507,271 @@ header {
 // =============================================
 // ホワイトニング 部分
 // =============================================
-.whitening{
+.whitening {
   background-image: url(../img/assets/back_white.png);
   background-size: cover;
   background-position: center center;
   padding: 20px 20px 100px;
   position: relative;
 
-  .whitening_picture{
+  .whitening_picture {
     position: absolute;
     bottom: 10%;
-    right:22%;
+    right: 22%;
   }
 
- .whitening_box{
-  background-color: #fff;
-  width: 70%;
-  padding: 50px 30px;
-  margin-top: 80px;
-  box-shadow: 0 0 8px #d60e4c;
-  border-radius: 10px;
+  .whitening_box {
+    background-color: #fff;
+    width: 70%;
+    padding: 50px 30px;
+    margin-top: 80px;
+    box-shadow: 0 0 8px #d60e4c;
+    border-radius: 10px;
 
-  .whitening_box_text{
-    width: 65%;
-    font-weight: bold;
+    .whitening_box_text {
+      width: 65%;
+      font-weight: bold;
 
-    .details {
-      width: 70%;
-      margin-left: auto;
-      margin-right: 0px;
-      padding-top: 20px;
+      .details {
+        width: 70%;
+        margin-left: auto;
+        margin-right: 0px;
+        padding-top: 20px;
 
-      .details_flex {
-        display: flex;
-        justify-content: space-around;
+        .details_flex {
+          display: flex;
+          justify-content: space-around;
 
-        a {
-          color: #d60e4c;
+          a {
+            color: #d60e4c;
+          }
         }
       }
     }
   }
- }
+}
+
+// =============================================
+// キャンペーン 部分
+// =============================================
+.campaign {
+  background-image: url(../img/assets/back_yellow.png);
+  background-size: cover;
+  background-position: center center;
+  padding: 20px;
+  position: relative;
+
+  .campaign_logo {
+    position: absolute;
+    top: 50%;
+    /*親要素を起点に上から50%*/
+    left: 20%;
+    transform: translateY(-50%);
+    /*要素の大きさの半分ずつを戻す*/
+    -webkit-transform: translateY(-50%);
+  }
+
+  .carousel_box {
+    width: 70%;
+    margin-right: 0;
+    margin-left: auto;
+    text-align: center;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 32px;
+    height: 32px;
+    margin-top: -16px;
+  }
+
+  .swiper-button-prev {
+    background: url(https://haniwaman.com/wp-content/uploads/2018/05/swiper3.png) no-repeat center center / contain;
+  }
+
+  .swiper-button-prev::after {
+    content: "";
+  }
+
+  .swiper-button-next {
+    background: url(https://haniwaman.com/wp-content/uploads/2018/05/swiper4.png) no-repeat center center / contain;
+  }
+
+  .swiper-button-next::after {
+    content: "";
+  }
+}
+
+// =============================================
+// ニュース 部分
+// =============================================
+.news {
+  background-image: url(../img/assets/background_pink.png);
+  background-size: cover;
+  background-position: center center;
+  padding: 30px;
+  position: relative;
+
+  .news_flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .news_logo {
+    width: 20%;
+    text-align: right;
+  }
+
+  .news__items {
+    margin: 60px auto 0;
+    width: 80%;
+    max-width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  @media (max-width: 767px) {
+    .news__items {
+      margin-top: 38px;
+    }
+  }
+
+  .news__item {
+    border-bottom: 1px solid #707070;
+  }
+
+  .news__item:last-child {
+    border: none;
+  }
+
+  .info {
+    padding: 20px 0 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  @media (max-width: 767px) {
+    .info {
+      display: block;
+      padding: 12px 0;
+    }
+  }
+
+  .info__meta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 185px;
+    padding-top: 2px;
+  }
+
+  @media (max-width: 767px) {
+    .info__meta {
+      width: 100%;
+      padding-top: 0;
+    }
+  }
+
+  .info__published {
+    width: 105px;
+    display: inline-block;
+    padding-top: 3px;
+  }
+
+  @media (max-width: 767px) {
+    .info__published {
+      width: auto;
+    }
+  }
+
+  .info__label {
+    width: 80px;
+  }
+
+  @media (max-width: 767px) {
+    .info__label {
+      width: auto;
+      margin-left: auto;
+    }
+  }
+
+  .info__label a {
+    display: inline-block;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    padding: 8px;
+    background: #e5004f;
+    border-radius: 4px;
+    text-decoration: none;
+    line-height: 1;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+
+  @media (max-width: 767px) {
+    .info__label a {
+      padding: 4px 8px;
+    }
+  }
+
+  .info__label.info__label--type01 a {
+    background: #e9578b;
+    text-decoration: none;
+  }
+
+
+  .info__title {
+    line-height: 1.25;
+    width: calc(100% - 105px - 80px);
+    padding: 5px 0 0 20px;
+  }
+
+  @media (max-width: 767px) {
+    .info__title {
+      width: 100%;
+      margin-top: 6px;
+      padding: 0;
+    }
+  }
+
+  .info__title a {
+    text-decoration: none;
+    color: #333;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+
+  .news__link {
+    text-align: center;
+    margin-top: 44px;
+  }
+
+  .news__link a {
+    text-decoration: none;
+    color: #e81919;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    font-weight: 700;
+  }
+
+  .details {
+    width: 30%;
+    margin-left: auto;
+    margin-right: 0px;
+    padding-top: 20px;
+
+    .details_flex {
+      display: flex;
+      justify-content: space-around;
+
+      a {
+        color: #d60e4c;
+        font-weight: bold;
+      }
+    }
+  }
 }
