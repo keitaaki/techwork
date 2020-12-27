@@ -8,14 +8,14 @@ $pink-font-color: #df003f;
 //メディアクエリの設定
 //マップ型変数breakpointsを定義
 $breakpoints: ( //キー　　値
-  'sm': 'screen and (max-width: 576px)',
+  'sm': 'screen and (max-width: 600px)',
   'md': 'screen and (max-width: 768px)',
   'lg': 'screen and (max-width: 992px)',
   'xl': 'screen and (max-width: 1200px)'
 ) !default;
 
 //メディアクエリ用のmixinを定義。デフォ値はmd
-@mixin mq($breakpoint: md) {
+@mixin mq($breakpoint: sm) {
 
   //map-get(マップ型変数, キー)で値を取得
   @media #{map-get($breakpoints, $breakpoint)} {
@@ -127,9 +127,6 @@ header {
 
             .contact_box_tel_flex {
               display: flex;
-
-              .contact_box_tel_flex_img {}
-
             }
           }
 
@@ -247,6 +244,11 @@ header {
     position: absolute;
     top: 100px;
     z-index: 10;
+
+    @include mq(){
+      top: 20%;
+      left: 10%;
+    }
   }
 }
 
@@ -269,10 +271,19 @@ header {
 
     .about_left {
       width: 45%;
+      @include mq(){
+        width: 100%;
+        margin-bottom: 30px;
+      }
     }
 
     .about_right {
       width: 55%;
+
+      @include mq(){
+        width: 100%;
+        margin-bottom: 10px;
+      }
 
       .about_message {
         font-weight: bold;
@@ -299,6 +310,11 @@ header {
     position: absolute;
     top: 5%;
     right: 23%;
+
+    @include mq(){
+      position: static;
+      text-align: center;
+    }
   }
 
   .menu_message_box {
@@ -308,23 +324,37 @@ header {
     margin-top: 100px;
     box-shadow: 0 0 8px #d60e4c;
     border-radius: 10px;
+
+    @include mq(){
+      width: 100%;
+      margin-top: 20px;
+    }
   }
 
   .menu_message_box_flex {
     display: flex;
     justify-content: left;
     align-items: flex-end;
+    flex-wrap: wrap;
 
     .menu_message_box_left {
       width: 57%;
       font-weight: bold;
       position: relative;
 
+      @include mq(){
+        width: 100%;
+      }
+
       .details {
         width: 50%;
         margin-left: auto;
         margin-right: 0px;
         padding-top: 20px;
+
+        @include mq(){
+          width: 100%;
+        }
 
         .details_flex {
           display: flex;
@@ -341,6 +371,10 @@ header {
       padding: 0 20px 0;
       position: relative;
       width: 30%;
+
+      @include mq(){
+        width: 100%;
+      }
     }
   }
 
@@ -354,6 +388,12 @@ header {
       position: absolute;
       top: 5%;
       left: 15%;
+
+      @include mq(){
+        position: static;
+        margin-top: 20px;
+        text-align: center;
+      }
     }
   }
 
@@ -367,11 +407,20 @@ header {
     margin-left: auto;
     margin-right: 0px;
 
+    @include mq(){
+      width: 100%;
+      margin-top: 20px;
+    }
+
     .menu_message_box_bbl_text {
       width: 65%;
       margin-left: auto;
       margin-right: 0px;
       font-weight: bold;
+
+      @include mq(){
+        width: 100%;
+      }
 
       .details {
         width: 70%;
@@ -379,9 +428,14 @@ header {
         margin-right: 0px;
         padding-top: 20px;
 
+        @include mq(){
+          width: 100%;
+        }
+
         .details_flex {
           display: flex;
           justify-content: space-around;
+          flex-wrap: wrap;
 
           a {
             color: #d60e4c;
@@ -406,6 +460,11 @@ header {
     position: absolute;
     top: 5%;
     right: 23%;
+
+    @include mq(){
+      position: static;
+      text-align: center;
+    }
   }
 
   .menu_message_box {
@@ -415,23 +474,37 @@ header {
     margin-top: 100px;
     box-shadow: 0 0 8px #d60e4c;
     border-radius: 10px;
+
+    @include mq(){
+      width: 100%;
+      margin-top: 20px;
+    }
   }
 
   .menu_message_box_flex {
     display: flex;
     justify-content: left;
     align-items: flex-end;
+    flex-wrap: wrap;
 
     .menu_message_box_left {
       width: 57%;
       font-weight: bold;
       position: relative;
 
+      @include mq(){
+        width: 100%;
+      }
+
       .details {
         width: 50%;
         margin-left: auto;
         margin-right: 0px;
         padding-top: 20px;
+
+        @include mq(){
+          width: 100%;
+        }
 
         .details_flex {
           display: flex;
@@ -449,6 +522,11 @@ header {
       position: relative;
       width: 25%;
       margin-left: 20px;
+
+      @include mq(){
+        width: 100%;
+        margin-top: 20px;
+      }
     }
   }
 }
@@ -467,6 +545,11 @@ header {
     position: absolute;
     top: 10%;
     left: 22%;
+
+    @include mq(){
+      position: static;
+      text-align: center;
+    }
   }
 
   .mens_box {
@@ -479,17 +562,30 @@ header {
     margin-left: auto;
     margin-right: 0px;
 
+    @include mq(){
+      width: 100%;
+      margin-top: 20px;
+    }
+
     .mens_box_text {
       width: 65%;
       margin-left: auto;
       margin-right: 0px;
       font-weight: bold;
 
+      @include mq(){
+        width: 100%;
+      }
+
       .details {
         width: 70%;
         margin-left: auto;
         margin-right: 0px;
         padding-top: 20px;
+
+        @include mq(){
+          width: 100%;
+        }
 
         .details_flex {
           display: flex;
@@ -518,6 +614,11 @@ header {
     position: absolute;
     bottom: 10%;
     right: 22%;
+
+    @include mq(){
+      position: static;
+      text-align: center;
+    }
   }
 
   .whitening_box {
@@ -528,9 +629,18 @@ header {
     box-shadow: 0 0 8px #d60e4c;
     border-radius: 10px;
 
+    @include mq(){
+      width: 100%;
+      margin-top: 20px;
+    }
+
     .whitening_box_text {
       width: 65%;
       font-weight: bold;
+
+      @include mq(){
+        width: 100%;
+      }
 
       .details {
         width: 70%;
@@ -538,9 +648,14 @@ header {
         margin-right: 0px;
         padding-top: 20px;
 
+        @include mq(){
+          width: 100%;
+        }
+
         .details_flex {
           display: flex;
           justify-content: space-around;
+          flex-wrap: wrap;
 
           a {
             color: #d60e4c;
@@ -564,11 +679,13 @@ header {
   .campaign_logo {
     position: absolute;
     top: 50%;
-    /*親要素を起点に上から50%*/
     left: 20%;
     transform: translateY(-50%);
-    /*要素の大きさの半分ずつを戻す*/
     -webkit-transform: translateY(-50%);
+
+    @include mq(){
+      position: static;
+    }
   }
 
   .carousel_box {
@@ -576,6 +693,10 @@ header {
     margin-right: 0;
     margin-left: auto;
     text-align: center;
+
+    @include mq(){
+      width: 100%;
+    }
   }
 
   .swiper-button-prev,
@@ -621,6 +742,11 @@ header {
   .news_logo {
     width: 20%;
     text-align: right;
+    
+    @include mq(){
+      width: 100%;
+      text-align: left;
+    }
   }
 
   .news__items {
@@ -630,6 +756,10 @@ header {
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
+
+    @include mq(){
+      width: 100%;
+    }
   }
 
   @media (max-width: 767px) {
@@ -764,6 +894,10 @@ header {
     margin-right: 0px;
     padding-top: 20px;
 
+    @include mq(){
+      width: 100%;
+    }
+
     .details_flex {
       display: flex;
       justify-content: space-around;
@@ -793,6 +927,11 @@ header {
     position: absolute;
     top: 0;
     right: 23%;
+
+    @include mq(){
+      position: static;
+      width: 100%;
+    }
   }
 
   .iframe-wrap {
@@ -811,6 +950,10 @@ header {
 
   .inner {
     padding: 30px 80px 30px;
+
+    @include mq(){
+      padding: 10px;
+    }
   }
 
   .access_flex {
@@ -823,6 +966,12 @@ header {
       width: 35%;
       padding: 20px;
 
+      @include mq(){
+        width: 100%;
+        padding: 0;
+        margin-top: 20px;
+      }
+
       p {
         font-weight: bold;
       }
@@ -833,11 +982,19 @@ header {
 
       .access_flex_left_open {
         padding-bottom: 120px;
+
+        @include mq(){
+          padding: 10px;
+        }
       }
     }
 
     .access_flex_right {
       width: 60%;
+
+      @include mq(){
+        width: 100%;
+      }
     }
   }
 }
@@ -855,6 +1012,10 @@ header {
   .inner {
     padding: 30px 80px 30px;
 
+    @include mq(){
+      padding: 0;
+    }
+
     .reservation_counseling {
       text-align: center;
     }
@@ -868,9 +1029,18 @@ header {
     padding: 30px;
     border-bottom: 2px solid #e5004f;
 
+    @include mq(){
+      padding: 0;
+    }
+
     .reservation_flex_left,
     .reservation_flex_right {
       width: 50%;
+
+      @include mq(){
+        width: 100%;
+        text-align: center;
+      }
     }
   }
 
@@ -882,9 +1052,17 @@ header {
     padding: 50px 30px;
     border-bottom: 2px dotted #e5004f;
 
+    @include mq(){
+      padding: 10px;
+    }
+
     .reservation_flex2_left,
     .reservation_flex2_right {
       width: 50%;
+
+      @include mq(){
+        width: 100%;
+      }
     }
   }
 }
@@ -901,11 +1079,26 @@ footer {
 
     .footer_logo{
       margin-right: 20px;
+
+      @include mq(){
+        order: 2;
+      }
     }
 
     .footer_list{
       width:35%;
       padding: 10px;
+
+      @include mq(){
+        width: 100%;
+        order:3;
+      }
+
+      .footer_about{
+        @include mq(){
+          text-align: center;
+        }
+      }
 
       span{
         color: #e12653;
@@ -920,18 +1113,38 @@ footer {
       display: flex;
       justify-content: left;
 
+      @include mq(){
+        justify-content: center;
+      }
+
       a{
         color: #e12653;
         font-weight: bold;
       }
 
+      .footer_list_flex_right{
+        @include mq(){
+          margin-top: 10px;
+        }
+      }
+
       .footer_list_flex_left{
         margin-right: 30px;
+
+        @include mq(){
+          margin-top: 10px;
+        }
       }
     }
 
     .sns{
       width: 35%;
+
+      @include mq(){
+        width: 100%;
+        text-align: center;
+        order:1;
+      }
 
       a{
         margin-right: 20px;
