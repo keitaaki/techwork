@@ -846,3 +846,96 @@ header .header_flex .header_right .contact_box .contact_box_flex .contact_box_hu
 .reservation .inner .reservation_counseling {
   text-align: center;
 }
+
+.reservation .reservation_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 20px 0;
+  padding: 30px;
+  border-bottom: 2px solid #e5004f;
+}
+
+.reservation .reservation_flex .reservation_flex_left,
+.reservation .reservation_flex .reservation_flex_right {
+  width: 50%;
+}
+
+.reservation .reservation_flex2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 20px 0;
+  padding: 50px 30px;
+  border-bottom: 2px dotted #e5004f;
+}
+
+.reservation .reservation_flex2 .reservation_flex2_left,
+.reservation .reservation_flex2 .reservation_flex2_right {
+  width: 50%;
+}
+
+footer .footer_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer .footer_flex .footer_logo {
+  margin-right: 20px;
+}
+
+footer .footer_flex .footer_list {
+  width: 35%;
+  padding: 10px;
+}
+
+footer .footer_flex .footer_list span {
+  color: #e12653;
+  font-weight: bold;
+  border-bottom: 2px solid #e12653;
+  line-height: 2rem;
+}
+
+footer .footer_flex .footer_list_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+footer .footer_flex .footer_list_flex a {
+  color: #e12653;
+  font-weight: bold;
+}
+
+footer .footer_flex .footer_list_flex .footer_list_flex_left {
+  margin-right: 30px;
+}
+
+footer .footer_flex .sns {
+  width: 35%;
+}
+
+footer .footer_flex .sns a {
+  margin-right: 20px;
+}
+
+footer .footer_reserved {
+  text-align: center;
+}

@@ -788,7 +788,7 @@ header {
   position: relative;
   margin-top: 30px;
 
-  .map_box{
+  .map_box {
     width: 25%;
     position: absolute;
     top: 0;
@@ -846,18 +846,100 @@ header {
 // reservation 部分
 // =============================================
 
-.reservation{
+.reservation {
   background-image: url(../img/assets/star.png);
   background-size: cover;
   background-position: center center;
   padding: 20px;
 
-
   .inner {
     padding: 30px 80px 30px;
 
-    .reservation_counseling{
+    .reservation_counseling {
       text-align: center;
     }
+  }
+
+  .reservation_flex {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    padding: 30px;
+    border-bottom: 2px solid #e5004f;
+
+    .reservation_flex_left,
+    .reservation_flex_right {
+      width: 50%;
+    }
+  }
+
+  .reservation_flex2 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    padding: 50px 30px;
+    border-bottom: 2px dotted #e5004f;
+
+    .reservation_flex2_left,
+    .reservation_flex2_right {
+      width: 50%;
+    }
+  }
+}
+
+
+// =============================================
+// footer 部分
+// =============================================
+footer {
+  .footer_flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .footer_logo{
+      margin-right: 20px;
+    }
+
+    .footer_list{
+      width:35%;
+      padding: 10px;
+
+      span{
+        color: #e12653;
+        font-weight: bold;
+        border-bottom: 2px solid #e12653;
+        line-height: 2rem;
+      }
+    }
+
+
+    .footer_list_flex {
+      display: flex;
+      justify-content: left;
+
+      a{
+        color: #e12653;
+        font-weight: bold;
+      }
+
+      .footer_list_flex_left{
+        margin-right: 30px;
+      }
+    }
+
+    .sns{
+      width: 35%;
+
+      a{
+        margin-right: 20px;
+      }
+    }
+  }
+
+  .footer_reserved{
+    text-align: center;
   }
 }
