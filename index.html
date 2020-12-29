@@ -4,11 +4,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- カルーセル -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-
   <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- ドロワー -->
+  <link rel="stylesheet" type="text/css" href="css/hiraku.css">
+  <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="js/hiraku.js"></script>
+
 
   <title>SAKURA beauty studio</title>
   <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
@@ -25,10 +32,11 @@
           <h1 class="logo-title"><img src="img/logo/logo.png" alt="美容総合サロンSAKURA"></h1>
         </div><!-- /.header_left -->
 
+        <!-- PC用 -->
         <div class="header_right">
           <div class="contact_box">
             <div class="contact_box_flex">
-              <div class="contact_box_tel">
+              <div class="contact_box_tel dis-pc">
                 <div class="contact_box_tel_flex">
                   <div class="contact_box_tel_flex_img">
                     <img src="img/logo/tel_logo.png" alt="電話">
@@ -40,13 +48,13 @@
                   </div><!-- /.contact_box_tel_flex_hour -->
                 </div><!-- /.contact_box_tel_flex -->
               </div><!-- /.contact_box_tel -->
-              <div class="contact_box_com">
+              <div class="contact_box_com dis-pc">
                 <a href="#">
                   <p class="contact_box_com_message">ネットでご予約</p><!-- /.contact_box_com_message -->
                   <img src="img/logo/com_logo.png" alt="パスコン画像">
                 </a>
               </div><!-- /.contact_box_com -->
-              <div class="contact_box_home">
+              <div class="contact_box_home dis-pc">
                 <a href="#">
                   <p class="contact_box_home_message">アクセス</p><!-- /.contact_box_home_message -->
                   <img src="img/logo/home_logo.png" alt="家の画像">
@@ -66,17 +74,85 @@
     </div><!-- /.inner -->
   </header>
 
-  <section class="global_nav inner">
+  <!-- PCのグローバルナビ -->
+  <section class="global_nav inner dis-pc">
     <ul class="header-nav">
       <li class="nav-items"><a href="#1">TOP</a></li>
       <li class="nav-items is-active"><a href="#2">SAKURA Beauty studio<br>について</a></li>
-      <li class="nav-items"><a href="#3">メニュー・料金</a></li>
+      <li class="nav-items drop_down"><a href="#3">メニュー・料金 <img src="img/assets/bottom_arrow.png" alt="下矢印"> </a>
+        <ul class="sub_menu">
+          <li class="nav-items"><a href="#3"><img src="img/assets/hana.png" alt="花">脱毛</a>
+          <li class="nav-items"><a href="#3"><img src="img/assets/hana.png" alt="花">ＢＢＬ</a>
+          <li class="nav-items"><a href="#3"><img src="img/assets/hana.png" alt="花">ハイフ</a>
+          <li class="nav-items"><a href="#3"><img src="img/assets/hana.png" alt="花">メンズ脱毛</a>
+          <li class="nav-items"><a href="#3"><img src="img/assets/hana.png" alt="花">セルフホワイトニング</a>
+        </ul>
+      </li>
       <li class="nav-items"><a href="#4">キャンペーン</a></li>
       <li class="nav-items"><a href="#5">よくあるご質問</a></li>
       <li class="nav-items"><a href="#6">お問い合わせ</a></li>
     </ul><!-- /.header-nav -->
   </section><!-- /.inner -->
 
+  <!-- ＳＰのグローバルナビ -->
+  <section class="sp_global_nav dis-sp">
+    <ul class="header-nav">
+      <li class="nav-items"><a href="#1">TOP</a></li>
+      <li class="nav-items"><a href="#2">SAKURA Beauty studio<br class="dis-pc">について</a></li>
+      <li class="nav-items drop_down"><a href="#3">メニュー・料金 <img src="img/assets/bottom_arrow.png" alt="下矢印"> </a>
+        <ul class="sub_menu">
+          <li class="nav-items"><a href="#3"><img src="img/assets/hana.png" alt="花">脱毛</a>
+          <li class="nav-items"><a href="#3"><img src="img/assets/hana.png" alt="花">ＢＢＬ</a>
+          <li class="nav-items"><a href="#3"><img src="img/assets/hana.png" alt="花">ハイフ</a>
+          <li class="nav-items"><a href="#3"><img src="img/assets/hana.png" alt="花">メンズ脱毛</a>
+          <li class="nav-items"><a href="#3"><img src="img/assets/hana.png" alt="花">セルフホワイトニング</a>
+        </ul>
+      </li>
+      <li class="nav-items"><a href="#4">キャンペーン</a></li>
+      <li class="nav-items"><a href="#5">よくあるご質問</a></li>
+      <li class="nav-items"><a href="#6">お問い合わせ</a></li>
+    </ul><!-- /.header-nav -->
+  </section><!-- /.sp_global_nav -->
+
+  <!-- SP用 -->
+  <div class="header_right dis-sp">
+    <div class="contact_box">
+      <div class="contact_box_flex">
+        <div class="contact_box_tel dis-sp">
+          <div class="contact_box_tel_flex">
+            <div class="contact_box_tel_flex_img">
+              <img src="img/logo/tel_logo.png" alt="電話">
+            </div><!-- /.contact_box_tel_flex_img -->
+            <div class="contact_box_tel_flex_hour">
+              <p class="contact_time">ご予約受付時間 <span>10:00～翌2:30</span>
+              </p><!-- /.contact_time -->
+              <p class="contact_box_tel_flex_number">011-252-9539</p><!-- /.contact_box_tel_flex_number -->
+            </div><!-- /.contact_box_tel_flex_hour -->
+          </div><!-- /.contact_box_tel_flex -->
+        </div><!-- /.contact_box_tel -->
+        <div class="contact_box_com dis-sp">
+          <a href="#">
+            <p class="contact_box_com_message">ネットでご予約</p><!-- /.contact_box_com_message -->
+            <img src="img/logo/com_logo.png" alt="パスコン画像">
+          </a>
+        </div><!-- /.contact_box_com -->
+        <div class="contact_box_home dis-sp">
+          <a href="#">
+            <p class="contact_box_home_message">アクセス</p><!-- /.contact_box_home_message -->
+            <img src="img/logo/home_logo.png" alt="家の画像">
+          </a>
+        </div><!-- /.contact_box_home -->
+        <div class="contact_box_hum dis-pc">
+          <a href="#">
+            <p class="contact_box_hum_message">メニュー</p><!-- /.contact_box_hum_message -->
+            <img src="img/logo/humberger.png" alt="ハンバーガーメニュー">
+          </a>
+        </div><!-- /.contact_box_hum -->
+      </div><!-- /.contact_box_flex -->
+    </div><!-- /.contact_box -->
+  </div><!-- /.header_right -->
+
+  <!-- メインエリア 女性 背景ピンク 都度払い -->
   <section class="main_area">
     <div class="inner">
       <div class="main_area_back">
@@ -121,7 +197,7 @@
             <div class="details">
               <div class="details_flex">
                 <a href="#"> 脱毛についてくわしく見る</a>
-                <img src="img/assets/pink_arrow.png" alt="右矢印">
+                <a href="#"><img src="img/assets/pink_arrow.png" alt="右矢印"></a>
               </div><!-- /.details_flex -->
               <img src="img/assets/zebra_pink.png" alt="ピンクしましま">
             </div><!-- /.details -->
@@ -144,7 +220,7 @@
             <div class="details">
               <div class="details_flex">
                 <a href="#">LUMIX-A9のBBLについてくわしく⾒る</a>
-                <img src="img/assets/pink_arrow.png" alt="右矢印">
+                <a href="#"><img src="img/assets/pink_arrow.png" alt="右矢印"></a>
               </div><!-- /.details_flex -->
               <img src="img/assets/zebra_pink.png" alt="ピンクしましま">
             </div><!-- /.details -->
@@ -168,7 +244,7 @@
             <div class="details">
               <div class="details_flex">
                 <a href="#"> ハイフについてくわしく見る</a>
-                <img src="img/assets/pink_arrow.png" alt="右矢印">
+                <a href="#"><img src="img/assets/pink_arrow.png" alt="右矢印"></a>
               </div><!-- /.details_flex -->
               <img src="img/assets/zebra_pink.png" alt="ピンクしましま">
             </div><!-- /.details -->
@@ -194,7 +270,7 @@
           <div class="details">
             <div class="details_flex">
               <a href="#">メンズ脱毛についてくわしく⾒る</a>
-              <img src="img/assets/blue_arrow.png" alt="右矢印">
+              <a href="#"><img src="img/assets/blue_arrow.png" alt="右矢印"></a>
             </div><!-- /.details_flex -->
             <img src="img/assets/zebra_blue.png" alt="青のしましま">
           </div><!-- /.details -->
@@ -330,8 +406,7 @@
         <div class="iframe-wrap">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2915.3925479462523!2d141.34857991543979!3d43.05421087914646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b2985ec9cc287%3A0x9b760b7ce1bfb878!2z44CSMDY0LTA4MDUg5YyX5rW36YGT5pyt5bmM5biC5Lit5aSu5Yy65Y2X77yV5p2h6KW_77yV5LiB55uu77yS77yR4oiS77yR!5e0!3m2!1sja!2sjp!4v1609017760834!5m2!1sja!2sjp"
-            width="400" height="300"  style="border:0;" allowfullscreen="" aria-hidden="false"
-            tabindex="0"></iframe>
+            width="400" height="300" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
       </div><!-- /.map_box -->
       <!-- 地図はここまで -->
@@ -417,10 +492,10 @@
           </div><!-- /.footer_list_flex -->
         </div><!-- /.footer_list -->
         <div class="sns">
-            <a href="#"><img src="img/assets/Instagram_btn.png" alt="インスタグラム"></a>
-            <a href="#"><img src="img/assets/twitter_btn.png" alt="ツイッター"></a>
-            <a href="#"><img src="img/assets/facebook_btn.png" alt="インスタグラム"></a>
-            <a href="#"><img src="img/assets/youtube_btn.png" alt="ユーチューブ"></a>
+          <a href="#"><img src="img/assets/Instagram_btn.png" alt="インスタグラム"></a>
+          <a href="#"><img src="img/assets/twitter_btn.png" alt="ツイッター"></a>
+          <a href="#"><img src="img/assets/facebook_btn.png" alt="インスタグラム"></a>
+          <a href="#"><img src="img/assets/youtube_btn.png" alt="ユーチューブ"></a>
         </div><!-- /.sns -->
       </div><!-- /.footer_flex -->
       <p class="footer_reserved"><small lang="en">©SAKURA beauty studio. All Rights Reserved.</small></p>
