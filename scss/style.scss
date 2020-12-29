@@ -10,7 +10,7 @@ $pink-font-color: #df003f;
 $breakpoints: ( //キー　　値
   'sm': 'screen and (max-width: 600px)',
   'md': 'screen and (max-width: 768px)',
-  'lg': 'screen and (max-width: 992px)',
+  'lg': 'screen and (max-width: 1024px)',
   'xl': 'screen and (max-width: 1200px)'
 ) !default;
 
@@ -57,7 +57,7 @@ body {
 }
 
 body {
-  font-family: "ヒラギノ明朝 ProN", "Yu Gothic", yugothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", meiryo, "MS Pゴシック", "MS PGothic", sans-serif;
+  font-family: "Yu Gothic", yugothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", meiryo, "MS Pゴシック", "MS PGothic", sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: $main-font-color;
@@ -92,6 +92,10 @@ li {
   list-style: none;
 }
 
+.is-active {
+  display: block;
+}
+
 // =============================================
 // header 部分
 // =============================================
@@ -100,80 +104,145 @@ header {
   padding: 10px 10px 30px 10px;
   border-bottom: 3px solid #d60e4c;
 
+  @include mq() {
+    border-bottom: none;
+    padding: 10px 0 0 0;
+  }
+
   .header_flex {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
 
-    // ヘッダーの右側
-    .header_right {
-      .contact_box {
-        text-align: center;
-        font-weight: bold;
-        font-size: 0.8rem;
-        background-color: #ffdcec;
-        padding: 10px;
-        color: #d60e4c;
+    @include mq() {
+      border-bottom: 1px solid #d60e4c;
+    }
 
-        .contact_box_flex {
+    // ヘッダーの左側
+    .header_left {
+
+      @include mq(md) {
+        width: 70%;
+      }
+
+      @include mq() {
+        width: 70%;
+      }
+    }
+  }
+}
+
+// ヘッダーの右側
+.header_right {
+  .contact_box {
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.8rem;
+    background-color: #ffdcec;
+    padding: 10px;
+    color: #d60e4c;
+
+    @include mq() {
+      padding: 0;
+    }
+
+    .contact_box_flex {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+
+      // 電話の部分
+      .contact_box_tel {
+        padding: 0 10px;
+
+        @include mq(md) {
+          width: 100%;
+        }
+
+        @include mq() {
+          padding: 0;
+          font-size: 0.5rem;
+        }
+
+        .contact_box_tel_flex {
           display: flex;
-          justify-content: space-around;
-          align-items: center;
 
-          // 電話の部分
-          .contact_box_tel {
-            padding: 0 10px;
-
-            .contact_box_tel_flex {
-              display: flex;
-            }
+          @include mq(md) {
+            justify-content: center;
           }
+        }
+      }
 
-          .contact_box_tel_flex_hour {
+      .contact_box_tel_flex_hour {
 
-            .contact_time {
+        .contact_time {
 
-              span {
-                color: #59493f
-              }
-            }
-
-            .contact_box_tel_flex_number {
-              font-size: 1.5rem;
-            }
+          span {
+            color: #59493f
           }
+        }
 
-          // ネットで予約の部分
-          .contact_box_com {
-            padding: 0 10px;
-            border-right: 2px solid #f19ec2;
-            border-left: 2px solid #f19ec2;
+        .contact_box_tel_flex_number {
+          font-size: 1.5rem;
 
-            .contact_box_com_message {
-              color: #d60e4c;
-            }
+          @include mq() {
+            font-size: 1.2rem;
           }
+        }
+      }
 
-          // アクセスの部分
-          .contact_box_home {
-            padding: 0 10px;
-            border-right: 2px solid #f19ec2;
+      // ネットで予約の部分
+      .contact_box_com {
+        padding: 0 10px;
+        border-right: 2px solid #f19ec2;
+        border-left: 2px solid #f19ec2;
 
-            .contact_box_home_message {
-              color: #d60e4c;
-            }
-          }
+        @include mq(md) {
+          border-right: none;
+          border-left: none;
+        }
 
-          // ハンバーガーメニューの部分
-          .contact_box_hum {
-            padding: 0 10px;
+        @include mq() {
+          padding: 5px;
+          font-size: 0.5rem;
+        }
 
-            .contact_box_hum_message {
-              margin-bottom: 5px;
-              color: #d60e4c;
-            }
-          }
+        .contact_box_com_message {
+          color: #d60e4c;
+        }
+      }
+
+      // アクセスの部分
+      .contact_box_home {
+        padding: 0 10px;
+        border-right: 2px solid #f19ec2;
+
+        @include mq(md) {
+          border-right: none;
+        }
+
+        @include mq() {
+          border-right: none;
+          font-size: 0.5rem;
+        }
+
+        .contact_box_home_message {
+          color: #d60e4c;
+        }
+      }
+
+      // ハンバーガーメニューの部分
+      .contact_box_hum {
+        padding: 0 10px;
+
+        @include mq() {
+          padding: 5px;
+        }
+
+        .contact_box_hum_message {
+          margin-bottom: 5px;
+          color: #d60e4c;
         }
       }
     }
@@ -183,44 +252,122 @@ header {
 // =============================================
 // header-nav 部分
 // =============================================
+// =============================================
+// header-nav 部分 ＰＣバージョン
+// =============================================
 .global_nav {
   margin-top: 10px;
   padding: 10px;
   text-align: center;
-}
 
-.header-nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  .header-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 
-  .nav-items {
+    .nav-items {
 
-    a {
-      color: #d60e4c;
-      font-weight: bold;
+      @include mq(md) {
+        margin: 0 5px;
+      }
+
+      a {
+        color: #d60e4c;
+        font-weight: bold;
+        position: relative;
+        display: inline-block;
+      }
+
+      a::after {
+        position: absolute;
+        bottom: -15px;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 5px;
+        background: #d60e4c;
+        transform: scale(0, 1);
+        transform-origin: left top;
+        transition: transform .3s;
+      }
+
+      a:hover::after {
+        transform: scale(1, 1);
+      }
+    }
+
+    /*子階層以降共通*/
+    .drop_down {
       position: relative;
-      display: inline-block;
+      padding: 0 20px;
+
+      img {
+        margin-left: 2px;
+      }
     }
 
-    a::after {
+    .sub_menu {
       position: absolute;
-      bottom: -15px;
-      left: 0;
-      content: '';
-      width: 100%;
-      height: 5px;
-      background: #d60e4c;
-      transform: scale(0, 1);
-      transform-origin: left top;
-      transition: transform .3s;
-    }
+      z-index: 100;
+      background-color: #fff;
+      padding: 10px;
+      text-align: left;
+      display: none;
 
-    a:hover::after {
-      transform: scale(1, 1);
+      a {
+        line-height: 2.5rem;
+
+        img {
+          margin-right: 2px;
+        }
+      }
+
+      a::after {
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 3px;
+        background: #d60e4c;
+        transform: scale(0, 1);
+        transform-origin: left top;
+        transition: transform .3s;
+      }
+
+      a:hover::after {
+        transform: scale(1, 1);
+      }
     }
   }
 }
+
+// =============================================
+// header-nav 部分 ＳＰバージョン
+// =============================================
+.sp_global_nav {
+  background-color: #ffdcec;
+  padding: 20px;
+
+  li {
+    padding: 5px;
+  }
+
+  a {
+    color: #e12653;
+    font-weight: bold;
+  }
+
+  .sub_menu {
+    display: none;
+
+    li {
+      padding-left: 20px;
+    }
+  }
+}
+
+
 
 // =============================================
 // main-area 部分
@@ -233,19 +380,32 @@ header {
   position: relative;
   margin-top: 10px;
 
+  @include mq() {
+    margin: 0;
+  }
+
   .main_area_back {
     position: relative;
     z-index: 1;
+    bottom: 0;
+
+    img {
+      vertical-align: bottom;
+    }
   }
 
   .safe_pay {
     text-align: center;
     width: 40%;
     position: absolute;
-    top: 100px;
+    top: 20%;
     z-index: 10;
 
-    @include mq(){
+    @include mq(lg) {
+      left: 15%;
+    }
+
+    @include mq() {
       top: 20%;
       left: 10%;
     }
@@ -271,7 +431,12 @@ header {
 
     .about_left {
       width: 45%;
-      @include mq(){
+
+      @include mq(lg) {
+        width: 40%;
+      }
+
+      @include mq() {
         width: 100%;
         margin-bottom: 30px;
       }
@@ -280,7 +445,7 @@ header {
     .about_right {
       width: 55%;
 
-      @include mq(){
+      @include mq() {
         width: 100%;
         margin-bottom: 10px;
       }
@@ -311,7 +476,26 @@ header {
     top: 5%;
     right: 23%;
 
-    @include mq(){
+    @include mq(lg) {
+      right: 5%;
+    }
+
+    @include mq(md) {
+      right: -5%;
+      top: 10%;
+    }
+
+    img {
+      @include mq(md) {
+        width: 80%;
+      }
+
+      @include mq() {
+        width: 100%;
+      }
+    }
+
+    @include mq() {
       position: static;
       text-align: center;
     }
@@ -325,7 +509,15 @@ header {
     box-shadow: 0 0 8px #d60e4c;
     border-radius: 10px;
 
-    @include mq(){
+    @include mq(lg) {
+      width: 90%;
+    }
+
+    @include mq(md) {
+      width: 100%;
+    }
+
+    @include mq() {
       width: 100%;
       margin-top: 20px;
     }
@@ -342,7 +534,17 @@ header {
       font-weight: bold;
       position: relative;
 
-      @include mq(){
+      @include mq(md) {
+        width: 50%;
+      }
+
+      p {
+        @include mq(md) {
+          padding-right: 10px;
+        }
+      }
+
+      @include mq() {
         width: 100%;
       }
 
@@ -352,13 +554,26 @@ header {
         margin-right: 0px;
         padding-top: 20px;
 
-        @include mq(){
+        @include mq(md) {
+          width: 100%;
+        }
+
+        @include mq() {
           width: 100%;
         }
 
         .details_flex {
           display: flex;
           justify-content: space-around;
+
+          img {
+            transition: all 0.3s ease 0s;
+            vertical-align: text-bottom;
+
+            &:hover {
+              transform: translateX(10px)
+            }
+          }
 
           a {
             color: #d60e4c;
@@ -372,7 +587,11 @@ header {
       position: relative;
       width: 30%;
 
-      @include mq(){
+      @include mq(md) {
+        width: 35%;
+      }
+
+      @include mq() {
         width: 100%;
       }
     }
@@ -389,7 +608,22 @@ header {
       top: 5%;
       left: 15%;
 
-      @include mq(){
+      @include mq(md) {
+        top: 15%;
+        left: 3%;
+      }
+
+      img {
+        @include mq(md) {
+          width: 65%;
+        }
+
+        @include mq() {
+          width: 100%;
+        }
+      }
+
+      @include mq() {
         position: static;
         margin-top: 20px;
         text-align: center;
@@ -407,7 +641,11 @@ header {
     margin-left: auto;
     margin-right: 0px;
 
-    @include mq(){
+    @include mq(md) {
+      width: 100%;
+    }
+
+    @include mq() {
       width: 100%;
       margin-top: 20px;
     }
@@ -418,7 +656,11 @@ header {
       margin-right: 0px;
       font-weight: bold;
 
-      @include mq(){
+      @include mq(md) {
+        width: 55%;
+      }
+
+      @include mq() {
         width: 100%;
       }
 
@@ -428,7 +670,11 @@ header {
         margin-right: 0px;
         padding-top: 20px;
 
-        @include mq(){
+        @include mq(md) {
+          width: 100%;
+        }
+
+        @include mq() {
           width: 100%;
         }
 
@@ -436,6 +682,15 @@ header {
           display: flex;
           justify-content: space-around;
           flex-wrap: wrap;
+
+          img {
+            vertical-align: text-bottom;
+            transition: all 0.3s ease 0s;
+
+            &:hover {
+              transform: translateX(10px)
+            }
+          }
 
           a {
             color: #d60e4c;
@@ -460,8 +715,24 @@ header {
     position: absolute;
     top: 5%;
     right: 23%;
+    text-align: right;
 
-    @include mq(){
+    @include mq(md) {
+      right: 5%;
+      top: 25%;
+    }
+
+    img {
+      @include mq(md) {
+        width: 80%;
+      }
+
+      @include mq() {
+        width: 100%;
+      }
+    }
+
+    @include mq() {
       position: static;
       text-align: center;
     }
@@ -475,7 +746,11 @@ header {
     box-shadow: 0 0 8px #d60e4c;
     border-radius: 10px;
 
-    @include mq(){
+    @include mq(md) {
+      width: 100%;
+    }
+
+    @include mq() {
       width: 100%;
       margin-top: 20px;
     }
@@ -487,12 +762,20 @@ header {
     align-items: flex-end;
     flex-wrap: wrap;
 
+    @include mq(md) {
+      justify-content: space-between;
+    }
+
     .menu_message_box_left {
       width: 57%;
       font-weight: bold;
       position: relative;
 
-      @include mq(){
+      @include mq(md) {
+        width: 50%;
+      }
+
+      @include mq() {
         width: 100%;
       }
 
@@ -502,13 +785,26 @@ header {
         margin-right: 0px;
         padding-top: 20px;
 
-        @include mq(){
+        @include mq(md) {
+          width: 100%;
+        }
+
+        @include mq() {
           width: 100%;
         }
 
         .details_flex {
           display: flex;
           justify-content: space-around;
+
+          img {
+            transition: all 0.3s ease 0s;
+            vertical-align: text-bottom;
+
+            &:hover {
+              transform: translateX(10px)
+            }
+          }
 
           a {
             color: #d60e4c;
@@ -523,7 +819,11 @@ header {
       width: 25%;
       margin-left: 20px;
 
-      @include mq(){
+      @include mq(md) {
+        width: 25%;
+      }
+
+      @include mq() {
         width: 100%;
         margin-top: 20px;
       }
@@ -546,7 +846,22 @@ header {
     top: 10%;
     left: 22%;
 
-    @include mq(){
+    @include mq(md) {
+      top: 30%;
+      left: 5%;
+    }
+
+    img {
+      @include mq(md) {
+        width: 70%;
+      }
+
+      @include mq() {
+        width: 100%;
+      }
+    }
+
+    @include mq() {
       position: static;
       text-align: center;
     }
@@ -562,7 +877,11 @@ header {
     margin-left: auto;
     margin-right: 0px;
 
-    @include mq(){
+    @include mq(md) {
+      width: 100%;
+    }
+
+    @include mq() {
       width: 100%;
       margin-top: 20px;
     }
@@ -573,7 +892,11 @@ header {
       margin-right: 0px;
       font-weight: bold;
 
-      @include mq(){
+      @include mq(md) {
+        width: 50%;
+      }
+
+      @include mq() {
         width: 100%;
       }
 
@@ -583,13 +906,26 @@ header {
         margin-right: 0px;
         padding-top: 20px;
 
-        @include mq(){
+        @include mq(md) {
+          width: 100%;
+        }
+
+        @include mq() {
           width: 100%;
         }
 
         .details_flex {
           display: flex;
           justify-content: space-around;
+
+          img {
+            transition: all 0.3s ease 0s;
+            vertical-align: text-bottom;
+
+            &:hover {
+              transform: translateX(10px)
+            }
+          }
 
           a {
             color: #6b8dd9;
@@ -615,7 +951,23 @@ header {
     bottom: 10%;
     right: 22%;
 
-    @include mq(){
+    @include mq(md) {
+      right: 0;
+      bottom: 30%;
+      text-align: right;
+    }
+
+    img {
+      @include mq(md) {
+        width: 80%;
+      }
+
+      @include mq() {
+        width: 100%;
+      }
+    }
+
+    @include mq() {
       position: static;
       text-align: center;
     }
@@ -629,7 +981,11 @@ header {
     box-shadow: 0 0 8px #d60e4c;
     border-radius: 10px;
 
-    @include mq(){
+    @include mq(md) {
+      width: 100%;
+    }
+
+    @include mq() {
       width: 100%;
       margin-top: 20px;
     }
@@ -638,17 +994,25 @@ header {
       width: 65%;
       font-weight: bold;
 
-      @include mq(){
+      @include mq(md) {
+        width: 50%;
+      }
+
+      @include mq() {
         width: 100%;
       }
 
       .details {
-        width: 70%;
+        width: 80%;
         margin-left: auto;
         margin-right: 0px;
         padding-top: 20px;
 
-        @include mq(){
+        @include mq(md) {
+          width: 100%;
+        }
+
+        @include mq() {
           width: 100%;
         }
 
@@ -656,6 +1020,15 @@ header {
           display: flex;
           justify-content: space-around;
           flex-wrap: wrap;
+
+          img {
+            transition: all 0.3s ease 0s;
+            vertical-align: text-bottom;
+
+            &:hover {
+              transform: translateX(10px)
+            }
+          }
 
           a {
             color: #d60e4c;
@@ -683,7 +1056,7 @@ header {
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
 
-    @include mq(){
+    @include mq(md) {
       position: static;
     }
   }
@@ -694,7 +1067,7 @@ header {
     margin-left: auto;
     text-align: center;
 
-    @include mq(){
+    @include mq(md) {
       width: 100%;
     }
   }
@@ -707,7 +1080,23 @@ header {
   }
 
   .swiper-button-prev {
-    background: url(https://haniwaman.com/wp-content/uploads/2018/05/swiper3.png) no-repeat center center / contain;
+    transition: all 0.3s ease 0s;
+
+    &:hover {
+      transform: translateX(-10px)
+    }
+  }
+
+  .swiper-button-next {
+    transition: all 0.3s ease 0s;
+
+    &:hover {
+      transform: translateX(10px)
+    }
+  }
+
+  .swiper-button-prev {
+    background: url(../img/assets/left_arrow.png) no-repeat center center / contain;
   }
 
   .swiper-button-prev::after {
@@ -715,7 +1104,7 @@ header {
   }
 
   .swiper-button-next {
-    background: url(https://haniwaman.com/wp-content/uploads/2018/05/swiper4.png) no-repeat center center / contain;
+    background: url(../img/assets/right_arrow.png) no-repeat center center / contain;
   }
 
   .swiper-button-next::after {
@@ -742,10 +1131,10 @@ header {
   .news_logo {
     width: 20%;
     text-align: right;
-    
-    @include mq(){
+
+    @include mq(md) {
       width: 100%;
-      text-align: left;
+      text-align: center;
     }
   }
 
@@ -757,7 +1146,7 @@ header {
     padding: 20px;
     border-radius: 10px;
 
-    @include mq(){
+    @include mq(md) {
       width: 100%;
     }
   }
@@ -894,7 +1283,11 @@ header {
     margin-right: 0px;
     padding-top: 20px;
 
-    @include mq(){
+    @include mq(md) {
+      width: 60%;
+    }
+
+    @include mq() {
       width: 100%;
     }
 
@@ -928,7 +1321,7 @@ header {
     top: 0;
     right: 23%;
 
-    @include mq(){
+    @include mq(md) {
       position: static;
       width: 100%;
     }
@@ -951,7 +1344,7 @@ header {
   .inner {
     padding: 30px 80px 30px;
 
-    @include mq(){
+    @include mq(md) {
       padding: 10px;
     }
   }
@@ -966,7 +1359,7 @@ header {
       width: 35%;
       padding: 20px;
 
-      @include mq(){
+      @include mq(md) {
         width: 100%;
         padding: 0;
         margin-top: 20px;
@@ -983,7 +1376,7 @@ header {
       .access_flex_left_open {
         padding-bottom: 120px;
 
-        @include mq(){
+        @include mq(md) {
           padding: 10px;
         }
       }
@@ -992,8 +1385,15 @@ header {
     .access_flex_right {
       width: 60%;
 
-      @include mq(){
+      @include mq(md) {
         width: 100%;
+        text-align: center;
+      }
+
+      img {
+        @include mq(md) {
+          width: 100%;
+        }
       }
     }
   }
@@ -1012,7 +1412,7 @@ header {
   .inner {
     padding: 30px 80px 30px;
 
-    @include mq(){
+    @include mq(md) {
       padding: 0;
     }
 
@@ -1029,7 +1429,7 @@ header {
     padding: 30px;
     border-bottom: 2px solid #e5004f;
 
-    @include mq(){
+    @include mq() {
       padding: 0;
     }
 
@@ -1037,7 +1437,7 @@ header {
     .reservation_flex_right {
       width: 50%;
 
-      @include mq(){
+      @include mq() {
         width: 100%;
         text-align: center;
       }
@@ -1052,7 +1452,7 @@ header {
     padding: 50px 30px;
     border-bottom: 2px dotted #e5004f;
 
-    @include mq(){
+    @include mq() {
       padding: 10px;
     }
 
@@ -1060,7 +1460,7 @@ header {
     .reservation_flex2_right {
       width: 50%;
 
-      @include mq(){
+      @include mq() {
         width: 100%;
       }
     }
@@ -1077,30 +1477,40 @@ footer {
     justify-content: center;
     flex-wrap: wrap;
 
-    .footer_logo{
+    .footer_logo {
       margin-right: 20px;
 
-      @include mq(){
+      @include mq() {
         order: 2;
       }
     }
 
-    .footer_list{
-      width:35%;
+    .footer_list {
+      width: 35%;
       padding: 10px;
 
-      @include mq(){
-        width: 100%;
-        order:3;
+      @include mq(md) {
+        margin-left: 20px;
       }
 
-      .footer_about{
-        @include mq(){
+      a {
+        @include mq(md) {
+          font-size: 1.2rem;
+        }
+      }
+
+      @include mq() {
+        width: 100%;
+        order: 3;
+      }
+
+      .footer_about {
+        @include mq() {
           text-align: center;
         }
       }
 
-      span{
+      span {
         color: #e12653;
         font-weight: bold;
         border-bottom: 2px solid #e12653;
@@ -1113,46 +1523,47 @@ footer {
       display: flex;
       justify-content: left;
 
-      @include mq(){
+      @include mq() {
         justify-content: center;
       }
 
-      a{
+      a {
         color: #e12653;
         font-weight: bold;
+        white-space: nowrap
       }
 
-      .footer_list_flex_right{
-        @include mq(){
+      .footer_list_flex_right {
+        @include mq() {
           margin-top: 10px;
         }
       }
 
-      .footer_list_flex_left{
+      .footer_list_flex_left {
         margin-right: 30px;
 
-        @include mq(){
+        @include mq() {
           margin-top: 10px;
         }
       }
     }
 
-    .sns{
+    .sns {
       width: 35%;
 
-      @include mq(){
+      @include mq(md) {
         width: 100%;
         text-align: center;
-        order:1;
+        order: 1;
       }
 
-      a{
+      a {
         margin-right: 20px;
       }
     }
   }
 
-  .footer_reserved{
+  .footer_reserved {
     text-align: center;
   }
 }
