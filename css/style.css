@@ -522,7 +522,8 @@ header .header_flex {
 
 @media screen and (max-width: 1024px) {
   .menu .menu_message_box .menu_massage_picture {
-    right: -5%;
+    right: -15%;
+    width: 53%;
   }
 }
 
@@ -530,7 +531,13 @@ header .header_flex {
   .menu .menu_message_box .menu_massage_picture {
     right: -5%;
     top: 10%;
-    width: 53%;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .menu .menu_message_box .menu_massage_picture {
+    width: 100%;
   }
 }
 

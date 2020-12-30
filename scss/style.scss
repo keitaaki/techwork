@@ -499,27 +499,32 @@ header {
       position: absolute;
       top: -15%;
       right: -5%;
-  
+
       @include mq(lg) {
-        right: -5%;
+        right: -15%;
+        width: 53%;
       }
-  
+
       @include mq(md) {
         right: -5%;
         top: 10%;
-        width: 53%;
+        width: 50%;
       }
-  
+
+      @include mq() {
+        width: 100%;
+      }
+
       img {
         @include mq(md) {
           width: 80%;
         }
-  
+
         @include mq() {
           width: 100%;
         }
       }
-  
+
       @include mq() {
         position: static;
         text-align: center;
@@ -592,16 +597,16 @@ header {
       width: 30%;
       text-align: center;
 
-      img{
+      img {
         width: 85%;
 
-        @include mq(md){
+        @include mq(md) {
           width: 70%;
         }
 
-        @include mq(){
+        @include mq() {
           width: 100%;
-       }
+        }
       }
 
       @include mq(md) {
@@ -636,7 +641,7 @@ header {
     @include mq() {
       width: 100%;
       margin-top: 20px;
-      padding:20px;
+      padding: 20px;
     }
 
     .menu_message_box_bbl_picture {
@@ -644,7 +649,7 @@ header {
       top: 5%;
       left: -20%;
 
-      @include mq(lg){
+      @include mq(lg) {
         left: -30%;
       }
 
@@ -752,26 +757,26 @@ header {
       right: -5%;
       text-align: right;
 
-      @include mq(lg){
+      @include mq(lg) {
         top: -10%;
         right: -20%;
       }
-  
+
       @include mq(md) {
         right: 5%;
         top: 25%;
       }
-  
+
       img {
         @include mq(md) {
           width: 75%;
         }
-  
+
         @include mq() {
           width: 100%;
         }
       }
-  
+
       @include mq() {
         position: static;
         text-align: center;
@@ -812,7 +817,7 @@ header {
           width: 80%;
         }
 
-        @include mq(md){
+        @include mq(md) {
           width: 100%;
         }
 
@@ -842,7 +847,7 @@ header {
       width: 25%;
       margin-left: 20px;
 
-      @include mq(lg){
+      @include mq(lg) {
         width: 30%;
       }
 
@@ -897,22 +902,22 @@ header {
       @include mq(lg) {
         left: -30%;
       }
-  
+
       @include mq(md) {
         top: 10%;
         left: 5%;
       }
-  
+
       img {
         @include mq(md) {
           width: 70%;
         }
-  
+
         @include mq() {
           width: 100%;
         }
       }
-  
+
       @include mq() {
         position: static;
         text-align: center;
@@ -982,7 +987,7 @@ header {
     padding: 20px;
   }
 
-  @include mq(){
+  @include mq() {
     padding: 20px;
   }
 
@@ -1017,23 +1022,23 @@ header {
       @include mq(lg) {
         right: -30%;
       }
-  
+
       @include mq(md) {
         right: 3%;
         bottom: 20%;
         text-align: right;
       }
-  
+
       img {
         @include mq(md) {
           width: 75%;
         }
-  
+
         @include mq() {
           width: 100%;
         }
       }
-  
+
       @include mq() {
         position: static;
         text-align: center;
@@ -1114,8 +1119,8 @@ header {
     margin-left: auto;
     text-align: center;
 
-    .swiper-slide{
-      @include mq(){
+    .swiper-slide {
+      @include mq() {
         padding: 5px;
       }
     }
@@ -1131,7 +1136,7 @@ header {
     height: 32px;
     margin-top: -30px;
 
-    @include mq(){
+    @include mq() {
       margin-top: -35px;
     }
   }
@@ -1595,7 +1600,7 @@ footer {
       a {
         color: #e12653;
         font-weight: bold;
-        
+
       }
 
       .footer_list_flex_right {
