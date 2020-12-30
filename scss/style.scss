@@ -161,7 +161,7 @@ header {
         }
 
         @include mq() {
-          padding: 0;
+          padding: 10px;
           font-size: 0.5rem;
         }
 
@@ -291,7 +291,8 @@ header {
         transition: transform .3s;
       }
 
-      a:hover::after {
+      a:hover::after,
+      a:focus::after {
         transform: scale(1, 1);
       }
     }
@@ -348,6 +349,7 @@ header {
 .sp_global_nav {
   background-color: #ffdcec;
   padding: 20px;
+  border-bottom: 2px solid #f19ec2;
 
   li {
     padding: 5px;
@@ -469,37 +471,6 @@ header {
   background-size: cover;
   background-position: center center;
   padding: 20px;
-  position: relative;
-
-  .menu_massage_picture {
-    position: absolute;
-    top: 5%;
-    right: 23%;
-
-    @include mq(lg) {
-      right: 5%;
-    }
-
-    @include mq(md) {
-      right: -5%;
-      top: 10%;
-    }
-
-    img {
-      @include mq(md) {
-        width: 80%;
-      }
-
-      @include mq() {
-        width: 100%;
-      }
-    }
-
-    @include mq() {
-      position: static;
-      text-align: center;
-    }
-  }
 
   .menu_message_box {
     background-color: #fff;
@@ -508,6 +479,7 @@ header {
     margin-top: 100px;
     box-shadow: 0 0 8px #d60e4c;
     border-radius: 10px;
+    position: relative;
 
     @include mq(lg) {
       width: 90%;
@@ -515,17 +487,49 @@ header {
 
     @include mq(md) {
       width: 100%;
+      margin: 20px 0;
     }
 
     @include mq() {
       width: 100%;
       margin-top: 20px;
     }
+
+    .menu_massage_picture {
+      position: absolute;
+      top: -15%;
+      right: -5%;
+  
+      @include mq(lg) {
+        right: -5%;
+      }
+  
+      @include mq(md) {
+        right: -5%;
+        top: 10%;
+        width: 53%;
+      }
+  
+      img {
+        @include mq(md) {
+          width: 80%;
+        }
+  
+        @include mq() {
+          width: 100%;
+        }
+      }
+  
+      @include mq() {
+        position: static;
+        text-align: center;
+      }
+    }
   }
 
   .menu_message_box_flex {
     display: flex;
-    justify-content: left;
+    justify-content: space-between;
     align-items: flex-end;
     flex-wrap: wrap;
 
@@ -586,6 +590,19 @@ header {
       padding: 0 20px 0;
       position: relative;
       width: 30%;
+      text-align: center;
+
+      img{
+        width: 85%;
+
+        @include mq(md){
+          width: 70%;
+        }
+
+        @include mq(){
+          width: 100%;
+       }
+      }
 
       @include mq(md) {
         width: 35%;
@@ -600,13 +617,36 @@ header {
   // =============================================
   // BBL 部分
   // =============================================
-  .menu_bbl_area {
+  .menu_message_box_bbl {
+    background-color: #fff;
+    width: 70%;
+    padding: 50px 30px;
+    margin-top: 80px;
+    box-shadow: 0 0 8px #d60e4c;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: 0px;
     position: relative;
+
+    @include mq(md) {
+      width: 100%;
+      margin: 30px 0;
+    }
+
+    @include mq() {
+      width: 100%;
+      margin-top: 20px;
+      padding:20px;
+    }
 
     .menu_message_box_bbl_picture {
       position: absolute;
       top: 5%;
-      left: 15%;
+      left: -20%;
+
+      @include mq(lg){
+        left: -30%;
+      }
 
       @include mq(md) {
         top: 15%;
@@ -629,26 +669,6 @@ header {
         text-align: center;
       }
     }
-  }
-
-  .menu_message_box_bbl {
-    background-color: #fff;
-    width: 70%;
-    padding: 50px 30px;
-    margin-top: 80px;
-    box-shadow: 0 0 8px #d60e4c;
-    border-radius: 10px;
-    margin-left: auto;
-    margin-right: 0px;
-
-    @include mq(md) {
-      width: 100%;
-    }
-
-    @include mq() {
-      width: 100%;
-      margin-top: 20px;
-    }
 
     .menu_message_box_bbl_text {
       width: 65%;
@@ -670,11 +690,7 @@ header {
         margin-right: 0px;
         padding-top: 20px;
 
-        @include mq(md) {
-          width: 100%;
-        }
-
-        @include mq() {
+        @include mq(lg) {
           width: 100%;
         }
 
@@ -709,34 +725,6 @@ header {
   background-size: cover;
   background-position: center center;
   padding: 20px;
-  position: relative;
-
-  .menu_massage_picture {
-    position: absolute;
-    top: 5%;
-    right: 23%;
-    text-align: right;
-
-    @include mq(md) {
-      right: 5%;
-      top: 25%;
-    }
-
-    img {
-      @include mq(md) {
-        width: 80%;
-      }
-
-      @include mq() {
-        width: 100%;
-      }
-    }
-
-    @include mq() {
-      position: static;
-      text-align: center;
-    }
-  }
 
   .menu_message_box {
     background-color: #fff;
@@ -745,14 +733,49 @@ header {
     margin-top: 100px;
     box-shadow: 0 0 8px #d60e4c;
     border-radius: 10px;
+    position: relative;
 
     @include mq(md) {
       width: 100%;
+      margin: 20px 0;
     }
 
     @include mq() {
       width: 100%;
       margin-top: 20px;
+      padding: 20px;
+    }
+
+    .menu_massage_picture {
+      position: absolute;
+      top: -30%;
+      right: -5%;
+      text-align: right;
+
+      @include mq(lg){
+        top: -10%;
+        right: -20%;
+      }
+  
+      @include mq(md) {
+        right: 5%;
+        top: 25%;
+      }
+  
+      img {
+        @include mq(md) {
+          width: 75%;
+        }
+  
+        @include mq() {
+          width: 100%;
+        }
+      }
+  
+      @include mq() {
+        position: static;
+        text-align: center;
+      }
     }
   }
 
@@ -785,11 +808,11 @@ header {
         margin-right: 0px;
         padding-top: 20px;
 
-        @include mq(md) {
-          width: 100%;
+        @include mq(lg) {
+          width: 80%;
         }
 
-        @include mq() {
+        @include mq(md){
           width: 100%;
         }
 
@@ -819,6 +842,10 @@ header {
       width: 25%;
       margin-left: 20px;
 
+      @include mq(lg){
+        width: 30%;
+      }
+
       @include mq(md) {
         width: 25%;
       }
@@ -839,33 +866,6 @@ header {
   background-size: cover;
   background-position: center center;
   padding: 20px;
-  position: relative;
-
-  .mens_picture {
-    position: absolute;
-    top: 10%;
-    left: 22%;
-
-    @include mq(md) {
-      top: 30%;
-      left: 5%;
-    }
-
-    img {
-      @include mq(md) {
-        width: 70%;
-      }
-
-      @include mq() {
-        width: 100%;
-      }
-    }
-
-    @include mq() {
-      position: static;
-      text-align: center;
-    }
-  }
 
   .mens_box {
     background-color: #fff;
@@ -876,14 +876,47 @@ header {
     border-radius: 10px;
     margin-left: auto;
     margin-right: 0px;
+    position: relative;
 
     @include mq(md) {
       width: 100%;
+      margin: 20px 0;
     }
 
     @include mq() {
       width: 100%;
       margin-top: 20px;
+      padding: 20px;
+    }
+
+    .mens_picture {
+      position: absolute;
+      top: -10%;
+      left: -20%;
+
+      @include mq(lg) {
+        left: -30%;
+      }
+  
+      @include mq(md) {
+        top: 10%;
+        left: 5%;
+      }
+  
+      img {
+        @include mq(md) {
+          width: 70%;
+        }
+  
+        @include mq() {
+          width: 100%;
+        }
+      }
+  
+      @include mq() {
+        position: static;
+        text-align: center;
+      }
     }
 
     .mens_box_text {
@@ -944,33 +977,13 @@ header {
   background-size: cover;
   background-position: center center;
   padding: 20px 20px 100px;
-  position: relative;
 
-  .whitening_picture {
-    position: absolute;
-    bottom: 10%;
-    right: 22%;
+  @include mq(lg) {
+    padding: 20px;
+  }
 
-    @include mq(md) {
-      right: 0;
-      bottom: 30%;
-      text-align: right;
-    }
-
-    img {
-      @include mq(md) {
-        width: 80%;
-      }
-
-      @include mq() {
-        width: 100%;
-      }
-    }
-
-    @include mq() {
-      position: static;
-      text-align: center;
-    }
+  @include mq(){
+    padding: 20px;
   }
 
   .whitening_box {
@@ -980,6 +993,11 @@ header {
     margin-top: 80px;
     box-shadow: 0 0 8px #d60e4c;
     border-radius: 10px;
+    position: relative;
+
+    @include mq(lg) {
+      margin: 20px 0;
+    }
 
     @include mq(md) {
       width: 100%;
@@ -988,6 +1006,38 @@ header {
     @include mq() {
       width: 100%;
       margin-top: 20px;
+      padding: 20px;
+    }
+
+    .whitening_picture {
+      position: absolute;
+      bottom: -15%;
+      right: -20%;
+
+      @include mq(lg) {
+        right: -30%;
+      }
+  
+      @include mq(md) {
+        right: 3%;
+        bottom: 20%;
+        text-align: right;
+      }
+  
+      img {
+        @include mq(md) {
+          width: 75%;
+        }
+  
+        @include mq() {
+          width: 100%;
+        }
+      }
+  
+      @include mq() {
+        position: static;
+        text-align: center;
+      }
     }
 
     .whitening_box_text {
@@ -1008,11 +1058,7 @@ header {
         margin-right: 0px;
         padding-top: 20px;
 
-        @include mq(md) {
-          width: 100%;
-        }
-
-        @include mq() {
+        @include mq(lg) {
           width: 100%;
         }
 
@@ -1056,7 +1102,8 @@ header {
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
 
-    @include mq(md) {
+    @include mq(lg) {
+      margin-top: 30px;
       position: static;
     }
   }
@@ -1067,7 +1114,13 @@ header {
     margin-left: auto;
     text-align: center;
 
-    @include mq(md) {
+    .swiper-slide{
+      @include mq(){
+        padding: 5px;
+      }
+    }
+
+    @include mq(lg) {
       width: 100%;
     }
   }
@@ -1076,7 +1129,11 @@ header {
   .swiper-button-next {
     width: 32px;
     height: 32px;
-    margin-top: -16px;
+    margin-top: -30px;
+
+    @include mq(){
+      margin-top: -35px;
+    }
   }
 
   .swiper-button-prev {
@@ -1122,6 +1179,10 @@ header {
   padding: 30px;
   position: relative;
 
+  @include mq(lg) {
+    padding: 20px;
+  }
+
   .news_flex {
     display: flex;
     flex-wrap: wrap;
@@ -1132,7 +1193,7 @@ header {
     width: 20%;
     text-align: right;
 
-    @include mq(md) {
+    @include mq(lg) {
       width: 100%;
       text-align: center;
     }
@@ -1146,7 +1207,11 @@ header {
     padding: 20px;
     border-radius: 10px;
 
-    @include mq(md) {
+    @include mq(lg) {
+      margin: 30px auto 0;
+    }
+
+    @include mq(lg) {
       width: 100%;
     }
   }
@@ -1530,7 +1595,7 @@ footer {
       a {
         color: #e12653;
         font-weight: bold;
-        white-space: nowrap
+        
       }
 
       .footer_list_flex_right {
