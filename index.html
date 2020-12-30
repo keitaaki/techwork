@@ -11,11 +11,7 @@
   <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-  <!-- ドロワー -->
-  <link rel="stylesheet" type="text/css" href="css/hiraku.css">
-  <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
-  <script src="js/hiraku.js"></script>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
   <title>SAKURA beauty studio</title>
   <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
@@ -60,16 +56,21 @@
                   <img src="img/logo/home_logo.png" alt="家の画像">
                 </a>
               </div><!-- /.contact_box_home -->
-              <div class="contact_box_hum">
-                <a href="#">
-                  <p class="contact_box_hum_message">メニュー</p><!-- /.contact_box_hum_message -->
-                  <img src="img/logo/humberger.png" alt="ハンバーガーメニュー">
-                </a>
+
+              <!-- ドロワーのボタン -->
+              <div class="contact_box_hum drawer">
+                <div class="navbar_toggle">
+                  <p class="contact_box_hum_message">メニュー</p>
+                  <div class="menu-trigger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div><!-- /.hamburger_icon -->
+                </div><!-- /.navbar_toggle -->
               </div><!-- /.contact_box_hum -->
             </div><!-- /.contact_box_flex -->
           </div><!-- /.contact_box -->
         </div><!-- /.header_right -->
-
       </div><!-- /.header_flex -->
     </div><!-- /.inner -->
   </header>
@@ -95,12 +96,12 @@
   </section><!-- /.inner -->
 
   <!-- ＳＰのグローバルナビ -->
-  <section class="sp_global_nav dis-sp">
+  <section class="sp_global_nav dis-sp hidden" id="sp_global_nav">
     <ul class="header-nav">
       <li class="nav-items"><a href="#1">TOP</a></li>
       <li class="nav-items"><a href="#2">SAKURA Beauty studio<br class="dis-pc">について</a></li>
-      <li class="nav-items drop_down"><a href="#3">メニュー・料金 <img src="img/assets/bottom_arrow.png" alt="下矢印"> </a>
-        <ul class="sub_menu">
+      <li class="nav-items drop_down" id="sp_sub_menus"><a href="#3">メニュー・料金 <img src="img/assets/bottom_arrow.png" alt="下矢印"> </a>
+        <ul class="sub_menu hidden">
           <li class="nav-items"><a href="#3"><img src="img/assets/hana.png" alt="花">脱毛</a>
           <li class="nav-items"><a href="#3"><img src="img/assets/hana.png" alt="花">ＢＢＬ</a>
           <li class="nav-items"><a href="#3"><img src="img/assets/hana.png" alt="花">ハイフ</a>
@@ -115,7 +116,7 @@
   </section><!-- /.sp_global_nav -->
 
   <!-- SP用 -->
-  <div class="header_right dis-sp">
+  <div class="header_right dis-sp hidden" id="sp_contact_box">
     <div class="contact_box">
       <div class="contact_box_flex">
         <div class="contact_box_tel dis-sp">
