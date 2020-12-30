@@ -25,7 +25,7 @@ $breakpoints: ( //キー　　値
 }
 
 .dis-pc {
-  @include mq() {
+  @include mq(md) {
     display: none;
   }
 }
@@ -33,7 +33,7 @@ $breakpoints: ( //キー　　値
 .dis-sp {
   display: none;
 
-  @include mq() {
+  @include mq(md) {
     display: block;
   }
 }
@@ -145,6 +145,7 @@ header {
     background-color: #ffdcec;
     padding: 10px;
     color: #d60e4c;
+    position: relative;
 
     @include mq() {
       padding: 0;
@@ -266,6 +267,7 @@ header {
     }
   }
 }
+
 // =============================================
 // ドロワー 部分
 // =============================================
@@ -439,8 +441,17 @@ header {
 .sp_global_nav {
   background-color: #ffdcec;
   padding: 20px;
-  border-bottom: 2px solid #f19ec2;
-  
+  border-bottom: 2px solid #f19ec2;  
+
+  @include mq(md){
+    font-size: 1.8rem;
+    padding-left: 50px;
+  }
+
+  @include mq(){
+    font-size: 1rem;
+    padding: 20px;
+  }
 
   li {
     padding: 5px;
@@ -503,6 +514,139 @@ header {
     }
   }
 }
+
+// =============================================
+// くっついてくるメニュー 部分
+// =============================================
+.contact_box {
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.8rem;
+  background-color: #ffdcec;
+  padding: 10px;
+  color: #d60e4c;
+
+  @include mq() {
+    padding: 0;
+  }
+
+  .contact_box_flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @include mq() {
+      flex-wrap: nowrap;
+    }
+
+
+    // 電話の部分
+    .contact_box_tel {
+      padding: 0 10px;
+
+      @include mq(md) {
+        width: 100%;
+      }
+
+      @include mq() {
+        width: 60%;
+        padding: 5px;
+        font-size: 0.5rem;
+      }
+
+      .contact_box_tel_flex {
+        display: flex;
+
+        @include mq(md) {
+          justify-content: center;
+        }
+
+        .contact_box_tel_flex_img {
+          img {
+            vertical-align: bottom;
+          }
+        }
+      }
+    }
+
+    .contact_box_tel_flex_hour {
+
+      .contact_time {
+
+        span {
+          color: #59493f
+        }
+      }
+
+      .contact_box_tel_flex_number {
+        font-size: 1.5rem;
+
+        @include mq() {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    // ネットで予約の部分
+    .contact_box_com {
+      padding: 0 10px;
+      border-right: 2px solid #f19ec2;
+      border-left: 2px solid #f19ec2;
+
+      @include mq(md) {
+        border-right: none;
+        border-left: none
+      }
+
+      @include mq() {
+        padding: 5px;
+        font-size: 0.5rem;
+        border-right: 2px solid #f19ec2;
+        border-left: 2px solid #f19ec2;
+      }
+
+      .contact_box_com_message {
+        color: #d60e4c;
+      }
+    }
+
+    // アクセスの部分
+    .contact_box_home {
+      padding: 0 10px;
+      border-right: 2px solid #f19ec2;
+
+      @include mq(md) {
+        border-right: none;
+      }
+
+      @include mq() {
+        border-right: none;
+        font-size: 0.5rem;
+      }
+
+      .contact_box_home_message {
+        color: #d60e4c;
+      }
+    }
+
+    // ハンバーガーメニューの部分
+    .contact_box_hum {
+      padding: 0 10px;
+
+      @include mq() {
+        padding: 5px;
+      }
+
+      .contact_box_hum_message {
+        margin-bottom: 8px;
+        color: #d60e4c;
+      }
+    }
+  }
+}
+
+
 
 // =============================================
 // about 部分

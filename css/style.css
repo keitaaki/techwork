@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .dis-pc {
     display: none;
   }
@@ -9,7 +9,7 @@
   display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .dis-sp {
     display: block;
   }
@@ -127,6 +127,7 @@ header .header_flex {
   background-color: #ffdcec;
   padding: 10px;
   color: #d60e4c;
+  position: relative;
 }
 
 @media screen and (max-width: 600px) {
@@ -490,6 +491,20 @@ header .header_flex {
   border-bottom: 2px solid #f19ec2;
 }
 
+@media screen and (max-width: 768px) {
+  .sp_global_nav {
+    font-size: 1.8rem;
+    padding-left: 50px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .sp_global_nav {
+    font-size: 1rem;
+    padding: 20px;
+  }
+}
+
 .sp_global_nav li {
   padding: 5px;
 }
@@ -546,6 +561,154 @@ header .header_flex {
     top: 20%;
     left: 10%;
   }
+}
+
+.contact_box {
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.8rem;
+  background-color: #ffdcec;
+  padding: 10px;
+  color: #d60e4c;
+}
+
+@media screen and (max-width: 600px) {
+  .contact_box {
+    padding: 0;
+  }
+}
+
+.contact_box .contact_box_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media screen and (max-width: 600px) {
+  .contact_box .contact_box_flex {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+.contact_box .contact_box_flex .contact_box_tel {
+  padding: 0 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .contact_box .contact_box_flex .contact_box_tel {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact_box .contact_box_flex .contact_box_tel {
+    width: 60%;
+    padding: 5px;
+    font-size: 0.5rem;
+  }
+}
+
+.contact_box .contact_box_flex .contact_box_tel .contact_box_tel_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .contact_box .contact_box_flex .contact_box_tel .contact_box_tel_flex {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.contact_box .contact_box_flex .contact_box_tel .contact_box_tel_flex .contact_box_tel_flex_img img {
+  vertical-align: bottom;
+}
+
+.contact_box .contact_box_flex .contact_box_tel_flex_hour .contact_time span {
+  color: #59493f;
+}
+
+.contact_box .contact_box_flex .contact_box_tel_flex_hour .contact_box_tel_flex_number {
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  .contact_box .contact_box_flex .contact_box_tel_flex_hour .contact_box_tel_flex_number {
+    font-size: 1rem;
+  }
+}
+
+.contact_box .contact_box_flex .contact_box_com {
+  padding: 0 10px;
+  border-right: 2px solid #f19ec2;
+  border-left: 2px solid #f19ec2;
+}
+
+@media screen and (max-width: 768px) {
+  .contact_box .contact_box_flex .contact_box_com {
+    border-right: none;
+    border-left: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact_box .contact_box_flex .contact_box_com {
+    padding: 5px;
+    font-size: 0.5rem;
+    border-right: 2px solid #f19ec2;
+    border-left: 2px solid #f19ec2;
+  }
+}
+
+.contact_box .contact_box_flex .contact_box_com .contact_box_com_message {
+  color: #d60e4c;
+}
+
+.contact_box .contact_box_flex .contact_box_home {
+  padding: 0 10px;
+  border-right: 2px solid #f19ec2;
+}
+
+@media screen and (max-width: 768px) {
+  .contact_box .contact_box_flex .contact_box_home {
+    border-right: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact_box .contact_box_flex .contact_box_home {
+    border-right: none;
+    font-size: 0.5rem;
+  }
+}
+
+.contact_box .contact_box_flex .contact_box_home .contact_box_home_message {
+  color: #d60e4c;
+}
+
+.contact_box .contact_box_flex .contact_box_hum {
+  padding: 0 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .contact_box .contact_box_flex .contact_box_hum {
+    padding: 5px;
+  }
+}
+
+.contact_box .contact_box_flex .contact_box_hum .contact_box_hum_message {
+  margin-bottom: 8px;
+  color: #d60e4c;
 }
 
 .about {
