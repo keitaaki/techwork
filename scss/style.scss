@@ -6,20 +6,15 @@ $main-font-color: #59493f;
 $pink-font-color: #df003f;
 
 //メディアクエリの設定
-//マップ型変数breakpointsを定義
-$breakpoints: ( //キー　　値
-  'sm': 'screen and (max-width: 600px)',
+$breakpoints: ('sm': 'screen and (max-width: 600px)',
   'md': 'screen and (max-width: 768px)',
   'lg': 'screen and (max-width: 1024px)',
   'xl': 'screen and (max-width: 1200px)'
 ) !default;
 
-//メディアクエリ用のmixinを定義。デフォ値はmd
 @mixin mq($breakpoint: sm) {
 
-  //map-get(マップ型変数, キー)で値を取得
   @media #{map-get($breakpoints, $breakpoint)} {
-    //この中をカスタムできる
     @content;
   }
 }
@@ -96,7 +91,7 @@ li {
   display: block;
 }
 
-.hidden{
+.hidden {
   display: none;
 }
 
@@ -280,66 +275,246 @@ header {
   transition: all .4s;
   box-sizing: border-box;
 }
+
 .menu-trigger {
   position: relative;
   width: 40px;
   height: 30px;
 }
+
 .menu-trigger span {
   position: absolute;
   left: 0;
   width: 100%;
   height: 4px;
-  background-color:#d60e4c;
+  background-color: #d60e4c;
   border-radius: 4px;
 }
+
 .menu-trigger span:nth-of-type(1) {
   top: 0;
 }
+
 .menu-trigger span:nth-of-type(2) {
   top: 12.5px;
 }
+
 .menu-trigger span:nth-of-type(3) {
   bottom: 0;
 }
 
 // オープン時
-
 .menu-trigger {
   animation: menu-close .6s;
 }
+
 .menu-trigger.active {
   animation: menu-open .6s;
 }
+
 @keyframes menu-close {
   30% {
     transform: scale(0);
     opacity: 0;
   }
+
   100% {
     transform: scale(1);
     opacity: 1;
   }
 }
+
 @keyframes menu-open {
   30% {
     transform: scale(0);
     opacity: 0;
   }
+
   100% {
     transform: scale(1);
     opacity: 1;
   }
 }
+
 .menu-trigger.active span:nth-of-type(1) {
   transform: translateY(14px) rotate(-45deg);
 }
+
 .menu-trigger.active span:nth-of-type(2) {
   opacity: 0;
 }
+
 .menu-trigger.active span:nth-of-type(3) {
   transform: translateY(-13px) rotate(45deg);
 }
+
+// =============================================
+// ドロワー 部分
+// =============================================
+// =============================================
+// スクロールするとついてくる（ハンバーガー） 部分
+// =============================================
+.scroll_menu {
+
+  .inner {
+    position: relative;
+
+    .contact_box_humber {
+      width: 75px;
+      padding: 5px;
+      background-color: #ffdcec;
+      z-index: 999;
+      position: fixed;
+      right: 11%;
+      top: 0;
+
+      @include mq(lg) {
+        right: 5%;
+      }
+
+      @include mq(md) {
+        right: 0;
+      }
+    }
+
+    .navbar_toggle_open {
+      text-align: center;
+    }
+
+    .contact_box_hum_message {
+      color: #d60e4c;
+      font-weight: bold;
+    }
+
+    .menu-trigger_open,
+    .menu-trigger_open span {
+      display: inline-block;
+      transition: all .4s;
+      box-sizing: border-box;
+    }
+
+    .menu-trigger_open {
+      position: relative;
+      width: 40px;
+      height: 30px;
+    }
+
+    .menu-trigger_open span {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background-color: #d60e4c;
+      border-radius: 4px;
+    }
+
+    .menu-trigger_open span:nth-of-type(1) {
+      top: 0;
+    }
+
+    .menu-trigger_open span:nth-of-type(2) {
+      top: 12.5px;
+    }
+
+    .menu-trigger_open span:nth-of-type(3) {
+      bottom: 0;
+    }
+
+    // オープン時
+    .menu-trigger_open {
+      animation: menu-close .6s;
+    }
+
+    .menu-trigger_open.active {
+      animation: menu-open .6s;
+    }
+
+    @keyframes menu-close {
+      30% {
+        transform: scale(0);
+        opacity: 0;
+      }
+
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    @keyframes menu-open {
+      30% {
+        transform: scale(0);
+        opacity: 0;
+      }
+
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    .menu-trigger_open.active span:nth-of-type(1) {
+      transform: translateY(14px) rotate(-45deg);
+    }
+
+    .menu-trigger_open.active span:nth-of-type(2) {
+      opacity: 0;
+    }
+
+    .menu-trigger_open.active span:nth-of-type(3) {
+      transform: translateY(-13px) rotate(45deg);
+    }
+
+    .scroll_menu_open {
+      width: 20%;
+      background-color: #ffdcec;
+      font-weight: bold;
+      padding-left: 20px;
+      z-index: 99;
+      position: fixed;
+      right: 11%;
+      top: 0;
+
+      @include mq(md) {
+        width: 80%;
+      }
+
+      a {
+        color: #d60e4c;
+        font-weight: bold;
+        position: relative;
+        display: inline-block;
+      }
+
+      a::after {
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 5px;
+        background: #d60e4c;
+        transform: scale(0, 1);
+        transform-origin: left top;
+        transition: transform .3s;
+      }
+
+      a:hover::after,
+      a:focus::after {
+        transform: scale(1, 1);
+      }
+
+      .header-nav {
+        padding: 10px;
+
+        .nav-items {
+          padding: 10px 0;
+        }
+      }
+    }
+  }
+}
+
 
 // =============================================
 // header-nav 部分
@@ -405,7 +580,6 @@ header {
       background-color: #fff;
       padding: 10px;
       text-align: left;
-      display: none;
 
       a {
         line-height: 2.5rem;
@@ -441,14 +615,14 @@ header {
 .sp_global_nav {
   background-color: #ffdcec;
   padding: 20px;
-  border-bottom: 2px solid #f19ec2;  
+  border-bottom: 2px solid #f19ec2;
 
-  @include mq(md){
+  @include mq(md) {
     font-size: 1.8rem;
     padding-left: 50px;
   }
 
-  @include mq(){
+  @include mq() {
     font-size: 1rem;
     padding: 20px;
   }
@@ -501,7 +675,8 @@ header {
     text-align: center;
     width: 40%;
     position: absolute;
-    top: 20%;
+    top: 10%;
+    left: 15%;
     z-index: 10;
 
     @include mq(lg) {
@@ -514,138 +689,6 @@ header {
     }
   }
 }
-
-// =============================================
-// くっついてくるメニュー 部分
-// =============================================
-.contact_box {
-  text-align: center;
-  font-weight: bold;
-  font-size: 0.8rem;
-  background-color: #ffdcec;
-  padding: 10px;
-  color: #d60e4c;
-
-  @include mq() {
-    padding: 0;
-  }
-
-  .contact_box_flex {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-
-    @include mq() {
-      flex-wrap: nowrap;
-    }
-
-
-    // 電話の部分
-    .contact_box_tel {
-      padding: 0 10px;
-
-      @include mq(md) {
-        width: 100%;
-      }
-
-      @include mq() {
-        width: 60%;
-        padding: 5px;
-        font-size: 0.5rem;
-      }
-
-      .contact_box_tel_flex {
-        display: flex;
-
-        @include mq(md) {
-          justify-content: center;
-        }
-
-        .contact_box_tel_flex_img {
-          img {
-            vertical-align: bottom;
-          }
-        }
-      }
-    }
-
-    .contact_box_tel_flex_hour {
-
-      .contact_time {
-
-        span {
-          color: #59493f
-        }
-      }
-
-      .contact_box_tel_flex_number {
-        font-size: 1.5rem;
-
-        @include mq() {
-          font-size: 1rem;
-        }
-      }
-    }
-
-    // ネットで予約の部分
-    .contact_box_com {
-      padding: 0 10px;
-      border-right: 2px solid #f19ec2;
-      border-left: 2px solid #f19ec2;
-
-      @include mq(md) {
-        border-right: none;
-        border-left: none
-      }
-
-      @include mq() {
-        padding: 5px;
-        font-size: 0.5rem;
-        border-right: 2px solid #f19ec2;
-        border-left: 2px solid #f19ec2;
-      }
-
-      .contact_box_com_message {
-        color: #d60e4c;
-      }
-    }
-
-    // アクセスの部分
-    .contact_box_home {
-      padding: 0 10px;
-      border-right: 2px solid #f19ec2;
-
-      @include mq(md) {
-        border-right: none;
-      }
-
-      @include mq() {
-        border-right: none;
-        font-size: 0.5rem;
-      }
-
-      .contact_box_home_message {
-        color: #d60e4c;
-      }
-    }
-
-    // ハンバーガーメニューの部分
-    .contact_box_hum {
-      padding: 0 10px;
-
-      @include mq() {
-        padding: 5px;
-      }
-
-      .contact_box_hum_message {
-        margin-bottom: 8px;
-        color: #d60e4c;
-      }
-    }
-  }
-}
-
 
 
 // =============================================

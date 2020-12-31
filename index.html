@@ -11,6 +11,7 @@
   <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
+  <!-- jqueryの読み込み -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
   <title>SAKURA beauty studio</title>
@@ -58,7 +59,7 @@
               </div><!-- /.contact_box_home -->
 
               <!-- ドロワーのボタン -->
-              <div class="contact_box_hum drawer">
+              <div class="contact_box_hum">
                 <div class="navbar_toggle">
                   <p class="contact_box_hum_message">メニュー</p>
                   <div class="menu-trigger">
@@ -80,8 +81,9 @@
     <ul class="header-nav">
       <li class="nav-items"><a href="#1">TOP</a></li>
       <li class="nav-items is-active"><a href="#2">SAKURA Beauty studio<br>について</a></li>
-      <li class="nav-items drop_down"><a href="#3">メニュー・料金 <img src="img/assets/bottom_arrow.png" alt="下矢印"> </a>
-        <ul class="sub_menu">
+      <li class="nav-items drop_down" id="pc_global_menus"><a href="#3">メニュー・料金 <img src="img/assets/bottom_arrow.png"
+            alt="下矢印"> </a>
+        <ul class="sub_menu hidden">
           <li class="nav-items"><a href="#3"><img src="img/assets/hana.png" alt="花">脱毛</a>
           <li class="nav-items"><a href="#3"><img src="img/assets/hana.png" alt="花">ＢＢＬ</a>
           <li class="nav-items"><a href="#3"><img src="img/assets/hana.png" alt="花">ハイフ</a>
@@ -153,6 +155,48 @@
       </div><!-- /.contact_box_flex -->
     </div><!-- /.contact_box -->
   </div><!-- /.header_right -->
+
+
+  <!-- スクロールするとついてくるメニュー -->
+  <div class="scroll_menu">
+      <div class="inner">
+        <div class="contact_box_humber" id="scroll_hamburger">
+          <div class="navbar_toggle_open">
+            <p class="contact_box_hum_message">メニュー</p>
+            <div class="menu-trigger_open">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div><!-- /.hamburger_icon -->
+          </div><!-- /.navbar_toggle -->
+        </div><!-- /.contact_box_hum -->
+
+        <div class="scroll_menu_open hidden">
+          <ul class="header-nav">
+            <li class="nav-items"><a href="#1">TOP</a></li>
+            <li class="nav-items is-active"><a href="#2">SAKURA Beauty studioについて</a></li>
+            <li class="nav-items drop_down" id="global_menus_open"><a href="#3">メニュー・料金 <img src="img/assets/bottom_arrow.png"
+                  alt="下矢印"> </a>
+              <ul class="sub_menu sub_menu_scroll hidden">
+                <li class="nav-items"><a href="#3"><img src="img/assets/hana.png" alt="花">脱毛</a>
+                <li class="nav-items"><a href="#3"><img src="img/assets/hana.png" alt="花">ＢＢＬ</a>
+                <li class="nav-items"><a href="#3"><img src="img/assets/hana.png" alt="花">ハイフ</a>
+                <li class="nav-items"><a href="#3"><img src="img/assets/hana.png" alt="花">メンズ脱毛</a>
+                <li class="nav-items"><a href="#3"><img src="img/assets/hana.png" alt="花">セルフホワイトニング</a>
+              </ul>
+            </li>
+            <li class="nav-items"><a href="#4">キャンペーン</a></li>
+            <li class="nav-items"><a href="#5">よくあるご質問</a></li>
+            <li class="nav-items"><a href="#6">お問い合わせ</a></li>
+          </ul><!-- /.header-nav -->
+        </div><!-- /.scroll_menu_open -->
+      </div><!-- /.inner -->
+  </div><!-- /.scroll_menu -->
+  
+
+
+<!-- ここまでがヘッダー・メニュー部分 -->
+
 
   <!-- メインエリア 女性 背景ピンク 都度払い -->
   <section class="main_area">
@@ -294,7 +338,7 @@
           <div class="details">
             <div class="details_flex">
               <a href="#">セルフホワイトニングについてくわしく⾒る</a>
-              <img src="img/assets/pink_arrow.png" alt="右矢印">
+              <a href="#"><img src="img/assets/pink_arrow.png" alt="右矢印"></a>
             </div><!-- /.details_flex -->
             <img src="img/assets/zebra_pink.png" alt="ピンクのしましま">
           </div><!-- /.details -->
