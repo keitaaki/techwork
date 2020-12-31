@@ -8,7 +8,8 @@ $pink-font-color: #df003f;
 //メディアクエリの設定
 $breakpoints: ('sm': 'screen and (max-width: 600px)',
   'md': 'screen and (max-width: 768px)',
-  'lg': 'screen and (max-width: 1024px)',
+  'mx': 'screen and (max-width: 980px)',
+  'lg': 'screen and (max-width: 1187px)',
   'xl': 'screen and (max-width: 1200px)'
 ) !default;
 
@@ -142,7 +143,7 @@ header {
     color: #d60e4c;
     position: relative;
 
-    @include mq() {
+    @include mq(md) {
       padding: 0;
     }
 
@@ -150,20 +151,10 @@ header {
       display: flex;
       justify-content: space-around;
       align-items: center;
-      flex-wrap: wrap;
-
-      @include mq() {
-        flex-wrap: nowrap;
-      }
-
 
       // 電話の部分
       .contact_box_tel {
         padding: 0 10px;
-
-        @include mq(md) {
-          width: 100%;
-        }
 
         @include mq() {
           width: 60%;
@@ -210,16 +201,12 @@ header {
         border-right: 2px solid #f19ec2;
         border-left: 2px solid #f19ec2;
 
-        @include mq(md) {
-          border-right: none;
-          border-left: none
-        }
+       
 
-        @include mq() {
+        @include mq(md) {
           padding: 5px;
           font-size: 0.5rem;
-          border-right: 2px solid #f19ec2;
-          border-left: 2px solid #f19ec2;
+          width: 20%;
         }
 
         .contact_box_com_message {
@@ -230,14 +217,12 @@ header {
       // アクセスの部分
       .contact_box_home {
         padding: 0 10px;
-        border-right: 2px solid #f19ec2;
 
         @include mq(md) {
           border-right: none;
         }
 
         @include mq() {
-          border-right: none;
           font-size: 0.5rem;
         }
 
@@ -365,16 +350,8 @@ header {
       background-color: #ffdcec;
       z-index: 999;
       position: fixed;
-      right: 11%;
+      right: 0;
       top: 0;
-
-      @include mq(lg) {
-        right: 5%;
-      }
-
-      @include mq(md) {
-        right: 0;
-      }
     }
 
     .navbar_toggle_open {
@@ -466,17 +443,20 @@ header {
     }
 
     .scroll_menu_open {
-      width: 20%;
+      width: 30%;
       background-color: #ffdcec;
       font-weight: bold;
-      padding-left: 20px;
       z-index: 99;
       position: fixed;
-      right: 11%;
+      right: 0;
       top: 0;
 
+      @include mq(lg){
+        width: 50%;
+      }
+
       @include mq(md) {
-        width: 80%;
+        width: 100%;
       }
 
       a {
@@ -484,6 +464,7 @@ header {
         font-weight: bold;
         position: relative;
         display: inline-block;
+        font-size: 1.2rem;
       }
 
       a::after {
@@ -505,10 +486,106 @@ header {
       }
 
       .header-nav {
-        padding: 10px;
+        padding-left: 30px;
 
         .nav-items {
           padding: 10px 0;
+        }
+      }
+
+      .contact_box {
+        text-align: center;
+        font-weight: bold;
+        font-size: 0.8rem;
+        background-color: #ffdcec;
+        border-top: 2px solid #f19ec2;
+        padding: 0;
+        color: #d60e4c;
+        position: relative;
+    
+        .contact_box_flex {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+    
+          // 電話の部分
+          .contact_box_tel {
+            padding: 0;
+            font-size: 0.5rem;
+    
+            @include mq() {
+              width: 60%;
+              padding: 5px;
+            }
+    
+            .contact_box_tel_flex {
+              display: flex;
+    
+              @include mq(md) {
+                justify-content: center;
+              }
+    
+              .contact_box_tel_flex_img {
+                img {
+                  vertical-align: bottom;
+                }
+              }
+            }
+          }
+    
+          .contact_box_tel_flex_hour {
+    
+            .contact_time {
+              span {
+                color: #59493f
+              }
+            }
+    
+            .contact_box_tel_flex_number {
+              font-size: 1.2rem;
+    
+              @include mq() {
+                font-size: 1.2rem;
+              }
+            }
+          }
+    
+          // ネットで予約の部分
+          .contact_box_com {
+            padding: 0 10px;
+            border-right: 2px solid #f19ec2;
+            border-left: 2px solid #f19ec2;
+
+            @include mq(md) {
+              padding: 5px;
+              font-size: 0.5rem;
+              width: 20%;
+            }
+    
+            .contact_box_com_message {
+              color: #d60e4c;
+              font-size: 0.8rem;
+            }
+          }
+    
+          // アクセスの部分
+          .contact_box_home {
+            padding: 0 10px;
+    
+            @include mq(md) {
+              border-right: none;
+              width: 20%;
+            }
+    
+            @include mq() {
+              font-size: 0.5rem;
+            }
+    
+            .contact_box_home_message {
+              font-size: 0.8rem;
+              color: #d60e4c;
+            }
+          }
         }
       }
     }
@@ -930,12 +1007,21 @@ header {
         left: -30%;
       }
 
+      @include mq(mx){
+        left: -40%;
+      }
+
       @include mq(md) {
         top: 15%;
-        left: 3%;
+        left: -5%;
       }
 
       img {
+
+        @include mq(mx){
+          width: 90%;
+        }
+
         @include mq(md) {
           width: 65%;
         }
@@ -1039,8 +1125,12 @@ header {
         right: -20%;
       }
 
+      @include mq(mx){
+        right: -30%;
+      }
+
       @include mq(md) {
-        right: 5%;
+        right: 0;
         top: 25%;
       }
 
@@ -1077,7 +1167,7 @@ header {
       position: relative;
 
       @include mq(md) {
-        width: 50%;
+        width: 44%;
       }
 
       @include mq() {
@@ -1180,12 +1270,21 @@ header {
         left: -30%;
       }
 
+      @include mq(mx){
+        left: -45%;
+      }
+
       @include mq(md) {
         top: 10%;
-        left: 5%;
+        left: -3%;
       }
 
       img {
+
+        @include mq(mx){
+          left: 90%;
+        }
+
         @include mq(md) {
           width: 70%;
         }
@@ -1300,8 +1399,12 @@ header {
         right: -30%;
       }
 
+      @include mq(mx){
+        right: -45%;
+      }
+
       @include mq(md) {
-        right: 3%;
+        right: -5%;
         bottom: 20%;
         text-align: right;
       }
