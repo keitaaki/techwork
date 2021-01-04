@@ -22,7 +22,7 @@
 
 
 <body>
-  <header>
+  <header id="header">
     <div class="inner">
       <div class="header_flex">
         <div class="header_left">
@@ -77,24 +77,26 @@
   </header>
 
   <!-- PCのグローバルナビ -->
-  <section class="global_nav inner dis-pc">
-    <ul class="header-nav">
-      <li class="nav-items"><a href="#1">TOP</a></li>
-      <li class="nav-items is-active"><a href="#2">SAKURA Beauty studio<br>について</a></li>
-      <li class="nav-items drop_down" id="pc_global_menus"><a href="#3">メニュー・料金 <img src="img/assets/bottom_arrow.png"
-            alt="下矢印"> </a>
-        <ul class="sub_menu hidden">
-          <li class="nav-items"><a href="#3"><img src="img/assets/hana.png" alt="花">脱毛</a>
-          <li class="nav-items"><a href="#3"><img src="img/assets/hana.png" alt="花">ＢＢＬ</a>
-          <li class="nav-items"><a href="#3"><img src="img/assets/hana.png" alt="花">ハイフ</a>
-          <li class="nav-items"><a href="#3"><img src="img/assets/hana.png" alt="花">メンズ脱毛</a>
-          <li class="nav-items"><a href="#3"><img src="img/assets/hana.png" alt="花">セルフホワイトニング</a>
-        </ul>
-      </li>
-      <li class="nav-items"><a href="#4">キャンペーン</a></li>
-      <li class="nav-items"><a href="#5">よくあるご質問</a></li>
-      <li class="nav-items"><a href="#6">お問い合わせ</a></li>
-    </ul><!-- /.header-nav -->
+  <section class="global_nav dis-pc site-header">
+    <div class="inner">
+      <ul class="header-nav">
+        <li class="nav-items"><a href="#1">TOP</a></li>
+        <li class="nav-items is-active"><a href="#2">SAKURA Beauty studio<br>について</a></li>
+        <li class="nav-items drop_down" id="pc_global_menus"><a href="#3">メニュー・料金 <img src="img/assets/bottom_arrow.png"
+              alt="下矢印"> </a>
+          <ul class="sub_menu hidden">
+            <li class="nav-items"><a href="#3"><img src="img/assets/hana.png" alt="花">脱毛</a>
+            <li class="nav-items"><a href="#3"><img src="img/assets/hana.png" alt="花">ＢＢＬ</a>
+            <li class="nav-items"><a href="#3"><img src="img/assets/hana.png" alt="花">ハイフ</a>
+            <li class="nav-items"><a href="#3"><img src="img/assets/hana.png" alt="花">メンズ脱毛</a>
+            <li class="nav-items"><a href="#3"><img src="img/assets/hana.png" alt="花">セルフホワイトニング</a>
+          </ul>
+        </li>
+        <li class="nav-items"><a href="#4">キャンペーン</a></li>
+        <li class="nav-items"><a href="#5">よくあるご質問</a></li>
+        <li class="nav-items"><a href="#6">お問い合わせ</a></li>
+      </ul><!-- /.header-nav -->
+    </div><!-- /.inner -->
   </section><!-- /.inner -->
 
   <!-- ＳＰのグローバルナビ -->
@@ -158,74 +160,74 @@
 
 
   <!-- スクロールするとついてくるメニュー -->
-  <div class="scroll_menu">
-      <div class="inner">
-        <div class="contact_box_humber" id="scroll_hamburger">
-          <div class="navbar_toggle_open">
-            <p class="contact_box_hum_message">メニュー</p>
-            <div class="menu-trigger_open">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div><!-- /.hamburger_icon -->
-          </div><!-- /.navbar_toggle -->
-        </div><!-- /.contact_box_hum -->
+  <div class="scroll_menu dis-sp">
+    <div class="inner">
+      <div class="contact_box_humber" id="scroll_hamburger">
+        <div class="navbar_toggle_open">
+          <p class="contact_box_hum_message">メニュー</p>
+          <div class="menu-trigger_open">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div><!-- /.hamburger_icon -->
+        </div><!-- /.navbar_toggle -->
+      </div><!-- /.contact_box_hum -->
 
-        <div class="scroll_menu_open hidden">
-          <ul class="header-nav">
-            <li class="nav-items"><a href="#1">TOP</a></li>
-            <li class="nav-items is-active"><a href="#2">SAKURA Beauty studioについて</a></li>
-            <li class="nav-items drop_down" id="global_menus_open"><a href="#3">メニュー・料金 <img src="img/assets/bottom_arrow.png"
-                  alt="下矢印"> </a>
-              <ul class="sub_menu sub_menu_scroll hidden">
-                <li class="nav-items"><a href="#3"><img src="img/assets/hana.png" alt="花">脱毛</a>
-                <li class="nav-items"><a href="#3"><img src="img/assets/hana.png" alt="花">ＢＢＬ</a>
-                <li class="nav-items"><a href="#3"><img src="img/assets/hana.png" alt="花">ハイフ</a>
-                <li class="nav-items"><a href="#3"><img src="img/assets/hana.png" alt="花">メンズ脱毛</a>
-                <li class="nav-items"><a href="#3"><img src="img/assets/hana.png" alt="花">セルフホワイトニング</a>
-              </ul>
-            </li>
-            <li class="nav-items"><a href="#4">キャンペーン</a></li>
-            <li class="nav-items"><a href="#5">よくあるご質問</a></li>
-            <li class="nav-items"><a href="#6">お問い合わせ</a></li>
-          </ul><!-- /.header-nav -->
+      <div class="scroll_menu_open hidden">
+        <ul class="header-nav">
+          <li class="nav-items"><a href="#1">TOP</a></li>
+          <li class="nav-items is-active"><a href="#2">SAKURA Beauty studioについて</a></li>
+          <li class="nav-items drop_down" id="global_menus_open"><a href="#3">メニュー・料金 <img
+                src="img/assets/bottom_arrow.png" alt="下矢印"> </a>
+            <ul class="sub_menu sub_menu_scroll hidden">
+              <li class="nav-items"><a href="#3"><img src="img/assets/hana.png" alt="花">脱毛</a>
+              <li class="nav-items"><a href="#3"><img src="img/assets/hana.png" alt="花">ＢＢＬ</a>
+              <li class="nav-items"><a href="#3"><img src="img/assets/hana.png" alt="花">ハイフ</a>
+              <li class="nav-items"><a href="#3"><img src="img/assets/hana.png" alt="花">メンズ脱毛</a>
+              <li class="nav-items"><a href="#3"><img src="img/assets/hana.png" alt="花">セルフホワイトニング</a>
+            </ul>
+          </li>
+          <li class="nav-items"><a href="#4">キャンペーン</a></li>
+          <li class="nav-items"><a href="#5">よくあるご質問</a></li>
+          <li class="nav-items"><a href="#6">お問い合わせ</a></li>
+        </ul><!-- /.header-nav -->
 
-          <!-- 下部の電話＆ネット＆アクセス -->
-          <div class="contact_box">
-            <div class="contact_box_flex">
-              <div class="contact_box_tel">
-                <div class="contact_box_tel_flex">
-                  <div class="contact_box_tel_flex_img">
-                    <img src="img/logo/tel_logo.png" alt="電話">
-                  </div><!-- /.contact_box_tel_flex_img -->
-                  <div class="contact_box_tel_flex_hour">
-                    <p class="contact_time">ご予約受付時間 <span>10:00～翌2:30</span>
-                    </p><!-- /.contact_time -->
-                    <p class="contact_box_tel_flex_number">011-252-9539</p><!-- /.contact_box_tel_flex_number -->
-                  </div><!-- /.contact_box_tel_flex_hour -->
-                </div><!-- /.contact_box_tel_flex -->
-              </div><!-- /.contact_box_tel -->
-              <div class="contact_box_com">
-                <a href="#">
-                  <p class="contact_box_com_message">ネットでご予約</p><!-- /.contact_box_com_message -->
-                  <img src="img/logo/com_logo.png" alt="パスコン画像">
-                </a>
-              </div><!-- /.contact_box_com -->
-              <div class="contact_box_home">
-                <a href="#">
-                  <p class="contact_box_home_message">アクセス</p><!-- /.contact_box_home_message -->
-                  <img src="img/logo/home_logo.png" alt="家の画像">
-                </a>
-              </div><!-- /.contact_box_home -->
-            </div><!-- /.contact_box_flex -->
-          </div><!-- /.contact_box -->
-        </div><!-- /.scroll_menu_open -->
-      </div><!-- /.inner -->
+        <!-- 下部の電話＆ネット＆アクセス -->
+        <div class="contact_box">
+          <div class="contact_box_flex">
+            <div class="contact_box_tel">
+              <div class="contact_box_tel_flex">
+                <div class="contact_box_tel_flex_img">
+                  <img src="img/logo/tel_logo.png" alt="電話">
+                </div><!-- /.contact_box_tel_flex_img -->
+                <div class="contact_box_tel_flex_hour">
+                  <p class="contact_time">ご予約受付時間 <span>10:00～翌2:30</span>
+                  </p><!-- /.contact_time -->
+                  <p class="contact_box_tel_flex_number">011-252-9539</p><!-- /.contact_box_tel_flex_number -->
+                </div><!-- /.contact_box_tel_flex_hour -->
+              </div><!-- /.contact_box_tel_flex -->
+            </div><!-- /.contact_box_tel -->
+            <div class="contact_box_com">
+              <a href="#">
+                <p class="contact_box_com_message">ネットでご予約</p><!-- /.contact_box_com_message -->
+                <img src="img/logo/com_logo.png" alt="パスコン画像">
+              </a>
+            </div><!-- /.contact_box_com -->
+            <div class="contact_box_home">
+              <a href="#">
+                <p class="contact_box_home_message">アクセス</p><!-- /.contact_box_home_message -->
+                <img src="img/logo/home_logo.png" alt="家の画像">
+              </a>
+            </div><!-- /.contact_box_home -->
+          </div><!-- /.contact_box_flex -->
+        </div><!-- /.contact_box -->
+      </div><!-- /.scroll_menu_open -->
+    </div><!-- /.inner -->
   </div><!-- /.scroll_menu -->
-  
 
 
-<!-- ここまでがヘッダー・メニュー部分 -->
+
+  <!-- ここまでがヘッダー・メニュー部分 -->
 
 
   <!-- メインエリア 女性 背景ピンク 都度払い -->

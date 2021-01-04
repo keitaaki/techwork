@@ -67,7 +67,7 @@ $(function () {
   $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
       //フェードインで表示
-      
+
     } else {
       //フェードアウトで非表示
       topBtn.fadeOut(1);
@@ -85,4 +85,19 @@ $(function () {
   $('#global_menus_open').on('click', function () {
     $('.sub_menu_scroll').toggleClass('hidden');
   });
+});
+
+
+// 上スクロールで表示、下スクロールで非表示にする処理
+var startPos = 0,winScrollTop = 0;
+$(window).on('scroll',function(){
+  winScrollTop = $(this).scrollTop();
+  if (winScrollTop >= startPos) {
+      if(winScrollTop >= 200){
+          $('.site-header').addClass('hide');
+      }
+  } else {
+      $('.site-header').removeClass('hide');
+  }
+  startPos = winScrollTop;
 });
