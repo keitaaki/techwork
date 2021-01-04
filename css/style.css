@@ -1716,7 +1716,7 @@ header .header_flex {
 .campaign .campaign_logo {
   position: absolute;
   top: 50%;
-  left: 20%;
+  left: 15%;
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
 }
@@ -2018,6 +2018,18 @@ header .header_flex {
   padding: 20px;
   position: relative;
   margin-top: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .access {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .access .access_logo {
+    margin-bottom: 10px;
+  }
 }
 
 .access .map_box {
