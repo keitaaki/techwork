@@ -1,0 +1,1205 @@
+// =============================================
+// main-area 部分
+// =============================================
+
+.main_area {
+  background-image: url(../img/assets/background_pink.png);
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  margin-top: 220px;
+
+  @include mq(md) {
+    margin: 0;
+  }
+
+  .main_area_back {
+    position: relative;
+    z-index: 1;
+    bottom: 0;
+
+    img {
+      vertical-align: bottom;
+    }
+  }
+
+  .safe_pay {
+    text-align: center;
+    width: 40%;
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    z-index: 10;
+
+    @include mq(lg) {
+      left: 15%;
+    }
+
+    @include mq() {
+      top: 20%;
+      left: 10%;
+    }
+  }
+}
+
+
+// =============================================
+// about 部分
+// =============================================
+
+.about {
+  background-image: url(../img/assets/back_yellow.png);
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  padding: 20px;
+
+  .about_flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+
+    .about_left {
+      width: 45%;
+
+      @include mq(lg) {
+        width: 40%;
+      }
+
+      @include mq() {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+    }
+
+    .about_right {
+      width: 55%;
+
+      @include mq() {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      .about_message {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+// =============================================
+// menu 部分
+// =============================================
+// =============================================
+// 脱毛 部分
+// =============================================
+
+.menu {
+  background-image: url(../img/assets/back_white.png);
+  background-size: cover;
+  background-position: center center;
+  padding: 20px;
+
+  .menu_message_box {
+    background-color: #fff;
+    width: 80%;
+    padding: 20px;
+    margin-top: 100px;
+    box-shadow: 0 0 8px #d60e4c;
+    border-radius: 10px;
+    position: relative;
+
+    @include mq(lg) {
+      width: 90%;
+    }
+
+    @include mq(md) {
+      width: 100%;
+      margin: 20px 0;
+    }
+
+    @include mq() {
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    .menu_massage_picture {
+      position: absolute;
+      top: -15%;
+      right: -5%;
+
+      @include mq(lg) {
+        right: -15%;
+        width: 53%;
+      }
+
+      @include mq(md) {
+        right: -5%;
+        top: 10%;
+        width: 50%;
+      }
+
+      @include mq() {
+        width: 100%;
+      }
+
+      img {
+        @include mq(md) {
+          width: 80%;
+        }
+
+        @include mq() {
+          width: 100%;
+        }
+      }
+
+      @include mq() {
+        position: static;
+        text-align: center;
+      }
+    }
+  }
+
+  .menu_message_box_flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+
+    .menu_message_box_left {
+      width: 57%;
+      font-weight: bold;
+      position: relative;
+
+      @include mq(md) {
+        width: 50%;
+      }
+
+      p {
+        @include mq(md) {
+          padding-right: 10px;
+        }
+      }
+
+      @include mq() {
+        width: 100%;
+      }
+
+      .details {
+        width: 50%;
+        margin-left: auto;
+        margin-right: 0px;
+        padding-top: 20px;
+
+        @include mq(md) {
+          width: 100%;
+        }
+
+        @include mq() {
+          width: 100%;
+        }
+
+        .details_flex {
+          display: flex;
+          justify-content: space-around;
+
+          img {
+            transition: all 0.3s ease 0s;
+            vertical-align: text-bottom;
+
+            &:hover {
+              transform: translateX(10px)
+            }
+          }
+
+          a {
+            color: #d60e4c;
+          }
+        }
+      }
+    }
+
+    .menu_message_box_right {
+      padding: 0 20px 0;
+      position: relative;
+      width: 30%;
+      text-align: center;
+
+      img {
+        width: 85%;
+
+        @include mq(md) {
+          width: 70%;
+        }
+
+        @include mq() {
+          width: 100%;
+        }
+      }
+
+      @include mq(md) {
+        width: 35%;
+      }
+
+      @include mq() {
+        width: 100%;
+      }
+    }
+  }
+
+  // =============================================
+  // BBL 部分
+  // =============================================
+  .menu_message_box_bbl {
+    background-color: #fff;
+    width: 70%;
+    padding: 50px 30px;
+    margin-top: 80px;
+    box-shadow: 0 0 8px #d60e4c;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: 0px;
+    position: relative;
+
+    @include mq(md) {
+      width: 100%;
+      margin: 30px 0;
+    }
+
+    @include mq() {
+      width: 100%;
+      margin-top: 20px;
+      padding: 20px;
+    }
+
+    .menu_message_box_bbl_picture {
+      position: absolute;
+      top: 5%;
+      left: -20%;
+
+      @include mq(lg) {
+        left: -30%;
+      }
+
+      @include mq(mx) {
+        left: -40%;
+      }
+
+      @include mq(md) {
+        top: 15%;
+        left: -5%;
+      }
+
+      img {
+
+        @include mq(mx) {
+          width: 90%;
+        }
+
+        @include mq(md) {
+          width: 65%;
+        }
+
+        @include mq() {
+          width: 100%;
+        }
+      }
+
+      @include mq() {
+        position: static;
+        margin-top: 20px;
+        text-align: center;
+      }
+    }
+
+    .menu_message_box_bbl_text {
+      width: 65%;
+      margin-left: auto;
+      margin-right: 0px;
+      font-weight: bold;
+
+      @include mq(md) {
+        width: 55%;
+      }
+
+      @include mq() {
+        width: 100%;
+      }
+
+      .details {
+        width: 70%;
+        margin-left: auto;
+        margin-right: 0px;
+        padding-top: 20px;
+
+        @include mq(lg) {
+          width: 100%;
+        }
+
+        .details_flex {
+          display: flex;
+          justify-content: space-around;
+          flex-wrap: wrap;
+
+          img {
+            vertical-align: text-bottom;
+            transition: all 0.3s ease 0s;
+
+            &:hover {
+              transform: translateX(10px)
+            }
+          }
+
+          a {
+            color: #d60e4c;
+          }
+        }
+      }
+    }
+  }
+}
+
+// =============================================
+// HIFE 部分
+// =============================================
+.hife {
+  background-image: url(../img/assets/back_pink_flower.png);
+  background-size: cover;
+  background-position: center center;
+  padding: 20px;
+
+  .menu_message_box {
+    background-color: #fff;
+    width: 80%;
+    padding: 50px 30px 30px;
+    margin-top: 100px;
+    box-shadow: 0 0 8px #d60e4c;
+    border-radius: 10px;
+    position: relative;
+
+    @include mq(md) {
+      width: 100%;
+      margin: 20px 0;
+    }
+
+    @include mq() {
+      width: 100%;
+      margin-top: 20px;
+      padding: 20px;
+    }
+
+    .menu_massage_picture {
+      position: absolute;
+      top: -30%;
+      right: -5%;
+      text-align: right;
+
+      @include mq(lg) {
+        top: -10%;
+        right: -20%;
+      }
+
+      @include mq(mx) {
+        right: -30%;
+      }
+
+      @include mq(md) {
+        right: 0;
+        top: 25%;
+      }
+
+      img {
+        @include mq(md) {
+          width: 75%;
+        }
+
+        @include mq() {
+          width: 100%;
+        }
+      }
+
+      @include mq() {
+        position: static;
+        text-align: center;
+      }
+    }
+  }
+
+  .menu_message_box_flex {
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+    flex-wrap: wrap;
+
+    @include mq(md) {
+      justify-content: space-between;
+    }
+
+    .menu_message_box_left {
+      width: 57%;
+      font-weight: bold;
+      position: relative;
+
+      @include mq(md) {
+        width: 44%;
+      }
+
+      @include mq() {
+        width: 100%;
+      }
+
+      .details {
+        width: 50%;
+        margin-left: auto;
+        margin-right: 0px;
+        padding-top: 20px;
+
+        @include mq(lg) {
+          width: 80%;
+        }
+
+        @include mq(md) {
+          width: 100%;
+        }
+
+        .details_flex {
+          display: flex;
+          justify-content: space-around;
+
+          img {
+            transition: all 0.3s ease 0s;
+            vertical-align: text-bottom;
+
+            &:hover {
+              transform: translateX(10px)
+            }
+          }
+
+          a {
+            color: #d60e4c;
+          }
+        }
+      }
+    }
+
+    .menu_message_box_right {
+      padding: 0 20px 0;
+      position: relative;
+      width: 25%;
+      margin-left: 20px;
+
+      @include mq(lg) {
+        width: 30%;
+      }
+
+      @include mq(md) {
+        width: 25%;
+      }
+
+      @include mq() {
+        width: 100%;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+// =============================================
+// mens 部分
+// =============================================
+.mens {
+  background-image: url(../img/assets/back_blue.png);
+  background-size: cover;
+  background-position: center center;
+  padding: 20px;
+
+  .mens_box {
+    background-color: #fff;
+    width: 70%;
+    padding: 50px 30px;
+    margin-top: 80px;
+    box-shadow: 0 0 8px #6b8dd9;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: 0px;
+    position: relative;
+
+    @include mq(md) {
+      width: 100%;
+      margin: 20px 0;
+    }
+
+    @include mq() {
+      width: 100%;
+      margin-top: 20px;
+      padding: 20px;
+    }
+
+    .mens_picture {
+      position: absolute;
+      top: -10%;
+      left: -20%;
+
+      @include mq(lg) {
+        left: -30%;
+      }
+
+      @include mq(mx) {
+        left: -45%;
+      }
+
+      @include mq(md) {
+        top: 10%;
+        left: -3%;
+      }
+
+      img {
+
+        @include mq(mx) {
+          left: 90%;
+        }
+
+        @include mq(md) {
+          width: 70%;
+        }
+
+        @include mq() {
+          width: 100%;
+        }
+      }
+
+      @include mq() {
+        position: static;
+        text-align: center;
+      }
+    }
+
+    .mens_box_text {
+      width: 65%;
+      margin-left: auto;
+      margin-right: 0px;
+      font-weight: bold;
+
+      @include mq(md) {
+        width: 50%;
+      }
+
+      @include mq() {
+        width: 100%;
+      }
+
+      .details {
+        width: 70%;
+        margin-left: auto;
+        margin-right: 0px;
+        padding-top: 20px;
+
+        @include mq(md) {
+          width: 100%;
+        }
+
+        @include mq() {
+          width: 100%;
+        }
+
+        .details_flex {
+          display: flex;
+          justify-content: space-around;
+
+          img {
+            transition: all 0.3s ease 0s;
+            vertical-align: text-bottom;
+
+            &:hover {
+              transform: translateX(10px)
+            }
+          }
+
+          a {
+            color: #6b8dd9;
+          }
+        }
+      }
+    }
+  }
+}
+
+// =============================================
+// ホワイトニング 部分
+// =============================================
+.whitening {
+  background-image: url(../img/assets/back_white.png);
+  background-size: cover;
+  background-position: center center;
+  padding: 20px 20px 100px;
+
+  @include mq(lg) {
+    padding: 20px;
+  }
+
+  @include mq() {
+    padding: 20px;
+  }
+
+  .whitening_box {
+    background-color: #fff;
+    width: 70%;
+    padding: 50px 30px;
+    margin-top: 80px;
+    box-shadow: 0 0 8px #d60e4c;
+    border-radius: 10px;
+    position: relative;
+
+    @include mq(lg) {
+      margin: 20px 0;
+    }
+
+    @include mq(md) {
+      width: 100%;
+    }
+
+    @include mq() {
+      width: 100%;
+      margin-top: 20px;
+      padding: 20px;
+    }
+
+    .whitening_picture {
+      position: absolute;
+      bottom: -15%;
+      right: -20%;
+
+      @include mq(lg) {
+        right: -30%;
+      }
+
+      @include mq(mx) {
+        right: -45%;
+      }
+
+      @include mq(md) {
+        right: -5%;
+        bottom: 20%;
+        text-align: right;
+      }
+
+      img {
+        @include mq(md) {
+          width: 75%;
+        }
+
+        @include mq() {
+          width: 100%;
+        }
+      }
+
+      @include mq() {
+        position: static;
+        text-align: center;
+      }
+    }
+
+    .whitening_box_text {
+      width: 65%;
+      font-weight: bold;
+
+      @include mq(md) {
+        width: 50%;
+      }
+
+      @include mq() {
+        width: 100%;
+      }
+
+      .details {
+        width: 80%;
+        margin-left: auto;
+        margin-right: 0px;
+        padding-top: 20px;
+
+        @include mq(lg) {
+          width: 100%;
+        }
+
+        .details_flex {
+          display: flex;
+          justify-content: space-around;
+          flex-wrap: wrap;
+
+          img {
+            transition: all 0.3s ease 0s;
+            vertical-align: text-bottom;
+
+            &:hover {
+              transform: translateX(10px)
+            }
+          }
+
+          a {
+            color: #d60e4c;
+          }
+        }
+      }
+    }
+  }
+}
+
+// =============================================
+// キャンペーン 部分
+// =============================================
+.campaign {
+  background-image: url(../img/assets/back_yellow.png);
+  background-size: cover;
+  background-position: center center;
+  padding: 20px;
+  position: relative;
+
+  .campaign_logo {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+
+
+    @include mq(lg) {
+      margin-top: 30px;
+      position: static;
+    }
+  }
+
+  .carousel_box {
+    width: 70%;
+    margin-right: 0;
+    margin-left: auto;
+    text-align: center;
+
+    .swiper-slide {
+      @include mq() {
+        padding: 5px;
+      }
+    }
+
+    @include mq(lg) {
+      width: 100%;
+    }
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 32px;
+    height: 32px;
+    margin-top: -30px;
+
+    @include mq() {
+      margin-top: -35px;
+    }
+  }
+
+  .swiper-button-prev {
+    transition: all 0.3s ease 0s;
+
+    &:hover {
+      transform: translateX(-10px)
+    }
+  }
+
+  .swiper-button-next {
+    transition: all 0.3s ease 0s;
+
+    &:hover {
+      transform: translateX(10px)
+    }
+  }
+
+  .swiper-button-prev {
+    background: url(../img/assets/left_arrow.png) no-repeat center center / contain;
+  }
+
+  .swiper-button-prev::after {
+    content: "";
+  }
+
+  .swiper-button-next {
+    background: url(../img/assets/right_arrow.png) no-repeat center center / contain;
+  }
+
+  .swiper-button-next::after {
+    content: "";
+  }
+}
+
+// =============================================
+// ニュース 部分
+// =============================================
+.news {
+  background-image: url(../img/assets/background_pink.png);
+  background-size: cover;
+  background-position: center center;
+  padding: 30px;
+  position: relative;
+
+  @include mq(lg) {
+    padding: 20px;
+  }
+
+  .news_flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .news_logo {
+    width: 20%;
+    text-align: right;
+
+    @include mq(lg) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .news__items {
+    margin: 60px auto 0;
+    width: 80%;
+    max-width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+
+    @include mq(lg) {
+      margin: 30px auto 0;
+    }
+
+    @include mq(lg) {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .news__items {
+      margin-top: 38px;
+    }
+  }
+
+  .news__item {
+    border-bottom: 1px solid #707070;
+  }
+
+  .news__item:last-child {
+    border: none;
+  }
+
+  .info {
+    padding: 20px 0 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  @media (max-width: 767px) {
+    .info {
+      display: block;
+      padding: 12px 0;
+    }
+  }
+
+  .info__meta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 185px;
+    padding-top: 2px;
+  }
+
+  @media (max-width: 767px) {
+    .info__meta {
+      width: 100%;
+      padding-top: 0;
+    }
+  }
+
+  .info__published {
+    width: 105px;
+    display: inline-block;
+    padding-top: 3px;
+  }
+
+  @media (max-width: 767px) {
+    .info__published {
+      width: auto;
+    }
+  }
+
+  .info__label {
+    width: 80px;
+  }
+
+  @media (max-width: 767px) {
+    .info__label {
+      width: auto;
+      margin-left: auto;
+    }
+  }
+
+  .info__label a {
+    display: inline-block;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    padding: 8px;
+    background: #e5004f;
+    border-radius: 4px;
+    text-decoration: none;
+    line-height: 1;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+
+  @media (max-width: 767px) {
+    .info__label a {
+      padding: 4px 8px;
+    }
+  }
+
+  .info__label.info__label--type01 a {
+    background: #e9578b;
+    text-decoration: none;
+  }
+
+
+  .info__title {
+    line-height: 1.25;
+    width: calc(100% - 105px - 80px);
+    padding: 5px 0 0 20px;
+  }
+
+  @media (max-width: 767px) {
+    .info__title {
+      width: 100%;
+      margin-top: 6px;
+      padding: 0;
+    }
+  }
+
+  .info__title a {
+    text-decoration: none;
+    color: #333;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+
+  .news__link {
+    text-align: center;
+    margin-top: 44px;
+  }
+
+  .news__link a {
+    text-decoration: none;
+    color: #e81919;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    font-weight: 700;
+  }
+
+  .details {
+    width: 30%;
+    margin-left: auto;
+    margin-right: 0px;
+    padding-top: 20px;
+
+    @include mq(md) {
+      width: 60%;
+    }
+
+    @include mq() {
+      width: 100%;
+    }
+
+    .details_flex {
+      display: flex;
+      justify-content: space-around;
+
+      a {
+        color: #d60e4c;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+// =============================================
+// access 部分
+// =============================================
+
+.access {
+  background-image: url(../img/assets/back_sakura.png);
+  background-size: cover;
+  background-position: center center;
+  padding: 20px;
+  position: relative;
+  margin-top: 30px;
+
+  @include mq(md) {
+    margin-top: 10px;
+  }
+
+  .access_logo {
+
+    @include mq(md) {
+      margin-bottom: 10px;
+    }
+  }
+
+  .map_box {
+    width: 25%;
+    position: absolute;
+    top: 0;
+    right: 23%;
+
+    @include mq(md) {
+      position: static;
+      width: 100%;
+    }
+  }
+
+  .iframe-wrap {
+    position: relative;
+    width: 100%;
+    padding-top: 75%;
+  }
+
+  .iframe-wrap iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .inner {
+    padding: 30px 80px 30px;
+
+    @include mq(md) {
+      padding: 10px;
+    }
+  }
+
+  .access_flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-wrap: wrap;
+
+    .access_flex_left {
+      width: 35%;
+      padding: 20px;
+
+      @include mq(md) {
+        width: 100%;
+        padding: 0;
+        margin-top: 20px;
+      }
+
+      p {
+        font-weight: bold;
+      }
+
+      .access_flex_left_address {
+        margin-bottom: 30px;
+      }
+
+      .access_flex_left_open {
+        padding-bottom: 120px;
+
+        @include mq(md) {
+          padding: 10px;
+        }
+      }
+    }
+
+    .access_flex_right {
+      width: 60%;
+
+      @include mq(md) {
+        width: 100%;
+        text-align: center;
+      }
+
+      img {
+        @include mq(md) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+// =============================================
+// reservation 部分
+// =============================================
+
+.reservation {
+  background-image: url(../img/assets/star.png);
+  background-size: cover;
+  background-position: center center;
+  padding: 20px;
+
+  .inner {
+    padding: 30px 80px 30px;
+
+    @include mq(md) {
+      padding: 0;
+    }
+
+    .reservation_counseling {
+      text-align: center;
+    }
+  }
+
+  .reservation_flex {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    padding: 30px;
+    border-bottom: 2px solid #e5004f;
+
+    @include mq() {
+      padding: 0;
+    }
+
+    .reservation_flex_left,
+    .reservation_flex_right {
+      width: 50%;
+
+      @include mq() {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+
+  .reservation_flex2 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    padding: 50px 30px;
+    border-bottom: 2px dotted #e5004f;
+
+    @include mq() {
+      padding: 10px;
+    }
+
+    .reservation_flex2_left,
+    .reservation_flex2_right {
+      width: 50%;
+
+      @include mq() {
+        width: 100%;
+      }
+    }
+  }
+}

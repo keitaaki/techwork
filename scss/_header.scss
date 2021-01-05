@@ -1,0 +1,657 @@
+header {
+  padding: 10px 10px 30px 10px;
+  position: fixed;
+  top: 0;
+  margin: 0;
+  width: 100%;
+  z-index: 9999;
+  background: #fff;
+
+  @include mq(md) {
+    position: static;
+  }
+
+  @include mq() {
+    border-bottom: none;
+    padding: 10px 0 0 0;
+  }
+
+  .header_flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include mq() {
+      border-bottom: 1px solid #d60e4c;
+    }
+
+    // ヘッダーの左側
+    .header_left {
+
+      @include mq(md) {
+        width: 70%;
+      }
+
+      @include mq() {
+        width: 70%;
+      }
+    }
+  }
+}
+
+// ヘッダーの右側
+.header_right {
+
+  .contact_box {
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.8rem;
+    background-color: #ffdcec;
+    padding: 10px;
+    color: #d60e4c;
+    position: relative;
+
+    @include mq(lg){
+      padding: 3px;
+    }
+
+    @include mq(md) {
+      padding: 0;
+    }
+
+    .contact_box_flex {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      // 電話の部分
+      .contact_box_tel {
+        padding: 0 10px;
+
+        @include mq() {
+          width: 50%;
+          padding: 0;
+          font-size: 0.5rem;
+        }
+
+        .contact_box_tel_flex {
+          display: flex;
+
+          @include mq(md) {
+            justify-content: center;
+          }
+
+          .contact_box_tel_flex_img {
+            img {
+              vertical-align: bottom;
+            }
+          }
+        }
+      }
+
+      .contact_box_tel_flex_hour {
+
+        .contact_time {
+
+          span {
+            color: #59493f
+          }
+        }
+
+        .contact_box_tel_flex_number {
+          font-size: 1.5rem;
+
+          @include mq(lg){
+            font-size: 1.2rem;;
+          }
+
+          @include mq() {
+            font-size: 1rem;
+          }
+        }
+      }
+
+      // ネットで予約の部分
+      .contact_box_com {
+        padding: 0 10px;
+        border-right: 2px solid #f19ec2;
+        border-left: 2px solid #f19ec2;
+        width: 150px;
+
+        @include mq(md) {
+          padding: 5px;
+          font-size: 0.5rem;
+          width: 30%;
+        }
+
+        .contact_box_com_message {
+          color: #d60e4c;
+        }
+      }
+
+      // アクセスの部分
+      .contact_box_home {
+        padding: 0 10px;
+        width: 120px;
+
+        @include mq(md) {
+          border-right: none;
+          width: 20%;
+        }
+
+        @include mq() {
+          font-size: 0.5rem;
+        }
+
+        .contact_box_home_message {
+          color: #d60e4c;
+        }
+      }
+
+      // ハンバーガーメニューの部分
+      .contact_box_hum {
+        padding: 0 10px;
+
+        @include mq() {
+          padding: 5px;
+        }
+
+        .contact_box_hum_message {
+          margin-bottom: 8px;
+          color: #d60e4c;
+        }
+      }
+    }
+  }
+}
+
+// =============================================
+// ドロワー 部分
+// =============================================
+// =============================================
+// アイコンの部分（ハンバーガー） 部分
+// =============================================
+.menu-trigger,
+.menu-trigger span {
+  display: inline-block;
+  transition: all .4s;
+  box-sizing: border-box;
+}
+
+.menu-trigger {
+  position: relative;
+  width: 40px;
+  height: 30px;
+}
+
+.menu-trigger span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #d60e4c;
+  border-radius: 4px;
+}
+
+.menu-trigger span:nth-of-type(1) {
+  top: 0;
+}
+
+.menu-trigger span:nth-of-type(2) {
+  top: 12.5px;
+}
+
+.menu-trigger span:nth-of-type(3) {
+  bottom: 0;
+}
+
+// オープン時
+.menu-trigger {
+  animation: menu-close .6s;
+}
+
+.menu-trigger.active {
+  animation: menu-open .6s;
+}
+
+@keyframes menu-close {
+  30% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes menu-open {
+  30% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.menu-trigger.active span:nth-of-type(1) {
+  transform: translateY(14px) rotate(-45deg);
+}
+
+.menu-trigger.active span:nth-of-type(2) {
+  opacity: 0;
+}
+
+.menu-trigger.active span:nth-of-type(3) {
+  transform: translateY(-13px) rotate(45deg);
+}
+
+// =============================================
+// ドロワー 部分
+// =============================================
+// =============================================
+// スクロールするとついてくる（ハンバーガー） 部分
+// =============================================
+.scroll_menu {
+
+  .inner {
+    position: relative;
+
+    .contact_box_humber {
+      width: 75px;
+      padding: 5px;
+      background-color: #ffdcec;
+      z-index: 999;
+      position: fixed;
+      right: 0;
+      top: 0;
+    }
+
+    .navbar_toggle_open {
+      text-align: center;
+    }
+
+    .contact_box_hum_message {
+      color: #d60e4c;
+      font-weight: bold;
+    }
+
+    .menu-trigger_open,
+    .menu-trigger_open span {
+      display: inline-block;
+      transition: all .4s;
+      box-sizing: border-box;
+    }
+
+    .menu-trigger_open {
+      position: relative;
+      width: 40px;
+      height: 30px;
+    }
+
+    .menu-trigger_open span {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background-color: #d60e4c;
+      border-radius: 4px;
+    }
+
+    .menu-trigger_open span:nth-of-type(1) {
+      top: 0;
+    }
+
+    .menu-trigger_open span:nth-of-type(2) {
+      top: 12.5px;
+    }
+
+    .menu-trigger_open span:nth-of-type(3) {
+      bottom: 0;
+    }
+
+    // オープン時
+    .menu-trigger_open {
+      animation: menu-close .6s;
+    }
+
+    .menu-trigger_open.active {
+      animation: menu-open .6s;
+    }
+
+    @keyframes menu-close {
+      30% {
+        transform: scale(0);
+        opacity: 0;
+      }
+
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    @keyframes menu-open {
+      30% {
+        transform: scale(0);
+        opacity: 0;
+      }
+
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    .menu-trigger_open.active span:nth-of-type(1) {
+      transform: translateY(14px) rotate(-45deg);
+    }
+
+    .menu-trigger_open.active span:nth-of-type(2) {
+      opacity: 0;
+    }
+
+    .menu-trigger_open.active span:nth-of-type(3) {
+      transform: translateY(-13px) rotate(45deg);
+    }
+
+    .scroll_menu_open {
+      width: 30%;
+      background-color: #ffdcec;
+      font-weight: bold;
+      z-index: 99;
+      position: fixed;
+      right: 0;
+      top: 0;
+
+      @include mq(lg) {
+        width: 50%;
+      }
+
+      @include mq(md) {
+        width: 100%;
+      }
+
+      a {
+        color: #d60e4c;
+        font-weight: bold;
+        position: relative;
+        display: inline-block;
+        font-size: 1.2rem;
+      }
+
+      .header-nav {
+        padding-left: 30px;
+
+        .nav-items {
+          padding: 10px 0;
+        }
+      }
+
+      .contact_box {
+        text-align: center;
+        font-weight: bold;
+        font-size: 0.8rem;
+        background-color: #ffdcec;
+        border-top: 2px solid #f19ec2;
+        padding: 0;
+        color: #d60e4c;
+        position: relative;
+
+        .contact_box_flex {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+
+          // 電話の部分
+          .contact_box_tel {
+            padding: 0;
+            font-size: 0.5rem;
+
+            @include mq() {
+              width: 60%;
+              padding: 5px;
+            }
+
+            .contact_box_tel_flex {
+              display: flex;
+
+              @include mq(md) {
+                justify-content: center;
+              }
+
+              .contact_box_tel_flex_img {
+                img {
+                  vertical-align: bottom;
+                }
+              }
+            }
+          }
+
+          .contact_box_tel_flex_hour {
+
+            .contact_time {
+              span {
+                color: #59493f
+              }
+            }
+
+            .contact_box_tel_flex_number {
+              font-size: 1.2rem;
+
+              @include mq() {
+                font-size: 1.2rem;
+              }
+            }
+          }
+
+          // ネットで予約の部分
+          .contact_box_com {
+            padding: 0 10px;
+            border-right: 2px solid #f19ec2;
+            border-left: 2px solid #f19ec2;
+
+            @include mq(md) {
+              padding: 5px;
+              font-size: 0.5rem;
+              width: 20%;
+            }
+
+            .contact_box_com_message {
+              color: #d60e4c;
+              font-size: 0.8rem;
+            }
+          }
+
+          // アクセスの部分
+          .contact_box_home {
+            padding: 0 10px;
+
+            @include mq(md) {
+              border-right: none;
+              width: 20%;
+            }
+
+            @include mq() {
+              font-size: 0.5rem;
+            }
+
+            .contact_box_home_message {
+              font-size: 0.8rem;
+              color: #d60e4c;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// =============================================
+// header-nav 部分
+// =============================================
+// 上スクロールで表示、下スクロールで非表示にする処理
+
+.site-header {
+  position: fixed;
+  top: 100px;
+  transition: .5s;
+  width: 100%;
+  z-index: 999;
+  background: #fff;
+  margin-top: 120px;
+
+  @include mq(md) {
+    margin-top: 0;
+  }
+}
+
+.hide {
+  transform: translateY(-200%);
+}
+
+// =============================================
+// header-nav 部分
+// =============================================
+// =============================================
+// header-nav 部分 ＰＣバージョン
+// =============================================
+.global_nav {
+  margin-top: 10px;
+  padding: 10px;
+  text-align: center;
+  padding-top: 20px;
+
+  .header-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .nav-items {
+
+      padding: 10px;
+
+      @include mq(md) {
+        margin: 0 5px;
+      }
+
+      a {
+        color: #d60e4c;
+        font-weight: bold;
+        position: relative;
+        display: inline-block;
+      }
+
+      a::after {
+        position: absolute;
+        bottom: -15px;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 5px;
+        background: #d60e4c;
+        transform: scale(0, 1);
+        transform-origin: left top;
+        transition: transform .3s;
+      }
+
+      a:hover::after,
+      a:focus::after {
+        transform: scale(1, 1);
+      }
+    }
+
+    /*子階層以降共通*/
+    .drop_down {
+      position: relative;
+      padding: 0 20px;
+
+      img {
+        margin-left: 2px;
+      }
+    }
+
+    .sub_menu {
+      position: absolute;
+      z-index: 100;
+      background-color: #fff;
+      padding: 10px;
+      text-align: left;
+
+      a {
+        line-height: 2.5rem;
+
+        img {
+          margin-right: 2px;
+        }
+      }
+
+      a::after {
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 3px;
+        background: #d60e4c;
+        transform: scale(0, 1);
+        transform-origin: left top;
+        transition: transform .3s;
+      }
+
+      a:hover::after {
+        transform: scale(1, 1);
+      }
+    }
+  }
+}
+
+// =============================================
+// header-nav 部分
+// =============================================
+// =============================================
+// header-nav 部分 ＰＣバージョン
+// =============================================
+.global_nav_red_line{
+  border-top: 3px solid #d60e4c;
+}
+
+
+// =============================================
+// header-nav 部分 ＳＰバージョン
+// =============================================
+.sp_global_nav {
+  background-color: #ffdcec;
+  padding: 20px;
+  border-bottom: 2px solid #f19ec2;
+
+  @include mq(md) {
+    font-size: 1.8rem;
+    padding-left: 50px;
+  }
+
+  @include mq() {
+    font-size: 1rem;
+    padding: 20px;
+  }
+
+  li {
+    padding: 5px;
+  }
+
+  a {
+    color: #e12653;
+    font-weight: bold;
+  }
+
+  .sub_menu {
+
+    li {
+      padding-left: 20px;
+    }
+  }
+}

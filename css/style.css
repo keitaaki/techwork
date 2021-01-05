@@ -141,6 +141,12 @@ header .header_flex {
   position: relative;
 }
 
+@media screen and (max-width: 1187px) {
+  .header_right .contact_box {
+    padding: 3px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .header_right .contact_box {
     padding: 0;
@@ -194,6 +200,12 @@ header .header_flex {
 
 .header_right .contact_box .contact_box_flex .contact_box_tel_flex_hour .contact_box_tel_flex_number {
   font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1187px) {
+  .header_right .contact_box .contact_box_flex .contact_box_tel_flex_hour .contact_box_tel_flex_number {
+    font-size: 1.2rem;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -626,7 +638,7 @@ header .header_flex {
 
 .site-header {
   position: fixed;
-  top: 115px;
+  top: 100px;
   -webkit-transition: .5s;
   transition: .5s;
   width: 100%;
@@ -650,7 +662,7 @@ header .header_flex {
   margin-top: 10px;
   padding: 10px;
   text-align: center;
-  border-top: 3px solid #d60e4c;
+  padding-top: 20px;
 }
 
 .global_nav .header-nav {
@@ -752,6 +764,10 @@ header .header_flex {
 .global_nav .header-nav .sub_menu a:hover::after {
   -webkit-transform: scale(1, 1);
           transform: scale(1, 1);
+}
+
+.global_nav_red_line {
+  border-top: 3px solid #d60e4c;
 }
 
 .sp_global_nav {

@@ -1,0 +1,99 @@
+// =============================================
+// footer 部分
+// =============================================
+footer {
+  .footer_flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .footer_logo {
+      margin-right: 20px;
+
+      @include mq() {
+        order: 2;
+      }
+    }
+
+    .footer_list {
+      width: 35%;
+      padding: 10px;
+
+      @include mq(md) {
+        margin-left: 20px;
+      }
+
+      a {
+        @include mq(md) {
+          font-size: 1.2rem;
+        }
+      }
+
+      @include mq() {
+        width: 100%;
+        order: 3;
+      }
+
+      .footer_about {
+        @include mq() {
+          text-align: center;
+        }
+      }
+
+      span {
+        color: #e12653;
+        font-weight: bold;
+        border-bottom: 2px solid #e12653;
+        line-height: 2rem;
+      }
+    }
+
+
+    .footer_list_flex {
+      display: flex;
+      justify-content: left;
+
+      @include mq() {
+        justify-content: center;
+      }
+
+      a {
+        color: #e12653;
+        font-weight: bold;
+
+      }
+
+      .footer_list_flex_right {
+        @include mq() {
+          margin-top: 10px;
+        }
+      }
+
+      .footer_list_flex_left {
+        margin-right: 30px;
+
+        @include mq() {
+          margin-top: 10px;
+        }
+      }
+    }
+
+    .sns {
+      width: 35%;
+
+      @include mq(md) {
+        width: 100%;
+        text-align: center;
+        order: 1;
+      }
+
+      a {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  .footer_reserved {
+    text-align: center;
+  }
+}

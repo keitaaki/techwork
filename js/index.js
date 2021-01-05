@@ -89,15 +89,15 @@ $(function () {
 
 
 // 上スクロールで表示、下スクロールで非表示にする処理
-var startPos = 0,winScrollTop = 0;
-$(window).on('scroll',function(){
+var startPos = 0, winScrollTop = 0;
+$(window).on('scroll', function () {
   winScrollTop = $(this).scrollTop();
   if (winScrollTop >= startPos) {
-      if(winScrollTop >= 200){
-          $('.site-header').addClass('hide');
-      }
+    if (winScrollTop >= 200) {
+      $('.site-header').addClass('hide');
+    }
   } else {
-      $('.site-header').removeClass('hide');
+    $('.site-header').removeClass('hide');
   }
   startPos = winScrollTop;
 });
