@@ -1067,6 +1067,16 @@ header .header_flex {
   color: #d60e4c;
 }
 
+.menu .menu_message_box_flex .menu_message_box_left .details .btn_move img {
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.menu .menu_message_box_flex .menu_message_box_left .details .btn_move:hover img {
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+}
+
 .menu .menu_message_box_flex .menu_message_box_right {
   padding: 0 20px 0;
   position: relative;
@@ -1238,6 +1248,16 @@ header .header_flex {
   color: #d60e4c;
 }
 
+.menu .menu_message_box_bbl .menu_message_box_bbl_text .details .btn_move img {
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.menu .menu_message_box_bbl .menu_message_box_bbl_text .details .btn_move:hover img {
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+}
+
 .hife {
   background-image: url(../img/assets/back_pink_flower.png);
   background-size: cover;
@@ -1385,8 +1405,6 @@ header .header_flex {
 }
 
 .hife .menu_message_box_flex .menu_message_box_left .details .details_flex img {
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
   vertical-align: text-bottom;
 }
 
@@ -1397,6 +1415,16 @@ header .header_flex {
 
 .hife .menu_message_box_flex .menu_message_box_left .details .details_flex a {
   color: #d60e4c;
+}
+
+.hife .menu_message_box_flex .menu_message_box_left .details .btn_move img {
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.hife .menu_message_box_flex .menu_message_box_left .details .btn_move:hover img {
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
 }
 
 .hife .menu_message_box_flex .menu_message_box_right {
@@ -1571,6 +1599,16 @@ header .header_flex {
   color: #6b8dd9;
 }
 
+.mens .mens_box .mens_box_text .details .btn_move img {
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.mens .mens_box .mens_box_text .details .btn_move:hover img {
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+}
+
 .whitening {
   background-image: url(../img/assets/back_white.png);
   background-size: cover;
@@ -1719,6 +1757,16 @@ header .header_flex {
 
 .whitening .whitening_box .whitening_box_text .details .details_flex a {
   color: #d60e4c;
+}
+
+.whitening .whitening_box .whitening_box_text .details .btn_move img {
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.whitening .whitening_box .whitening_box_text .details .btn_move:hover img {
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
 }
 
 .campaign {
@@ -2025,6 +2073,16 @@ header .header_flex {
 .news .details .details_flex a {
   color: #d60e4c;
   font-weight: bold;
+}
+
+.news .details .btn_move img {
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.news .details .btn_move:hover img {
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
 }
 
 .access {
