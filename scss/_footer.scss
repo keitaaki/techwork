@@ -6,6 +6,7 @@ footer {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    align-items: center;
 
     .footer_logo {
       margin-right: 20px;
@@ -16,8 +17,12 @@ footer {
     }
 
     .footer_list {
-      width: 35%;
+      width: 40%;
       padding: 10px;
+
+      li{
+        margin-bottom: 16px;
+      }
 
       @include mq(md) {
         margin-left: 20px;
@@ -35,6 +40,7 @@ footer {
       }
 
       .footer_about {
+        margin-bottom: 16px;
         @include mq() {
           text-align: center;
         }
@@ -79,7 +85,7 @@ footer {
     }
 
     .sns {
-      width: 35%;
+      width: 40%;
 
       @include mq(md) {
         width: 100%;

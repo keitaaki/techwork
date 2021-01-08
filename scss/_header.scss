@@ -1,5 +1,5 @@
 header {
-  padding: 10px 10px 30px 10px;
+  padding: 10px 0 5px 0;
   position: fixed;
   top: 0;
   margin: 0;
@@ -47,7 +47,7 @@ header {
     font-weight: bold;
     font-size: 0.8rem;
     background-color: #ffdcec;
-    padding: 10px;
+    padding: 10px 0;
     color: #d60e4c;
     position: relative;
 
@@ -113,7 +113,6 @@ header {
 
       // ネットで予約の部分
       .contact_box_com {
-        padding: 0 10px;
         border-right: 2px solid #f19ec2;
         border-left: 2px solid #f19ec2;
         width: 150px;
@@ -131,7 +130,6 @@ header {
 
       // アクセスの部分
       .contact_box_home {
-        padding: 0 10px;
         width: 120px;
 
         @include mq(md) {
@@ -498,7 +496,7 @@ header {
 
 .site-header {
   position: fixed;
-  top: 100px;
+  top: 80px;
   transition: .5s;
   width: 100%;
   z-index: 999;
@@ -522,9 +520,8 @@ header {
 // =============================================
 .global_nav {
   margin-top: 10px;
-  padding: 10px;
+  padding: 20px 10px 0 10px;
   text-align: center;
-  padding-top: 20px;
 
   .header-nav {
     display: flex;
@@ -548,7 +545,7 @@ header {
 
       a::after {
         position: absolute;
-        bottom: -15px;
+        bottom: -5px;
         left: 0;
         content: '';
         width: 100%;
