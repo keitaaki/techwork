@@ -24,13 +24,6 @@ $(function () {
   });
 });
 
-// ヘッダーの中のサブメニュー（SP）
-$(function () {
-  $('#sp_sub_menus').on('click', function () {
-    $('.sub_menu').toggleClass('hidden');
-  });
-});
-
 // ヘッダーの中のサブメニュー（PC）
 $(function () {
   $('#pc_global_menus').on('click', function () {
@@ -38,6 +31,27 @@ $(function () {
   });
 });
 
+// 別の画面をクリックした際にサブメニューが消える処理
+document.addEventListener('click', (e) => {
+  if (!e.target.closest('#pc_global_menus')) {
+    var obj = document.getElementById("sub_menu_pc");
+    obj.classList.add("hidden");
+  }
+});
+
+// スクロールしたら、開いていたサブメニューが閉じる処理
+$(window).scroll(function () {
+  if($(window).scrollTop() > 20) {
+    $('#sub_menu_pc').addClass('hidden');
+  } 
+});
+
+// ヘッダーの中のサブメニュー（SP）
+$(function () {
+  $('#sp_sub_menus').on('click', function () {
+    $('.sub_menu').toggleClass('hidden');
+  });
+});
 
 //  スクロールしたらついてくるメニューの実装
 $(function () {

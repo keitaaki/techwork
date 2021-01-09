@@ -51,7 +51,7 @@ header {
     color: #d60e4c;
     position: relative;
 
-    @include mq(lg){
+    @include mq(lg) {
       padding: 3px;
     }
 
@@ -101,8 +101,9 @@ header {
         .contact_box_tel_flex_number {
           font-size: 1.5rem;
 
-          @include mq(lg){
-            font-size: 1.2rem;;
+          @include mq(lg) {
+            font-size: 1.2rem;
+            ;
           }
 
           @include mq() {
@@ -496,7 +497,7 @@ header {
 
 .site-header {
   position: fixed;
-  top: 80px;
+  top: 75px;
   transition: .5s;
   width: 100%;
   z-index: 999;
@@ -530,7 +531,7 @@ header {
 
     .nav-items {
 
-      padding: 5px ;
+      padding: 5px;
 
       @include mq(md) {
         margin: 0 5px;
@@ -562,7 +563,9 @@ header {
       }
     }
 
-    /*子階層以降共通*/
+    // =============================================
+    // 子階層以降共通
+    // =============================================
     .drop_down {
       position: relative;
 
@@ -613,7 +616,7 @@ header {
 // =============================================
 // header-nav 部分 ＰＣバージョン
 // =============================================
-.global_nav_red_line{
+.global_nav_red_line {
   border-top: 3px solid #d60e4c;
 }
 
