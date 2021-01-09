@@ -2089,13 +2089,14 @@ header .header_flex {
   width: 90px;
   color: #fff;
   text-align: center;
-  padding: 5px;
-  background: #e5004f;
+  padding: 2px 5px;
+  background: #e9578b;
   border-radius: 4px;
   text-decoration: none;
   line-height: 1;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+  font-size: 14px;
 }
 
 @media (max-width: 767px) {
@@ -2105,7 +2106,7 @@ header .header_flex {
 }
 
 .news .info__label.info__label--type01 a {
-  background: #e9578b;
+  background: #e5004f;
   text-decoration: none;
 }
 
@@ -2408,6 +2409,59 @@ header .header_flex {
   .reservation .reservation_flex2 .reservation_flex2_right {
     width: 100%;
   }
+}
+
+.menu_epitation {
+  background-image: url(../img/assets/back_red.png);
+  background-size: cover;
+  background-position: center center;
+  margin-top: 170px;
+  z-index: -5;
+  padding: 30px 0;
+}
+
+.menu_epitation .menu_epitation_box {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.menu_epitation .menu_epitation_box .menu_epitation_box_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.menu_epitation .menu_epitation_box .menu_epitation_box_flex .menu_epitation_box_flex_left {
+  width: 50%;
+  padding: 20px;
+}
+
+.menu_epitation .menu_epitation_box .menu_epitation_box_flex .menu_epitation_box_flex_left h2 {
+  margin-bottom: 10px;
+}
+
+.menu_epitation .menu_epitation_box .menu_epitation_box_flex .menu_epitation_box_flex_left p {
+  font-weight: bold;
+}
+
+.menu_epitation .menu_epitation_box .menu_epitation_box_flex .menu_epitation_box_flex_left .epitation_list {
+  margin-top: 30px;
+}
+
+.menu_epitation .menu_epitation_box .menu_epitation_box_flex .menu_epitation_box_flex_left .epitation_lists {
+  padding-left: 40px;
+  background: url(../img/assets/cheack_icon.png) left 0px top -2px no-repeat;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+.menu_epitation .menu_epitation_box .menu_epitation_box_flex .menu_epitation_box_flex_right {
+  width: 45%;
 }
 
 footer .footer_flex {

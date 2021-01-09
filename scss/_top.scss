@@ -1078,13 +1078,14 @@
     width: 90px;
     color: #fff;
     text-align: center;
-    padding: 5px;
-    background: #e5004f;
+    padding: 2px 5px;
+    background: #e9578b;
     border-radius: 4px;
     text-decoration: none;
     line-height: 1;
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
+    font-size: 14px;
   }
 
   @media (max-width: 767px) {
@@ -1094,7 +1095,7 @@
   }
 
   .info__label.info__label--type01 a {
-    background: #e9578b;
+    background: #e5004f;
     text-decoration: none;
   }
 
