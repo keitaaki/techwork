@@ -28,6 +28,10 @@ footer {
         margin-left: 20px;
       }
 
+      @include mq() {
+        margin-left: 0;
+      }
+
       a {
         @include mq(md) {
           font-size: 1.2rem;

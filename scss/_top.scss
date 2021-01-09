@@ -7,12 +7,13 @@
   background-size: cover;
   background-position: center center;
   margin-top: 180px;
+  z-index: -5;
 
   @include mq(md) {
     margin: 0;
   }
 
-  .main_area_relative{
+  .main_area_relative {
     position: relative;
   }
 
@@ -35,12 +36,12 @@
     z-index: 10;
 
     @include mq(lg) {
-      left: 15%;
+      left: 5%;
     }
 
-    @include mq() {
-      top: 20%;
-      left: 10%;
+    @include mq(md) {
+      top: 5%;
+      left: 5%;
     }
   }
 }
@@ -79,7 +80,7 @@
     .about_right {
       width: 45%;
 
-      img{
+      img {
         object-fit: cover;
       }
 
@@ -111,7 +112,7 @@
   .menu_message_box {
     background-color: #fff;
     width: 85%;
-    padding: 20px;
+    padding: 50px 30px 10px;
     margin: 80px 0 50px;
     box-shadow: 0 0 8px #d60e4c;
     border-radius: 10px;
@@ -124,6 +125,7 @@
     @include mq(md) {
       width: 100%;
       margin: 20px 0;
+      padding: 10px;
     }
 
     @include mq() {
@@ -133,27 +135,27 @@
 
     .menu_massage_picture {
       position: absolute;
-      top: -15%;
-      right: -18%;
+      top: -5%;
+      right: -15%;
 
       @include mq(lg) {
-        right: -15%;
-        width: 53%;
+        right: -14%;
       }
 
       @include mq(md) {
-        right: -5%;
         top: 10%;
-        width: 50%;
+        right: 2%;
+        width: 300px;
       }
 
       @include mq() {
         width: 100%;
+        margin-bottom: 24px;
       }
 
       img {
         @include mq(md) {
-          width: 80%;
+          width: 100%;
         }
 
         @include mq() {
@@ -183,7 +185,7 @@
         width: 50%;
       }
 
-      img{
+      .contents_img {
         margin-bottom: 24px;
       }
 
@@ -198,7 +200,7 @@
       }
 
       .details {
-        width: 50%;
+        width: 60%;
         margin-left: auto;
         margin-right: 0px;
         padding-top: 20px;
@@ -217,7 +219,7 @@
 
           img {
             transition: all 0.3s ease 0s;
-            vertical-align: text-bottom;
+            vertical-align: middle;
 
             &:hover {
               transform: translateX(10px)
@@ -226,14 +228,21 @@
 
           a {
             color: #d60e4c;
+            display: block;
+            height: 20px;
+            font-size: 18px;
+
+            @include mq() {
+              font-size: 16px;
+            }
           }
         }
 
-        .btn_move img{
+        .btn_move img {
           transition: all 0.3s ease 0s;
         }
 
-        .btn_move:hover img{
+        .btn_move:hover img {
           transform: translateX(10px)
         }
       }
@@ -249,10 +258,6 @@
         width: 85%;
 
         @include mq(md) {
-          width: 70%;
-        }
-
-        @include mq() {
           width: 100%;
         }
       }
@@ -289,46 +294,38 @@
     @include mq() {
       width: 100%;
       margin-top: 20px;
-      padding: 20px;
+      padding: 10px;
     }
 
     .menu_message_box_bbl_picture {
       position: absolute;
-      top: 5%;
+      top: 15%;
       left: -20%;
 
       @include mq(lg) {
-        left: -30%;
-      }
-
-      @include mq(mx) {
-        left: -40%;
+        left: -18%;
       }
 
       @include mq(md) {
         top: 15%;
-        left: -5%;
-      }
-
-      img {
-
-        @include mq(mx) {
-          width: 90%;
-        }
-
-        @include mq(md) {
-          width: 65%;
-        }
-
-        @include mq() {
-          width: 100%;
-        }
+        left: 1%;
       }
 
       @include mq() {
         position: static;
         margin-top: 20px;
         text-align: center;
+        margin-bottom: 24px;
+      }
+
+      img {
+        @include mq(md) {
+          width: 70%;
+        }
+
+        @include mq() {
+          width: 100%;
+        }
       }
     }
 
@@ -346,7 +343,7 @@
         width: 100%;
       }
 
-      img{
+      .contents_img {
         margin-bottom: 24px;
       }
 
@@ -356,7 +353,7 @@
         margin-right: 0px;
         padding-top: 20px;
 
-        @include mq(lg) {
+        @include mq(md) {
           width: 100%;
         }
 
@@ -366,7 +363,7 @@
           flex-wrap: wrap;
 
           img {
-            vertical-align: text-bottom;
+            vertical-align: text-top;
             transition: all 0.3s ease 0s;
 
             &:hover {
@@ -376,14 +373,21 @@
 
           a {
             color: #d60e4c;
+            display: block;
+            height: 20px;
+            font-size: 18px;
+
+            @include mq() {
+              font-size: 16px;
+            }
           }
         }
 
-        .btn_move img{
+        .btn_move img {
           transition: all 0.3s ease 0s;
         }
 
-        .btn_move:hover img{
+        .btn_move:hover img {
           transform: translateX(10px)
         }
       }
@@ -397,7 +401,8 @@
 .hife {
   background-image: url(../img/assets/back_pink_flower.png);
   background-size: cover;
-  background-position: center 60%;;
+  background-position: center 60%;
+  ;
   padding: 20px;
 
   .menu_message_box {
@@ -417,7 +422,7 @@
     @include mq() {
       width: 100%;
       margin-top: 20px;
-      padding: 20px;
+      padding: 10px;
     }
 
     .menu_massage_picture {
@@ -428,7 +433,7 @@
 
       @include mq(lg) {
         top: -10%;
-        right: -20%;
+        right: -16.5%;
       }
 
       @include mq(mx) {
@@ -440,6 +445,12 @@
         top: 25%;
       }
 
+      @include mq() {
+        position: static;
+        text-align: center;
+        margin-bottom: 24px;
+      }
+
       img {
         @include mq(md) {
           width: 75%;
@@ -448,11 +459,6 @@
         @include mq() {
           width: 100%;
         }
-      }
-
-      @include mq() {
-        position: static;
-        text-align: center;
       }
     }
   }
@@ -473,25 +479,25 @@
       position: relative;
 
       @include mq(md) {
-        width: 44%;
+        width: 55%;
       }
 
       @include mq() {
         width: 100%;
       }
 
-      img{
+      .contents_img {
         margin-bottom: 24px;
       }
 
       .details {
-        width: 50%;
+        width: 60%;
         margin-left: auto;
         margin-right: 0px;
         padding-top: 20px;
 
         @include mq(lg) {
-          width: 80%;
+          width: 60%;
         }
 
         @include mq(md) {
@@ -512,14 +518,21 @@
 
           a {
             color: #d60e4c;
+            display: block;
+            height: 20px;
+            font-size: 18px;
+
+            @include mq() {
+              font-size: 16px;
+            }
           }
         }
 
-        .btn_move img{
+        .btn_move img {
           transition: all 0.3s ease 0s;
         }
 
-        .btn_move:hover img{
+        .btn_move:hover img {
           transform: translateX(10px)
         }
       }
@@ -536,7 +549,7 @@
       }
 
       @include mq(md) {
-        width: 25%;
+        width: 30%;
       }
 
       @include mq() {
@@ -559,7 +572,7 @@
   .mens_box {
     background-color: #fff;
     width: 85%;
-    padding: 30px 30px 10px;
+    padding: 50px 30px 10px;
     margin: 60px 0 50px;
     box-shadow: 0 0 8px #6b8dd9;
     border-radius: 10px;
@@ -575,7 +588,7 @@
     @include mq() {
       width: 100%;
       margin-top: 20px;
-      padding: 20px;
+      padding: 10px;
     }
 
     .mens_picture {
@@ -584,16 +597,18 @@
       left: -20%;
 
       @include mq(lg) {
-        left: -30%;
-      }
-
-      @include mq(mx) {
-        left: -45%;
+        left: -17%;
       }
 
       @include mq(md) {
         top: 10%;
-        left: -3%;
+        left: 3%;
+      }
+
+      @include mq() {
+        position: static;
+        text-align: center;
+        margin-bottom: 24px;
       }
 
       img {
@@ -609,11 +624,6 @@
         @include mq() {
           width: 100%;
         }
-      }
-
-      @include mq() {
-        position: static;
-        text-align: center;
       }
     }
 
@@ -631,7 +641,7 @@
         width: 100%;
       }
 
-      img{
+      .contents_img {
         margin-bottom: 24px;
       }
 
@@ -655,7 +665,7 @@
 
           img {
             transition: all 0.3s ease 0s;
-            vertical-align: text-bottom;
+            vertical-align: middle;
 
             &:hover {
               transform: translateX(10px)
@@ -664,14 +674,21 @@
 
           a {
             color: #6b8dd9;
+            display: block;
+            height: 20px;
+            font-size: 18px;
+
+            @include mq() {
+              font-size: 16px;
+            }
           }
         }
 
-        .btn_move img{
+        .btn_move img {
           transition: all 0.3s ease 0s;
         }
 
-        .btn_move:hover img{
+        .btn_move:hover img {
           transform: translateX(10px)
         }
       }
@@ -686,7 +703,7 @@
   background-image: url(../img/assets/back_white.png);
   background-size: cover;
   background-position: center center;
-  padding: 20px 20px 100px;
+  padding: 5px 20px 100px;
 
   @include mq(lg) {
     padding: 20px;
@@ -700,7 +717,7 @@
     background-color: #fff;
     width: 85%;
     padding: 50px 30px 10px;
-    margin-top: 80px;
+    margin-top: 70px;
     box-shadow: 0 0 8px #d60e4c;
     border-radius: 10px;
     position: relative;
@@ -716,7 +733,7 @@
     @include mq() {
       width: 100%;
       margin-top: 20px;
-      padding: 20px;
+      padding: 10px;
     }
 
     .whitening_picture {
@@ -725,17 +742,19 @@
       right: -20%;
 
       @include mq(lg) {
-        right: -30%;
-      }
-
-      @include mq(mx) {
-        right: -45%;
+        right: -18%;
       }
 
       @include mq(md) {
-        right: -5%;
+        right: 1%;
         bottom: 20%;
         text-align: right;
+      }
+      
+      @include mq() {
+        position: static;
+        text-align: center;
+        margin-bottom: 24px;
       }
 
       img {
@@ -746,11 +765,6 @@
         @include mq() {
           width: 100%;
         }
-      }
-
-      @include mq() {
-        position: static;
-        text-align: center;
       }
     }
 
@@ -766,7 +780,7 @@
         width: 100%;
       }
 
-      img{
+      .contents_img {
         margin-bottom: 24px;
       }
 
@@ -777,6 +791,10 @@
         padding-top: 20px;
 
         @include mq(lg) {
+          width: 80%;
+        }
+
+        @include mq(md) {
           width: 100%;
         }
 
@@ -787,7 +805,7 @@
 
           img {
             transition: all 0.3s ease 0s;
-            vertical-align: text-bottom;
+            vertical-align: middle;
 
             &:hover {
               transform: translateX(10px)
@@ -796,14 +814,21 @@
 
           a {
             color: #d60e4c;
+            display: block;
+            height: 20px;
+            font-size: 18px;
+
+            @include mq() {
+              font-size: 16px;
+            }
           }
         }
 
-        .btn_move img{
+        .btn_move img {
           transition: all 0.3s ease 0s;
         }
 
-        .btn_move:hover img{
+        .btn_move:hover img {
           transform: translateX(10px)
         }
       }
@@ -819,8 +844,12 @@
   background-size: cover;
   background-position: center center;
   padding: 70px 20px;
-  
-  .campaign_relative{
+
+  @include mq() {
+    padding: 20px 10px;
+  }
+
+  .campaign_relative {
     position: relative;
   }
 
@@ -848,11 +877,11 @@
         padding: 5px;
       }
 
-      img{
+      img {
         width: 90%;
 
         @include mq(lg) {
-          width: 100%;
+          width: 90%;
         }
       }
     }
@@ -1000,6 +1029,7 @@
     width: 105px;
     display: inline-block;
     padding-top: 3px;
+    font-weight: bold;
   }
 
   @media (max-width: 767px) {
@@ -1021,11 +1051,10 @@
 
   .info__label a {
     display: inline-block;
-    width: 80px;
+    width: 90px;
     color: #fff;
-    font-weight: 700;
     text-align: center;
-    padding: 8px;
+    padding: 5px;
     background: #e5004f;
     border-radius: 4px;
     text-decoration: none;
@@ -1048,7 +1077,7 @@
 
   .info__title {
     line-height: 1.25;
-    width: calc(100% - 105px - 80px);
+    width: calc(100% - 105px - 90px);
     padding: 5px 0 0 20px;
   }
 
@@ -1081,13 +1110,13 @@
   }
 
   .details {
-    width: 35%;
+    width: 40%;
     margin-left: auto;
     margin-right: 0px;
     padding-top: 20px;
 
     @include mq(md) {
-      width: 60%;
+      width: 50%;
     }
 
     @include mq() {
@@ -1102,14 +1131,22 @@
       a {
         color: #d60e4c;
         font-weight: bold;
+        display: block;
+        height: 20px;
+        font-size: 18px;
+
+        @include mq() {
+          font-size: 16px;
+        }
       }
     }
 
-    .btn_move img{
+    .btn_move img {
       transition: all 0.3s ease 0s;
+      vertical-align: middle;
     }
 
-    .btn_move:hover img{
+    .btn_move:hover img {
       transform: translateX(10px)
     }
   }
@@ -1237,6 +1274,10 @@
 
     @include mq(md) {
       padding: 0;
+    }
+
+    @include mq() {
+      padding: 10px;
     }
 
     .reservation_counseling {

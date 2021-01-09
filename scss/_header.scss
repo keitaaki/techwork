@@ -530,7 +530,7 @@ header {
 
     .nav-items {
 
-      padding: 10px;
+      padding: 5px ;
 
       @include mq(md) {
         margin: 0 5px;
@@ -565,7 +565,6 @@ header {
     /*子階層以降共通*/
     .drop_down {
       position: relative;
-      padding: 0 20px;
 
       img {
         margin-left: 2px;
@@ -574,10 +573,11 @@ header {
 
     .sub_menu {
       position: absolute;
-      z-index: 100;
+      z-index: -1;
       background-color: #fff;
-      padding: 10px;
       text-align: left;
+      padding-top: 10px;
+      width: 200px;
 
       a {
         line-height: 2.5rem;
@@ -589,7 +589,7 @@ header {
 
       a::after {
         position: absolute;
-        bottom: -2px;
+        bottom: 0px;
         left: 0;
         content: '';
         width: 100%;
