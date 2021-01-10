@@ -20,19 +20,19 @@
         width: 50%;
         padding: 20px;
 
-        h2{
+        h2 {
           margin-bottom: 10px;
         }
 
-        p{
+        p {
           font-weight: bold;
         }
 
-        .epitation_list{
+        .epitation_list {
           margin-top: 30px;
         }
 
-        .epitation_lists{
+        .epitation_lists {
           padding-left: 40px;
           background: url(../img/assets/cheack_icon.png) left 0px top -2px no-repeat;
           margin: 20px 0;
@@ -41,6 +41,188 @@
       }
 
       .menu_epitation_box_flex_right {
+        width: 45%;
+      }
+    }
+  }
+}
+
+
+// =============================================
+// SHR方式 部分
+// =============================================
+.shr {
+  background-color: #ffffee;
+  padding: 30px 0;
+
+  .shr_box {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 8px gray;
+
+    .shr_flex {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+
+      .shr_flex_left {
+        width: 50%;
+      }
+
+      .shr_flex_right {
+        width: 50%;
+        padding: 10px;
+
+        .shr_flex_right_title {
+          color: #eb6794;
+          padding: 20px 0;
+        }
+
+        .shr_flex_right_message {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+// =============================================
+// 毎月通えるから短期間に脱毛できちゃう 部分
+// =============================================
+.menu_schedule {
+  background-color: #fff4f6;
+  padding: 30px 0;
+
+  .menu_schedule_box {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 8px gray;
+
+    .menu_schedule_flex {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      align-items: center;
+
+      .menu_schedule_flex_left {
+        width: 50%;
+        padding: 10px;
+
+        .menu_schedule_flex_left_title {
+          color: #eb6794;
+          padding: 20px 10px;
+        }
+
+        .menu_schedule_flex_left_message {
+          font-weight: bold;
+          padding: 10px;
+        }
+      }
+
+      .menu_schedule_flex_right {
+        width: 50%;
+      }
+    }
+  }
+}
+
+// =============================================
+// 全身脱毛60分！施術時間MAX1/2に時間短縮！ 部分
+// =============================================
+.menu_short {
+  background-color: #ffffee;
+  padding: 30px 0;
+
+  .menu_short_box {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 8px gray;
+
+    .menu_short_box_flex{
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      align-items: center;
+
+      .menu_short_box_flex_left{
+        width: 50%;
+      }
+
+      .menu_short_box_flex_right{
+        width: 50%;
+        padding: 10px;
+
+        .menu_short_box_flex_right_title{
+          color: #eb6794;
+          padding: 20px 10px;
+        }
+
+        .menu_short_box_flex_right_message{
+          font-weight: bold;
+          padding: 10px;
+        }
+      }
+    }
+  }
+}
+
+// ==============================================
+// 全身脱毛60分！施術時間MAX1/2に時間短縮！ 部分
+// ==============================================
+.epitation_parts{
+  background-image: url(../img/assets/back_yellow.png);
+  background-size: cover;
+  background-position: center center;
+  padding: 30px 0;
+}
+
+// ==============================================
+// BBL 部分
+// ==============================================
+
+.menu_bbl_area{
+  background-color: #e6396a;
+  padding: 30px 0;
+
+  .menu_bbl_area_box{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+
+    .menu_bbl_area_box_flex{
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      align-items: center;
+
+      .menu_bbl_area_box_flex_left{
+        width: 50%;
+        padding: 20px;
+
+        h2 {
+          margin-bottom: 10px;
+        }
+
+        .menu_bbl_area_box_flex_left_message {
+          font-weight: bold;
+        }
+
+        .menu_bbl_area_list {
+          margin-top: 30px;
+        }
+
+        .menu_bbl_area_lists {
+          padding-left: 40px;
+          background: url(../img/assets/cheack_icon.png) left 0px top -2px no-repeat;
+          margin: 20px 0;
+          font-weight: bold;
+        }
+      }
+
+      .menu_bbl_area_box_flex_right{
         width: 45%;
       }
     }

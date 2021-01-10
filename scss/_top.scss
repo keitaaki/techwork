@@ -216,7 +216,7 @@
         }
 
         @include mq(md) {
-          width: 90%;
+          width: 100%;
         }
 
         .details_flex {
@@ -364,7 +364,7 @@
         }
 
         @include mq(md) {
-          width: 90%;
+          width: 100%;
         }
 
         .details_flex {
@@ -520,7 +520,7 @@
         }
 
         @include mq(md) {
-          width: 90%;
+          width: 100%;
         }
 
         .details_flex {
@@ -676,7 +676,7 @@
         }
 
         @include mq(md) {
-          width: 90%;
+          width: 100%;
         }
 
         .details_flex {
@@ -823,7 +823,7 @@
         }
 
         @include mq(md) {
-          width: 90%;
+          width: 100%;
         }
 
         .details_flex {
@@ -1140,12 +1140,12 @@
     margin-right: 0px;
     padding-top: 20px;
 
-    @include mq(md) {
+    @include mq(mx) {
       width: 50%;
     }
 
-    @include mq(md) {
-      width: 90%;
+    @include mq() {
+      width: 100%;
     }
 
     .details_flex {
