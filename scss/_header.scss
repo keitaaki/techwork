@@ -62,7 +62,7 @@ header {
     .contact_box_flex {
       display: flex;
       justify-content: space-around;
-      align-items: center;
+      align-items:flex-end;
 
       // 電話の部分
       .contact_box_tel {
@@ -70,7 +70,7 @@ header {
 
         @include mq() {
           width: 50%;
-          padding: 0;
+          padding: 0 0 5px 0;
           font-size: 0.5rem;
         }
 
@@ -81,10 +81,8 @@ header {
             justify-content: center;
           }
 
-          .contact_box_tel_flex_img {
-            img {
-              vertical-align: bottom;
-            }
+          @include mq(){
+            align-items: center;
           }
         }
       }
@@ -104,6 +102,10 @@ header {
 
           @include mq(lg) {
             font-size: 1.2rem;
+          }
+
+          @include mq(){
+            font-size: 1rem;
           }
         }
       }
@@ -132,6 +134,7 @@ header {
         @include mq(md) {
           border-right: none;
           width: 20%;
+          padding: 5px;
         }
 
         @include mq() {

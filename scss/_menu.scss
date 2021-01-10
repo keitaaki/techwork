@@ -6,10 +6,18 @@
   z-index: -5;
   padding: 30px 0;
 
+  @include mq() {
+    margin: 0;
+  }
+
   .menu_epitation_box {
     background-color: #fff;
     border-radius: 10px;
     padding: 10px;
+
+    @include mq() {
+      margin: 0 5px;
+    }
 
     .menu_epitation_box_flex {
       display: flex;
@@ -19,6 +27,11 @@
       .menu_epitation_box_flex_left {
         width: 50%;
         padding: 20px;
+
+        @include mq() {
+          width: 100%;
+          padding: 5px;
+        }
 
         h2 {
           margin-bottom: 10px;
@@ -42,6 +55,10 @@
 
       .menu_epitation_box_flex_right {
         width: 45%;
+
+        @include mq() {
+          width: 100%;
+        }
       }
     }
   }
@@ -61,6 +78,11 @@
     padding: 10px;
     box-shadow: 0 0 8px gray;
 
+    @include mq() {
+      margin: 0 5px;
+      padding: 10px 0;
+    }
+
     .shr_flex {
       display: flex;
       justify-content: space-around;
@@ -68,15 +90,30 @@
 
       .shr_flex_left {
         width: 50%;
+
+        @include mq() {
+          width: 100%;
+          order: 2;
+        }
       }
 
       .shr_flex_right {
         width: 50%;
         padding: 10px;
 
+        @include mq() {
+          width: 100%;
+          order: 1;
+        }
+
         .shr_flex_right_title {
           color: #eb6794;
           padding: 20px 0;
+
+          @include mq() {
+            padding: 5px 0;
+            text-align: center;
+          }
         }
 
         .shr_flex_right_message {
@@ -100,6 +137,11 @@
     padding: 10px;
     box-shadow: 0 0 8px gray;
 
+    @include mq() {
+      margin: 0 5px;
+      padding: 10px 0;
+    }
+
     .menu_schedule_flex {
       display: flex;
       justify-content: space-around;
@@ -110,19 +152,36 @@
         width: 50%;
         padding: 10px;
 
+        @include mq() {
+          width: 100%;
+        }
+
         .menu_schedule_flex_left_title {
           color: #eb6794;
           padding: 20px 10px;
+
+          @include mq() {
+            padding: 5px 0;
+            text-align: center;
+          }
         }
 
         .menu_schedule_flex_left_message {
           font-weight: bold;
           padding: 10px;
+
+          @include mq() {
+            padding: 0;
+          }
         }
       }
 
       .menu_schedule_flex_right {
         width: 50%;
+
+        @include mq() {
+          width: 100%;
+        }
       }
     }
   }
@@ -141,26 +200,48 @@
     padding: 10px;
     box-shadow: 0 0 8px gray;
 
-    .menu_short_box_flex{
+    @include mq() {
+      margin: 0 5px;
+      padding: 10px 0;
+    }
+
+    .menu_short_box_flex {
       display: flex;
       justify-content: space-around;
       flex-wrap: wrap;
       align-items: center;
 
-      .menu_short_box_flex_left{
+      .menu_short_box_flex_left {
         width: 50%;
+
+        @include mq() {
+          width: 100%;
+          order: 2;
+          padding: 0 5px;
+        }
       }
 
-      .menu_short_box_flex_right{
+      .menu_short_box_flex_right {
         width: 50%;
         padding: 10px;
 
-        .menu_short_box_flex_right_title{
-          color: #eb6794;
-          padding: 20px 10px;
+        @include mq() {
+          width: 100%;
+          order: 1;
+          padding: 0;
         }
 
-        .menu_short_box_flex_right_message{
+        .menu_short_box_flex_right_title {
+          color: #eb6794;
+          padding: 20px 10px;
+
+          @include mq() {
+            padding: 5px 0;
+            text-align: center;
+          }
+        }
+
+        .menu_short_box_flex_right_message {
           font-weight: bold;
           padding: 10px;
         }
@@ -170,9 +251,143 @@
 }
 
 // ==============================================
+// flow 施術までの流れ 部分
+// ==============================================
+.flow {
+
+  h2 {
+    margin: 10px auto 0;
+    width: 10%;
+
+    @include mq(md) {
+      width: 30%;
+    }
+  }
+
+  .tabBox_border_line {
+    border-top: 1px solid #868686;
+  }
+
+  .tabBox .tabArea {
+    width: 1000px;
+    max-width: 100%;
+    margin: 0 auto;
+    height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .tabBox .tabArea .one_tab {
+    width: 50%;
+  }
+
+  .tabBox .tabArea .one_tab a {
+    display: block;
+    text-decoration: none;
+    transition-duration: 0.3s;
+    text-align: center;
+    color: #fff;
+  }
+
+  .tabBox .tabArea .one_tab a:hover {
+    opacity: 0.7;
+    text-decoration: none;
+  }
+
+  .tabBox .tabArea .one_tab .tab_inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition-duration: 0.3s;
+    border-radius: 10px 10px 0 0;
+    background-color: #808080;
+
+    @include mq() {
+      font-size: 0.8rem;
+      height: 30px;
+    }
+  }
+
+  .tabBox .tabArea .one_tab .tab_inner.non_selected {
+    background-color: #fff;
+    color: #808080;
+    border: 1px solid #868686;
+  }
+
+  .tabBox .tabArea .one_tab a.select .tab_inner {
+    height: 60px;
+
+    @include mq() {
+      height: 40px;
+    }
+  }
+
+  .contents .tab_main {
+    display: none;
+    padding: 50px 0;
+    text-align: center;
+    min-height: 280px;
+    transition-duration: 0.3s;
+  }
+
+  .innerArea_flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .innerArea_flex_cards {
+      width: 23%;
+      text-align: left;
+      margin-bottom: 10px;
+
+      @include mq(md) {
+        width: 95%;
+        text-align: center;
+        margin: 0 auto 10px;
+      }
+
+      h3 {
+        font-size: 18px;
+
+        @include mq(){
+          font-size: 20px;
+        }
+      }
+
+      p {
+        font-size: 15px;
+
+        @include mq() {
+          width: 80%;
+          padding: 0 10px 10px;
+          margin: 0 auto;
+          font-size: 16px;
+        }
+      }
+
+      img {
+        border: 1px solid #868686;
+      }
+
+
+    }
+  }
+
+  .tab_main.is_show {
+    display: block;
+  }
+
+}
+
+// ==============================================
 // 全身脱毛60分！施術時間MAX1/2に時間短縮！ 部分
 // ==============================================
-.epitation_parts{
+.epitation_parts {
   background-image: url(../img/assets/back_yellow.png);
   background-size: cover;
   background-position: center center;
@@ -183,38 +398,46 @@
 // BBL 部分
 // ==============================================
 
-.menu_bbl_area{
+.menu_bbl {
   background-color: #e6396a;
   padding: 30px 0;
 
-  .menu_bbl_area_box{
+  .menu_bbl_box {
     background-color: #fff;
     border-radius: 10px;
     padding: 10px;
 
-    .menu_bbl_area_box_flex{
+    @include mq() {
+      margin: 0 5px;
+    }
+
+    .menu_bbl_box_flex {
       display: flex;
       justify-content: space-around;
       flex-wrap: wrap;
       align-items: center;
 
-      .menu_bbl_area_box_flex_left{
+      .menu_bbl_box_flex_left {
         width: 50%;
         padding: 20px;
+
+        @include mq(){
+          width: 100%;
+        }
 
         h2 {
           margin-bottom: 10px;
         }
 
-        .menu_bbl_area_box_flex_left_message {
+        .menu_bbl_box_flex_left_message {
           font-weight: bold;
         }
 
-        .menu_bbl_area_list {
+        .menu_bbl_list {
           margin-top: 30px;
         }
 
-        .menu_bbl_area_lists {
+        .menu_bbl_lists {
           padding-left: 40px;
           background: url(../img/assets/cheack_icon.png) left 0px top -2px no-repeat;
           margin: 20px 0;
@@ -222,9 +445,23 @@
         }
       }
 
-      .menu_bbl_area_box_flex_right{
+      .menu_bbl_box_flex_right {
         width: 45%;
+
+        @include mq(){
+          width: 100%;
+        }
       }
     }
   }
+}
+
+// ==============================================
+// BBL 施術可能箇所 部分
+// ==============================================
+.bbl_points {
+  background-image: url(../img/assets/back_yellow.png);
+  background-size: cover;
+  background-position: center center;
+  padding: 30px 0;
 }
