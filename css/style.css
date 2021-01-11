@@ -2429,7 +2429,7 @@ header .header_flex {
   padding: 30px 0;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .menu_epitation {
     margin: 0;
   }
@@ -2439,6 +2439,12 @@ header .header_flex {
   background-color: #fff;
   border-radius: 10px;
   padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .menu_epitation .menu_epitation_box {
+    margin: 0 10px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -2455,6 +2461,9 @@ header .header_flex {
       justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .menu_epitation .menu_epitation_box .menu_epitation_box_flex .menu_epitation_box_flex_left {
@@ -2511,6 +2520,12 @@ header .header_flex {
           box-shadow: 0 0 8px gray;
 }
 
+@media screen and (max-width: 768px) {
+  .shr .shr_box {
+    margin: 0 10px;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .shr .shr_box {
     margin: 0 5px;
@@ -2526,6 +2541,9 @@ header .header_flex {
       justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .shr .shr_box .shr_flex .shr_flex_left {
@@ -2584,6 +2602,12 @@ header .header_flex {
           box-shadow: 0 0 8px gray;
 }
 
+@media screen and (max-width: 768px) {
+  .menu_schedule .menu_schedule_box {
+    margin: 0 10px;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .menu_schedule .menu_schedule_box {
     margin: 0 5px;
@@ -2612,6 +2636,7 @@ header .header_flex {
 @media screen and (max-width: 600px) {
   .menu_schedule .menu_schedule_box .menu_schedule_flex .menu_schedule_flex_left {
     width: 100%;
+    padding: 0;
   }
 }
 
@@ -2630,12 +2655,6 @@ header .header_flex {
 .menu_schedule .menu_schedule_box .menu_schedule_flex .menu_schedule_flex_left .menu_schedule_flex_left_message {
   font-weight: bold;
   padding: 10px;
-}
-
-@media screen and (max-width: 600px) {
-  .menu_schedule .menu_schedule_box .menu_schedule_flex .menu_schedule_flex_left .menu_schedule_flex_left_message {
-    padding: 0;
-  }
 }
 
 .menu_schedule .menu_schedule_box .menu_schedule_flex .menu_schedule_flex_right {
@@ -2659,6 +2678,12 @@ header .header_flex {
   padding: 10px;
   -webkit-box-shadow: 0 0 8px gray;
           box-shadow: 0 0 8px gray;
+}
+
+@media screen and (max-width: 768px) {
+  .menu_short .menu_short_box {
+    margin: 0 10px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -2840,6 +2865,13 @@ header .header_flex {
       flex-wrap: wrap;
 }
 
+@media screen and (max-width: 768px) {
+  .flow .innerArea_flex {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
 .flow .innerArea_flex .innerArea_flex_cards {
   width: 23%;
   text-align: left;
@@ -2848,9 +2880,17 @@ header .header_flex {
 
 @media screen and (max-width: 768px) {
   .flow .innerArea_flex .innerArea_flex_cards {
+    width: 48%;
+    text-align: center;
+    margin: 0 auto 25px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .flow .innerArea_flex .innerArea_flex_cards {
     width: 95%;
     text-align: center;
-    margin: 0 auto 10px;
+    margin: 0 auto 15px;
   }
 }
 
@@ -2901,6 +2941,12 @@ header .header_flex {
   background-color: #fff;
   border-radius: 10px;
   padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .menu_bbl .menu_bbl_box {
+    margin: 0 10px;
+  }
 }
 
 @media screen and (max-width: 600px) {

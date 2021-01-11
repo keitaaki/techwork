@@ -6,7 +6,7 @@
   z-index: -5;
   padding: 30px 0;
 
-  @include mq() {
+  @include mq(md) {
     margin: 0;
   }
 
@@ -14,6 +14,10 @@
     background-color: #fff;
     border-radius: 10px;
     padding: 10px;
+
+    @include mq(md){
+      margin: 0 10px;
+    }
 
     @include mq() {
       margin: 0 5px;
@@ -23,6 +27,7 @@
       display: flex;
       justify-content: space-around;
       flex-wrap: wrap;
+      align-items: center;
 
       .menu_epitation_box_flex_left {
         width: 50%;
@@ -78,6 +83,10 @@
     padding: 10px;
     box-shadow: 0 0 8px gray;
 
+    @include mq(md){
+      margin: 0 10px;
+    }
+
     @include mq() {
       margin: 0 5px;
       padding: 10px 0;
@@ -87,6 +96,7 @@
       display: flex;
       justify-content: space-around;
       flex-wrap: wrap;
+      align-items: center;
 
       .shr_flex_left {
         width: 50%;
@@ -137,6 +147,10 @@
     padding: 10px;
     box-shadow: 0 0 8px gray;
 
+    @include mq(md){
+      margin: 0 10px;
+    }
+
     @include mq() {
       margin: 0 5px;
       padding: 10px 0;
@@ -154,6 +168,7 @@
 
         @include mq() {
           width: 100%;
+          padding: 0;
         }
 
         .menu_schedule_flex_left_title {
@@ -169,10 +184,6 @@
         .menu_schedule_flex_left_message {
           font-weight: bold;
           padding: 10px;
-
-          @include mq() {
-            padding: 0;
-          }
         }
       }
 
@@ -199,6 +210,10 @@
     border-radius: 10px;
     padding: 10px;
     box-shadow: 0 0 8px gray;
+
+    @include mq(md){
+      margin: 0 10px;
+    }
 
     @include mq() {
       margin: 0 5px;
@@ -340,15 +355,25 @@
     justify-content: space-between;
     flex-wrap: wrap;
 
+    @include mq(md){
+      justify-content: space-around;
+    }
+
     .innerArea_flex_cards {
       width: 23%;
       text-align: left;
       margin-bottom: 10px;
 
-      @include mq(md) {
+      @include mq(md){
+        width: 48%;
+        text-align: center;
+        margin: 0 auto 25px;
+      }
+
+      @include mq() {
         width: 95%;
         text-align: center;
-        margin: 0 auto 10px;
+        margin: 0 auto 15px;
       }
 
       h3 {
@@ -406,6 +431,10 @@
     background-color: #fff;
     border-radius: 10px;
     padding: 10px;
+
+    @include mq(md){
+      margin: 0 10px;
+    }
 
     @include mq() {
       margin: 0 5px;
