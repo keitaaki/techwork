@@ -156,10 +156,16 @@
 // =============================================
 
 .menu {
-  background-image: url(../img/assets/back_white.png);
-  background-size: cover;
-  background-position: center 60%;
-  padding: 20px;
+  background: #ffffee url("../img/assets/hana-bk.png") no-repeat left top;
+  
+
+  .menu_bk{
+    background: url("../img/assets/hana-bk-right.png") no-repeat right top;
+    padding: 20px 0;
+    @include mq() {
+      padding: 20px;
+    }
+  }
 
   .menu_message_box {
     background-color: #fff;
@@ -457,11 +463,17 @@
 // HIFE 部分
 // =============================================
 .hife {
-  background-image: url(../img/assets/back_pink_flower.png);
-  background-size: cover;
-  background-position: center 60%;
-  ;
-  padding: 20px;
+  background: #e6396a url("../img/assets/hana-bk2-left.png") no-repeat left bottom;
+  
+
+  .hife_bk{
+    background: url("../img/assets/hana-bk2-right.png") no-repeat right bottom;
+    padding: 20px 0;
+
+    @include mq() {
+      padding: 20px;
+    }
+  }
 
   .menu_message_box {
     background-color: #fff;
@@ -631,10 +643,13 @@
 // mens 部分
 // =============================================
 .mens {
-  background-image: url(../img/assets/back_blue.png);
-  background-size: cover;
-  background-position: center center;
-  padding: 20px;
+  background: #c2d6f0 url("../img/assets/hana-bk3-right.png") no-repeat  right top;
+  
+
+  .mens_bk{
+    background: url("../img/assets/hana-bk3-left.png") no-repeat left top;
+    padding: 20px;
+  }
 
   .mens_box {
     background-color: #fff;
@@ -768,17 +783,20 @@
 // ホワイトニング 部分
 // =============================================
 .whitening {
-  background-image: url(../img/assets/back_white.png);
-  background-size: cover;
-  background-position: center center;
-  padding: 5px 20px 100px;
+  background: #ffffee url("../img/assets/hana-bk4-right.png") no-repeat right top;
 
-  @include mq(lg) {
-    padding: 20px;
-  }
+  .whitening_bk{
+    background: url("../img/assets/hana-bk4-left.png") no-repeat  left bottom;
+    padding: 5px 20px 100px;
 
-  @include mq() {
-    padding: 20px;
+    @include mq(lg) {
+      padding: 20px 20px 60px 20px;
+    }
+  
+    @include mq() {
+      padding: 20px;
+    }
+
   }
 
   .whitening_box {

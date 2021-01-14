@@ -990,10 +990,18 @@ header .header_flex {
 }
 
 .menu {
-  background-image: url(../img/assets/back_white.png);
-  background-size: cover;
-  background-position: center 60%;
-  padding: 20px;
+  background: #ffffee url("../img/assets/hana-bk.png") no-repeat left top;
+}
+
+.menu .menu_bk {
+  background: url("../img/assets/hana-bk-right.png") no-repeat right top;
+  padding: 20px 0;
+}
+
+@media screen and (max-width: 600px) {
+  .menu .menu_bk {
+    padding: 20px;
+  }
 }
 
 .menu .menu_message_box {
@@ -1362,10 +1370,18 @@ header .header_flex {
 }
 
 .hife {
-  background-image: url(../img/assets/back_pink_flower.png);
-  background-size: cover;
-  background-position: center 60%;
-  padding: 20px;
+  background: #e6396a url("../img/assets/hana-bk2-left.png") no-repeat left bottom;
+}
+
+.hife .hife_bk {
+  background: url("../img/assets/hana-bk2-right.png") no-repeat right bottom;
+  padding: 20px 0;
+}
+
+@media screen and (max-width: 600px) {
+  .hife .hife_bk {
+    padding: 20px;
+  }
 }
 
 .hife .menu_message_box {
@@ -1583,9 +1599,11 @@ header .header_flex {
 }
 
 .mens {
-  background-image: url(../img/assets/back_blue.png);
-  background-size: cover;
-  background-position: center center;
+  background: #c2d6f0 url("../img/assets/hana-bk3-right.png") no-repeat right top;
+}
+
+.mens .mens_bk {
+  background: url("../img/assets/hana-bk3-left.png") no-repeat left top;
   padding: 20px;
 }
 
@@ -1748,20 +1766,22 @@ header .header_flex {
 }
 
 .whitening {
-  background-image: url(../img/assets/back_white.png);
-  background-size: cover;
-  background-position: center center;
+  background: #ffffee url("../img/assets/hana-bk4-right.png") no-repeat right top;
+}
+
+.whitening .whitening_bk {
+  background: url("../img/assets/hana-bk4-left.png") no-repeat left bottom;
   padding: 5px 20px 100px;
 }
 
 @media screen and (max-width: 1187px) {
-  .whitening {
-    padding: 20px;
+  .whitening .whitening_bk {
+    padding: 20px 20px 60px 20px;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .whitening {
+  .whitening .whitening_bk {
     padding: 20px;
   }
 }
