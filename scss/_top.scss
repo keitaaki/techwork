@@ -1137,7 +1137,7 @@
     line-height: 1;
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
-    font-size: 14px;
+    font-size: 18px;
   }
 
   @media (max-width: 767px) {
@@ -1363,6 +1363,50 @@
 
     .reservation_counseling {
       text-align: center;
+      position: relative;
+
+      .star1{
+        position: absolute;
+        top: 0;
+        right: 8%;
+      }
+
+      .star2{
+        position: absolute;
+        bottom: 0;
+        left: 8%;
+      }
+
+      .counseling_title{
+        font-size: 38px;
+        font-weight: bold;
+        color: #e9578b;
+
+        @include mq(){
+          font-size: 24px;
+          margin-top: 10px;
+        }
+
+
+        span{
+          background: linear-gradient(transparent 50%, yellow 50%);
+        }
+      }
+
+      .counseling_message{
+        font-size: 18px;
+        font-weight: bold;
+
+        @include mq(){
+          font-size: 12px;
+          margin-top: 10px;
+          padding: 0 10px;
+        }
+
+        span{
+          color: #e9578b;
+        }
+      }
     }
   }
 

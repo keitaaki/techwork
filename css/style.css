@@ -566,7 +566,7 @@ header .header_flex {
 @media screen and (max-width: 600px) {
   .scroll_menu .inner .scroll_menu_open .contact_box .contact_box_flex .contact_box_tel {
     width: 60%;
-    padding: 5px;
+    padding: 0;
   }
 }
 
@@ -586,6 +586,12 @@ header .header_flex {
 
 .scroll_menu .inner .scroll_menu_open .contact_box .contact_box_flex .contact_box_tel .contact_box_tel_flex .contact_box_tel_flex_img img {
   vertical-align: bottom;
+}
+
+@media screen and (max-width: 600px) {
+  .scroll_menu .inner .scroll_menu_open .contact_box .contact_box_flex .contact_box_tel_flex_hour .contact_time {
+    font-size: 0.5rem;
+  }
 }
 
 .scroll_menu .inner .scroll_menu_open .contact_box .contact_box_flex .contact_box_tel_flex_hour .contact_time span {
@@ -737,7 +743,7 @@ header .header_flex {
   background-color: #fff;
   text-align: left;
   padding-top: 10px;
-  width: 200px;
+  width: 250px;
 }
 
 .global_nav .header-nav .sub_menu a {
@@ -2172,7 +2178,7 @@ header .header_flex {
   line-height: 1;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 @media (max-width: 767px) {
@@ -2428,6 +2434,54 @@ header .header_flex {
 
 .reservation .inner .reservation_counseling {
   text-align: center;
+  position: relative;
+}
+
+.reservation .inner .reservation_counseling .star1 {
+  position: absolute;
+  top: 0;
+  right: 8%;
+}
+
+.reservation .inner .reservation_counseling .star2 {
+  position: absolute;
+  bottom: 0;
+  left: 8%;
+}
+
+.reservation .inner .reservation_counseling .counseling_title {
+  font-size: 38px;
+  font-weight: bold;
+  color: #e9578b;
+}
+
+@media screen and (max-width: 600px) {
+  .reservation .inner .reservation_counseling .counseling_title {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+}
+
+.reservation .inner .reservation_counseling .counseling_title span {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, yellow));
+  background: linear-gradient(transparent 50%, yellow 50%);
+}
+
+.reservation .inner .reservation_counseling .counseling_message {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+  .reservation .inner .reservation_counseling .counseling_message {
+    font-size: 12px;
+    margin-top: 10px;
+    padding: 0 10px;
+  }
+}
+
+.reservation .inner .reservation_counseling .counseling_message span {
+  color: #e9578b;
 }
 
 .reservation .reservation_flex {

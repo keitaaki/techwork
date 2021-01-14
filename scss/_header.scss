@@ -412,11 +412,12 @@ header {
 
             @include mq() {
               width: 60%;
-              padding: 5px;
+              padding: 0;
             }
 
             .contact_box_tel_flex {
               display: flex;
+
 
               @include mq(md) {
                 justify-content: center;
@@ -433,6 +434,11 @@ header {
           .contact_box_tel_flex_hour {
 
             .contact_time {
+
+              @include mq() {
+                font-size: 0.5rem;
+              }
+
               span {
                 color: #59493f
               }
@@ -579,7 +585,7 @@ header {
       background-color: #fff;
       text-align: left;
       padding-top: 10px;
-      width: 200px;
+      width: 250px;
 
       a {
         line-height: 2.5rem;
