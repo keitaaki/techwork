@@ -1,0 +1,97 @@
+// =============================================
+// 共通 部分
+// =============================================
+
+$main-font-color: #59493f;
+$pink-font-color: #df003f;
+
+//メディアクエリの設定
+$breakpoints: ('sm': 'screen and (max-width: 600px)',
+  'md': 'screen and (max-width: 768px)',
+  'mx': 'screen and (max-width: 980px)',
+  'lg': 'screen and (max-width: 1187px)',
+  'xl': 'screen and (max-width: 1200px)'
+) !default;
+
+@mixin mq($breakpoint: sm) {
+
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+.dis-pc {
+  @include mq(md) {
+    display: none;
+  }
+}
+
+.dis-sp {
+  display: none;
+
+  @include mq(md) {
+    display: block;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.inner {
+  width: 1000px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Yu Gothic", yugothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", meiryo, "MS Pゴシック", "MS PGothic", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: $main-font-color;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #fff;
+  overflow-x: hidden;
+  overflow-wrap: break-word;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  color: $main-font-color;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  list-style: none;
+}
+
+.is-active {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
