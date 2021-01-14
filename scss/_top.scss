@@ -3,7 +3,7 @@
 // =============================================
 
 .main_area {
-  background-image: url(../img/assets/background_pink.png);
+  background-image: url(../common/images/background_pink.png);
   background-size: cover;
   background-position: center center;
   margin-top: 170px;
@@ -52,12 +52,12 @@
 // =============================================
 
 .about {
-  background-image: url(../img/assets/back_yellow.png);
+  background-image: url(../common/images/back_yellow.png);
   background-size: cover;
   background-position: center center;
   position: relative;
-  
-  @include mq(lg){
+
+  @include mq(lg) {
     padding: 20px;
   }
 
@@ -102,7 +102,7 @@
         margin-right: 0px;
         padding-top: 20px;
 
-        @include mq(mx){
+        @include mq(mx) {
           width: 90%;
         }
 
@@ -130,7 +130,7 @@
             font-size: 18px;
             font-weight: bold;
 
-            @include mq(md){
+            @include mq(md) {
               font-size: 14px;
             }
           }
@@ -156,12 +156,13 @@
 // =============================================
 
 .menu {
-  background: #ffffee url("../img/assets/hana-bk.png") no-repeat left top;
-  
+  background: #ffffee url("../common/images/hana-bk.png") no-repeat left top;
 
-  .menu_bk{
-    background: url("../img/assets/hana-bk-right.png") no-repeat right top;
+
+  .menu_bk {
+    background: url("../common/images/hana-bk-right.png") no-repeat right top;
     padding: 20px 0;
+
     @include mq() {
       padding: 20px;
     }
@@ -269,7 +270,7 @@
         margin-right: 0px;
         padding-top: 20px;
 
-        @include mq(mx){
+        @include mq(mx) {
           width: 90%;
         }
 
@@ -379,7 +380,7 @@
       }
 
       img {
-        @include mq(mx){
+        @include mq(mx) {
           width: 75%;
         }
 
@@ -417,7 +418,7 @@
         margin-right: 0px;
         padding-top: 20px;
 
-        @include mq(mx){
+        @include mq(mx) {
           width: 90%;
         }
 
@@ -463,11 +464,11 @@
 // HIFE 部分
 // =============================================
 .hife {
-  background: #e6396a url("../img/assets/hana-bk2-left.png") no-repeat left bottom;
-  
+  background: #e6396a url("../common/images/hana-bk2-left.png") no-repeat left bottom;
 
-  .hife_bk{
-    background: url("../img/assets/hana-bk2-right.png") no-repeat right bottom;
+
+  .hife_bk {
+    background: url("../common/images/hana-bk2-right.png") no-repeat right bottom;
     padding: 20px 0;
 
     @include mq() {
@@ -484,7 +485,7 @@
     border-radius: 10px;
     position: relative;
 
-    @include mq(mx){
+    @include mq(mx) {
       padding: 10px;
     }
 
@@ -527,7 +528,7 @@
 
       img {
 
-        @include mq(mx){
+        @include mq(mx) {
           width: 80%;
         }
 
@@ -579,7 +580,7 @@
           width: 60%;
         }
 
-        @include mq(mx){
+        @include mq(mx) {
           width: 90%;
         }
 
@@ -643,11 +644,11 @@
 // mens 部分
 // =============================================
 .mens {
-  background: #c2d6f0 url("../img/assets/hana-bk3-right.png") no-repeat  right top;
-  
+  background: #c2d6f0 url("../common/images/hana-bk3-right.png") no-repeat right top;
 
-  .mens_bk{
-    background: url("../img/assets/hana-bk3-left.png") no-repeat left top;
+
+  .mens_bk {
+    background: url("../common/images/hana-bk3-left.png") no-repeat left top;
     padding: 20px;
   }
 
@@ -683,7 +684,7 @@
         left: -17%;
       }
 
-      @include mq(mx){
+      @include mq(mx) {
         left: -19%;
       }
 
@@ -738,7 +739,7 @@
         margin-right: 0px;
         padding-top: 20px;
 
-        @include mq(mx){
+        @include mq(mx) {
           width: 90%;
         }
 
@@ -783,16 +784,16 @@
 // ホワイトニング 部分
 // =============================================
 .whitening {
-  background: #ffffee url("../img/assets/hana-bk4-right.png") no-repeat right top;
+  background: #ffffee url("../common/images/hana-bk4-right.png") no-repeat right top;
 
-  .whitening_bk{
-    background: url("../img/assets/hana-bk4-left.png") no-repeat  left bottom;
+  .whitening_bk {
+    background: url("../common/images/hana-bk4-left.png") no-repeat left bottom;
     padding: 5px 20px 100px;
 
     @include mq(lg) {
       padding: 20px 20px 60px 20px;
     }
-  
+
     @include mq() {
       padding: 20px;
     }
@@ -832,7 +833,7 @@
         right: -18%;
       }
 
-      @include mq(mx){
+      @include mq(mx) {
         right: -20%;
         width: 340px;
       }
@@ -888,7 +889,7 @@
           width: 80%;
         }
 
-        @include mq(mx){
+        @include mq(mx) {
           width: 100%;
         }
 
@@ -934,7 +935,7 @@
 // キャンペーン 部分
 // =============================================
 .campaign {
-  background-image: url(../img/assets/back_yellow.png);
+  background-image: url(../common/images/back_yellow.png);
   background-size: cover;
   background-position: center center;
   padding: 70px 20px;
@@ -1013,7 +1014,7 @@
   }
 
   .swiper-button-prev {
-    background: url(../img/assets/left_arrow.png) no-repeat center center / contain;
+    background: url(../common/images/left_arrow.png) no-repeat center center / contain;
   }
 
   .swiper-button-prev::after {
@@ -1021,7 +1022,7 @@
   }
 
   .swiper-button-next {
-    background: url(../img/assets/right_arrow.png) no-repeat center center / contain;
+    background: url(../common/images/right_arrow.png) no-repeat center center / contain;
   }
 
   .swiper-button-next::after {
@@ -1033,14 +1034,16 @@
 // ニュース 部分
 // =============================================
 .news {
-  background-image: url(../img/assets/back_pink_flower.png);
-  background-size: cover;
-  background-position: center center;
-  padding: 30px;
+  background: #e6396a url("../common/images/hana-bk2-left.png") no-repeat left bottom;
   position: relative;
 
-  @include mq(lg) {
-    padding: 20px;
+  .news_bk {
+    background: url("../common/images/hana-bk2-right.png") no-repeat right bottom;
+    padding: 20px 0;
+
+    @include mq() {
+      padding: 20px;
+    }
   }
 
   .news_flex {
@@ -1252,9 +1255,6 @@
 // =============================================
 
 .access {
-  background-image: url(../img/assets/back_sakura.png);
-  background-size: cover;
-  background-position: center 60%;
   padding: 30px 0;
   margin-top: 30px;
 
@@ -1270,11 +1270,16 @@
   }
 
   .inner {
+    background: url("../common/images/sakura-left.png") no-repeat left bottom;
     padding: 30px 0;
     position: relative;
 
     @include mq(md) {
       padding: 10px;
+    }
+
+    .access_bk{
+      background: url("../common/images/sakura-right.png") no-repeat right top;
     }
   }
 
@@ -1303,7 +1308,7 @@
     width: 100%;
     height: 80%;
 
-    @include mq(md){
+    @include mq(md) {
       height: 100%;
     }
   }
@@ -1383,45 +1388,45 @@
       text-align: center;
       position: relative;
 
-      .star1{
+      .star1 {
         position: absolute;
         top: 0;
         right: 8%;
       }
 
-      .star2{
+      .star2 {
         position: absolute;
         bottom: 0;
         left: 8%;
       }
 
-      .counseling_title{
+      .counseling_title {
         font-size: 38px;
         font-weight: bold;
         color: #e9578b;
 
-        @include mq(){
+        @include mq() {
           font-size: 24px;
           margin-top: 10px;
         }
 
 
-        span{
+        span {
           background: linear-gradient(transparent 50%, yellow 50%);
         }
       }
 
-      .counseling_message{
+      .counseling_message {
         font-size: 18px;
         font-weight: bold;
 
-        @include mq(){
+        @include mq() {
           font-size: 12px;
           margin-top: 10px;
           padding: 0 10px;
         }
 
-        span{
+        span {
           color: #e9578b;
         }
       }

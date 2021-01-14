@@ -815,7 +815,7 @@ header .header_flex {
 }
 
 .main_area {
-  background-image: url(../img/assets/background_pink.png);
+  background-image: url(../common/images/background_pink.png);
   background-size: cover;
   background-position: center center;
   margin-top: 170px;
@@ -865,7 +865,7 @@ header .header_flex {
 }
 
 .about {
-  background-image: url(../img/assets/back_yellow.png);
+  background-image: url(../common/images/back_yellow.png);
   background-size: cover;
   background-position: center center;
   position: relative;
@@ -990,11 +990,11 @@ header .header_flex {
 }
 
 .menu {
-  background: #ffffee url("../img/assets/hana-bk.png") no-repeat left top;
+  background: #ffffee url("../common/images/hana-bk.png") no-repeat left top;
 }
 
 .menu .menu_bk {
-  background: url("../img/assets/hana-bk-right.png") no-repeat right top;
+  background: url("../common/images/hana-bk-right.png") no-repeat right top;
   padding: 20px 0;
 }
 
@@ -1370,11 +1370,11 @@ header .header_flex {
 }
 
 .hife {
-  background: #e6396a url("../img/assets/hana-bk2-left.png") no-repeat left bottom;
+  background: #e6396a url("../common/images/hana-bk2-left.png") no-repeat left bottom;
 }
 
 .hife .hife_bk {
-  background: url("../img/assets/hana-bk2-right.png") no-repeat right bottom;
+  background: url("../common/images/hana-bk2-right.png") no-repeat right bottom;
   padding: 20px 0;
 }
 
@@ -1599,11 +1599,11 @@ header .header_flex {
 }
 
 .mens {
-  background: #c2d6f0 url("../img/assets/hana-bk3-right.png") no-repeat right top;
+  background: #c2d6f0 url("../common/images/hana-bk3-right.png") no-repeat right top;
 }
 
 .mens .mens_bk {
-  background: url("../img/assets/hana-bk3-left.png") no-repeat left top;
+  background: url("../common/images/hana-bk3-left.png") no-repeat left top;
   padding: 20px;
 }
 
@@ -1766,11 +1766,11 @@ header .header_flex {
 }
 
 .whitening {
-  background: #ffffee url("../img/assets/hana-bk4-right.png") no-repeat right top;
+  background: #ffffee url("../common/images/hana-bk4-right.png") no-repeat right top;
 }
 
 .whitening .whitening_bk {
-  background: url("../img/assets/hana-bk4-left.png") no-repeat left bottom;
+  background: url("../common/images/hana-bk4-left.png") no-repeat left bottom;
   padding: 5px 20px 100px;
 }
 
@@ -1952,7 +1952,7 @@ header .header_flex {
 }
 
 .campaign {
-  background-image: url(../img/assets/back_yellow.png);
+  background-image: url(../common/images/back_yellow.png);
   background-size: cover;
   background-position: center center;
   padding: 70px 20px;
@@ -2047,7 +2047,7 @@ header .header_flex {
 }
 
 .campaign .swiper-button-prev {
-  background: url(../img/assets/left_arrow.png) no-repeat center center/contain;
+  background: url(../common/images/left_arrow.png) no-repeat center center/contain;
 }
 
 .campaign .swiper-button-prev::after {
@@ -2055,7 +2055,7 @@ header .header_flex {
 }
 
 .campaign .swiper-button-next {
-  background: url(../img/assets/right_arrow.png) no-repeat center center/contain;
+  background: url(../common/images/right_arrow.png) no-repeat center center/contain;
 }
 
 .campaign .swiper-button-next::after {
@@ -2063,15 +2063,17 @@ header .header_flex {
 }
 
 .news {
-  background-image: url(../img/assets/back_pink_flower.png);
-  background-size: cover;
-  background-position: center center;
-  padding: 30px;
+  background: #e6396a url("../common/images/hana-bk2-left.png") no-repeat left bottom;
   position: relative;
 }
 
-@media screen and (max-width: 1187px) {
-  .news {
+.news .news_bk {
+  background: url("../common/images/hana-bk2-right.png") no-repeat right bottom;
+  padding: 20px 0;
+}
+
+@media screen and (max-width: 600px) {
+  .news .news_bk {
     padding: 20px;
   }
 }
@@ -2302,9 +2304,6 @@ header .header_flex {
 }
 
 .access {
-  background-image: url(../img/assets/back_sakura.png);
-  background-size: cover;
-  background-position: center 60%;
   padding: 30px 0;
   margin-top: 30px;
 }
@@ -2322,6 +2321,7 @@ header .header_flex {
 }
 
 .access .inner {
+  background: url("../common/images/sakura-left.png") no-repeat left bottom;
   padding: 30px 0;
   position: relative;
 }
@@ -2330,6 +2330,10 @@ header .header_flex {
   .access .inner {
     padding: 10px;
   }
+}
+
+.access .inner .access_bk {
+  background: url("../common/images/sakura-right.png") no-repeat right top;
 }
 
 .access .map_box {
@@ -2568,7 +2572,7 @@ header .header_flex {
 }
 
 .menu_epitation {
-  background-image: url(../img/assets/back_red.png);
+  background-image: url(../common/images/back_red.png);
   background-size: cover;
   background-position: center center;
   margin-top: 170px;
@@ -2639,7 +2643,7 @@ header .header_flex {
 
 .menu_epitation .menu_epitation_box .menu_epitation_box_flex .menu_epitation_box_flex_left .epitation_lists {
   padding-left: 40px;
-  background: url(../img/assets/cheack_icon.png) left 0px top -2px no-repeat;
+  background: url(../common/images/cheack_icon.png) left 0px top -2px no-repeat;
   margin: 20px 0;
   font-weight: bold;
 }
@@ -3079,7 +3083,7 @@ header .header_flex {
 }
 
 .epitation_parts {
-  background-image: url(../img/assets/back_yellow.png);
+  background-image: url(../common/images/back_yellow.png);
   background-size: cover;
   background-position: center center;
   padding: 30px 0;
@@ -3146,7 +3150,7 @@ header .header_flex {
 
 .menu_bbl .menu_bbl_box .menu_bbl_box_flex .menu_bbl_box_flex_left .menu_bbl_lists {
   padding-left: 40px;
-  background: url(../img/assets/cheack_icon.png) left 0px top -2px no-repeat;
+  background: url(../common/images/cheack_icon.png) left 0px top -2px no-repeat;
   margin: 20px 0;
   font-weight: bold;
 }
@@ -3162,7 +3166,7 @@ header .header_flex {
 }
 
 .bbl_points {
-  background-image: url(../img/assets/back_yellow.png);
+  background-image: url(../common/images/back_yellow.png);
   background-size: cover;
   background-position: center center;
   padding: 30px 0;
