@@ -19,9 +19,6 @@
       margin: 0 10px;
     }
 
-    @include mq() {
-      margin: 0 5px;
-    }
 
     .menu_epitation_box_flex {
       display: flex;
@@ -88,7 +85,7 @@
     }
 
     @include mq() {
-      margin: 0 5px;
+      margin: 0 10px;
       padding: 10px 0;
     }
 
@@ -118,7 +115,7 @@
 
         .shr_flex_right_title {
           color: #eb6794;
-          font-size: 1.2rem;
+          font-size: 1.3rem;
           padding: 20px 0;
 
           @include mq() {
@@ -157,7 +154,7 @@
     }
 
     @include mq() {
-      margin: 0 5px;
+      margin: 0 10px;
       padding: 10px 0;
     }
 
@@ -178,7 +175,7 @@
 
         .menu_schedule_flex_left_title {
           color: #eb6794;
-          font-size: 1.2rem;
+          font-size: 1.3rem;
           padding: 20px 10px;
 
           @include mq() {
@@ -222,7 +219,7 @@
     }
 
     @include mq() {
-      margin: 0 5px;
+      margin: 0 10px;
       padding: 10px 0;
     }
 
@@ -254,7 +251,7 @@
 
         .menu_short_box_flex_right_title {
           color: #eb6794;
-          font-size: 1.2rem;
+          font-size: 1.3rem;
           padding: 20px 10px;
 
           @include mq() {
@@ -443,10 +440,6 @@
       margin: 0 10px;
     }
 
-    @include mq() {
-      margin: 0 5px;
-    }
-
     .menu_mens_epitation_box_flex {
       display: flex;
       justify-content: space-around;
@@ -497,16 +490,18 @@
     border-radius: 10px;
     margin-top: 20px;
 
+    @include mq(md) {
+      margin: 20px 10px 10px 10px;
+      padding: 0;
+      border-radius: 10px;
+    }
+
     .menu_mens_epitation_entrance_box {
       background-color: #fff;
       padding: 10px;
-
-      @include mq(md) {
-        margin: 0 10px;
-      }
+      border-radius: 10px;
 
       @include mq() {
-        margin: 0 5px;
         padding: 10px 0;
       }
 
@@ -543,12 +538,17 @@
             @include mq() {
               padding: 5px 0;
               text-align: center;
+              font-size: 1.3rem;
             }
           }
 
           .menu_mens_epitation_entrance_box_flex_right_message {
             font-weight: bold;
             padding: 10px;
+
+            @include mq(md) {
+              padding: 0;
+            }
           }
         }
       }
@@ -601,13 +601,12 @@
       @include mq(md) {
         width: 48%;
         text-align: center;
-        margin: 0 auto 25px;
+        margin: 0 0 10px 0;
       }
 
       @include mq() {
         width: 95%;
         text-align: center;
-        margin: 0 auto 15px;
       }
 
       h3 {

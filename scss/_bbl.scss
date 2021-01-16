@@ -21,10 +21,6 @@
       margin: 0 10px;
     }
 
-    @include mq() {
-      margin: 0 5px;
-    }
-
     .menu_bbl_box_flex {
       display: flex;
       justify-content: space-around;
@@ -37,6 +33,7 @@
 
         @include mq() {
           width: 100%;
+          padding: 10px;
         }
 
         h2 {
@@ -88,7 +85,7 @@
     }
 
     @include mq() {
-      margin: 0 5px;
+      margin: 0 10px;
       padding: 10px 0;
     }
 
@@ -119,7 +116,7 @@
 
         .bbl_light_power_flex_right_title {
           color: #eb6794;
-          font-size: 1.2rem;
+          font-size: 1.3rem;
           padding: 20px 0;
 
           @include mq() {
@@ -158,7 +155,7 @@
     }
 
     @include mq() {
-      margin: 0 5px;
+      margin: 0 10px;
       padding: 10px 0;
     }
 
@@ -179,7 +176,7 @@
 
         .bbl_tits_flex_left_title {
           color: #eb6794;
-          font-size: 1.2rem;
+          font-size: 1.3rem;
           padding: 20px 10px;
 
           @include mq() {
@@ -251,13 +248,12 @@
       @include mq(md) {
         width: 48%;
         text-align: center;
-        margin: 0 auto 25px;
+        margin: 0 0 10px 0;
       }
 
       @include mq() {
         width: 95%;
         text-align: center;
-        margin: 0 auto 15px;
       }
 
       h3 {

@@ -21,22 +21,19 @@
       margin: 0 10px;
     }
 
-    @include mq() {
-      margin: 0 5px;
-    }
-
     .menu__hifu_box_flex {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       flex-wrap: wrap;
       align-items: center;
 
       .menu__hifu_box_flex_left {
-        width: 70%;
+        width: 50%;
         padding: 20px;
 
         @include mq() {
           width: 100%;
+          padding: 10px;
         }
 
         h2 {
@@ -60,7 +57,7 @@
       }
 
       .menu__hifu_box_flex_right {
-        width: 25%;
+        width: 50%;
         text-align: center;
 
         @include mq() {
@@ -89,7 +86,7 @@
     }
 
     @include mq() {
-      margin: 0 5px;
+      margin: 0 10px;
       padding: 10px 0;
     }
 
@@ -120,7 +117,7 @@
 
         .no_pain_flex_right_title {
           color: #eb6794;
-          font-size: 1.2rem;
+          font-size: 1.3rem;
           padding: 20px 0;
 
           @include mq() {
@@ -133,7 +130,7 @@
           font-weight: bold;
 
           @include mq() {
-            padding: 10px;
+            padding: 5px;
           }
         }
       }
@@ -159,7 +156,7 @@
     }
 
     @include mq() {
-      margin: 0 5px;
+      margin: 0 10px;
       padding: 10px 0;
     }
 
@@ -180,7 +177,7 @@
 
         .usual_hifu_flex_left_title {
           color: #eb6794;
-          font-size: 1.2rem;
+          font-size: 1.3rem;
           padding: 20px 10px;
 
           @include mq() {
@@ -192,6 +189,10 @@
         .usual_hifu_flex_left_message {
           font-weight: bold;
           padding: 10px;
+
+          @include mq(){
+            padding :5px;
+          }
         }
       }
 
@@ -252,13 +253,12 @@
       @include mq(md) {
         width: 48%;
         text-align: center;
-        margin: 0 auto 25px;
+        margin: 0 0 10px 0;
       }
 
       @include mq() {
         width: 95%;
         text-align: center;
-        margin: 0 auto 15px;
       }
 
       h3 {
@@ -288,16 +288,16 @@
     .hifu_margin1 {
       margin: 0 25px;
 
-      @include mq() {
-        margin: 0;
+      @include mq(md) {
+        margin: 0 0 10px 0;
       }
     }
 
     .hifu_margin2 {
       margin-right: 25px;
 
-      @include mq() {
-        margin: 0;
+      @include mq(md) {
+        margin: 0 0 10px 0;
       }
     }
   }
