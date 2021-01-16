@@ -516,7 +516,7 @@
         flex-wrap: wrap;
 
         .menu_mens_epitation_entrance_box_flex_left {
-          width: 50%;
+          width: 55%;
 
           @include mq() {
             width: 100%;
@@ -526,7 +526,7 @@
         }
 
         .menu_mens_epitation_entrance_box_flex_right {
-          width: 50%;
+          width: 40%;
           padding: 10px;
 
           @include mq() {

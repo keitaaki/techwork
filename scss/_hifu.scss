@@ -1,8 +1,8 @@
 // ==============================================
-// BBL 部分
+// ＨＩＦＵ 部分
 // ==============================================
 
-.menu_bbl {
+.menu__hifu {
   background-color: #e6396a;
   padding: 30px 0;
   margin-top: 170px;
@@ -12,7 +12,7 @@
     margin: 0;
   }
 
-  .menu_bbl_box {
+  .menu__hifu_box {
     background-color: #fff;
     border-radius: 10px;
     padding: 10px;
@@ -25,14 +25,14 @@
       margin: 0 5px;
     }
 
-    .menu_bbl_box_flex {
+    .menu__hifu_box_flex {
       display: flex;
       justify-content: space-around;
       flex-wrap: wrap;
       align-items: center;
 
-      .menu_bbl_box_flex_left {
-        width: 50%;
+      .menu__hifu_box_flex_left {
+        width: 70%;
         padding: 20px;
 
         @include mq(){
@@ -43,15 +43,15 @@
           margin-bottom: 10px;
         }
 
-        .menu_bbl_box_flex_left_message {
+        .menu__hifu_box_flex_left_message {
           font-weight: bold;
         }
 
-        .menu_bbl_list {
+        .menu__hifu_list {
           margin-top: 30px;
         }
 
-        .menu_bbl_lists {
+        .menu__hifu_lists {
           padding-left: 40px;
           background: url(../common/images/cheack_icon.png) left 0px top -2px no-repeat;
           margin: 20px 0;
@@ -59,8 +59,9 @@
         }
       }
 
-      .menu_bbl_box_flex_right {
-        width: 45%;
+      .menu__hifu_box_flex_right {
+        width: 25%;
+        text-align: center;
 
         @include mq(){
           width: 100%;
@@ -71,13 +72,13 @@
 }
 
 // ==============================================
-// 業界初！光のパワー 部分
+// 無痛なのに効果が⾼い！ 部分
 // ==============================================
-.bbl_light_power {
+.no_pain {
   background-color: #ffffee;
   padding: 30px 0;
 
-  .bbl_light_power_box {
+  .no_pain_box {
     background-color: #fff;
     border-radius: 10px;
     padding: 10px;
@@ -92,13 +93,13 @@
       padding: 10px 0;
     }
 
-    .bbl_light_power_flex {
+    .no_pain_flex {
       display: flex;
       justify-content: space-around;
       flex-wrap: wrap;
       align-items: center;
 
-      .bbl_light_power_flex_left {
+      .no_pain_flex_left {
         width: 50%;
         padding: 10px;
 
@@ -108,7 +109,7 @@
         }
       }
 
-      .bbl_light_power_flex_right {
+      .no_pain_flex_right {
         width: 50%;
         padding: 10px;
 
@@ -117,7 +118,7 @@
           order: 1;
         }
 
-        .bbl_light_power_flex_right_title {
+        .no_pain_flex_right_title {
           color: #eb6794;
           font-size: 1.2rem;
           padding: 20px 0;
@@ -128,7 +129,7 @@
           }
         }
 
-        .bbl_light_power_flex_right_message {
+        .no_pain_flex_right_message {
           font-weight: bold;
 
           @include mq() {
@@ -141,13 +142,13 @@
 }
 
 // =============================================
-// ふっくら美乳は作れる！ 部分
+// 従来のHIFUを超えた蓄熱式超⾳波！ 部分
 // =============================================
-.bbl_tits {
+.usual_hifu {
   background-color: #fff4f6;
   padding: 30px 0;
 
-  .bbl_tits_box {
+  .usual_hifu_box {
     background-color: #fff;
     border-radius: 10px;
     padding: 10px;
@@ -162,13 +163,13 @@
       padding: 10px 0;
     }
 
-    .bbl_tits_flex {
+    .usual_hifu_flex {
       display: flex;
       justify-content: space-around;
       flex-wrap: wrap;
       align-items: center;
 
-      .bbl_tits_flex_left {
+      .usual_hifu_flex_left {
         width: 50%;
         padding: 10px;
 
@@ -177,7 +178,7 @@
           padding: 10px;
         }
 
-        .bbl_tits_flex_left_title {
+        .usual_hifu_flex_left_title {
           color: #eb6794;
           font-size: 1.2rem;
           padding: 20px 10px;
@@ -188,13 +189,13 @@
           }
         }
 
-        .bbl_tits_flex_left_message {
+        .usual_hifu_flex_left_message {
           font-weight: bold;
           padding: 10px;
         }
       }
 
-      .bbl_tits_flex_right {
+      .usual_hifu_flex_right {
         width: 50%;
         padding: 10px;
 
@@ -209,9 +210,9 @@
 
 
 // ==============================================
-// BBL 施術可能箇所 部分
+// ＨＩＨＵ 施術可能箇所 部分
 // ==============================================
-.bbl_points {
+.hifu_points {
   background-image: url(../common/images/back_yellow.png);
   background-size: cover;
   background-position: center center;
@@ -222,7 +223,7 @@
 // ＭＥＮＳ 流れ 部分
 // ==============================================
 
-.bbl__flow {
+.hifu__flow {
 
   h2 {
     margin: 10px auto 0;
@@ -234,16 +235,16 @@
   }
 
 
-  .bbl__innerArea_flex {
+  .hifu__innerArea_flex {
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
     flex-wrap: wrap;
 
     @include mq(md) {
       justify-content: space-around;
     }
 
-    .bbl__innerArea_flex_cards {
+    .hifu__innerArea_flex_cards {
       width: 23%;
       text-align: left;
       margin-bottom: 10px;
@@ -281,6 +282,21 @@
 
       img {
         border: 1px solid #868686;
+      }
+    }
+
+    .hifu_margin1{
+      margin: 0 25px;
+
+      @include mq(){
+        margin: 0;
+      }
+    }
+    .hifu_margin2{
+      margin-right:25px;
+
+      @include mq(){
+        margin: 0;
       }
     }
   }
