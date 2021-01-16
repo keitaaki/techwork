@@ -15,7 +15,7 @@
     border-radius: 10px;
     padding: 10px;
 
-    @include mq(md){
+    @include mq(md) {
       margin: 0 10px;
     }
 
@@ -83,7 +83,7 @@
     padding: 10px;
     box-shadow: 0 0 8px gray;
 
-    @include mq(md){
+    @include mq(md) {
       margin: 0 10px;
     }
 
@@ -118,6 +118,7 @@
 
         .shr_flex_right_title {
           color: #eb6794;
+          font-size: 1.2rem;
           padding: 20px 0;
 
           @include mq() {
@@ -129,7 +130,7 @@
         .shr_flex_right_message {
           font-weight: bold;
 
-          @include mq(){
+          @include mq() {
             padding: 10px;
           }
         }
@@ -151,7 +152,7 @@
     padding: 10px;
     box-shadow: 0 0 8px gray;
 
-    @include mq(md){
+    @include mq(md) {
       margin: 0 10px;
     }
 
@@ -177,6 +178,7 @@
 
         .menu_schedule_flex_left_title {
           color: #eb6794;
+          font-size: 1.2rem;
           padding: 20px 10px;
 
           @include mq() {
@@ -215,7 +217,7 @@
     padding: 10px;
     box-shadow: 0 0 8px gray;
 
-    @include mq(md){
+    @include mq(md) {
       margin: 0 10px;
     }
 
@@ -252,6 +254,7 @@
 
         .menu_short_box_flex_right_title {
           color: #eb6794;
+          font-size: 1.2rem;
           padding: 20px 10px;
 
           @include mq() {
@@ -267,6 +270,16 @@
       }
     }
   }
+}
+
+// ==============================================
+// 施術可能箇所 部分
+// ==============================================
+.epitation_parts {
+  background-image: url(../common/images/back_yellow.png);
+  background-size: cover;
+  background-position: center center;
+  padding: 30px 0;
 }
 
 // ==============================================
@@ -359,7 +372,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
 
-    @include mq(md){
+    @include mq(md) {
       justify-content: space-around;
     }
 
@@ -368,7 +381,7 @@
       text-align: left;
       margin-bottom: 10px;
 
-      @include mq(md){
+      @include mq(md) {
         width: 48%;
         text-align: center;
         margin: 0 auto 25px;
@@ -383,7 +396,7 @@
       h3 {
         font-size: 18px;
 
-        @include mq(){
+        @include mq() {
           font-size: 20px;
         }
       }
@@ -411,30 +424,22 @@
 
 }
 
-// ==============================================
-// 全身脱毛60分！施術時間MAX1/2に時間短縮！ 部分
-// ==============================================
-.epitation_parts {
-  background-image: url(../common/images/back_yellow.png);
-  background-size: cover;
-  background-position: center center;
-  padding: 30px 0;
-}
+
 
 // ==============================================
-// BBL 部分
+// ＭＥＮＳ 部分
 // ==============================================
 
-.menu_bbl {
-  background-color: #e6396a;
+.menu_mens_epitation {
+  background-color: #c2d6f0;
   padding: 30px 0;
 
-  .menu_bbl_box {
+  .menu_mens_epitation_box {
     background-color: #fff;
     border-radius: 10px;
     padding: 10px;
 
-    @include mq(md){
+    @include mq(md) {
       margin: 0 10px;
     }
 
@@ -442,17 +447,17 @@
       margin: 0 5px;
     }
 
-    .menu_bbl_box_flex {
+    .menu_mens_epitation_box_flex {
       display: flex;
       justify-content: space-around;
       flex-wrap: wrap;
       align-items: center;
 
-      .menu_bbl_box_flex_left {
+      .menu_mens_epitation_box_flex_left {
         width: 50%;
         padding: 20px;
 
-        @include mq(){
+        @include mq() {
           width: 100%;
         }
 
@@ -460,15 +465,15 @@
           margin-bottom: 10px;
         }
 
-        .menu_bbl_box_flex_left_message {
+        .menu_mens_epitation_box_flex_left_message {
           font-weight: bold;
         }
 
-        .menu_bbl_list {
+        .menu_mens_epitation_list {
           margin-top: 30px;
         }
 
-        .menu_bbl_lists {
+        .menu_mens_epitation_lists {
           padding-left: 40px;
           background: url(../common/images/cheack_icon.png) left 0px top -2px no-repeat;
           margin: 20px 0;
@@ -476,11 +481,75 @@
         }
       }
 
-      .menu_bbl_box_flex_right {
+      .menu_mens_epitation_box_flex_right {
         width: 45%;
 
-        @include mq(){
+        @include mq() {
           width: 100%;
+        }
+      }
+    }
+  }
+
+  .menu_mens_epitation_entrance {
+    background-color: #fff;
+    padding: 30px 0;
+    border-radius: 10px;
+    margin-top: 20px;
+
+    .menu_mens_epitation_entrance_box {
+      background-color: #fff;
+      padding: 10px;
+
+      @include mq(md) {
+        margin: 0 10px;
+      }
+
+      @include mq() {
+        margin: 0 5px;
+        padding: 10px 0;
+      }
+
+      .menu_mens_epitation_entrance_box_flex {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        .menu_mens_epitation_entrance_box_flex_left {
+          width: 50%;
+
+          @include mq() {
+            width: 100%;
+            order: 2;
+            padding: 0 5px;
+          }
+        }
+
+        .menu_mens_epitation_entrance_box_flex_right {
+          width: 50%;
+          padding: 10px;
+
+          @include mq() {
+            width: 100%;
+            order: 1;
+            padding: 10px;
+          }
+
+          .menu_mens_epitation_entrance_box_flex_right_title {
+            color: #6b8dd9;
+            font-size: 1.4rem;
+            padding: 20px 10px;
+
+            @include mq() {
+              padding: 5px 0;
+              text-align: center;
+            }
+          }
+
+          .menu_mens_epitation_entrance_box_flex_right_message {
+            font-weight: bold;
+            padding: 10px;
+          }
         }
       }
     }
@@ -488,11 +557,81 @@
 }
 
 // ==============================================
-// BBL 施術可能箇所 部分
+// ＭＥＮＳ 施術可能箇所 部分
 // ==============================================
-.bbl_points {
-  background-image: url(../common/images/back_yellow.png);
+
+.mens_points {
+  background-image: url(../service/images/zebra-mens.png);
   background-size: cover;
   background-position: center center;
   padding: 30px 0;
+}
+
+
+// ==============================================
+// ＭＥＮＳ 流れ 部分
+// ==============================================
+
+.mens_flow {
+
+  h2 {
+    margin: 10px auto 0;
+    width: 10%;
+
+    @include mq(md) {
+      width: 30%;
+    }
+  }
+
+
+  .mens_innerArea_flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @include mq(md) {
+      justify-content: space-around;
+    }
+
+    .mens_innerArea_flex_cards {
+      width: 23%;
+      text-align: left;
+      margin-bottom: 10px;
+
+      @include mq(md) {
+        width: 48%;
+        text-align: center;
+        margin: 0 auto 25px;
+      }
+
+      @include mq() {
+        width: 95%;
+        text-align: center;
+        margin: 0 auto 15px;
+      }
+
+      h3 {
+        font-size: 18px;
+
+        @include mq() {
+          font-size: 20px;
+        }
+      }
+
+      p {
+        font-size: 15px;
+
+        @include mq() {
+          width: 80%;
+          padding: 0 10px 10px;
+          margin: 0 auto;
+          font-size: 16px;
+        }
+      }
+
+      img {
+        border: 1px solid #868686;
+      }
+    }
+  }
 }

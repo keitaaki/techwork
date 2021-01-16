@@ -2882,6 +2882,7 @@ footer .footer_reserved {
 
 .shr .shr_box .shr_flex .shr_flex_right .shr_flex_right_title {
   color: #eb6794;
+  font-size: 1.2rem;
   padding: 20px 0;
 }
 
@@ -2955,6 +2956,7 @@ footer .footer_reserved {
 
 .menu_schedule .menu_schedule_box .menu_schedule_flex .menu_schedule_flex_left .menu_schedule_flex_left_title {
   color: #eb6794;
+  font-size: 1.2rem;
   padding: 20px 10px;
 }
 
@@ -3050,6 +3052,7 @@ footer .footer_reserved {
 
 .menu_short .menu_short_box .menu_short_box_flex .menu_short_box_flex_right .menu_short_box_flex_right_title {
   color: #eb6794;
+  font-size: 1.2rem;
   padding: 20px 10px;
 }
 
@@ -3063,6 +3066,13 @@ footer .footer_reserved {
 .menu_short .menu_short_box .menu_short_box_flex .menu_short_box_flex_right .menu_short_box_flex_right_message {
   font-weight: bold;
   padding: 10px;
+}
+
+.epitation_parts {
+  background-image: url(../common/images/back_yellow.png);
+  background-size: cover;
+  background-position: center center;
+  padding: 30px 0;
 }
 
 .flow h2 {
@@ -3238,11 +3248,247 @@ footer .footer_reserved {
   display: block;
 }
 
-.epitation_parts {
-  background-image: url(../common/images/back_yellow.png);
+.menu_mens_epitation {
+  background-color: #c2d6f0;
+  padding: 30px 0;
+}
+
+.menu_mens_epitation .menu_mens_epitation_box {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .menu_mens_epitation .menu_mens_epitation_box {
+    margin: 0 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .menu_mens_epitation .menu_mens_epitation_box {
+    margin: 0 5px;
+  }
+}
+
+.menu_mens_epitation .menu_mens_epitation_box .menu_mens_epitation_box_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu_mens_epitation .menu_mens_epitation_box .menu_mens_epitation_box_flex .menu_mens_epitation_box_flex_left {
+  width: 50%;
+  padding: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .menu_mens_epitation .menu_mens_epitation_box .menu_mens_epitation_box_flex .menu_mens_epitation_box_flex_left {
+    width: 100%;
+  }
+}
+
+.menu_mens_epitation .menu_mens_epitation_box .menu_mens_epitation_box_flex .menu_mens_epitation_box_flex_left h2 {
+  margin-bottom: 10px;
+}
+
+.menu_mens_epitation .menu_mens_epitation_box .menu_mens_epitation_box_flex .menu_mens_epitation_box_flex_left .menu_mens_epitation_box_flex_left_message {
+  font-weight: bold;
+}
+
+.menu_mens_epitation .menu_mens_epitation_box .menu_mens_epitation_box_flex .menu_mens_epitation_box_flex_left .menu_mens_epitation_list {
+  margin-top: 30px;
+}
+
+.menu_mens_epitation .menu_mens_epitation_box .menu_mens_epitation_box_flex .menu_mens_epitation_box_flex_left .menu_mens_epitation_lists {
+  padding-left: 40px;
+  background: url(../common/images/cheack_icon.png) left 0px top -2px no-repeat;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+.menu_mens_epitation .menu_mens_epitation_box .menu_mens_epitation_box_flex .menu_mens_epitation_box_flex_right {
+  width: 45%;
+}
+
+@media screen and (max-width: 600px) {
+  .menu_mens_epitation .menu_mens_epitation_box .menu_mens_epitation_box_flex .menu_mens_epitation_box_flex_right {
+    width: 100%;
+  }
+}
+
+.menu_mens_epitation .menu_mens_epitation_entrance {
+  background-color: #fff;
+  padding: 30px 0;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.menu_mens_epitation .menu_mens_epitation_entrance .menu_mens_epitation_entrance_box {
+  background-color: #fff;
+  padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .menu_mens_epitation .menu_mens_epitation_entrance .menu_mens_epitation_entrance_box {
+    margin: 0 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .menu_mens_epitation .menu_mens_epitation_entrance .menu_mens_epitation_entrance_box {
+    margin: 0 5px;
+    padding: 10px 0;
+  }
+}
+
+.menu_mens_epitation .menu_mens_epitation_entrance .menu_mens_epitation_entrance_box .menu_mens_epitation_entrance_box_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.menu_mens_epitation .menu_mens_epitation_entrance .menu_mens_epitation_entrance_box .menu_mens_epitation_entrance_box_flex .menu_mens_epitation_entrance_box_flex_left {
+  width: 50%;
+}
+
+@media screen and (max-width: 600px) {
+  .menu_mens_epitation .menu_mens_epitation_entrance .menu_mens_epitation_entrance_box .menu_mens_epitation_entrance_box_flex .menu_mens_epitation_entrance_box_flex_left {
+    width: 100%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    padding: 0 5px;
+  }
+}
+
+.menu_mens_epitation .menu_mens_epitation_entrance .menu_mens_epitation_entrance_box .menu_mens_epitation_entrance_box_flex .menu_mens_epitation_entrance_box_flex_right {
+  width: 50%;
+  padding: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .menu_mens_epitation .menu_mens_epitation_entrance .menu_mens_epitation_entrance_box .menu_mens_epitation_entrance_box_flex .menu_mens_epitation_entrance_box_flex_right {
+    width: 100%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    padding: 10px;
+  }
+}
+
+.menu_mens_epitation .menu_mens_epitation_entrance .menu_mens_epitation_entrance_box .menu_mens_epitation_entrance_box_flex .menu_mens_epitation_entrance_box_flex_right .menu_mens_epitation_entrance_box_flex_right_title {
+  color: #6b8dd9;
+  font-size: 1.4rem;
+  padding: 20px 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .menu_mens_epitation .menu_mens_epitation_entrance .menu_mens_epitation_entrance_box .menu_mens_epitation_entrance_box_flex .menu_mens_epitation_entrance_box_flex_right .menu_mens_epitation_entrance_box_flex_right_title {
+    padding: 5px 0;
+    text-align: center;
+  }
+}
+
+.menu_mens_epitation .menu_mens_epitation_entrance .menu_mens_epitation_entrance_box .menu_mens_epitation_entrance_box_flex .menu_mens_epitation_entrance_box_flex_right .menu_mens_epitation_entrance_box_flex_right_message {
+  font-weight: bold;
+  padding: 10px;
+}
+
+.mens_points {
+  background-image: url(../service/images/zebra-mens.png);
   background-size: cover;
   background-position: center center;
   padding: 30px 0;
+}
+
+.mens_flow h2 {
+  margin: 10px auto 0;
+  width: 10%;
+}
+
+@media screen and (max-width: 768px) {
+  .mens_flow h2 {
+    width: 30%;
+  }
+}
+
+.mens_flow .mens_innerArea_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px) {
+  .mens_flow .mens_innerArea_flex {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+.mens_flow .mens_innerArea_flex .mens_innerArea_flex_cards {
+  width: 23%;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .mens_flow .mens_innerArea_flex .mens_innerArea_flex_cards {
+    width: 48%;
+    text-align: center;
+    margin: 0 auto 25px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .mens_flow .mens_innerArea_flex .mens_innerArea_flex_cards {
+    width: 95%;
+    text-align: center;
+    margin: 0 auto 15px;
+  }
+}
+
+.mens_flow .mens_innerArea_flex .mens_innerArea_flex_cards h3 {
+  font-size: 18px;
+}
+
+@media screen and (max-width: 600px) {
+  .mens_flow .mens_innerArea_flex .mens_innerArea_flex_cards h3 {
+    font-size: 20px;
+  }
+}
+
+.mens_flow .mens_innerArea_flex .mens_innerArea_flex_cards p {
+  font-size: 15px;
+}
+
+@media screen and (max-width: 600px) {
+  .mens_flow .mens_innerArea_flex .mens_innerArea_flex_cards p {
+    width: 80%;
+    padding: 0 10px 10px;
+    margin: 0 auto;
+    font-size: 16px;
+  }
+}
+
+.mens_flow .mens_innerArea_flex .mens_innerArea_flex_cards img {
+  border: 1px solid #868686;
 }
 
 .menu_bbl {
