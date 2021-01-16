@@ -1,0 +1,236 @@
+// ==============================================
+// ＨＩＦＵ 部分
+// ==============================================
+
+.menu__whitening {
+  background-color: #0299be;
+  padding: 30px 0;
+  margin-top: 170px;
+  z-index: -5;
+
+  @include mq(md) {
+    margin: 0;
+  }
+
+  .menu__whitening_box {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+
+    @include mq(md){
+      margin: 0 10px;
+    }
+
+    @include mq() {
+      margin: 0 5px;
+    }
+
+    .menu__whitening_box_flex {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      align-items: center;
+
+      .menu__whitening_box_flex_left {
+        width: 50%;
+        padding: 20px;
+
+        @include mq(){
+          width: 100%;
+        }
+
+        h2 {
+          margin-bottom: 10px;
+        }
+
+        .menu__whitening_box_flex_left_message {
+          font-weight: bold;
+        }
+
+        .menu__whitening_list {
+          margin-top: 30px;
+        }
+
+        .menu__whitening_lists {
+          padding-left: 40px;
+          background: url(../common/images/cheack_icon.png) left 0px top -2px no-repeat;
+          margin: 20px 0;
+          font-weight: bold;
+        }
+      }
+
+      .menu__whitening_box_flex_right {
+        width: 50%;
+        text-align: center;
+
+        @include mq(){
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+// ==============================================
+// 施術時間「5分」の時短を実現！ 部分
+// ==============================================
+.five-minutes {
+  background-color: #ffffee;
+  padding: 30px 0;
+
+  .five-minutes_box {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 8px gray;
+
+    @include mq(md) {
+      margin: 0 10px;
+    }
+
+    @include mq() {
+      margin: 0 5px;
+      padding: 10px 0;
+    }
+
+    .five-minutes_flex {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      align-items: center;
+
+      .five-minutes_flex_left {
+        width: 50%;
+        padding: 10px;
+
+        @include mq() {
+          width: 100%;
+          order: 2;
+        }
+      }
+
+      .five-minutes_flex_right {
+        width: 50%;
+        padding: 10px;
+
+        @include mq() {
+          width: 100%;
+          order: 1;
+        }
+
+        .five-minutes_flex_right_title {
+          color: #0299be;
+          font-size: 1.2rem;
+          padding: 20px 0;
+
+          @include mq() {
+            padding: 5px 0;
+            text-align: center;
+          }
+        }
+
+        .five-minutes_flex_right_message {
+          font-weight: bold;
+
+          @include mq() {
+            padding: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+// ==============================================
+// ホワイトニング 価格 部分
+// ==============================================
+.whitening-price {
+  background-image: url(../common/images/back_yellow.png);
+  background-size: cover;
+  background-position: center center;
+  padding: 30px 0;
+}
+
+// ==============================================
+// ホワイトニング 流れ 部分
+// ==============================================
+
+.whitening__flow {
+
+  h2 {
+    margin: 10px auto 0;
+    width: 10%;
+
+    @include mq(md) {
+      width: 30%;
+    }
+  }
+
+
+  .whitening__innerArea_flex {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+
+    @include mq(md) {
+      justify-content: space-around;
+    }
+
+    .whitening__innerArea_flex_cards {
+      width: 23%;
+      text-align: left;
+      margin-bottom: 10px;
+
+      @include mq(md) {
+        width: 48%;
+        text-align: center;
+        margin: 0 auto 25px;
+      }
+
+      @include mq() {
+        width: 95%;
+        text-align: center;
+        margin: 0 auto 15px;
+      }
+
+      h3 {
+        font-size: 18px;
+
+        @include mq() {
+          font-size: 20px;
+        }
+      }
+
+      p {
+        font-size: 15px;
+
+        @include mq() {
+          width: 80%;
+          padding: 0 10px 10px;
+          margin: 0 auto;
+          font-size: 16px;
+        }
+      }
+
+      img {
+        border: 1px solid #868686;
+      }
+    }
+
+    .hifu_margin1{
+      margin: 0 25px;
+
+      @include mq(){
+        margin: 0;
+      }
+    }
+    .hifu_margin2{
+      margin-right:25px;
+
+      @include mq(){
+        margin: 0;
+      }
+    }
+  }
+}
