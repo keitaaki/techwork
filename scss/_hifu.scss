@@ -17,7 +17,7 @@
     border-radius: 10px;
     padding: 10px;
 
-    @include mq(md){
+    @include mq(md) {
       margin: 0 10px;
     }
 
@@ -35,7 +35,7 @@
         width: 70%;
         padding: 20px;
 
-        @include mq(){
+        @include mq() {
           width: 100%;
         }
 
@@ -63,7 +63,7 @@
         width: 25%;
         text-align: center;
 
-        @include mq(){
+        @include mq() {
           width: 100%;
         }
       }
@@ -285,17 +285,18 @@
       }
     }
 
-    .hifu_margin1{
+    .hifu_margin1 {
       margin: 0 25px;
 
-      @include mq(){
+      @include mq() {
         margin: 0;
       }
     }
-    .hifu_margin2{
-      margin-right:25px;
 
-      @include mq(){
+    .hifu_margin2 {
+      margin-right: 25px;
+
+      @include mq() {
         margin: 0;
       }
     }

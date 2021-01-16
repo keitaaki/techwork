@@ -62,7 +62,7 @@ header {
     .contact_box_flex {
       display: flex;
       justify-content: space-around;
-      align-items:flex-end;
+      align-items: flex-end;
 
       // 電話の部分
       .contact_box_tel {
@@ -81,17 +81,17 @@ header {
             justify-content: center;
           }
 
-          @include mq(){
+          @include mq() {
             align-items: center;
           }
         }
       }
 
       .contact_box_tel_flex_hour {
-        color:  #d60e4c;
+        color: #d60e4c;
 
         .contact_time {
-    
+
           span {
             color: #59493f
           }
@@ -104,7 +104,7 @@ header {
             font-size: 1.2rem;
           }
 
-          @include mq(){
+          @include mq() {
             font-size: 1rem;
           }
         }
