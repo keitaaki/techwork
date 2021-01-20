@@ -81,30 +81,31 @@
     }
 
     .about_right {
-      width: 45%;
-
-      img {
-        object-fit: cover;
-      }
+      width: 48%;
 
       @include mq() {
         width: 100%;
         margin-bottom: 10px;
       }
 
+      .about_right_title{
+        margin-top: 30px;
+
+        @include mq(md){
+          margin-top: 10px;
+        }
+      }
+
       .about_message {
         font-weight: bold;
+        padding: 10px;
       }
 
       .details {
-        width: 100%;
+        width: 420px;
         margin-left: auto;
         margin-right: 0px;
         padding-top: 20px;
-
-        @include mq(mx) {
-          width: 90%;
-        }
 
         @include mq(md) {
           width: 100%;
@@ -265,16 +266,12 @@
       }
 
       .details {
-        width: 60%;
+        width: 250px;
         margin-left: auto;
         margin-right: 0px;
         padding-top: 20px;
 
-        @include mq(mx) {
-          width: 90%;
-        }
-
-        @include mq(md) {
+        @include mq() {
           width: 100%;
         }
 
@@ -367,6 +364,10 @@
         left: -18%;
       }
 
+      @include mq(lg){
+        left: -12%;
+      }
+
       @include mq(md) {
         top: 15%;
         left: 1%;
@@ -413,16 +414,12 @@
       }
 
       .details {
-        width: 70%;
+        width: 360px;
         margin-left: auto;
         margin-right: 0px;
         padding-top: 20px;
 
-        @include mq(mx) {
-          width: 90%;
-        }
-
-        @include mq(md) {
+        @include mq() {
           width: 100%;
         }
 
@@ -512,7 +509,7 @@
       }
 
       @include mq(mx) {
-        right: -20%;
+        right: -15%;
       }
 
       @include mq(md) {
@@ -529,7 +526,7 @@
       img {
 
         @include mq(mx) {
-          width: 80%;
+          width: 75%;
         }
 
         @include mq(md) {
@@ -571,20 +568,12 @@
       }
 
       .details {
-        width: 60%;
+        width: 260px;
         margin-left: auto;
         margin-right: 0px;
         padding-top: 20px;
 
-        @include mq(lg) {
-          width: 60%;
-        }
-
-        @include mq(mx) {
-          width: 90%;
-        }
-
-        @include mq(md) {
+        @include mq() {
           width: 100%;
         }
 
@@ -734,16 +723,12 @@
       }
 
       .details {
-        width: 70%;
+        width: 310px;
         margin-left: auto;
         margin-right: 0px;
         padding-top: 20px;
 
-        @include mq(mx) {
-          width: 90%;
-        }
-
-        @include mq(md) {
+        @include mq() {
           width: 100%;
         }
 
@@ -880,20 +865,12 @@
       }
 
       .details {
-        width: 80%;
+        width: 397px;
         margin-left: auto;
         margin-right: 0px;
         padding-top: 20px;
 
-        @include mq(lg) {
-          width: 80%;
-        }
-
-        @include mq(mx) {
-          width: 100%;
-        }
-
-        @include mq(md) {
+        @include mq() {
           width: 100%;
         }
 
@@ -1039,7 +1016,7 @@
 
   .news_bk {
     background: url("../common/images/hana-bk2-right.png") no-repeat right bottom;
-    padding: 20px 0;
+    padding: 60px 0;
 
     @include mq() {
       padding: 20px;
@@ -1074,8 +1051,8 @@
       margin: 30px auto 0;
     }
 
-    @include mq(lg) {
-      width: 100%;
+    @include mq(md){
+      width: 95%;
     }
   }
 
@@ -1094,7 +1071,7 @@
   }
 
   .info {
-    padding: 20px 0 10px;
+    padding: 10px 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1151,14 +1128,14 @@
     width: 90px;
     color: #fff;
     text-align: center;
-    padding: 2px 5px;
+    padding: 5px 5px 3px 5px;
     background: #e9578b;
     border-radius: 4px;
     text-decoration: none;
     line-height: 1;
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
-    font-size: 18px;
+    font-size: 14px;
   }
 
   @media (max-width: 767px) {
@@ -1208,18 +1185,10 @@
   }
 
   .details {
-    width: 40%;
+    width: 275px;
     margin-left: auto;
     margin-right: 0px;
     padding-top: 20px;
-
-    @include mq(mx) {
-      width: 50%;
-    }
-
-    @include mq() {
-      width: 100%;
-    }
 
     .details_flex {
       display: flex;
@@ -1271,7 +1240,7 @@
 
   .inner {
     background: url("../common/images/sakura-left.png") no-repeat left bottom;
-    padding: 30px 0;
+    padding: 30px 0 0 0;
     position: relative;
 
     @include mq(md) {
@@ -1284,7 +1253,7 @@
   }
 
   .map_box {
-    width: 40%;
+    width: 43%;
     position: absolute;
     top: 0;
     right: 0;
@@ -1320,7 +1289,7 @@
     flex-wrap: wrap;
 
     .access_flex_left {
-      width: 45%;
+      width: 35%;
       padding: 0;
 
       @include mq(md) {
@@ -1338,7 +1307,11 @@
       }
 
       .access_flex_left_open {
-        padding-bottom: 120px;
+        padding-bottom: 200px;
+
+        @include mq(mx){
+          padding-bottom: 180px;
+        }
 
         @include mq(md) {
           padding: 10px;
@@ -1347,7 +1320,7 @@
     }
 
     .access_flex_right {
-      width: 50%;
+      width: 55%;
 
       @include mq(md) {
         width: 100%;
@@ -1355,7 +1328,15 @@
       }
 
       img {
-        width: 60%;
+        width: 69%;
+
+        @include mq(lg){
+          width: 75%;
+        }
+
+        @include mq(mx){
+          width: 80%;
+        }
 
         @include mq(md) {
           width: 100%;

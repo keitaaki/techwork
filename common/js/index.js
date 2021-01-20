@@ -28,6 +28,8 @@ $(function () {
 $(function () {
   $('#pc_global_menus').on('click', function () {
     $('.sub_menu').toggleClass('hidden');
+    $('.bottom-arrow').toggleClass('hidden');
+    $('.top-arrow').toggleClass('hidden');
   });
 });
 
@@ -116,7 +118,7 @@ $(window).on('scroll', function () {
   startPos = winScrollTop;
 });
 
-// スムーススクロール
+// スムーススクロール(バナーをクリックしたらflowへ)
 $(function(){
   $('a[href^="#end"]').click(function(){
     var speed = 500;
