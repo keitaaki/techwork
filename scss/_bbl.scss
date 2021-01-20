@@ -3,13 +3,17 @@
 // ==============================================
 
 .menu_bbl {
-  background-color: #e6396a;
+  background: #e6396a url("../common/images/hana-bk2-left.png") no-repeat left bottom;
   padding: 30px 0;
   margin-top: 170px;
   z-index: -5;
 
   @include mq(md) {
     margin: 0;
+  }
+
+  .bbl_bk{
+    background: url("../common/images/hana-bk2-right.png") no-repeat right bottom;
   }
 
   .menu_bbl_box {
@@ -71,8 +75,12 @@
 // 業界初！光のパワー 部分
 // ==============================================
 .bbl_light_power {
-  background-color: #ffffee;
+  background: #ffffee url("../common/images/hana-bk4-right.png") no-repeat right top;
   padding: 30px 0;
+
+  .bbl_light_power_bk{
+    background: url("../common/images/hana-bk4-left.png") no-repeat left bottom;
+  }
 
   .bbl_light_power_box {
     background-color: #fff;
@@ -141,8 +149,12 @@
 // ふっくら美乳は作れる！ 部分
 // =============================================
 .bbl_tits {
-  background-color: #fff4f6;
+  background: #fff4f6 url("../common/images/hana-bk.png") no-repeat left top;
   padding: 30px 0;
+
+  .bbl_bk_tits{
+    background: url("../common/images/hana-bk.png") no-repeat right top;
+  }
 
   .bbl_tits_box {
     background-color: #fff;

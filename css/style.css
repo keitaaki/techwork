@@ -729,6 +729,23 @@ header .header_flex {
           transform: scale(1, 1);
 }
 
+.global_nav .header-nav .is-selected {
+  position: relative;
+  display: inline-block;
+}
+
+.global_nav .header-nav .is-selected::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 5px;
+  background: #d60e4c;
+  z-index: 999999;
+}
+
 .global_nav .header-nav .drop_down {
   position: relative;
 }
@@ -900,7 +917,6 @@ footer .footer_flex .footer_list .footer_about {
 footer .footer_flex .footer_list span {
   color: #e12653;
   font-weight: bold;
-  border-bottom: 2px solid #e12653;
   line-height: 2rem;
 }
 
@@ -2728,9 +2744,7 @@ footer .footer_reserved {
 }
 
 .menu_epitation {
-  background-image: url(../common/images/back_red.png);
-  background-size: cover;
-  background-position: center center;
+  background: #e6396a url("../common/images/hana-bk2-left.png") no-repeat left bottom;
   margin-top: 170px;
   z-index: -5;
   padding: 30px 0;
@@ -2740,6 +2754,10 @@ footer .footer_reserved {
   .menu_epitation {
     margin: 0;
   }
+}
+
+.menu_epitation .epitation_bk {
+  background: url("../common/images/hana-bk2-right.png") no-repeat right bottom;
 }
 
 .menu_epitation .menu_epitation_box {
@@ -2809,7 +2827,11 @@ footer .footer_reserved {
 }
 
 .shr {
-  background-color: #ffffee;
+  background: #ffffee url("../common/images/hana-bk4-right.png") no-repeat right top;
+}
+
+.shr .shr_bk {
+  background: url("../common/images/hana-bk4-left.png") no-repeat left bottom;
   padding: 30px 0;
 }
 
@@ -2898,8 +2920,12 @@ footer .footer_reserved {
 }
 
 .menu_schedule {
-  background-color: #fff4f6;
+  background: #fff4f6 url("../common/images/hana-bk.png") no-repeat left top;
   padding: 30px 0;
+}
+
+.menu_schedule .menu_schedule_bk {
+  background: url("../common/images/hana-bk.png") no-repeat right top;
 }
 
 .menu_schedule .menu_schedule_box {
@@ -2977,7 +3003,11 @@ footer .footer_reserved {
 }
 
 .menu_short {
-  background-color: #ffffee;
+  background: #ffffee url("../common/images/hana-bk4-right.png") no-repeat right top;
+}
+
+.menu_short .menu_short_bk {
+  background: url("../common/images/hana-bk4-left.png") no-repeat left bottom;
   padding: 30px 0;
 }
 
@@ -3067,6 +3097,17 @@ footer .footer_reserved {
   background-size: cover;
   background-position: center center;
   padding: 30px 0;
+}
+
+.epitation_parts .epitation_banner {
+  width: 60%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .epitation_parts .epitation_banner {
+    width: 90%;
+  }
 }
 
 .flow h2 {
@@ -3243,8 +3284,12 @@ footer .footer_reserved {
 }
 
 .menu_mens_epitation {
-  background-color: #c2d6f0;
+  background: #c2d6f0 url("../common/images/hana-bk3-right.png") no-repeat right top;
   padding: 30px 0;
+}
+
+.menu_mens_epitation .mens_bk {
+  background: url("../common/images/hana-bk3-left.png") no-repeat left bottom;
 }
 
 .menu_mens_epitation .menu_mens_epitation_box {
@@ -3488,7 +3533,7 @@ footer .footer_reserved {
 }
 
 .menu_bbl {
-  background-color: #e6396a;
+  background: #e6396a url("../common/images/hana-bk2-left.png") no-repeat left bottom;
   padding: 30px 0;
   margin-top: 170px;
   z-index: -5;
@@ -3498,6 +3543,10 @@ footer .footer_reserved {
   .menu_bbl {
     margin: 0;
   }
+}
+
+.menu_bbl .bbl_bk {
+  background: url("../common/images/hana-bk2-right.png") no-repeat right bottom;
 }
 
 .menu_bbl .menu_bbl_box {
@@ -3567,8 +3616,12 @@ footer .footer_reserved {
 }
 
 .bbl_light_power {
-  background-color: #ffffee;
+  background: #ffffee url("../common/images/hana-bk4-right.png") no-repeat right top;
   padding: 30px 0;
+}
+
+.bbl_light_power .bbl_light_power_bk {
+  background: url("../common/images/hana-bk4-left.png") no-repeat left bottom;
 }
 
 .bbl_light_power .bbl_light_power_box {
@@ -3657,8 +3710,12 @@ footer .footer_reserved {
 }
 
 .bbl_tits {
-  background-color: #fff4f6;
+  background: #fff4f6 url("../common/images/hana-bk.png") no-repeat left top;
   padding: 30px 0;
+}
+
+.bbl_tits .bbl_bk_tits {
+  background: url("../common/images/hana-bk.png") no-repeat right top;
 }
 
 .bbl_tits .bbl_tits_box {
@@ -3821,7 +3878,7 @@ footer .footer_reserved {
 }
 
 .menu__hifu {
-  background-color: #e6396a;
+  background: #e6396a url("../common/images/hana-bk2-left.png") no-repeat left bottom;
   padding: 30px 0;
   margin-top: 170px;
   z-index: -5;
@@ -3831,6 +3888,10 @@ footer .footer_reserved {
   .menu__hifu {
     margin: 0;
   }
+}
+
+.menu__hifu .hifu_bk {
+  background: url("../common/images/hana-bk2-right.png") no-repeat right bottom;
 }
 
 .menu__hifu .menu__hifu_box {
@@ -3902,8 +3963,12 @@ footer .footer_reserved {
 }
 
 .no_pain {
-  background-color: #ffffee;
+  background: #ffffee url("../common/images/hana-bk4-right.png") no-repeat right top;
   padding: 30px 0;
+}
+
+.no_pain .no_pain_bk {
+  background: url("../common/images/hana-bk4-left.png") no-repeat left bottom;
 }
 
 .no_pain .no_pain_box {
@@ -3992,8 +4057,12 @@ footer .footer_reserved {
 }
 
 .usual_hifu {
-  background-color: #fff4f6;
+  background: #fff4f6 url("../common/images/hana-bk.png") no-repeat left top;
   padding: 30px 0;
+}
+
+.usual_hifu .usual_hifu_bk {
+  background: url("../common/images/hana-bk.png") no-repeat right top;
 }
 
 .usual_hifu .usual_hifu_box {
@@ -4182,7 +4251,7 @@ footer .footer_reserved {
 }
 
 .menu__whitening {
-  background-color: #e6396a;
+  background: #e6396a url("../common/images/hana-bk2-left.png") no-repeat left bottom;
   padding: 30px 0;
   margin-top: 170px;
   z-index: -5;
@@ -4192,6 +4261,10 @@ footer .footer_reserved {
   .menu__whitening {
     margin: 0;
   }
+}
+
+.menu__whitening .whitening_bk {
+  background: url("../common/images/hana-bk2-right.png") no-repeat right bottom;
 }
 
 .menu__whitening .menu__whitening_box {
@@ -4262,8 +4335,12 @@ footer .footer_reserved {
 }
 
 .five-minutes {
-  background-color: #ffffee;
+  background: #ffffee url("../common/images/hana-bk4-right.png") no-repeat right top;
   padding: 30px 0;
+}
+
+.five-minutes .five-minutes_bk {
+  background: url("../common/images/hana-bk4-left.png") no-repeat left top;
 }
 
 .five-minutes .five-minutes_box {
@@ -4410,6 +4487,8 @@ footer .footer_reserved {
 
 .whitening__flow .whitening__innerArea_flex .whitening__innerArea_flex_cards h3 {
   font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 5px;
 }
 
 @media screen and (max-width: 600px) {
@@ -4436,7 +4515,7 @@ footer .footer_reserved {
 }
 
 .whitening__flow .whitening__innerArea_flex .hifu_margin1 {
-  margin: 0 25px;
+  margin: 0 25px 24px;
 }
 
 @media screen and (max-width: 768px) {

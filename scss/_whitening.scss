@@ -3,13 +3,17 @@
 // ==============================================
 
 .menu__whitening {
-  background-color: #e6396a;
+  background: #e6396a url("../common/images/hana-bk2-left.png") no-repeat left bottom;
   padding: 30px 0;
   margin-top: 170px;
   z-index: -5;
 
   @include mq(md) {
     margin: 0;
+  }
+  
+  .whitening_bk{
+    background: url("../common/images/hana-bk2-right.png") no-repeat right bottom;
   }
 
   .menu__whitening_box {
@@ -72,8 +76,12 @@
 // 施術時間「5分」の時短を実現！ 部分
 // ==============================================
 .five-minutes {
-  background-color: #ffffee;
+  background: #ffffee url("../common/images/hana-bk4-right.png") no-repeat right top;
   padding: 30px 0;
+
+  .five-minutes_bk{
+    background: url("../common/images/hana-bk4-left.png") no-repeat left top;
+  }
 
   .five-minutes_box {
     background-color: #fff;
@@ -192,6 +200,8 @@
 
       h3 {
         font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 5px;
 
         @include mq() {
           font-size: 20px;
@@ -215,7 +225,7 @@
     }
 
     .hifu_margin1 {
-      margin: 0 25px;
+      margin: 0 25px 24px;
 
       @include mq(md) {
         margin: 0 0 10px 0;

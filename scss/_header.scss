@@ -568,6 +568,23 @@ header {
       }
     }
 
+    .is-selected{
+      position: relative;
+      display: inline-block;
+    }
+
+    .is-selected::after{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      content: '';
+      display: block;
+      width: 100%;
+      height: 5px;
+      background: #d60e4c;
+      z-index: 999999;
+    }
+
     // =============================================
     // 子階層以降共通
     // =============================================

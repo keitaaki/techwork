@@ -3,13 +3,17 @@
 // ==============================================
 
 .menu__hifu {
-  background-color: #e6396a;
+  background: #e6396a url("../common/images/hana-bk2-left.png") no-repeat left bottom;
   padding: 30px 0;
   margin-top: 170px;
   z-index: -5;
 
   @include mq(md) {
     margin: 0;
+  }
+
+  .hifu_bk{
+    background: url("../common/images/hana-bk2-right.png") no-repeat right bottom;
   }
 
   .menu__hifu_box {
@@ -72,8 +76,12 @@
 // 無痛なのに効果が⾼い！ 部分
 // ==============================================
 .no_pain {
-  background-color: #ffffee;
+  background: #ffffee url("../common/images/hana-bk4-right.png") no-repeat right top;
   padding: 30px 0;
+
+  .no_pain_bk{
+    background: url("../common/images/hana-bk4-left.png") no-repeat left bottom;
+  }
 
   .no_pain_box {
     background-color: #fff;
@@ -142,8 +150,12 @@
 // 従来のHIFUを超えた蓄熱式超⾳波！ 部分
 // =============================================
 .usual_hifu {
-  background-color: #fff4f6;
+  background: #fff4f6 url("../common/images/hana-bk.png") no-repeat left top;
   padding: 30px 0;
+
+  .usual_hifu_bk{
+    background: url("../common/images/hana-bk.png") no-repeat right top;
+  }
 
   .usual_hifu_box {
     background-color: #fff;
