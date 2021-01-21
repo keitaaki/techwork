@@ -1080,10 +1080,13 @@ footer .footer_reserved {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .about .about_flex .about_left {
     width: 100%;
     margin-bottom: 30px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
 }
 
@@ -1091,7 +1094,7 @@ footer .footer_reserved {
   width: 48%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .about .about_flex .about_right {
     width: 100%;
     margin-bottom: 10px;
@@ -1114,13 +1117,13 @@ footer .footer_reserved {
 }
 
 .about .about_flex .about_right .details {
-  width: 420px;
+  width: 410px;
   margin-left: auto;
   margin-right: 0px;
   padding-top: 20px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .about .about_flex .about_right .details {
     width: 100%;
   }
@@ -1153,7 +1156,7 @@ footer .footer_reserved {
   font-weight: bold;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .about .about_flex .about_right .details .details_flex a {
     font-size: 14px;
   }
@@ -1203,8 +1206,8 @@ footer .footer_reserved {
 
 @media screen and (max-width: 768px) {
   .menu .menu_message_box {
-    width: 100%;
-    margin: 20px 0;
+    width: 90%;
+    margin: 20px auto;
     padding: 10px;
   }
 }
@@ -1237,14 +1240,6 @@ footer .footer_reserved {
 
 @media screen and (max-width: 768px) {
   .menu .menu_message_box .menu_massage_picture {
-    top: 10%;
-    right: -2%;
-    width: 300px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .menu .menu_message_box .menu_massage_picture {
     width: 100%;
     margin-bottom: 24px;
   }
@@ -1262,7 +1257,7 @@ footer .footer_reserved {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .menu .menu_message_box .menu_massage_picture {
     position: static;
     text-align: center;
@@ -1291,7 +1286,7 @@ footer .footer_reserved {
 
 @media screen and (max-width: 768px) {
   .menu .menu_message_box_flex .menu_message_box_left {
-    width: 50%;
+    width: 100%;
   }
 }
 
@@ -1302,12 +1297,6 @@ footer .footer_reserved {
 @media screen and (max-width: 768px) {
   .menu .menu_message_box_flex .menu_message_box_left p {
     padding-right: 10px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .menu .menu_message_box_flex .menu_message_box_left {
-    width: 100%;
   }
 }
 
@@ -1379,7 +1368,8 @@ footer .footer_reserved {
 
 @media screen and (max-width: 768px) {
   .menu .menu_message_box_flex .menu_message_box_right {
-    width: 35%;
+    width: 50%;
+    margin: 0 auto;
   }
 }
 
@@ -1404,8 +1394,8 @@ footer .footer_reserved {
 
 @media screen and (max-width: 768px) {
   .menu .menu_message_box_bbl {
-    width: 100%;
-    margin: 30px 0;
+    width: 90%;
+    margin: 30px auto;
     padding: 10px;
   }
 }
@@ -1429,12 +1419,6 @@ footer .footer_reserved {
   }
 }
 
-@media screen and (max-width: 1187px) {
-  .menu .menu_message_box_bbl .menu_message_box_bbl_picture {
-    left: -12%;
-  }
-}
-
 @media screen and (max-width: 768px) {
   .menu .menu_message_box_bbl .menu_message_box_bbl_picture {
     top: 15%;
@@ -1442,7 +1426,7 @@ footer .footer_reserved {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .menu .menu_message_box_bbl .menu_message_box_bbl_picture {
     position: static;
     margin-top: 20px;
@@ -1459,12 +1443,6 @@ footer .footer_reserved {
 
 @media screen and (max-width: 768px) {
   .menu .menu_message_box_bbl .menu_message_box_bbl_picture img {
-    width: 55%;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .menu .menu_message_box_bbl .menu_message_box_bbl_picture img {
     width: 100%;
   }
 }
@@ -1477,12 +1455,6 @@ footer .footer_reserved {
 }
 
 @media screen and (max-width: 768px) {
-  .menu .menu_message_box_bbl .menu_message_box_bbl_text {
-    width: 55%;
-  }
-}
-
-@media screen and (max-width: 600px) {
   .menu .menu_message_box_bbl .menu_message_box_bbl_text {
     width: 100%;
   }
@@ -1577,8 +1549,8 @@ footer .footer_reserved {
 
 @media screen and (max-width: 768px) {
   .hife .menu_message_box {
-    width: 100%;
-    margin: 20px 0;
+    width: 90%;
+    margin: 20px auto;
   }
 }
 
@@ -1612,13 +1584,6 @@ footer .footer_reserved {
 
 @media screen and (max-width: 768px) {
   .hife .menu_message_box .menu_massage_picture {
-    right: 0;
-    top: 25%;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .hife .menu_message_box .menu_massage_picture {
     position: static;
     text-align: center;
     margin-bottom: 24px;
@@ -1632,12 +1597,6 @@ footer .footer_reserved {
 }
 
 @media screen and (max-width: 768px) {
-  .hife .menu_message_box .menu_massage_picture img {
-    width: 60%;
-  }
-}
-
-@media screen and (max-width: 600px) {
   .hife .menu_message_box .menu_massage_picture img {
     width: 100%;
   }
@@ -1672,12 +1631,6 @@ footer .footer_reserved {
 }
 
 @media screen and (max-width: 768px) {
-  .hife .menu_message_box_flex .menu_message_box_left {
-    width: 55%;
-  }
-}
-
-@media screen and (max-width: 600px) {
   .hife .menu_message_box_flex .menu_message_box_left {
     width: 100%;
   }
@@ -1749,14 +1702,9 @@ footer .footer_reserved {
 
 @media screen and (max-width: 768px) {
   .hife .menu_message_box_flex .menu_message_box_right {
-    width: 30%;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .hife .menu_message_box_flex .menu_message_box_right {
     width: 100%;
     margin-top: 20px;
+    text-align: center;
   }
 }
 
@@ -1766,7 +1714,7 @@ footer .footer_reserved {
 
 .mens .mens_bk {
   background: url("../common/images/hana-bk3-left.png") no-repeat left top;
-  padding: 20px;
+  padding: 20px 0;
 }
 
 .mens .mens_box {
@@ -1784,8 +1732,8 @@ footer .footer_reserved {
 
 @media screen and (max-width: 768px) {
   .mens .mens_box {
-    width: 100%;
-    margin: 20px 0;
+    width: 90%;
+    margin: 20px auto;
     padding: 10px;
   }
 }
@@ -1818,13 +1766,6 @@ footer .footer_reserved {
 
 @media screen and (max-width: 768px) {
   .mens .mens_box .mens_picture {
-    top: 10%;
-    left: 3%;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .mens .mens_box .mens_picture {
     position: static;
     text-align: center;
     margin-bottom: 24px;
@@ -1839,12 +1780,6 @@ footer .footer_reserved {
 
 @media screen and (max-width: 768px) {
   .mens .mens_box .mens_picture img {
-    width: 60%;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .mens .mens_box .mens_picture img {
     width: 100%;
   }
 }
@@ -1858,12 +1793,6 @@ footer .footer_reserved {
 
 @media screen and (max-width: 768px) {
   .mens .mens_box .mens_box_text {
-    width: 50%;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .mens .mens_box .mens_box_text {
     width: 100%;
   }
 }
@@ -1873,7 +1802,7 @@ footer .footer_reserved {
 }
 
 .mens .mens_box .mens_box_text .details {
-  width: 310px;
+  width: 303px;
   margin-left: auto;
   margin-right: 0px;
   padding-top: 20px;
@@ -1936,9 +1865,9 @@ footer .footer_reserved {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .whitening .whitening_bk {
-    padding: 20px;
+    padding: 20px 0;
   }
 }
 
@@ -1961,7 +1890,8 @@ footer .footer_reserved {
 
 @media screen and (max-width: 768px) {
   .whitening .whitening_box {
-    width: 100%;
+    width: 90%;
+    margin: 20px auto;
     padding: 10px;
   }
 }
@@ -1995,15 +1925,6 @@ footer .footer_reserved {
 
 @media screen and (max-width: 768px) {
   .whitening .whitening_box .whitening_picture {
-    right: 1%;
-    bottom: 20%;
-    text-align: right;
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .whitening .whitening_box .whitening_picture {
     position: static;
     text-align: center;
     margin-bottom: 24px;
@@ -2012,12 +1933,6 @@ footer .footer_reserved {
 }
 
 @media screen and (max-width: 768px) {
-  .whitening .whitening_box .whitening_picture img {
-    width: 45%;
-  }
-}
-
-@media screen and (max-width: 600px) {
   .whitening .whitening_box .whitening_picture img {
     width: 100%;
   }
@@ -2029,12 +1944,6 @@ footer .footer_reserved {
 }
 
 @media screen and (max-width: 768px) {
-  .whitening .whitening_box .whitening_box_text {
-    width: 50%;
-  }
-}
-
-@media screen and (max-width: 600px) {
   .whitening .whitening_box .whitening_box_text {
     width: 100%;
   }
@@ -2397,6 +2306,12 @@ footer .footer_reserved {
   margin-left: auto;
   margin-right: 0px;
   padding-top: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .news .details {
+    width: 100%;
+  }
 }
 
 .news .details .details_flex {

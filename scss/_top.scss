@@ -74,16 +74,17 @@
         width: 40%;
       }
 
-      @include mq() {
+      @include mq(md) {
         width: 100%;
         margin-bottom: 30px;
+        order: 2;
       }
     }
 
     .about_right {
       width: 48%;
 
-      @include mq() {
+      @include mq(md) {
         width: 100%;
         margin-bottom: 10px;
       }
@@ -102,12 +103,12 @@
       }
 
       .details {
-        width: 420px;
+        width: 410px;
         margin-left: auto;
         margin-right: 0px;
         padding-top: 20px;
 
-        @include mq(md) {
+        @include mq() {
           width: 100%;
         }
 
@@ -131,7 +132,7 @@
             font-size: 18px;
             font-weight: bold;
 
-            @include mq(md) {
+            @include mq() {
               font-size: 14px;
             }
           }
@@ -183,8 +184,8 @@
     }
 
     @include mq(md) {
-      width: 100%;
-      margin: 20px 0;
+      width: 90%;
+      margin: 20px auto;
       padding: 10px;
     }
 
@@ -208,12 +209,6 @@
       }
 
       @include mq(md) {
-        top: 10%;
-        right: -2%;
-        width: 300px;
-      }
-
-      @include mq() {
         width: 100%;
         margin-bottom: 24px;
       }
@@ -229,7 +224,7 @@
         }
       }
 
-      @include mq() {
+      @include mq(md) {
         position: static;
         text-align: center;
       }
@@ -248,7 +243,7 @@
       position: relative;
 
       @include mq(md) {
-        width: 50%;
+        width: 100%;
       }
 
       .contents_img {
@@ -259,10 +254,6 @@
         @include mq(md) {
           padding-right: 10px;
         }
-      }
-
-      @include mq() {
-        width: 100%;
       }
 
       .details {
@@ -321,12 +312,15 @@
       }
 
       @include mq(md) {
-        width: 35%;
+        width: 50%;
+        margin: 0 auto;
       }
 
-      @include mq() {
+      @include mq(){
         width: 100%;
       }
+
+      
     }
   }
 
@@ -345,8 +339,8 @@
     position: relative;
 
     @include mq(md) {
-      width: 100%;
-      margin: 30px 0;
+      width: 90%;
+      margin: 30px auto;
       padding: 10px;
     }
 
@@ -364,16 +358,12 @@
         left: -18%;
       }
 
-      @include mq(lg){
-        left: -12%;
-      }
-
       @include mq(md) {
         top: 15%;
         left: 1%;
       }
 
-      @include mq() {
+      @include mq(md) {
         position: static;
         margin-top: 20px;
         text-align: center;
@@ -386,10 +376,6 @@
         }
 
         @include mq(md) {
-          width: 55%;
-        }
-
-        @include mq() {
           width: 100%;
         }
       }
@@ -402,10 +388,6 @@
       font-weight: bold;
 
       @include mq(md) {
-        width: 55%;
-      }
-
-      @include mq() {
         width: 100%;
       }
 
@@ -487,8 +469,8 @@
     }
 
     @include mq(md) {
-      width: 100%;
-      margin: 20px 0;
+      width: 90%;
+      margin: 20px auto;
     }
 
     @include mq() {
@@ -513,11 +495,6 @@
       }
 
       @include mq(md) {
-        right: 0;
-        top: 25%;
-      }
-
-      @include mq() {
         position: static;
         text-align: center;
         margin-bottom: 24px;
@@ -530,10 +507,6 @@
         }
 
         @include mq(md) {
-          width: 60%;
-        }
-
-        @include mq() {
           width: 100%;
         }
       }
@@ -556,10 +529,6 @@
       position: relative;
 
       @include mq(md) {
-        width: 55%;
-      }
-
-      @include mq() {
         width: 100%;
       }
 
@@ -618,12 +587,9 @@
       }
 
       @include mq(md) {
-        width: 30%;
-      }
-
-      @include mq() {
         width: 100%;
         margin-top: 20px;
+        text-align: center;
       }
     }
   }
@@ -638,7 +604,7 @@
 
   .mens_bk {
     background: url("../common/images/hana-bk3-left.png") no-repeat left top;
-    padding: 20px;
+    padding: 20px 0;
   }
 
   .mens_box {
@@ -653,8 +619,8 @@
     position: relative;
 
     @include mq(md) {
-      width: 100%;
-      margin: 20px 0;
+      width: 90%;
+      margin: 20px auto;
       padding: 10px;
     }
 
@@ -678,11 +644,6 @@
       }
 
       @include mq(md) {
-        top: 10%;
-        left: 3%;
-      }
-
-      @include mq() {
         position: static;
         text-align: center;
         margin-bottom: 24px;
@@ -695,10 +656,6 @@
         }
 
         @include mq(md) {
-          width: 60%;
-        }
-
-        @include mq() {
           width: 100%;
         }
       }
@@ -711,10 +668,6 @@
       font-weight: bold;
 
       @include mq(md) {
-        width: 50%;
-      }
-
-      @include mq() {
         width: 100%;
       }
 
@@ -723,7 +676,7 @@
       }
 
       .details {
-        width: 310px;
+        width: 303px;
         margin-left: auto;
         margin-right: 0px;
         padding-top: 20px;
@@ -779,8 +732,8 @@
       padding: 20px 20px 60px 20px;
     }
 
-    @include mq() {
-      padding: 20px;
+    @include mq(md) {
+      padding: 20px 0;
     }
 
   }
@@ -799,7 +752,8 @@
     }
 
     @include mq(md) {
-      width: 100%;
+      width: 90%;
+      margin: 20px auto;
       padding: 10px;
     }
 
@@ -824,13 +778,6 @@
       }
 
       @include mq(md) {
-        right: 1%;
-        bottom: 20%;
-        text-align: right;
-        width: 100%;
-      }
-
-      @include mq() {
         position: static;
         text-align: center;
         margin-bottom: 24px;
@@ -839,10 +786,6 @@
 
       img {
         @include mq(md) {
-          width: 45%;
-        }
-
-        @include mq() {
           width: 100%;
         }
       }
@@ -853,10 +796,6 @@
       font-weight: bold;
 
       @include mq(md) {
-        width: 50%;
-      }
-
-      @include mq() {
         width: 100%;
       }
 
@@ -1189,6 +1128,10 @@
     margin-left: auto;
     margin-right: 0px;
     padding-top: 20px;
+
+    @include mq() {
+      width: 100%;
+    }
 
     .details_flex {
       display: flex;
