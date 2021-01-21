@@ -134,6 +134,7 @@
 
             @include mq() {
               font-size: 14px;
+              height: 11px;
             }
           }
         }
@@ -263,7 +264,7 @@
         padding-top: 20px;
 
         @include mq() {
-          width: 100%;
+          width: 210px;
         }
 
         .details_flex {
@@ -284,6 +285,11 @@
             display: block;
             height: 20px;
             font-size: 18px;
+
+            @include mq() {
+              font-size: 14px;
+              height: 11px;
+            }
           }
         }
 
@@ -402,7 +408,7 @@
         padding-top: 20px;
 
         @include mq() {
-          width: 100%;
+          width: 290px;
         }
 
         .details_flex {
@@ -424,6 +430,11 @@
             display: block;
             height: 20px;
             font-size: 18px;
+
+            @include mq() {
+              font-size: 14px;
+              height: 11px;
+            }
           }
         }
 
@@ -543,7 +554,7 @@
         padding-top: 20px;
 
         @include mq() {
-          width: 100%;
+          width: 210px;
         }
 
         .details_flex {
@@ -563,6 +574,11 @@
             display: block;
             height: 20px;
             font-size: 18px;
+
+            @include mq() {
+              font-size: 14px;
+              height: 11px;
+            }
           }
         }
 
@@ -625,7 +641,6 @@
     }
 
     @include mq() {
-      width: 100%;
       margin-top: 20px;
       padding: 10px;
     }
@@ -682,7 +697,7 @@
         padding-top: 20px;
 
         @include mq() {
-          width: 100%;
+          width: 250px;
         }
 
         .details_flex {
@@ -703,6 +718,11 @@
             display: block;
             height: 20px;
             font-size: 18px;
+
+            @include mq() {
+              font-size: 14px;
+              height: 11px;
+            }
           }
         }
 
@@ -758,7 +778,6 @@
     }
 
     @include mq() {
-      width: 100%;
       margin-top: 20px;
       padding: 10px;
     }
@@ -832,6 +851,11 @@
             display: block;
             height: 20px;
             font-size: 18px;
+
+            @include mq() {
+              font-size: 14px;
+              height: 11px;
+            }
           }
         }
 
@@ -1130,7 +1154,7 @@
     padding-top: 20px;
 
     @include mq() {
-      width: 100%;
+      width: 220px;
     }
 
     .details_flex {
@@ -1146,7 +1170,8 @@
         font-size: 18px;
 
         @include mq() {
-          font-size: 16px;
+          font-size: 14px;
+          height: 11px;
         }
       }
     }

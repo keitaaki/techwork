@@ -90,7 +90,8 @@
     box-shadow: 0 0 8px gray;
 
     @include mq(md) {
-      margin: 0 10px;
+      margin: 0 20px;
+      padding: 10px 0;
     }
 
     @include mq() {
@@ -108,7 +109,7 @@
         width: 50%;
         padding: 10px;
 
-        @include mq() {
+        @include mq(md) {
           width: 100%;
           order: 2;
         }
@@ -118,9 +119,10 @@
         width: 50%;
         padding: 10px;
 
-        @include mq() {
+        @include mq(md) {
           width: 100%;
           order: 1;
+          text-align: center;
         }
 
         .no_pain_flex_right_title {
@@ -128,7 +130,7 @@
           font-size: 1.3rem;
           padding: 20px 0;
 
-          @include mq() {
+          @include mq(md) {
             padding: 5px 0;
             text-align: center;
           }
@@ -137,7 +139,7 @@
         .no_pain_flex_right_message {
           font-weight: bold;
 
-          @include mq() {
+          @include mq(md) {
             padding: 5px;
           }
         }
@@ -164,7 +166,8 @@
     box-shadow: 0 0 8px gray;
 
     @include mq(md) {
-      margin: 0 10px;
+      margin: 0 20px;
+      padding: 10px 0;
     }
 
     @include mq() {
@@ -182,9 +185,10 @@
         width: 50%;
         padding: 10px;
 
-        @include mq() {
+        @include mq(md) {
           width: 100%;
           padding: 10px;
+          text-align: center;
         }
 
         .usual_hifu_flex_left_title {
@@ -192,7 +196,7 @@
           font-size: 1.3rem;
           padding: 20px 10px;
 
-          @include mq() {
+          @include mq(md) {
             padding: 5px 0;
             text-align: center;
           }
@@ -202,7 +206,7 @@
           font-weight: bold;
           padding: 10px;
 
-          @include mq(){
+          @include mq(md){
             padding :5px;
           }
         }
@@ -212,7 +216,7 @@
         width: 50%;
         padding: 10px;
 
-        @include mq() {
+        @include mq(md) {
           width: 100%;
         }
       }

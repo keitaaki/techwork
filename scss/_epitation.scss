@@ -87,7 +87,8 @@
     box-shadow: 0 0 8px gray;
 
     @include mq(md) {
-      margin: 0 10px;
+      margin: 0 20px;
+      padding: 10px 0;
     }
 
     @include mq() {
@@ -104,7 +105,7 @@
       .shr_flex_left {
         width: 50%;
 
-        @include mq() {
+        @include mq(md) {
           width: 100%;
           order: 2;
         }
@@ -114,7 +115,7 @@
         width: 50%;
         padding: 10px;
 
-        @include mq() {
+        @include mq(md) {
           width: 100%;
           order: 1;
         }
@@ -124,7 +125,7 @@
           font-size: 1.3rem;
           padding: 20px 0;
 
-          @include mq() {
+          @include mq(md) {
             padding: 5px 0;
             text-align: center;
           }
@@ -133,7 +134,7 @@
         .shr_flex_right_message {
           font-weight: bold;
 
-          @include mq() {
+          @include mq(md) {
             padding: 10px;
           }
         }
@@ -160,7 +161,8 @@
     box-shadow: 0 0 8px gray;
 
     @include mq(md) {
-      margin: 0 10px;
+      margin: 0 20px;
+      padding: 10px 0;
     }
 
     @include mq() {
@@ -178,7 +180,7 @@
         width: 50%;
         padding: 10px;
 
-        @include mq() {
+        @include mq(md) {
           width: 100%;
           padding: 10px;
         }
@@ -188,7 +190,7 @@
           font-size: 1.3rem;
           padding: 20px 10px;
 
-          @include mq() {
+          @include mq(md) {
             padding: 5px 0;
             text-align: center;
           }
@@ -203,7 +205,8 @@
       .menu_schedule_flex_right {
         width: 50%;
 
-        @include mq() {
+        @include mq(md) {
+          padding: 20px;
           width: 100%;
         }
       }
@@ -230,7 +233,8 @@
     box-shadow: 0 0 8px gray;
 
     @include mq(md) {
-      margin: 0 10px;
+      margin: 0 20px;
+      padding: 10px 0;
     }
 
     @include mq() {
@@ -247,7 +251,7 @@
       .menu_short_box_flex_left {
         width: 50%;
 
-        @include mq() {
+        @include mq(md) {
           width: 100%;
           order: 2;
           padding: 0 5px;
@@ -258,7 +262,7 @@
         width: 50%;
         padding: 10px;
 
-        @include mq() {
+        @include mq(md) {
           width: 100%;
           order: 1;
           padding: 10px;
@@ -269,7 +273,7 @@
           font-size: 1.3rem;
           padding: 20px 10px;
 
-          @include mq() {
+          @include mq(md) {
             padding: 5px 0;
             text-align: center;
           }
@@ -541,7 +545,7 @@
         .menu_mens_epitation_entrance_box_flex_left {
           width: 55%;
 
-          @include mq() {
+          @include mq(md) {
             width: 100%;
             order: 2;
             padding: 0 5px;
@@ -552,10 +556,11 @@
           width: 40%;
           padding: 10px;
 
-          @include mq() {
+          @include mq(md) {
             width: 100%;
             order: 1;
             padding: 10px;
+            text-align: center;
           }
 
           .menu_mens_epitation_entrance_box_flex_right_title {
@@ -563,7 +568,7 @@
             font-size: 1.4rem;
             padding: 20px 10px;
 
-            @include mq() {
+            @include mq(md) {
               padding: 5px 0;
               text-align: center;
               font-size: 1.3rem;

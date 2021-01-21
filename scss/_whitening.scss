@@ -90,7 +90,8 @@
     box-shadow: 0 0 8px gray;
 
     @include mq(md) {
-      margin: 0 10px;
+      margin: 0 20px;
+      padding: 10px 0;
     }
 
     @include mq() {
@@ -108,7 +109,7 @@
         width: 50%;
         padding: 10px;
 
-        @include mq() {
+        @include mq(md) {
           width: 100%;
           order: 2;
         }
@@ -118,7 +119,7 @@
         width: 50%;
         padding: 10px;
 
-        @include mq() {
+        @include mq(md) {
           width: 100%;
           order: 1;
         }
@@ -128,7 +129,7 @@
           font-size: 1.3rem;
           padding: 20px 0;
 
-          @include mq() {
+          @include mq(md) {
             padding: 5px 0;
             text-align: center;
           }
@@ -137,7 +138,7 @@
         .five-minutes_flex_right_message {
           font-weight: bold;
 
-          @include mq() {
+          @include mq(md) {
             padding: 10px;
           }
         }
