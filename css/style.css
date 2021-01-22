@@ -525,7 +525,18 @@ header .header_flex {
   font-weight: bold;
   position: relative;
   display: inline-block;
-  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .scroll_menu .inner .scroll_menu_open a {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .scroll_menu .inner .scroll_menu_open a {
+    font-size: 1rem;
+  }
 }
 
 .scroll_menu .inner .scroll_menu_open .header-nav {
@@ -534,6 +545,15 @@ header .header_flex {
 
 .scroll_menu .inner .scroll_menu_open .header-nav .nav-items {
   padding: 10px 0;
+}
+
+.scroll_menu .inner .scroll_menu_open .sub_menu {
+  padding-left: 30px;
+}
+
+.scroll_menu .inner .scroll_menu_open .sub_menu .nav-items {
+  list-style-type: disc;
+  color: #d60e4c;
 }
 
 .scroll_menu .inner .scroll_menu_open .contact_box {
@@ -808,26 +828,24 @@ header .header_flex {
 
 .sp_global_nav {
   background-color: #ffdcec;
-  padding: 20px;
   border-bottom: 2px solid #f19ec2;
 }
 
 @media screen and (max-width: 768px) {
   .sp_global_nav {
     font-size: 1.8rem;
-    padding-left: 50px;
+    padding-left: 30px;
   }
 }
 
 @media screen and (max-width: 600px) {
   .sp_global_nav {
     font-size: 1rem;
-    padding: 20px;
   }
 }
 
 .sp_global_nav li {
-  padding: 5px;
+  padding: 10px 0;
 }
 
 .sp_global_nav a {
@@ -835,8 +853,13 @@ header .header_flex {
   font-weight: bold;
 }
 
-.sp_global_nav .sub_menu li {
-  padding-left: 20px;
+.sp_global_nav .sub_menu {
+  padding-left: 30px;
+}
+
+.sp_global_nav .sub_menu .nav-items {
+  list-style-type: disc;
+  color: #d60e4c;
 }
 
 footer .footer_flex {
@@ -3029,6 +3052,10 @@ footer .footer_reserved {
   background-size: cover;
   background-position: center center;
   padding: 30px 0;
+}
+
+.epitation_parts .sp_back {
+  padding: 10px;
 }
 
 .epitation_parts .epitation_banner {

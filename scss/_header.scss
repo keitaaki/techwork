@@ -379,7 +379,16 @@ header {
         font-weight: bold;
         position: relative;
         display: inline-block;
-        font-size: 1.2rem;
+
+        @include mq(md) {
+          font-size: 1.8rem;
+        }
+
+        @include mq() {
+          font-size: 1rem;
+        }
+
+
       }
 
       .header-nav {
@@ -388,6 +397,16 @@ header {
         .nav-items {
           padding: 10px 0;
         }
+      }
+
+      .sub_menu {
+
+        padding-left: 30px;
+        
+        .nav-items{
+            list-style-type: disc;
+            color: #d60e4c;
+          }
       }
 
       .contact_box {
@@ -656,21 +675,19 @@ header {
 // =============================================
 .sp_global_nav {
   background-color: #ffdcec;
-  padding: 20px;
   border-bottom: 2px solid #f19ec2;
 
   @include mq(md) {
     font-size: 1.8rem;
-    padding-left: 50px;
+    padding-left: 30px;
   }
 
   @include mq() {
     font-size: 1rem;
-    padding: 20px;
   }
 
   li {
-    padding: 5px;
+    padding: 10px 0;
   }
 
   a {
@@ -680,8 +697,11 @@ header {
 
   .sub_menu {
 
-    li {
-      padding-left: 20px;
-    }
+    padding-left: 30px;
+    
+    .nav-items{
+        list-style-type: disc;
+        color: #d60e4c;
+      }
   }
 }

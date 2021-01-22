@@ -38,6 +38,9 @@ document.addEventListener('click', (e) => {
   if (!e.target.closest('#pc_global_menus')) {
     var obj = document.getElementById("sub_menu_pc");
     obj.classList.add("hidden");
+    //別画面をクリックした際に矢印の上下が変わる
+    $('.bottom-arrow').removeClass('hidden');
+    $('.top-arrow').addClass('hidden');
   }
 });
 
