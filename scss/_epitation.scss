@@ -303,10 +303,12 @@
 
   .epitation_banner{
     width: 60%;
-    margin: 0 auto;
+    margin: 20px auto 55px;
+
 
     @include mq(md) {
       width: 90%;
+      margin: 0 auto;
     }
   }
 }

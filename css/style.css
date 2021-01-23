@@ -3060,12 +3060,13 @@ footer .footer_reserved {
 
 .epitation_parts .epitation_banner {
   width: 60%;
-  margin: 0 auto;
+  margin: 20px auto 55px;
 }
 
 @media screen and (max-width: 768px) {
   .epitation_parts .epitation_banner {
     width: 90%;
+    margin: 0 auto;
   }
 }
 
