@@ -1,0 +1,229 @@
+.about_sakura {
+  background: #e6396a url("../common/images/hana-bk2-left.png") no-repeat left bottom;
+  padding: 55px 0;
+  margin-top: 170px;
+  z-index: -5;
+
+  @include mq(md) {
+    margin: 0;
+  }
+
+  .bbl_bk {
+    background: url("../common/images/hana-bk2-right.png") no-repeat right bottom;
+  }
+
+  .about_sakura_box {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+
+    @include mq(md) {
+      margin: 0 10px;
+    }
+
+    .about_sakura_box_flex {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      align-items: center;
+
+      .about_sakura_box_flex_left {
+        width: 50%;
+        padding: 20px;
+        font-weight: bold;
+
+        @include mq(md) {
+          width: 100%;
+          padding: 10px;
+        }
+
+        h2 {
+          margin-bottom: 10px;
+        }
+
+        .about_sakura_lists {
+          list-style-type: disc;
+          margin-left: 20px;
+        }
+      }
+
+      .about_sakura_box_flex_right {
+        width: 45%;
+
+        @include mq(md) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+// ==============================================
+// コンセプト 部分
+// ==============================================
+.about_concept_power {
+  background: #ffffee url("../common/images/hana-bk4-right.png") no-repeat right top;
+  padding: 55px 0;
+
+  .about_concept_power_bk {
+    background: url("../common/images/hana-bk4-left.png") no-repeat left bottom;
+  }
+
+  .about_concept_power_box {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 8px gray;
+
+    @include mq(md) {
+      margin: 0 20px;
+      padding: 10px 0;
+    }
+
+    @include mq() {
+      margin: 0 10px;
+      padding: 10px 0;
+    }
+
+    .about_concept_power_flex {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      align-items: center;
+
+      .about_concept_power_flex_left {
+        width: 45%;
+        padding: 10px;
+
+        @include mq(md) {
+          width: 100%;
+          order: 2;
+        }
+      }
+
+      .about_concept_power_flex_right {
+        width: 55%;
+        padding: 10px;
+
+        @include mq(md) {
+          width: 100%;
+          order: 1;
+        }
+
+        .about_concept_power_flex_right_title {
+          color: #eb6794;
+          font-size: 1.3rem;
+          padding: 20px 0;
+
+          @include mq(md) {
+            padding: 5px 0;
+            text-align: center;
+          }
+        }
+
+        .about_concept_power_flex_right_message {
+          font-weight: bold;
+
+          span {
+            color: #eb6794;
+          }
+
+          @include mq(md) {
+            padding: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// ==============================================
+// FAQ 部分
+// ==============================================
+.faq_area {
+  background-image: url(../common/images/back_yellow.png);
+  background-size: cover;
+  background-position: center center;
+  padding: 55px 0;
+
+  .faq_area_box {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 8px gray;
+
+    @include mq(md) {
+      margin: 0 10px;
+    }
+
+    .faq_title {
+      text-align: center;
+    }
+
+    .faq_area_menu {
+      .faq_area_menu_flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+        @include mq(md) {
+          justify-content: space-around;
+        }
+
+        li {
+          width: 20%;
+          text-align: center;
+          background: url("../about/images/hana.png") no-repeat center center;
+          padding: 10px 0;
+
+          @include mq(md) {
+            width: 40%;
+          }
+
+          a{
+            font-weight:bold;
+          }
+        }
+      }
+    }
+
+    h4{
+      font-size: 1.5rem;
+      margin-top: 50px;
+    }
+
+    .faq_area_box_contents {
+      .faq_area_box_contents_each {
+        padding: 10px;
+        font-weight: bold;
+        border-bottom: solid ; 
+
+        .faq_question {
+          span {
+            color: yellow;
+            font-size: 1.5rem;
+          }
+        }
+
+        .faq_answer {
+          padding-bottom: 10px;
+          span{
+            color:  #d60e4c;
+            font-size: 1.5rem;
+          }
+        }
+
+        li{
+          background: url(../common/images/cheack_icon.png) left 0px top -2px no-repeat;
+          margin: 20px 0;
+          padding-left: 40px;
+        }
+
+        .top_blank{
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+}

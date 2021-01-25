@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- カルーセル -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- jqueryの読み込み -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <title>SAKURA beauty studioについて</title>
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link rel="stylesheet" href="../common/css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+  <header id="header">
+    <div class="inner">
+      <div class="header_flex">
+        <div class="header_left">
+          <h1 class="logo-title"><a href="../index.html"><img src="../common/images/main-logo1.svg"
+                alt="美容総合サロンSAKURA"></a></h1>
+        </div><!-- /.header_left -->
+
+        <!-- PC用 -->
+        <div class="header_right">
+          <div class="contact_box">
+            <div class="contact_box_flex">
+              <div class="contact_box_tel dis-pc">
+                <div class="contact_box_tel_flex">
+                  <div class="contact_box_tel_flex_img">
+                    <img src="../common/images/tel_logo.png" alt="電話">
+                  </div><!-- /.contact_box_tel_flex_img -->
+                  <div class="contact_box_tel_flex_hour">
+                    <p class="contact_time">ご予約受付時間<span>10:00～翌2:30</span>
+                    </p><!-- /.contact_time -->
+                    <p class="contact_box_tel_flex_number">011-252-9539</p><!-- /.contact_box_tel_flex_number -->
+                  </div><!-- /.contact_box_tel_flex_hour -->
+                </div><!-- /.contact_box_tel_flex -->
+              </div><!-- /.contact_box_tel -->
+              <a href="#">
+                <div class="contact_box_com dis-pc">
+                  <p class="contact_box_com_message">ネットでご予約</p><!-- /.contact_box_com_message -->
+                  <img src="../common/images/com_logo.png" alt="パスコン画像">
+                </div><!-- /.contact_box_com -->
+              </a>
+              <a href="#">
+                <div class="contact_box_home dis-pc">
+                  <p class="contact_box_home_message">アクセス</p><!-- /.contact_box_home_message -->
+                  <img src="../common/images/home_logo.png" alt="家の画像">
+                </div><!-- /.contact_box_home -->
+              </a>
+
+              <!-- ドロワーのボタン -->
+              <div class="contact_box_hum dis-sp">
+                <div class="navbar_toggle">
+                  <p class="contact_box_hum_message">メニュー</p>
+                  <div class="menu-trigger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div><!-- /.hamburger_icon -->
+                </div><!-- /.navbar_toggle -->
+              </div><!-- /.contact_box_hum -->
+            </div><!-- /.contact_box_flex -->
+          </div><!-- /.contact_box -->
+        </div><!-- /.header_right -->
+      </div><!-- /.header_flex -->
+    </div><!-- /.inner -->
+  </header>
+
+  <!-- PCのグローバルナビ -->
+  <!-- PCのグローバルナビ -->
+  <section class="global_nav dis-pc site-header">
+    <div class="global_nav_red_line">
+      <div class="inner">
+        <ul class="header-nav">
+          <li class="nav-items"><a href="../index.html">TOP</a></li>
+          <li class="nav-items is-active is-selected"><a href="../about/index.html">SAKURA Beauty studio<br>について</a></li>
+          <li class="nav-items drop_down" id="pc_global_menus"><a href="#3">メニュー・料金 <img
+                src="../common/images/bottom_arrow.png" alt="下矢印" class="bottom-arrow"><img
+                src="../common/images/top_arrow.png" alt="上矢印" class="top-arrow hidden"> </a>
+            <ul class="sub_menu hidden" id="sub_menu_pc">
+              <li class="nav-items"><a href="../epitation/index.html">脱毛</a></li>
+              <li class="nav-items"><a href="../bbl/index.html">BBL</a></li>
+              <li class="nav-items"><a href="../hifu/index.html">HIFU</a></li>
+              <li class="nav-items"><a href="../epitation/index.html#mens_epitation_area-box">メンズ脱毛</a></li>
+              <li class="nav-items"><a href="../whitening/index.html">セルフホワイトニング</a></li>
+            </ul>
+          </li>
+          <li class="nav-items"><a href="#4">キャンペーン</a></li>
+          <li class="nav-items"><a href="../about/index.html#faq_area_point">よくあるご質問</a></li>
+          <li class="nav-items"><a href="#6">お問い合わせ</a></li>
+        </ul><!-- /.header-nav -->
+      </div><!-- /.inner -->
+    </div><!-- /.global_nav_red_line -->
+  </section><!-- /.global_nav -->
+
+  <!-- ＳＰのグローバルナビ -->
+  <section class="sp_global_nav dis-sp hidden" id="sp_global_nav">
+    <ul class="header-nav">
+      <li class="nav-items"><a href="#1">TOP</a></li>
+      <li class="nav-items"><a href="../about/index.html">SAKURA Beauty studio<br class="dis-pc">について</a></li>
+      <li class="nav-items drop_down"><a href="#3" id="sp_sub_menus">メニュー・料金 <img
+            src="../common/images/bottom_arrow.png" alt="下矢印"> </a>
+        <ul class="sub_menu hidden">
+          <li class="nav-items"><a href="../epitation/index.html">脱毛</a></li>
+          <li class="nav-items"><a href="../bbl/index.html">BBL</a></li>
+          <li class="nav-items"><a href="../hifu/index.html">HIFU</a></li>
+          <li class="nav-items"><a href="../epitation/index.html#mens_epitation_area-box">メンズ脱毛</a></li>
+          <li class="nav-items"><a href="../whitening/index.html">セルフホワイトニング</a></li>
+        </ul>
+      </li>
+      <li class="nav-items"><a href="#4">キャンペーン</a></li>
+      <li class="nav-items"><a href="../about/index.html#faq_area_point">よくあるご質問</a></li>
+      <li class="nav-items"><a href="#6">お問い合わせ</a></li>
+    </ul><!-- /.header-nav -->
+  </section><!-- /.sp_global_nav -->
+
+  <!-- SP用 -->
+  <div class="header_right dis-sp hidden" id="sp_contact_box">
+    <div class="contact_box">
+      <div class="contact_box_flex">
+        <div class="contact_box_tel dis-sp">
+          <a href="tel:011-252-9539">
+            <div class="contact_box_tel_flex">
+              <div class="contact_box_tel_flex_img">
+                <img src="../common/images/tel_logo.png" alt="電話">
+              </div><!-- /.contact_box_tel_flex_img -->
+              <div class="contact_box_tel_flex_hour">
+                <p class="contact_time">ご予約受付時間 <span>10:00～翌2:30</span>
+                </p><!-- /.contact_time -->
+                <p class="contact_box_tel_flex_number">011-252-9539</p><!-- /.contact_box_tel_flex_number -->
+              </div><!-- /.contact_box_tel_flex_hour -->
+            </div><!-- /.contact_box_tel_flex -->
+          </a>
+        </div><!-- /.contact_box_tel -->
+        <div class="contact_box_com dis-sp">
+          <a href="#">
+            <p class="contact_box_com_message">ネットでご予約</p><!-- /.contact_box_com_message -->
+            <img src="../common/images/com_logo.png" alt="パスコン画像">
+          </a>
+        </div><!-- /.contact_box_com -->
+        <div class="contact_box_home dis-sp">
+          <a href="#">
+            <p class="contact_box_home_message">アクセス</p><!-- /.contact_box_home_message -->
+            <img src="../common/images/home_logo.png" alt="家の画像">
+          </a>
+        </div><!-- /.contact_box_home -->
+        <div class="contact_box_hum dis-pc">
+          <a href="#">
+            <p class="contact_box_hum_message">メニュー</p><!-- /.contact_box_hum_message -->
+            <img src="../common/images/humberger.png" alt="ハンバーガーメニュー">
+          </a>
+        </div><!-- /.contact_box_hum -->
+      </div><!-- /.contact_box_flex -->
+    </div><!-- /.contact_box -->
+  </div><!-- /.header_right -->
+
+
+  <!-- スクロールするとついてくるメニュー -->
+  <div class="scroll_menu dis-sp">
+    <div class="inner">
+      <div class="contact_box_humber" id="scroll_hamburger">
+        <div class="navbar_toggle_open">
+          <p class="contact_box_hum_message">メニュー</p>
+          <div class="menu-trigger_open">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div><!-- /.hamburger_icon -->
+        </div><!-- /.navbar_toggle -->
+      </div><!-- /.contact_box_hum -->
+
+      <div class="scroll_menu_open hidden">
+        <ul class="header-nav">
+          <li class="nav-items"><a href="../index.html">TOP</a></li>
+          <li class="nav-items is-active"><a href="../about/index.html">SAKURA Beauty studioについて</a></li>
+          <li class="nav-items drop_down"><a href="#3" id="global_menus_open">メニュー・料金 <img
+                src="../common/images/bottom_arrow.png" alt="下矢印"> </a>
+            <ul class="sub_menu sub_menu_scroll hidden">
+              <li class="nav-items"><a href="../epitation/index.html">脱毛</a></li>
+              <li class="nav-items"><a href="../bbl/index.html">BBL</a></li>
+              <li class="nav-items"><a href="../hifu/index.html">HIFU</a></li>
+              <li class="nav-items"><a href="../epitation/index.html#mens_epitation_area-box">メンズ脱毛</a></li>
+              <li class="nav-items"><a href="../whitening/index.html">セルフホワイトニング</a></li>
+            </ul>
+          </li>
+          <li class="nav-items"><a href="#4">キャンペーン</a></li>
+          <li class="nav-items"><a href="../about/index.html#faq_area_point">よくあるご質問</a></li>
+          <li class="nav-items"><a href="#6">お問い合わせ</a></li>
+        </ul><!-- /.header-nav -->
+
+        <!-- 下部の電話＆ネット＆アクセス -->
+        <div class="contact_box">
+          <div class="contact_box_flex">
+            <div class="contact_box_tel">
+              <a href="tel:011-252-9539">
+                <div class="contact_box_tel_flex">
+                  <div class="contact_box_tel_flex_img">
+                    <img src="../common/images/tel_logo.png" alt="電話">
+                  </div><!-- /.contact_box_tel_flex_img -->
+                  <div class="contact_box_tel_flex_hour">
+                    <p class="contact_time">ご予約受付時間 <span>10:00～翌2:30</span>
+                    </p><!-- /.contact_time -->
+                    <p class="contact_box_tel_flex_number">011-252-9539</p><!-- /.contact_box_tel_flex_number -->
+                  </div><!-- /.contact_box_tel_flex_hour -->
+                </div><!-- /.contact_box_tel_flex -->
+              </a>
+            </div><!-- /.contact_box_tel -->
+            <div class="contact_box_com">
+              <a href="#">
+                <p class="contact_box_com_message">ネットでご予約</p><!-- /.contact_box_com_message -->
+                <img src="../common/images/com_logo.png" alt="パスコン画像">
+              </a>
+            </div><!-- /.contact_box_com -->
+            <div class="contact_box_home">
+              <a href="#">
+                <p class="contact_box_home_message">アクセス</p><!-- /.contact_box_home_message -->
+                <img src="../common/images/home_logo.png" alt="家の画像">
+              </a>
+            </div><!-- /.contact_box_home -->
+          </div><!-- /.contact_box_flex -->
+        </div><!-- /.contact_box -->
+      </div><!-- /.scroll_menu_open -->
+    </div><!-- /.inner -->
+  </div><!-- /.scroll_menu -->
+
+  <section class="about_sakura">
+    <div class="bbl_bk">
+      <div class="inner">
+        <div class="about_sakura_box">
+          <div class="about_sakura_box_flex">
+            <div class="about_sakura_box_flex_left">
+              <h2><img src="../common/images/contents01_ttl@2.svg" alt="sakura"></h2>
+              <p class="about_sakura_box_flex_left_message">SAKURA beauty studio（サクラビューティースタジオ）は、札幌・すすきので</p>
+              <ul class="about_sakura_list">
+                <li class="about_sakura_lists">レディース・メンズ脱⽑</li><!-- /.about_sakura_lists -->
+                <li class="about_sakura_lists">BBL</li><!-- /.about_sakura_lists -->
+                <li class="about_sakura_lists">HIFU</li><!-- /.about_sakura_lists -->
+                <li class="about_sakura_lists">セルフホワイトニング</li><!-- /.about_sakura_lists -->
+              </ul><!-- /.about_sakura_lists -->
+              <p class="about_sakura_box_flex_left_message_under">
+                をご提供する総合美容サロンです。<br>
+                リーズナブルな価格と安⼼の都度払いでお好きな時間にお好きな回数のご利⽤が可能です。
+              </p><!-- /.about_sakura_box_flex_left_message_under -->
+              <!-- /.about_sakura_box_flex_left_message -->
+            </div><!-- /.about_sakura_box_flex_left -->
+            <div class="about_sakura_box_flex_right">
+              <img src="images/about_main.JPG" alt="女性">
+            </div><!-- /.about_sakura_box_flex_right -->
+          </div><!-- /.about_sakura_box_flex -->
+        </div><!-- /.about_sakura_box -->
+      </div><!-- /.inner -->
+    </div>
+  </section><!-- /.about_sakura_area -->
+
+
+  <section class="about_concept_power">
+    <div class="about_concept_power_bk">
+      <div class="inner">
+        <div class="about_concept_power_box">
+          <div class="about_concept_power_flex">
+            <div class="about_concept_power_flex_left">
+              <img src="images/about-concept.JPG" alt="集合写真">
+            </div><!-- /.about_concept_power__flex_left -->
+            <div class="about_concept_power_flex_right">
+              <img src="./images/concept.png" alt="コンセプト">
+              <h3 class="about_concept_power_flex_right_title">勧誘⼀切なし！コース契約、追加営業なし！</h3>
+              <p class="about_concept_power_flex_right_message">
+                ⾼額なお⽀払いや商品の押し売りなどもございません。
+                エステに通いたいけど「⾼額な契約をしたくない！」そんな⽅にオススメの都度払いサロンで
+                す。お肌のケアについてのご説明やお悩み相談のみさせていただきます。
+                また、他のサロンだと⾃⼰処理をしていない場合、施術をお断りするケースがほとんどだと
+                思いますが、当サロンはシェービング代1箇所1,000円をお⽀払いいただければこちらで
+                シェービングを⾏うことができますので <span>"すぐに脱⽑したい！"</span> が、叶うサロンです。
+              </p><!-- /.about_concept_power_flex_right_message -->
+            </div><!-- /.about_concept_power_flex_right -->
+          </div><!-- /.about_concept_power_flex -->
+          <div id="faq_area_point"></div><!-- /#faq_area_point -->
+        </div><!-- /.about_concept_power_box -->
+      </div><!-- /.inner -->
+    </div>
+  </section><!-- /.about_concept_power_ -->
+
+
+
+  <section class="faq_area">
+    <div class="inner">
+      <div class="faq_area_box">
+        <h3 class="faq_title"><img src="./images/FAQ.png" alt="FAQ"></h3><!-- /.faq_title -->
+        <div class="faq_area_menu">
+          <ul class="faq_area_menu_flex">
+            <li><a href="#about_faq">ご利⽤について</a></li>
+            <li><a href="#epitation_faq">脱⽑について</a></li>
+            <li><a href="#bbl_faq">BBLについて</a></li>
+            <li><a href="#hifu_faq">HIFUについて</a></li>
+            <li><a href="#whitening_faq">ホワイトニング<br>について</a></li>
+          </ul>
+        </div><!-- /.faq_area_menu -->
+        <h4 id="about_faq">ご利⽤について</h4>
+        <div class="faq_area_box_contents">
+          <div class="faq_area_box_contents_each">
+            <p class="faq_question">
+              <span>Q.</span>カウンセリング時間はどのぐらいかかりますか？
+            </p><!-- /.faq_question -->
+            <p class="faq_answer"><span>A.</span>
+              初回のカウンセリングにつきましては、「約10〜15分」のお時間をいただいております。<br>
+              カウンセリングでは、サロンスタッフがお客さまのお悩みやご要望をしっかりと伺い、お肌や⾃⼰処理の状態を丁寧に確認させていた
+              だきます。また、脱⽑・BBL・HIFUの仕組み、効果や施術内容、料⾦などもしっかりとご説明させていただきました上で、お客様に最
+              適なプランをご提案致します</p><!-- /.faq_answer -->
+          </div><!-- /.faq_area_box_contents_each -->
+          <div class="faq_area_box_contents_each">
+            <p class="faq_question">
+              <span>Q.</span>都合が悪くなってしまった場合、変更・キャンセルはできますか？
+            </p><!-- /.faq_question -->
+            <p class="faq_answer"><span>A.</span>
+              空きがある場合は時間変更も可能です。キャンセル料などもいただいておりません。<br>
+              当⽇キャンセルの場合は予約時間より前にお電話にてご連絡をお願いしております。
+            </p><!-- /.faq_answer -->
+          </div><!-- /.faq_area_box_contents_each -->
+          <div class="faq_area_box_contents_each">
+            <p class="faq_question">
+              <span>Q.</span>18歳未満ですが施術可能ですか？
+            </p><!-- /.faq_question -->
+            <p class="faq_answer"><span>A.</span>
+              ご来店前にメールか郵便にて未成年親権者同意書をお送りいたしますので、当サロンまでお電話下さい。<br>
+              ご来店時に同意書をお持ちいただいた場合：同意書を確認後、施術に⼊ります。<br>
+              ご来店時に同意書がない場合：テレビ電話にて、ご親権者様に施術内容のお話をさせていただき、ご親権者様の⾝分証明書の確認をさ
+              せて頂きます。来店時に同意書をお渡しますので、次回来店時にお持ちください。<br>
+              ご親権者様のお付き添いでのご来店も可能になっております。
+            </p><!-- /.faq_answer -->
+          </div><!-- /.faq_area_box_contents_each -->
+          <div class="faq_area_box_contents_each">
+            <p class="faq_question">
+              <span>Q.</span>施術できない条件はありますか？
+            </p><!-- /.faq_question -->
+            <p class="faq_answer"><span>A.</span>
+              以下に該当されるお客さまのご利⽤はできかねますので、予めご了承くださいませ。
+            </p><!-- /.faq_answer -->
+            <ul>
+              <li>体調がすぐれない⽅</li>
+              <li>妊娠中・授乳中の⽅</li>
+              <li>⽪膚疾患のある⽅</li>
+              <li>お肌に炎症・腫れ・⾚みがある⽅</li>
+              <li>⼼疾患や頻脈症のある⽅</li>
+              <li>ペースメーカーをご使⽤の⽅</li>
+              <li>当⽇飲酒をされている⽅</li>
+              <li>施術部位に⾦属プレート、シリコン、プロテーゼ、ボトックス、ヒアルロン酸、⽷リフト、インプラントを使⽤されている⽅</li>
+              <li>医療、美容機関での注射前後1週間以内の⽅（にんにく注射・美容点滴など）</li>
+              <li>アートメイク・タトゥー及び刺⻘をされている部位</li>
+            </ul>
+            <p class="top_blank">なお、以下に該当されるお客さまは、サロンスタッフまでご相談ください。</p>
+            <ul>
+              <li>持病をお持ちの⽅</li>
+              <li>医師の治療を受けられている⽅</li>
+              <li>薬を内服・塗布中の⽅</li>
+            </ul>
+            <p>その他ご不明点等ございましたら、まずは無料カウンセリングをご利⽤くださいませ。</p>
+          </div><!-- /.faq_area_box_contents_each -->
+        </div><!-- /.faq_area_box_contents -->
+
+        <h4 id="epitation_faq">脱⽑について</h4>
+        <div class="faq_area_box_contents">
+          <div class="faq_area_box_contents_each">
+            <p class="faq_question">
+              <span>Q.</span>痛みはありますか？
+            </p><!-- /.faq_question -->
+            <p class="faq_answer"><span>A.</span>
+              感じ⽅には個⼈差がありますが、部位（VIOや男性の髭）によっては軽い刺激がある場合がございます。当サロンの機械はお肌にあたる
+              クリスタルを冷却しながら脱⽑をしますので、お痛みが軽減され安⼼して施術をお受けいただけるかと思います。
+              体感はじんわり暖かい程度が最⼤となっております。
+            </p><!-- /.faq_answer -->
+          </div><!-- /.faq_area_box_contents_each -->
+          <div class="faq_area_box_contents_each">
+            <p class="faq_question">
+              <span>Q.</span>⾊⿊肌や、埋もれ⽑・ほくろの⽑・産⽑にも脱⽑できますか？
+            </p><!-- /.faq_question -->
+            <p class="faq_answer"><span>A.</span>
+              はい、当サロンなら可能です。最新の『SHR⽅式』を採⽤しており、これまでのような「⿊いメラニン⾊素」に直接反応する脱⽑⽅法
+              ではないため、しっかり効果が出ます。<br>
+              SHR⽅式とは、バルジ(⽑を作る際に指令を出すところ)にダメージを与え、熱を「⽑包」に集中させて⽑を徐々に減らしていく脱⽑⽅
+              法を採⽤しているため、従来の脱⽑⽅法では効果が出なかったお客様にも⼤変喜んでいただいております。<br>
+              業界最先端の⾼性能脱⽑機『LUMIX-A9』のチカラをぜひご体感ください。
+            </p><!-- /.faq_answer -->
+          </div><!-- /.faq_area_box_contents_each -->
+          <div class="faq_area_box_contents_each">
+            <p class="faq_question">
+              <span>Q.</span>どれくらいの来店ペースで、何回通えばいいですか？
+            </p><!-- /.faq_question -->
+            <p class="faq_answer"><span>A.</span>
+              2週間あけていただければ施術は可能となっております。効果には個⼈差がありますが、3.4回で⽑の減りを感じ、12回程通っていただ
+              くとご満⾜いただける⽅が多いです。<br>
+              ワキやVIO、男性の髭など⽑量が多く太い⽑が⽣える箇所は、他の箇所よりも回数が必要となります。<br>
+              また、永久脱⽑ではないので100％⽑が⽣えなくなることはありません。
+            </p><!-- /.faq_answer -->
+          </div><!-- /.faq_area_box_contents_each -->
+          <div class="faq_area_box_contents_each">
+            <p class="faq_question">
+              <span>Q.</span>術後のケアは必要ですか？
+            </p><!-- /.faq_question -->
+            <p class="faq_answer"><span>A.</span>
+              激しい運動や⼊浴など代謝を上げることは控え、肌を乾燥させないよう保湿剤や⽇焼け⽌めを塗っていただくようお願いいたします。
+              お酒は控えて頂き、施術箇所に⾚みが出ましたら冷たいタオルで肌を鎮静してください。<br>
+              万が⼀、体調や施術部位に異変がある場合は当サロンまでご連絡ください。
+            </p><!-- /.faq_answer -->
+          </div><!-- /.faq_area_box_contents_each -->
+          <div class="faq_area_box_contents_each">
+            <p class="faq_question">
+              <span>Q.</span>何歳から施術が可能ですか？
+            </p><!-- /.faq_question -->
+            <p class="faq_answer"><span>A.</span>
+              7歳から施術が可能です。光バストケアは育ちやすい環境を整えることができるので学⽣さんなど10代の⽅にもおすすめです。
+            </p><!-- /.faq_answer -->
+          </div><!-- /.faq_area_box_contents_each -->
+        </div><!-- /.faq_area_box_contents -->
+
+
+        <h4 id="bbl_faq">BBLについて</h4>
+        <div class="faq_area_box_contents">
+          <div class="faq_area_box_contents_each">
+            <p class="faq_question">
+              <span>Q.</span>BBLとは？
+            </p><!-- /.faq_question -->
+            <p class="faq_answer"><span>A.</span>
+              従来の光フェイシャルでは、熱さや痛みなどの刺激に加え、⽕傷などのリスクがあり限界がありましたが、それを解決するために登場
+              したのがBBLです。<br>
+              BBLはゆっくりと真⽪層を温めていくことで、コラーゲンの修復を最⼤に⾼めるなど、⽬覚ましいエイジングケアの効果が期待できま
+              す。<br>
+              従来の光フェイシャルと⽐較すると5倍の美容効果があると⾔われ、リフトアップや、ハリ、引き締まりなどを実感していただけます。
+            </p><!-- /.faq_answer -->
+          </div><!-- /.faq_area_box_contents_each -->
+          <div class="faq_area_box_contents_each">
+            <p class="faq_question">
+              <span>Q.</span>BBLの効果は？
+            </p><!-- /.faq_question -->
+            <p class="faq_answer"><span>A.</span>
+              従来のものより、熱さを感じない光を何度も照射する事で、⾼い熱量を肌の深部に⼊れることが出来ます。<br>
+              照射直後にリフトアップ、⽑⽳の引き締まり、透明感など効果を感じられます。<br>
+              お顔は、全体の⽑⽳の開きや⾚ら顔など広い範囲のお悩みや、⼝元のシワ、ニキビ。<br>
+              お⾝体は、バストアップやヒップアップなどスポット的にケアしたい箇所は重ねて照射する事でお悩みひとつひとつに対応したオーダ
+              メイドのトリートメントが可能になりました。
+            </p><!-- /.faq_answer -->
+          </div><!-- /.faq_area_box_contents_each -->
+          <div class="faq_area_box_contents_each">
+            <p class="faq_question">
+              <span>Q.</span>どのくらいのペースで受けられますか？
+            </p><!-- /.faq_question -->
+            <p class="faq_answer"><span>A.</span>
+              2週間に1回程度を3ヶ⽉、6回程度を1クールとして続けることをお勧めします。
+              1回でも効果は出ますが、3カ⽉程度は続けて頂くことをお勧めしております。
+            </p><!-- /.faq_answer -->
+          </div><!-- /.faq_area_box_contents_each -->
+          <div class="faq_area_box_contents_each">
+            <p class="faq_question">
+              <span>Q.</span>光バストケアは全ての⼈に効果が出ますか？
+            </p><!-- /.faq_question -->
+            <p class="faq_answer"><span>A.</span>
+              全ての⼈に効果があるとは⾔い切れません。光のバストで効果が出る、出ないは潜在的に脂肪細胞をどのくらい持っているかというと
+              ころがカギになります。<br>
+              主に成⻑期の時から痩せていて、胸もずっと⼩さかった⽅は脂肪細胞そのものが少なく、思うように効果が出ないなども考えられま
+              す。<br>
+              ダイエットなどでカップのサイズが⼩さくなった⽅は、脂肪細胞の個数が多い⽅ですので、結果が早く出てきます。
+              美容整形とは異なりますので、Aカップの⽅がEカップやFカップになるということはありません。個⼈差ございますが1〜2カップ程度
+              の⽅が多いです。
+            </p><!-- /.faq_answer -->
+          </div><!-- /.faq_area_box_contents_each -->
+          <div class="faq_area_box_contents_each">
+            <p class="faq_question">
+              <span>Q.</span>何歳から施術が可能ですか？
+            </p><!-- /.faq_question -->
+            <p class="faq_answer"><span>A.</span>
+              7歳から施術が可能です。光バストケアは育ちやすい環境を整えることができるので学⽣さんなど10代の⽅にもおすすめです。
+            </p><!-- /.faq_answer -->
+          </div><!-- /.faq_area_box_contents_each -->
+        </div><!-- /.faq_area_box_contents -->
+
+        <h4 id="hifu_faq">HIFUについて</h4>
+        <div class="faq_area_box_contents">
+          <div class="faq_area_box_contents_each">
+            <p class="faq_question">
+              <span>Q.</span>HIFUとは何ですか？
+            </p><!-- /.faq_question -->
+            <p class="faq_answer"><span>A.</span>
+              超⾳波を⽪下層にピンポイントでアプローチし頬や⽬元、顎下などのたるみを引き締めたり、脂肪そのものに働きかけ⽪下脂肪の減少
+              を促していく施術です。
+            </p><!-- /.faq_answer -->
+          </div><!-- /.faq_area_box_contents_each -->
+          <div class="faq_area_box_contents_each">
+            <p class="faq_question">
+              <span>Q.</span>痛みはありますか？
+            </p><!-- /.faq_question -->
+            <p class="faq_answer"><span>A.</span>
+              部位や施術箇所の状態にもよりますが、ほとんど痛みはありません。
+            </p><!-- /.faq_answer -->
+          </div><!-- /.faq_area_box_contents_each -->
+          <div class="faq_area_box_contents_each">
+            <p class="faq_question">
+              <span>Q.</span>15000ショット以上当てられますか？
+            </p><!-- /.faq_question -->
+            <p class="faq_answer"><span>A.</span>
+              かゆみや⾚み、まれに⽔ぶくれができる可能性がありますのでショット数を制限しています。
+            </p><!-- /.faq_answer -->
+          </div><!-- /.faq_area_box_contents_each -->
+          <div class="faq_area_box_contents_each">
+            <p class="faq_question">
+              <span>Q.</span>当てられない箇所はありますか？
+            </p><!-- /.faq_question -->
+            <p class="faq_answer"><span>A.</span>
+              胸や背中の中⼼部分、ひざ裏、脇の下などリンパﾟ節がある箇所が不可です。
+            </p><!-- /.faq_answer -->
+          </div><!-- /.faq_area_box_contents_each -->
+          <div class="faq_area_box_contents_each">
+            <p class="faq_question">
+              <span>Q.</span>どのくらいの間隔で通えばいいですか？
+            </p><!-- /.faq_question -->
+            <p class="faq_answer"><span>A.</span>
+              2週間に⼀回で3〜6か⽉程度をおすすめしています。
+            </p><!-- /.faq_answer -->
+          </div><!-- /.faq_area_box_contents_each -->
+        </div><!-- /.faq_area_box_contents -->
+
+        <h4 id="whitening_faq">ホワイトニングについて</h4>
+        <div class="faq_area_box_contents">
+          <div class="faq_area_box_contents_each">
+            <p class="faq_question">
+              <span>Q.</span>どのような効果がありますか？
+            </p><!-- /.faq_question -->
+            <p class="faq_answer"><span>A.</span>
+              ⻭を漂⽩する施術⽅法とは異なり、当サロンのセルフホワイトニングは⻭に付着した汚れを落とし、元々の⻭の⽩さに戻す⽅法になり
+              ます。さらに、抗菌・殺菌・⼝臭予防にも効果的です。
+            </p><!-- /.faq_answer -->
+          </div><!-- /.faq_area_box_contents_each -->
+          <div class="faq_area_box_contents_each">
+            <p class="faq_question">
+              <span>Q.</span>どのくらいの間隔で通えばいいですか？
+            </p><!-- /.faq_question -->
+            <p class="faq_answer"><span>A.</span>
+              1週間に1回を1カ⽉続けてみてください。
+            </p><!-- /.faq_answer -->
+          </div><!-- /.faq_area_box_contents_each -->
+        </div><!-- /.faq_area_box_contents -->
+      </div><!-- /.faq_area_box -->
+    </div><!-- /.inner -->
+  </section><!-- /.faq_area -->
+
+
+
+
+
+
+  <!-- ここからが予約画面・共通部分 -->
+
+
+
+  <section class="reservation">
+    <div class="inner">
+      <div class="reservation_logo">
+        <h2>
+          <img src="../common/images/reservation.png" alt="ご予約" class="dis-pc">
+          <img src="../common/images/reservation_sp.png" alt="ご予約" class="dis-sp">
+        </h2>
+      </div><!-- /.reservation_logo -->
+      <div class="reservation_counseling">
+        <img src="../common/images/star-mark.png" alt="星" class="star1 dis-pc">
+        <img src="../common/images/star-mark.png" alt="星" class="star2 dis-pc">
+        <p class="counseling_title"><span>カウンセリング無料相談</span></p><!-- /.counseling_title -->
+        <p class="counseling_message">どんなことでも<span>お気軽に</span>お電話でご連絡ください！<br>
+          当店ではスタッフが現在8名在籍しておりますので<span>スピーディーな対応</span>が可能です!</p><!-- /.counseling_message -->
+      </div><!-- /.reservation_counseling -->
+      <div class="reservation_flex">
+        <div class="reservation_flex_left">
+          <a href="tel:011-252-9539">
+            <img src="../common/images/tel_img.jpg" alt="電話">
+          </a>
+        </div><!-- /.reservation_flex_left -->
+        <div class="reservation_flex_right">
+          <a href="#"><img src="../common/images/net_img.jpg" alt="ネット"></a>
+        </div><!-- /.reservation_flex_right -->
+      </div><!-- /.reservation_flex -->
+      <div class="reservation_flex2">
+        <div class="reservation_flex2_left">
+          <a href="#"><img src="../common/images/Interview_bnr.jpg" alt="ご予約されたお客様へ"></a>
+        </div><!-- /.reservation_flex2_left -->
+        <div class="reservation_flex2_right">
+          <a href="#"><img src="../common/images/consent_bnr.jpg" alt="未成年のお客様へ"></a>
+        </div><!-- /.reservation_flex2_right -->
+      </div><!-- /.reservation_flex2 -->
+    </div><!-- /.inner -->
+  </section><!-- /.reservation -->
+
+  <footer>
+    <div class="inner">
+      <div class="footer_flex">
+        <div class="footer_logo">
+          <h2><img src="../common/images/footer-logo.svg" alt="ロゴ"></h2>
+        </div><!-- /.footer_logo -->
+        <div class="footer_list">
+          <p class="footer_about"><a href="index.html"><img src="../common/images/hana.png" alt="花"> <span>SAKURA beauty
+                studioについて</span></a></p>
+          <div class="footer_list_flex">
+            <div class="footer_list_flex_left">
+              <ul>
+                <li><a href="../epitation/index.html"><img src="../common/images/hana.png" alt="花"> 脱毛</a></li>
+                <li><a href="../bbl/index.html"><img src="../common/images/hana.png" alt="花"> BBL</a></li>
+                <li><a href="../hifu/index.html"><img src="../common/images/hana.png" alt="花"> HIFU</a></li>
+                <li><a href="../epitation/index.html#mens_epitation_area-box"><img src="../common/images/hana.png"
+                      alt="花"> メンズ脱毛</a></li>
+                <li><a href="../whitening/index.html"><img src="../common/images/hana.png" alt="花"> セルフホワイトニング</a></li>
+              </ul>
+            </div><!-- /.footer_list_flex_left -->
+            <div class="footer_list_flex_right">
+              <ul>
+                <li><a href="#"><img src="../common/images/hana.png" alt="花"> キャンペーン</a></li>
+                <li><a href="#"><img src="../common/images/hana.png" alt="花"> お知らせ／コラム</a></li>
+                <li><a href="#"><img src="../common/images/hana.png" alt="花"> サロン情報</a></li>
+                <li><a href="#"><img src="../common/images/hana.png" alt="花"> お問い合わせ</a></li>
+              </ul>
+            </div><!-- /.footer_list_flex_right -->
+          </div><!-- /.footer_list_flex -->
+        </div><!-- /.footer_list -->
+        <div class="sns">
+          <a href="#"><img src="../common/images/Instagram_btn.png" alt="インスタグラム"></a>
+          <a href="#"><img src="../common/images/twitter_btn.png" alt="ツイッター"></a>
+          <a href="#"><img src="../common/images/facebook_btn.png" alt="インスタグラム"></a>
+          <a href="#"><img src="../common/images/youtube_btn.png" alt="ユーチューブ"></a>
+        </div><!-- /.sns -->
+      </div><!-- /.footer_flex -->
+      <p class="footer_reserved"><small lang="en">©SAKURA beauty studio. All Rights Reserved.</small></p>
+    </div><!-- /.inner -->
+  </footer>
+
+  <script src="../common/js/index.js"></script>
+</body>
+
+</html>
