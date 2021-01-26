@@ -2,10 +2,11 @@
   background: #e6396a url("../common/images/hana-bk2-left.png") no-repeat left bottom;
   margin-top: 170px;
   z-index: -5;
-  padding: 30px 0;
+  padding: 56px 0;
 
   @include mq(md) {
     margin: 0;
+    padding: 30px 0;
   }
 
   .epitation_bk{
@@ -77,7 +78,12 @@
 
   .shr_bk{
     background: url("../common/images/hana-bk4-left.png") no-repeat left bottom;
+    padding: 56px 0;
+
+  @include mq(md) {
+    margin: 0;
     padding: 30px 0;
+  }
   }
 
   .shr_box {
@@ -148,7 +154,12 @@
 // =============================================
 .menu_schedule {
   background: #fff4f6 url("../common/images/hana-bk.png") no-repeat left top;
-  padding: 30px 0;
+  padding: 56px 0;
+
+  @include mq(md) {
+    margin: 0;
+    padding: 30px 0;
+  }
 
   .menu_schedule_bk{
     background: url("../common/images/hana-bk.png") no-repeat right top;
@@ -223,7 +234,12 @@
 
   .menu_short_bk{
     background: url("../common/images/hana-bk4-left.png") no-repeat left bottom;
+    padding: 56px 0;
+
+  @include mq(md) {
+    margin: 0;
     padding: 30px 0;
+  }
   }
 
   .menu_short_box {
@@ -295,20 +311,22 @@
   background-image: url(../common/images/back_yellow.png);
   background-size: cover;
   background-position: center center;
-  padding: 30px 0;
+  padding: 56px 0 30px;
 
-  .sp_back{
-    padding: 10px;
+  @include mq(md) {
+    margin: 0;
+    padding: 30px 0;
   }
+
+  
 
   .epitation_banner{
     width: 60%;
-    margin: 20px auto 55px;
-
+    margin: 0 auto ;
 
     @include mq(md) {
       width: 90%;
-      margin: 0 auto;
+      margin: 20px auto 0;
     }
   }
 }
@@ -461,9 +479,22 @@
 // ＭＥＮＳ 部分
 // ==============================================
 
+
+
 .menu_mens_epitation {
   background: #c2d6f0 url("../common/images/hana-bk3-right.png") no-repeat right top;
-  padding: 30px 0;
+  padding: 56px 0;
+  position: relative;
+
+  @include mq(md) {
+    margin: 0;
+    padding: 30px 0;
+  }
+
+  #mens_epitation_area-box{
+    position: absolute;
+    top: -100px;
+  }
 
   .mens_bk{
     background: url("../common/images/hana-bk3-left.png") no-repeat left bottom;
@@ -603,8 +634,14 @@
   background-image: url(../service/images/zebra-mens.png);
   background-size: cover;
   background-position: center center;
-  padding: 30px 0;
   text-align: center;
+
+  padding: 56px 0;
+
+  @include mq(md) {
+    margin: 0;
+    padding: 30px 0;
+  }
 }
 
 

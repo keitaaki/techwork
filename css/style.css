@@ -1091,6 +1091,7 @@ footer .footer_reserved {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 56px 0;
 }
 
 .about .about_flex .about_left {
@@ -1245,7 +1246,7 @@ footer .footer_reserved {
 
 .menu .menu_message_box .menu_massage_picture {
   position: absolute;
-  top: -5%;
+  top: -10%;
   right: -15%;
 }
 
@@ -2536,10 +2537,6 @@ footer .footer_reserved {
   }
 }
 
-.access .access_flex .access_flex_right img {
-  width: 69%;
-}
-
 @media screen and (max-width: 1187px) {
   .access .access_flex .access_flex_right img {
     width: 75%;
@@ -2698,12 +2695,13 @@ footer .footer_reserved {
   background: #e6396a url("../common/images/hana-bk2-left.png") no-repeat left bottom;
   margin-top: 170px;
   z-index: -5;
-  padding: 30px 0;
+  padding: 56px 0;
 }
 
 @media screen and (max-width: 768px) {
   .menu_epitation {
     margin: 0;
+    padding: 30px 0;
   }
 }
 
@@ -2783,7 +2781,14 @@ footer .footer_reserved {
 
 .shr .shr_bk {
   background: url("../common/images/hana-bk4-left.png") no-repeat left bottom;
-  padding: 30px 0;
+  padding: 56px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .shr .shr_bk {
+    margin: 0;
+    padding: 30px 0;
+  }
 }
 
 .shr .shr_box {
@@ -2873,7 +2878,14 @@ footer .footer_reserved {
 
 .menu_schedule {
   background: #fff4f6 url("../common/images/hana-bk.png") no-repeat left top;
-  padding: 30px 0;
+  padding: 56px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .menu_schedule {
+    margin: 0;
+    padding: 30px 0;
+  }
 }
 
 .menu_schedule .menu_schedule_bk {
@@ -2962,7 +2974,14 @@ footer .footer_reserved {
 
 .menu_short .menu_short_bk {
   background: url("../common/images/hana-bk4-left.png") no-repeat left bottom;
-  padding: 30px 0;
+  padding: 56px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .menu_short .menu_short_bk {
+    margin: 0;
+    padding: 30px 0;
+  }
 }
 
 .menu_short .menu_short_box {
@@ -3051,22 +3070,25 @@ footer .footer_reserved {
   background-image: url(../common/images/back_yellow.png);
   background-size: cover;
   background-position: center center;
-  padding: 30px 0;
+  padding: 56px 0 30px;
 }
 
-.epitation_parts .sp_back {
-  padding: 10px;
+@media screen and (max-width: 768px) {
+  .epitation_parts {
+    margin: 0;
+    padding: 30px 0;
+  }
 }
 
 .epitation_parts .epitation_banner {
   width: 60%;
-  margin: 20px auto 55px;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 768px) {
   .epitation_parts .epitation_banner {
     width: 90%;
-    margin: 0 auto;
+    margin: 20px auto 0;
   }
 }
 
@@ -3245,7 +3267,20 @@ footer .footer_reserved {
 
 .menu_mens_epitation {
   background: #c2d6f0 url("../common/images/hana-bk3-right.png") no-repeat right top;
-  padding: 30px 0;
+  padding: 56px 0;
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .menu_mens_epitation {
+    margin: 0;
+    padding: 30px 0;
+  }
+}
+
+.menu_mens_epitation #mens_epitation_area-box {
+  position: absolute;
+  top: -100px;
 }
 
 .menu_mens_epitation .mens_bk {
@@ -3413,8 +3448,15 @@ footer .footer_reserved {
   background-image: url(../service/images/zebra-mens.png);
   background-size: cover;
   background-position: center center;
-  padding: 30px 0;
   text-align: center;
+  padding: 56px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .mens_points {
+    margin: 0;
+    padding: 30px 0;
+  }
 }
 
 .mens_flow h2 {
@@ -3496,14 +3538,15 @@ footer .footer_reserved {
 
 .menu_bbl {
   background: #e6396a url("../common/images/hana-bk2-left.png") no-repeat left bottom;
-  padding: 30px 0;
   margin-top: 170px;
   z-index: -5;
+  padding: 56px 0;
 }
 
 @media screen and (max-width: 768px) {
   .menu_bbl {
     margin: 0;
+    padding: 30px 0;
   }
 }
 
@@ -3579,7 +3622,14 @@ footer .footer_reserved {
 
 .bbl_light_power {
   background: #ffffee url("../common/images/hana-bk4-right.png") no-repeat right top;
-  padding: 30px 0;
+  padding: 56px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .bbl_light_power {
+    margin: 0;
+    padding: 30px 0;
+  }
 }
 
 .bbl_light_power .bbl_light_power_bk {
@@ -3674,7 +3724,14 @@ footer .footer_reserved {
 
 .bbl_tits {
   background: #fff4f6 url("../common/images/hana-bk.png") no-repeat left top;
-  padding: 30px 0;
+  padding: 56px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .bbl_tits {
+    margin: 0;
+    padding: 30px 0;
+  }
 }
 
 .bbl_tits .bbl_bk_tits {
@@ -3761,7 +3818,25 @@ footer .footer_reserved {
   background-image: url(../common/images/back_yellow.png);
   background-size: cover;
   background-position: center center;
-  padding: 30px 0;
+  padding: 56px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .bbl_points {
+    margin: 0;
+    padding: 30px 0;
+  }
+}
+
+.bbl__flow {
+  padding: 56px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .bbl__flow {
+    margin: 0;
+    padding: 30px 0;
+  }
 }
 
 .bbl__flow h2 {
@@ -3843,14 +3918,15 @@ footer .footer_reserved {
 
 .menu__hifu {
   background: #e6396a url("../common/images/hana-bk2-left.png") no-repeat left bottom;
-  padding: 30px 0;
   margin-top: 170px;
   z-index: -5;
+  padding: 56px 0;
 }
 
 @media screen and (max-width: 768px) {
   .menu__hifu {
     margin: 0;
+    padding: 30px 0;
   }
 }
 
@@ -3928,7 +4004,14 @@ footer .footer_reserved {
 
 .no_pain {
   background: #ffffee url("../common/images/hana-bk4-right.png") no-repeat right top;
-  padding: 30px 0;
+  padding: 56px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .no_pain {
+    margin: 0;
+    padding: 30px 0;
+  }
 }
 
 .no_pain .no_pain_bk {
@@ -4024,7 +4107,14 @@ footer .footer_reserved {
 
 .usual_hifu {
   background: #fff4f6 url("../common/images/hana-bk.png") no-repeat left top;
-  padding: 30px 0;
+  padding: 56px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .usual_hifu {
+    margin: 0;
+    padding: 30px 0;
+  }
 }
 
 .usual_hifu .usual_hifu_bk {
@@ -4118,7 +4208,25 @@ footer .footer_reserved {
   background-image: url(../common/images/back_yellow.png);
   background-size: cover;
   background-position: center center;
-  padding: 30px 0;
+  padding: 56px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .hifu_points {
+    margin: 0;
+    padding: 30px 0;
+  }
+}
+
+.hifu__flow {
+  padding: 56px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .hifu__flow {
+    margin: 0;
+    padding: 30px 0;
+  }
 }
 
 .hifu__flow h2 {
@@ -4220,14 +4328,15 @@ footer .footer_reserved {
 
 .menu__whitening {
   background: #e6396a url("../common/images/hana-bk2-left.png") no-repeat left bottom;
-  padding: 30px 0;
   margin-top: 170px;
   z-index: -5;
+  padding: 56px 0;
 }
 
 @media screen and (max-width: 768px) {
   .menu__whitening {
     margin: 0;
+    padding: 30px 0;
   }
 }
 
@@ -4304,7 +4413,14 @@ footer .footer_reserved {
 
 .five-minutes {
   background: #ffffee url("../common/images/hana-bk4-right.png") no-repeat right top;
-  padding: 30px 0;
+  padding: 56px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .five-minutes {
+    margin: 0;
+    padding: 30px 0;
+  }
 }
 
 .five-minutes .five-minutes_bk {
@@ -4401,7 +4517,25 @@ footer .footer_reserved {
   background-image: url(../common/images/back_yellow.png);
   background-size: cover;
   background-position: center center;
-  padding: 30px 0;
+  padding: 56px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .whitening-price {
+    margin: 0;
+    padding: 30px 0;
+  }
+}
+
+.whitening__flow {
+  padding: 56px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .whitening__flow {
+    margin: 0;
+    padding: 30px 0;
+  }
 }
 
 .whitening__flow h2 {

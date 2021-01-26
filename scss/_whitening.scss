@@ -4,12 +4,13 @@
 
 .menu__whitening {
   background: #e6396a url("../common/images/hana-bk2-left.png") no-repeat left bottom;
-  padding: 30px 0;
   margin-top: 170px;
   z-index: -5;
+  padding: 56px 0;
 
   @include mq(md) {
     margin: 0;
+    padding: 30px 0;
   }
   
   .whitening_bk{
@@ -77,7 +78,12 @@
 // ==============================================
 .five-minutes {
   background: #ffffee url("../common/images/hana-bk4-right.png") no-repeat right top;
-  padding: 30px 0;
+  padding: 56px 0;
+
+  @include mq(md) {
+    margin: 0;
+    padding: 30px 0;
+  }
 
   .five-minutes_bk{
     background: url("../common/images/hana-bk4-left.png") no-repeat left top;
@@ -155,7 +161,12 @@
   background-image: url(../common/images/back_yellow.png);
   background-size: cover;
   background-position: center center;
-  padding: 30px 0;
+  padding: 56px 0;
+
+  @include mq(md) {
+    margin: 0;
+    padding: 30px 0;
+  }
 }
 
 // ==============================================
@@ -163,6 +174,12 @@
 // ==============================================
 
 .whitening__flow {
+  padding: 56px 0;
+
+  @include mq(md) {
+    margin: 0;
+    padding: 30px 0;
+  }
 
   h2 {
     margin: 10px auto 0;

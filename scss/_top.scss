@@ -66,6 +66,8 @@
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
+    padding: 56px 0;
+    
 
     .about_left {
       width: 50%;
@@ -197,7 +199,7 @@
 
     .menu_massage_picture {
       position: absolute;
-      top: -5%;
+      top: -10%;
       right: -15%;
 
       @include mq(lg) {
@@ -1296,7 +1298,6 @@
       }
 
       img {
-        width: 69%;
 
         @include mq(lg){
           width: 75%;
