@@ -67,15 +67,17 @@ header {
       // 電話の部分
       .contact_box_tel {
         padding: 0 10px;
+        width: 280px;
 
         @include mq() {
-          width: 50%;
+          width: 60%;
           padding: 0 0 5px 0;
-          font-size: 0.5rem;
+          font-size: 0.6rem;
         }
 
         .contact_box_tel_flex {
           display: flex;
+          justify-content: center;
 
           @include mq(md) {
             justify-content: center;
@@ -105,7 +107,7 @@ header {
           }
 
           @include mq() {
-            font-size: 1rem;
+            font-size: 1.2rem;
           }
         }
       }
@@ -114,12 +116,12 @@ header {
       .contact_box_com {
         border-right: 2px solid #f19ec2;
         border-left: 2px solid #f19ec2;
-        width: 150px;
+        width: 130px;
 
         @include mq(md) {
           padding: 5px;
           font-size: 0.5rem;
-          width: 30%;
+          width: 25%;
         }
 
         .contact_box_com_message {
@@ -481,12 +483,16 @@ header {
             @include mq(md) {
               padding: 5px;
               font-size: 0.5rem;
-              width: 20%;
+              width: 25%;
             }
 
             .contact_box_com_message {
               color: #d60e4c;
               font-size: 0.8rem;
+
+              @include mq() {
+                font-size: 0.5rem;
+              }
             }
           }
 

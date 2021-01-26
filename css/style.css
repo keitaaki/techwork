@@ -166,13 +166,14 @@ header .header_flex {
 
 .header_right .contact_box .contact_box_flex .contact_box_tel {
   padding: 0 10px;
+  width: 280px;
 }
 
 @media screen and (max-width: 600px) {
   .header_right .contact_box .contact_box_flex .contact_box_tel {
-    width: 50%;
+    width: 60%;
     padding: 0 0 5px 0;
-    font-size: 0.5rem;
+    font-size: 0.6rem;
   }
 }
 
@@ -180,6 +181,9 @@ header .header_flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -218,21 +222,21 @@ header .header_flex {
 
 @media screen and (max-width: 600px) {
   .header_right .contact_box .contact_box_flex .contact_box_tel_flex_hour .contact_box_tel_flex_number {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
 
 .header_right .contact_box .contact_box_flex .contact_box_com {
   border-right: 2px solid #f19ec2;
   border-left: 2px solid #f19ec2;
-  width: 150px;
+  width: 130px;
 }
 
 @media screen and (max-width: 768px) {
   .header_right .contact_box .contact_box_flex .contact_box_com {
     padding: 5px;
     font-size: 0.5rem;
-    width: 30%;
+    width: 25%;
   }
 }
 
@@ -638,13 +642,19 @@ header .header_flex {
   .scroll_menu .inner .scroll_menu_open .contact_box .contact_box_flex .contact_box_com {
     padding: 5px;
     font-size: 0.5rem;
-    width: 20%;
+    width: 25%;
   }
 }
 
 .scroll_menu .inner .scroll_menu_open .contact_box .contact_box_flex .contact_box_com .contact_box_com_message {
   color: #d60e4c;
   font-size: 0.8rem;
+}
+
+@media screen and (max-width: 600px) {
+  .scroll_menu .inner .scroll_menu_open .contact_box .contact_box_flex .contact_box_com .contact_box_com_message {
+    font-size: 0.5rem;
+  }
 }
 
 .scroll_menu .inner .scroll_menu_open .contact_box .contact_box_flex .contact_box_home {
