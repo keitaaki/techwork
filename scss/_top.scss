@@ -67,6 +67,10 @@
     flex-wrap: wrap;
     align-items: center;
     padding: 56px 0;
+
+    @include mq(md){
+      padding:0;
+    }
     
 
     .about_left {
