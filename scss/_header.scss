@@ -9,11 +9,11 @@ header {
 
   @include mq(md) {
     position: static;
+    padding: 0;
   }
 
   @include mq() {
     border-bottom: none;
-    padding: 10px 0 0 0;
   }
 
   .header_flex {
@@ -34,6 +34,16 @@ header {
 
       @include mq() {
         width: 70%;
+      }
+
+      .logo-title {
+        @include mq(md) {
+          margin-left: 8px;
+
+          img {
+            vertical-align: middle;
+          }
+        }
       }
     }
   }
@@ -152,8 +162,8 @@ header {
       .contact_box_hum {
         padding: 0 10px;
 
-        @include mq() {
-          padding: 5px;
+        @include mq(md) {
+          padding: 4px 12px;
         }
 
         .contact_box_hum_message {
@@ -262,13 +272,17 @@ header {
     position: relative;
 
     .contact_box_humber {
-      width: 75px;
+      width: 80px;
       padding: 5px;
       background-color: #ffdcec;
       z-index: 999;
       position: fixed;
       right: 0;
       top: 0;
+
+      @include mq(md) {
+        padding: 4px 12px;
+      }
     }
 
     .navbar_toggle_open {
@@ -278,6 +292,7 @@ header {
     .contact_box_hum_message {
       color: #d60e4c;
       font-weight: bold;
+      font-size: 0.8rem;
     }
 
     .menu-trigger_open,
@@ -404,11 +419,11 @@ header {
       .sub_menu {
 
         padding-left: 30px;
-        
-        .nav-items{
-            list-style-type: disc;
-            color: #d60e4c;
-          }
+
+        .nav-items {
+          list-style-type: disc;
+          color: #d60e4c;
+        }
       }
 
       .contact_box {
@@ -632,11 +647,11 @@ header {
       background-color: #ffdcec;
       text-align: left;
       padding-top: 10px;
-      padding-left: 30px; 
+      padding-left: 30px;
       width: 250px;
       display: none;
-      
-      .nav-items{
+
+      .nav-items {
         list-style-type: disc;
         color: #d60e4c;
       }
@@ -668,7 +683,7 @@ header {
     }
   }
 
-  .header-nav .drop_down:hover .sub_menu{
+  .header-nav .drop_down:hover .sub_menu {
     display: block;
   }
 }
@@ -714,10 +729,10 @@ header {
   .sub_menu {
 
     padding-left: 30px;
-    
-    .nav-items{
-        list-style-type: disc;
-        color: #d60e4c;
-      }
+
+    .nav-items {
+      list-style-type: disc;
+      color: #d60e4c;
+    }
   }
 }

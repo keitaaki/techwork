@@ -91,13 +91,13 @@ header {
 @media screen and (max-width: 768px) {
   header {
     position: static;
+    padding: 0;
   }
 }
 
 @media screen and (max-width: 600px) {
   header {
     border-bottom: none;
-    padding: 10px 0 0 0;
   }
 }
 
@@ -128,6 +128,15 @@ header .header_flex {
 @media screen and (max-width: 600px) {
   header .header_flex .header_left {
     width: 70%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header .header_flex .header_left .logo-title {
+    margin-left: 8px;
+  }
+  header .header_flex .header_left .logo-title img {
+    vertical-align: middle;
   }
 }
 
@@ -270,9 +279,9 @@ header .header_flex {
   padding: 0 10px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .header_right .contact_box .contact_box_flex .contact_box_hum {
-    padding: 5px;
+    padding: 4px 12px;
   }
 }
 
@@ -398,13 +407,19 @@ header .header_flex {
 }
 
 .scroll_menu .inner .contact_box_humber {
-  width: 75px;
+  width: 80px;
   padding: 5px;
   background-color: #ffdcec;
   z-index: 999;
   position: fixed;
   right: 0;
   top: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .scroll_menu .inner .contact_box_humber {
+    padding: 4px 12px;
+  }
 }
 
 .scroll_menu .inner .navbar_toggle_open {
@@ -414,6 +429,7 @@ header .header_flex {
 .scroll_menu .inner .contact_box_hum_message {
   color: #d60e4c;
   font-weight: bold;
+  font-size: 0.8rem;
 }
 
 .scroll_menu .inner .menu-trigger_open,
@@ -3293,8 +3309,8 @@ footer .footer_reserved {
 
 .menu_mens_epitation {
   background: #c2d6f0 url("../common/images/hana-bk3-right.png") no-repeat right top;
-  padding: 56px 0;
   position: relative;
+  padding: 56px 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -3471,7 +3487,7 @@ footer .footer_reserved {
 }
 
 .mens_points {
-  background-image: url(../service/images/zebra-mens.png);
+  background-image: url(../epitation/images/zebra-mens.png);
   background-size: cover;
   background-position: center center;
   text-align: center;
@@ -3480,6 +3496,17 @@ footer .footer_reserved {
 
 @media screen and (max-width: 768px) {
   .mens_points {
+    margin: 0;
+    padding: 30px 0;
+  }
+}
+
+.mens_flow {
+  padding: 56px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .mens_flow {
     margin: 0;
     padding: 30px 0;
   }
@@ -4911,7 +4938,7 @@ footer .footer_reserved {
 }
 
 .faq_area .faq_area_box .faq_area_box_contents .faq_area_box_contents_each .faq_question span {
-  color: yellow;
+  color: #f19ec2;
   font-size: 1.5rem;
 }
 

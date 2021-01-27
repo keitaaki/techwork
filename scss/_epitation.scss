@@ -483,8 +483,8 @@
 
 .menu_mens_epitation {
   background: #c2d6f0 url("../common/images/hana-bk3-right.png") no-repeat right top;
-  padding: 56px 0;
   position: relative;
+  padding: 56px 0;
 
   @include mq(md) {
     margin: 0;
@@ -631,7 +631,7 @@
 // ==============================================
 
 .mens_points {
-  background-image: url(../service/images/zebra-mens.png);
+  background-image: url(../epitation/images/zebra-mens.png);
   background-size: cover;
   background-position: center center;
   text-align: center;
@@ -650,6 +650,13 @@
 // ==============================================
 
 .mens_flow {
+
+  padding: 56px 0;
+
+  @include mq(md) {
+    margin: 0;
+    padding: 30px 0;
+  }
 
   h2 {
     margin: 10px auto 0;
