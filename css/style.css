@@ -794,12 +794,12 @@ header .header_flex {
 .global_nav .header-nav .sub_menu {
   position: absolute;
   margin-top: 5px;
-  z-index: -1;
   background-color: #ffdcec;
   text-align: left;
   padding-top: 10px;
   padding-left: 30px;
   width: 250px;
+  display: none;
 }
 
 .global_nav .header-nav .sub_menu .nav-items {
@@ -836,6 +836,10 @@ header .header_flex {
 .global_nav .header-nav .sub_menu a:hover::after {
   -webkit-transform: scale(1, 1);
           transform: scale(1, 1);
+}
+
+.global_nav .header-nav .drop_down:hover .sub_menu {
+  display: block;
 }
 
 .global_nav_red_line {

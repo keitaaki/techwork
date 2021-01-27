@@ -24,14 +24,6 @@ $(function () {
   });
 });
 
-// ヘッダーの中のサブメニュー（PC）
-$(function () {
-  $('#pc_global_menus').on('click', function () {
-    $('.sub_menu').toggleClass('hidden');
-    $('.bottom-arrow').toggleClass('hidden');
-    $('.top-arrow').toggleClass('hidden');
-  });
-});
 
 // 別の画面をクリックした際にサブメニューが消える処理
 document.addEventListener('click', (e) => {

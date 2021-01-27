@@ -629,13 +629,13 @@ header {
     .sub_menu {
       position: absolute;
       margin-top: 5px;
-      z-index: -1;
       background-color: #ffdcec;
       text-align: left;
       padding-top: 10px;
       padding-left: 30px; 
       width: 250px;
-
+      display: none;
+      
       .nav-items{
         list-style-type: disc;
         color: #d60e4c;
@@ -667,7 +667,13 @@ header {
       }
     }
   }
+
+  .header-nav .drop_down:hover .sub_menu{
+    display: block;
+  }
 }
+
+
 
 // =============================================
 // header-nav 部分
