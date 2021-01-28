@@ -914,6 +914,11 @@
     text-align: center;
 
     .swiper-slide {
+
+      a:hover{
+        opacity: 1;
+      }
+      
       @include mq() {
         padding: 5px;
       }
