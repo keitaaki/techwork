@@ -1,5 +1,5 @@
 .access_area {
-  background: #e6396a url("../common/images/hana-bk2-left.png") no-repeat left bottom;
+  background: #e6396a url("../common/images/hana-bk2-left.png") no-repeat left top;
   margin-top: 170px;
   z-index: -5;
   padding: 56px 0;
@@ -10,7 +10,7 @@
   }
 
   .access_area_bk {
-    background: url("../common/images/hana-bk2-right.png") no-repeat right bottom;
+    background: url("../common/images/hana-bk2-right.png") no-repeat right top;
   }
 
   .access_area_box {

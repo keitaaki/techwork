@@ -5758,7 +5758,7 @@ footer .footer_reserved {
 }
 
 .access_area {
-  background: #e6396a url("../common/images/hana-bk2-left.png") no-repeat left bottom;
+  background: #e6396a url("../common/images/hana-bk2-left.png") no-repeat left top;
   margin-top: 170px;
   z-index: -5;
   padding: 56px 0;
@@ -5772,7 +5772,7 @@ footer .footer_reserved {
 }
 
 .access_area .access_area_bk {
-  background: url("../common/images/hana-bk2-right.png") no-repeat right bottom;
+  background: url("../common/images/hana-bk2-right.png") no-repeat right top;
 }
 
 .access_area .access_area_box {
@@ -5925,4 +5925,402 @@ footer .footer_reserved {
   .access_area .access_area_box .iframe-wrap iframe {
     height: 100%;
   }
+}
+
+.contact {
+  background: #e6396a url("../common/images/hana-bk2-left.png") no-repeat left top;
+  margin-top: 170px;
+  z-index: -5;
+  padding: 56px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .contact {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.contact .contact_bk {
+  background: url("../common/images/hana-bk2-right.png") no-repeat right top;
+}
+
+.contact .section-title {
+  text-align: center;
+  width: 200px;
+  margin: 20px auto;
+}
+
+.contact .contact__item {
+  margin: 0 auto;
+  padding: 20px 60px;
+  background: #fff;
+  width: 800px;
+  max-width: 100%;
+}
+
+@media (max-width: 767px) {
+  .contact .contact__item {
+    padding: 20px;
+    margin-top: 26px;
+  }
+}
+
+.contact .contact__controls {
+  margin: 0;
+}
+
+.contact .contact__control {
+  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 767px) {
+  .contact .contact__control {
+    display: block;
+    margin-bottom: 24px;
+  }
+}
+
+.contact .contact__control_bottom_margin {
+  margin-bottom: 5px;
+}
+
+.contact .contact__control:last-child {
+  margin-bottom: 0;
+}
+
+.contact .contact__control dt {
+  width: 160px;
+  padding: 6px 0 0 20px;
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  .contact .contact__control dt {
+    width: 100%;
+    padding-top: 0;
+  }
+}
+
+.contact .contact__control dd {
+  width: 500px;
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  .contact .contact__control dd {
+    width: 100%;
+    margin-top: 8px;
+  }
+}
+
+.contact .contact__label {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+@media (max-width: 767px) {
+  .contact .contact__label {
+    font-size: 16px;
+    display: inline-block;
+  }
+}
+
+.contact .contact__label--required {
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .contact .contact__label--required {
+    padding-right: 54px;
+  }
+}
+
+.contact .contact__label--required::after {
+  content: "必須";
+  position: absolute;
+  background: #e81919;
+  border-radius: 4px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 700;
+  padding: 4px 8px;
+  width: 44px;
+  display: block;
+  top: calc(100% + 8px);
+  left: -50px;
+  top: 0;
+}
+
+@media (max-width: 767px) {
+  .contact .contact__label--required::after {
+    top: 50%;
+    left: auto;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
+
+.contact .contact__required {
+  background: #e81919;
+  border-radius: 12px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 1px 8px;
+  width: 46px;
+  display: block;
+  margin-top: 6px;
+}
+
+.contact .contact__check {
+  margin-top: 58px;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .contact .contact__check {
+    margin-top: 24px;
+  }
+}
+
+.contact .contact__check a {
+  color: #333;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  font-weight: 700;
+}
+
+.contact .contact__submit {
+  text-align: center;
+  background: #f19ec2;
+  width: 200px;
+  margin: 30px auto;
+  padding: 20px 0;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.contact .form-input {
+  width: 100%;
+  border: 1px solid #707070;
+  padding: 4px 16px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  background-image: none;
+  border-radius: 0;
+  color: inherit;
+  font-family: inherit;
+  font-size: 14px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  height: 38px;
+}
+
+@media (max-width: 767px) {
+  .contact .form-input {
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+}
+
+.contact .form-textarea {
+  width: 100%;
+  height: 240px;
+  border: 1px solid #707070;
+  resize: none;
+  padding: 10px 16px;
+  line-height: 1.625;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  background-image: none;
+  border-radius: 0;
+  color: inherit;
+  font-family: inherit;
+  font-size: 14px;
+  vertical-align: bottom;
+}
+
+@media (max-width: 767px) {
+  .contact .form-textarea {
+    height: 180px;
+  }
+}
+
+.contact .form-checkbox {
+  display: none;
+}
+
+.contact .form-checkbox + span {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 0 0 50px;
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .contact .form-checkbox + span {
+    padding-left: 46px;
+  }
+}
+
+.contact .form-checkbox + span::before, .contact .form-checkbox + span::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.contact .form-checkbox + span::before {
+  background: #fff;
+  border: 1px solid #707070;
+  display: block;
+  left: 0;
+  width: 25px;
+  height: 25px;
+}
+
+.contact .form-checkbox + span::after {
+  border: 1px solid transparent;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background: transparent url(../contact/images/icon.png) no-repeat center center/contain;
+  -webkit-transition: opacity 0.3s ease 0s;
+  transition: opacity 0.3s ease 0s;
+  opacity: 0;
+}
+
+.contact .form-checkbox:checked + span::after {
+  opacity: 1;
+}
+
+.contact .contact__label--non-required {
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .contact .contact__label--non-required {
+    padding-right: 54px;
+  }
+}
+
+.contact .contact__label--non-required::after {
+  content: "任意";
+  position: absolute;
+  background: #f19ec2;
+  border-radius: 4px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 700;
+  padding: 4px 8px;
+  width: 44px;
+  display: block;
+  top: calc(100% + 8px);
+  left: -50px;
+  top: 0;
+}
+
+@media (max-width: 767px) {
+  .contact .contact__label--non-required::after {
+    top: 50%;
+    left: auto;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
+
+.contact p {
+  text-align: center;
+}
+
+.contact .atention {
+  margin-top: 5px;
+}
+
+.personal_information {
+  background: #ffffee url("../common/images/hana-bk4-right.png") no-repeat right top;
+  padding: 55px 0;
+}
+
+.personal_information .personal_information_bk {
+  background: url("../common/images/hana-bk4-left.png") no-repeat left bottom;
+}
+
+.personal_information .personal_information_box {
+  width: 800px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  -webkit-box-shadow: 0 0 8px gray;
+          box-shadow: 0 0 8px gray;
+  margin: 0 auto;
+}
+
+.personal_information .personal_information_title_box {
+  margin: 10px;
+}
+
+.personal_information .personal_information_attention {
+  margin: 10px;
+}
+
+.personal_information h3 {
+  margin: 15px 10px;
+}
+
+.personal_information .personal_information_boxes1 {
+  margin: 10px;
+}
+
+.personal_information .personal_information_boxes1_1 {
+  margin: 10px;
+}
+
+.personal_information .personal_information_boxes1_2 {
+  margin: 10px;
+}
+
+.personal_information .personal_information_boxes1_2 ul {
+  margin: 10px;
+}
+
+.personal_information .personal_information_boxes1_2 li {
+  list-style-type: disc;
+}
+
+.personal_information .personal_information_boxes2 {
+  margin: 10px;
+}
+
+.personal_information .personal_information_boxes2_1 {
+  margin: 10px;
+}
+
+.personal_information .personal_information_boxes2_1 ul {
+  margin: 0 10px;
+}
+
+.personal_information .personal_information_boxes2_1 li {
+  list-style-type: disc;
+}
+
+.personal_information .personal_information_boxes3 {
+  margin: 10px;
 }

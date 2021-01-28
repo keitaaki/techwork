@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- カルーセル -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- jqueryの読み込み -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <title>お問い合わせ</title>
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link rel="stylesheet" href="../common/css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+  <header id="header">
+    <div class="inner">
+      <div class="header_flex">
+        <div class="header_left">
+          <h1 class="logo-title"><a href="../index.html"><img src="../common/images/main-logo1.svg"
+                alt="美容総合サロンSAKURA"></a></h1>
+        </div><!-- /.header_left -->
+
+        <!-- PC用 -->
+        <div class="header_right">
+          <div class="contact_box">
+            <div class="contact_box_flex">
+              <div class="contact_box_tel dis-pc">
+                <div class="contact_box_tel_flex">
+                  <div class="contact_box_tel_flex_img">
+                    <img src="../common/images/tel_logo.png" alt="電話">
+                  </div><!-- /.contact_box_tel_flex_img -->
+                  <div class="contact_box_tel_flex_hour">
+                    <p class="contact_time">ご予約受付時間<span>10:00～翌2:30</span>
+                    </p><!-- /.contact_time -->
+                    <p class="contact_box_tel_flex_number">011-252-9539</p><!-- /.contact_box_tel_flex_number -->
+                  </div><!-- /.contact_box_tel_flex_hour -->
+                </div><!-- /.contact_box_tel_flex -->
+              </div><!-- /.contact_box_tel -->
+              <a href="https://beauty.hotpepper.jp/kr/slnH000514348/" target="_blank">
+                <div class="contact_box_com dis-pc">
+                  <p class="contact_box_com_message">ネットでご予約</p><!-- /.contact_box_com_message -->
+                  <img src="../common/images/com_logo.png" alt="パスコン画像">
+                </div><!-- /.contact_box_com -->
+              </a>
+              <a href="#">
+                <div class="contact_box_home dis-pc">
+                  <p class="contact_box_home_message">アクセス</p><!-- /.contact_box_home_message -->
+                  <img src="../common/images/home_logo.png" alt="家の画像">
+                </div><!-- /.contact_box_home -->
+              </a>
+
+              <!-- ドロワーのボタン -->
+              <div class="contact_box_hum dis-sp">
+                <div class="navbar_toggle">
+                  <p class="contact_box_hum_message">メニュー</p>
+                  <div class="menu-trigger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div><!-- /.hamburger_icon -->
+                </div><!-- /.navbar_toggle -->
+              </div><!-- /.contact_box_hum -->
+            </div><!-- /.contact_box_flex -->
+          </div><!-- /.contact_box -->
+        </div><!-- /.header_right -->
+      </div><!-- /.header_flex -->
+    </div><!-- /.inner -->
+  </header>
+
+  <!-- PCのグローバルナビ -->
+  <!-- PCのグローバルナビ -->
+  <section class="global_nav dis-pc site-header">
+    <div class="global_nav_red_line">
+      <div class="inner">
+        <ul class="header-nav">
+          <li class="nav-items"><a href="../index.html">TOP</a></li>
+          <li class="nav-items is-active"><a href="../about/index.html">SAKURA Beauty studio<br>について</a></li>
+          <li class="nav-items drop_down" id="pc_global_menus"><a href="#3">メニュー・料金 <img
+                src="../common/images/bottom_arrow.png" alt="下矢印" class="bottom-arrow"><img
+                src="../common/images/top_arrow.png" alt="上矢印" class="top-arrow hidden"> </a>
+            <ul class="sub_menu hidden" id="sub_menu_pc">
+              <li class="nav-items"><a href="../epitation/index.html">脱毛</a></li>
+              <li class="nav-items"><a href="../bbl/index.html">BBL</a></li>
+              <li class="nav-items"><a href="../hifu/index.html">HIFU</a></li>
+              <li class="nav-items"><a href="../epitation/index.html#mens_epitation_area-box">メンズ脱毛</a></li>
+              <li class="nav-items"><a href="../whitening/index.html">セルフホワイトニング</a></li>
+            </ul>
+          </li>
+          <li class="nav-items"><a href="../campaign/index.html">キャンペーン</a></li>
+          <li class="nav-items"><a href="../about/index.html#faq_area_point">よくあるご質問</a></li>
+          <li class="nav-items"><a href="#6">お問い合わせ</a></li>
+        </ul><!-- /.header-nav -->
+      </div><!-- /.inner -->
+    </div><!-- /.global_nav_red_line -->
+  </section><!-- /.global_nav -->
+
+  <!-- ＳＰのグローバルナビ -->
+  <section class="sp_global_nav dis-sp hidden" id="sp_global_nav">
+    <ul class="header-nav">
+      <li class="nav-items"><a href="../index.html">TOP</a></li>
+      <li class="nav-items"><a href="../about/index.html">SAKURA Beauty studio<br class="dis-pc">について</a></li>
+      <li class="nav-items drop_down"><a href="#3" id="sp_sub_menus">メニュー・料金 <img
+            src="../common/images/bottom_arrow.png" alt="下矢印"> </a>
+        <ul class="sub_menu hidden">
+          <li class="nav-items"><a href="../epitation/index.html">脱毛</a></li>
+          <li class="nav-items"><a href="../bbl/index.html">BBL</a></li>
+          <li class="nav-items"><a href="../hifu/index.html">HIFU</a></li>
+          <li class="nav-items"><a href="../epitation/index.html#mens_epitation_area-box">メンズ脱毛</a></li>
+          <li class="nav-items"><a href="../whitening/index.html">セルフホワイトニング</a></li>
+        </ul>
+      </li>
+      <li class="nav-items"><a href="../campaign/index.html">キャンペーン</a></li>
+      <li class="nav-items"><a href="../about/index.html#faq_area_point">よくあるご質問</a></li>
+      <li class="nav-items"><a href="#6">お問い合わせ</a></li>
+    </ul><!-- /.header-nav -->
+  </section><!-- /.sp_global_nav -->
+
+  <!-- SP用 -->
+  <div class="header_right dis-sp hidden" id="sp_contact_box">
+    <div class="contact_box">
+      <div class="contact_box_flex">
+        <div class="contact_box_tel dis-sp">
+          <a href="tel:011-252-9539">
+            <div class="contact_box_tel_flex">
+              <div class="contact_box_tel_flex_img">
+                <img src="../common/images/tel_logo.png" alt="電話">
+              </div><!-- /.contact_box_tel_flex_img -->
+              <div class="contact_box_tel_flex_hour">
+                <p class="contact_time">ご予約受付時間 <span>10:00～翌2:30</span>
+                </p><!-- /.contact_time -->
+                <p class="contact_box_tel_flex_number">011-252-9539</p><!-- /.contact_box_tel_flex_number -->
+              </div><!-- /.contact_box_tel_flex_hour -->
+            </div><!-- /.contact_box_tel_flex -->
+          </a>
+        </div><!-- /.contact_box_tel -->
+        <div class="contact_box_com dis-sp">
+          <a href="https://beauty.hotpepper.jp/kr/slnH000514348/" target="_blank">
+            <p class="contact_box_com_message">ネットでご予約</p><!-- /.contact_box_com_message -->
+            <img src="../common/images/com_logo.png" alt="パスコン画像">
+          </a>
+        </div><!-- /.contact_box_com -->
+        <div class="contact_box_home dis-sp">
+          <a href="#">
+            <p class="contact_box_home_message">アクセス</p><!-- /.contact_box_home_message -->
+            <img src="../common/images/home_logo.png" alt="家の画像">
+          </a>
+        </div><!-- /.contact_box_home -->
+        <div class="contact_box_hum dis-pc">
+          <a href="#">
+            <p class="contact_box_hum_message">メニュー</p><!-- /.contact_box_hum_message -->
+            <img src="../common/images/humberger.png" alt="ハンバーガーメニュー">
+          </a>
+        </div><!-- /.contact_box_hum -->
+      </div><!-- /.contact_box_flex -->
+    </div><!-- /.contact_box -->
+  </div><!-- /.header_right -->
+
+
+  <!-- スクロールするとついてくるメニュー -->
+  <div class="scroll_menu dis-sp">
+    <div class="inner">
+      <div class="contact_box_humber" id="scroll_hamburger">
+        <div class="navbar_toggle_open">
+          <p class="contact_box_hum_message">メニュー</p>
+          <div class="menu-trigger_open">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div><!-- /.hamburger_icon -->
+        </div><!-- /.navbar_toggle -->
+      </div><!-- /.contact_box_hum -->
+
+      <div class="scroll_menu_open hidden">
+        <ul class="header-nav">
+          <li class="nav-items"><a href="../index.html">TOP</a></li>
+          <li class="nav-items is-active"><a href="../about/index.html">SAKURA Beauty studioについて</a></li>
+          <li class="nav-items drop_down"><a href="#3" id="global_menus_open">メニュー・料金 <img
+                src="../common/images/bottom_arrow.png" alt="下矢印"> </a>
+            <ul class="sub_menu sub_menu_scroll hidden">
+              <li class="nav-items"><a href="../epitation/index.html">脱毛</a></li>
+              <li class="nav-items"><a href="../bbl/index.html">BBL</a></li>
+              <li class="nav-items"><a href="../hifu/index.html">HIFU</a></li>
+              <li class="nav-items"><a href="../epitation/index.html#mens_epitation_area-box">メンズ脱毛</a></li>
+              <li class="nav-items"><a href="../whitening/index.html">セルフホワイトニング</a></li>
+            </ul>
+          </li>
+          <li class="nav-items"><a href="../campaign/index.html">キャンペーン</a></li>
+          <li class="nav-items"><a href="../about/index.html#faq_area_point">よくあるご質問</a></li>
+          <li class="nav-items"><a href="#6">お問い合わせ</a></li>
+        </ul><!-- /.header-nav -->
+
+        <!-- 下部の電話＆ネット＆アクセス -->
+        <div class="contact_box">
+          <div class="contact_box_flex">
+            <div class="contact_box_tel">
+              <a href="tel:011-252-9539">
+                <div class="contact_box_tel_flex">
+                  <div class="contact_box_tel_flex_img">
+                    <img src="../common/images/tel_logo.png" alt="電話">
+                  </div><!-- /.contact_box_tel_flex_img -->
+                  <div class="contact_box_tel_flex_hour">
+                    <p class="contact_time">ご予約受付時間 <span>10:00～翌2:30</span>
+                    </p><!-- /.contact_time -->
+                    <p class="contact_box_tel_flex_number">011-252-9539</p><!-- /.contact_box_tel_flex_number -->
+                  </div><!-- /.contact_box_tel_flex_hour -->
+                </div><!-- /.contact_box_tel_flex -->
+              </a>
+            </div><!-- /.contact_box_tel -->
+            <div class="contact_box_com">
+              <a href="https://beauty.hotpepper.jp/kr/slnH000514348/" target="_blank">
+                <p class="contact_box_com_message">ネットでご予約</p><!-- /.contact_box_com_message -->
+                <img src="../common/images/com_logo.png" alt="パスコン画像">
+              </a>
+            </div><!-- /.contact_box_com -->
+            <div class="contact_box_home">
+              <a href="#">
+                <p class="contact_box_home_message">アクセス</p><!-- /.contact_box_home_message -->
+                <img src="../common/images/home_logo.png" alt="家の画像">
+              </a>
+            </div><!-- /.contact_box_home -->
+          </div><!-- /.contact_box_flex -->
+        </div><!-- /.contact_box -->
+      </div><!-- /.scroll_menu_open -->
+    </div><!-- /.inner -->
+  </div><!-- /.scroll_menu -->
+
+  <!-- ここからがコンタクト部分 -->
+  <section id="" class="contact section">
+    <div class="contact_bk">
+      <div class="contact__inner inner">
+        <div class="contact__item">
+          <h2 class="section-title"><img src="images/contact-title.png" alt="お問い合わせ"></h2><!-- /.section-title -->
+          <form action="#">
+            <dl class="contact__controls">
+              <div class="contact__control">
+                <dt>
+                  <label class="contact__label contact__label--required" for="your-name">お名前</label>
+                </dt>
+                <dd>
+                  <input id="your-name" class="form-input" type="text" name="your-name" value=""
+                    placeholder="お名前をご⼊⼒ください">
+                </dd>
+              </div><!-- /.contact__control -->
+
+              <div class="contact__control">
+                <dt>
+                  <label class="contact__label contact__label--required" for="your-name">フリガナ</label>
+                </dt>
+                <dd>
+                  <input id="your-name" class="form-input" type="text" name="your-name" value=""
+                    placeholder="フリガナをご⼊⼒ください">
+                </dd>
+              </div><!-- /.contact__control -->
+
+              <div class="contact__control">
+                <dt>
+                  <label class="contact__label contact__label--non-required" for="your-tel">電話番号</label>
+                </dt>
+                <dd>
+                  <input id="your-tel" class="form-input" type="tel" name="your-name" value="" placeholder="例）000-123-1234
+                  ">
+                </dd>
+              </div><!-- /.contact__control -->
+
+              <div class="contact__control contact__control_bottom_margin">
+                <dt>
+                  <label class="contact__label contact__label--required" for="your-mail">メールアドレス</label>
+                </dt>
+                <dd>
+                  <input id="your-mail" class="form-input" type="email" name="your-mail" value=""
+                    placeholder="例）abc@sample.com">
+                </dd>
+              </div><!-- /.contact__control -->
+
+              <p>確認のため、もう⼀度ご⼊⼒ください。</p>
+
+              <div class="contact__control">
+                <dt></dt>
+                <dd>
+                  <input id="your-mail" class="form-input" type="email" name="your-mail" value=""
+                    placeholder="例）abc@sample.com">
+                </dd>
+              </div><!-- /.contact__control -->
+
+
+              <div class="contact__control">
+                <dt>
+                  <label class="contact__label contact__label--required" for="your-message">お問い合わせ内容</label>
+                </dt>
+                <dd>
+                  <textarea id="your-message" class="form-textarea" name="your-message"></textarea>
+                </dd>
+              </div><!-- /.contact__control -->
+            </dl><!-- /.contact__controls -->
+            <div class="contact__check">
+              <label>
+                <input class="form-checkbox" type="checkbox" name="your-checkbox">
+
+                <span>
+                  <p>「個⼈情報保護⽅針」の内容に同意する<br></p>
+                </span>
+                <p class="atention">※ご同意いただけない場合は送信ができません。</p>
+
+              </label>
+            </div><!-- /.contact__check -->
+            <div class="contact__submit"><input class="button-arrow-right" type="submit" value="確認画⾯へ ▶"></div>
+            <!-- /.contact__submit -->
+          </form>
+        </div><!-- /.contact__item -->
+      </div><!-- /.contact__inner -->
+    </div><!-- /.contact_bk -->
+  </section><!-- /.contact -->
+
+  <section class="personal_information">
+    <div class="personal_information_bk">
+      <div class="inner">
+        <div class="personal_information_box">
+          <div class="personal_information_title_box">
+            <h2>個⼈情報保護⽅針</h2>
+          </div><!-- /.personal_information_title_box -->
+          <div class="personal_information_attention">
+            <p>当サイトの運営に際し、お客様のプライバシーを尊重し個⼈情報に対して⼗分な配慮を⾏うとともに、⼤切に保護し、適正な管理を⾏うことに
+              努めております。</p>
+          </div><!-- /.personal_information_attention -->
+          <div class="personal_information_under_box">
+            <div class="personal_information_boxes1">
+              <h3>【個⼈情報の利⽤⽬的】</h3>
+              <div class="personal_information_boxes1_1">
+                <p>A）お客様のご要望に合わせたサービスをご提供するための各種ご連絡。</p>
+                <p>B）お問い合わせいただいたご質問への回答のご連絡</p>
+              </div><!-- /.personal_information_boxes1_1 -->
+              <div class="personal_information_boxes1_2">
+                <ul>
+                  <li> 公正かつ適正な⼿段で、上記⽬的に必要となる個⼈情報を収集します。</li>
+                  <li>要配慮個⼈情報を取得する際は、ご本⼈の同意を得るものとします。</li>
+                  <li>取得した個⼈情報・要配慮個⼈情報は、ご本⼈の同意なしに⽬的以外では利⽤しません。</li>
+                  <li>情報が漏洩しないよう対策を講じ、従業員だけでなく委託業者も監督します。</li>
+                  <li>国内外を問わず、ご本⼈の同意を得ずに第三者に情報を提供しません。</li>
+                  <li>ご本⼈からの求めに応じ情報を開⽰します。</li>
+                  <li>公開された個⼈情報が事実と異なる場合、訂正や削除に応じます。</li>
+                  <li>個⼈情報の取り扱いに関する苦情に対し、適切・迅速に対処します。</li>
+                  <li>本個⼈情報保護⽅針の適⽤範囲は本ホームページ内のみとします。</li>
+                </ul>
+              </div><!-- /.personal_information_boxes1_2 -->
+            </div><!-- /.personal_information_boxes1 -->
+            <div class="personal_information_boxes2">
+              <h3>【Googleアナリティクスの使⽤について】</h3>
+              <p>当サイトでは、より良いサービスの提供、またユーザビリティの向上のため、Googleアナリティクスを使⽤し、当サイトの利⽤状況などの
+                データ収集及び解析 を⾏っております。その際、「Cookie」を通じて、Googleがお客様のIPアドレスなどの情報を収集する場合があ
+                りますが、「Cookie」で収集される情報は個⼈ を特定できるものではありません。 収集されたデータはGoogleのプライバシーポリシー
+                において管理されます。なお、当サイトのご利⽤をもって、上述の⽅法・⽬的においてGoogle及び当サイト が⾏うデータ処理に関し、
+                お客様にご承諾いただいたものとみなします。</p>
+              <div class="personal_information_boxes2_1">
+                <p>Googleのプライバシーポリシー</p>
+                <ul>
+                  <li>http://www.google.com/intl/ja/policies/privacy/</li>
+                  <li>https://www.google.com/intl/ja/policies/privacy/partners/</li>
+                </ul>
+              </div><!-- /.personal_information_boxes2_1 -->
+            </div><!-- /.personal_information_boxes2 -->
+            <div class="personal_information_boxes3">
+              <h3>【個⼈情報に関するお問い合わせ窓⼝】</h3>
+              <p>SAKURA beauty studio </p>
+              <p>電話番号: 011-252-9539</p>
+            </div><!-- /.personal_information_boxes3 -->
+          </div><!-- /.personal_information_under_box -->
+        </div><!-- /.personal_information_box -->
+      </div><!-- /.inner -->
+    </div><!-- /.personal_information_bk -->
+  </section><!-- /.personal_information -->
+
+
+  <!-- ここからが予約画面・共通部分 -->
+
+
+
+  <section class="reservation">
+    <div class="inner">
+      <div class="reservation_logo">
+        <h2>
+          <img src="../common/images/reservation.png" alt="ご予約" class="dis-pc">
+          <img src="../common/images/reservation_sp.png" alt="ご予約" class="dis-sp">
+        </h2>
+      </div><!-- /.reservation_logo -->
+      <div class="reservation_counseling">
+        <img src="../common/images/star-mark.png" alt="星" class="star1 dis-pc">
+        <img src="../common/images/star-mark.png" alt="星" class="star2 dis-pc">
+        <p class="counseling_title"><span>カウンセリング無料相談</span></p><!-- /.counseling_title -->
+        <p class="counseling_message">どんなことでも<span>お気軽に</span>お電話でご連絡ください！<br>
+          当店ではスタッフが現在8名在籍しておりますので<span>スピーディーな対応</span>が可能です!</p><!-- /.counseling_message -->
+      </div><!-- /.reservation_counseling -->
+      <div class="reservation_flex">
+        <div class="reservation_flex_left">
+          <div class="dis-sp">
+            <a href="tel:011-252-9539">
+              <img src="../common/images/tel_img.jpg" alt="電話">
+            </a>
+          </div><!-- /.dis-sp -->
+          <img src="../common/images/tel_img.jpg" alt="電話" class="dis-pc">
+        </div><!-- /.reservation_flex_left -->
+        <div class="reservation_flex_right">
+          <a href="https://beauty.hotpepper.jp/kr/slnH000514348/" target="_blank"><img
+              src="../common/images/net_img.jpg" alt="ネット"></a>
+        </div><!-- /.reservation_flex_right -->
+      </div><!-- /.reservation_flex -->
+      <div class="reservation_flex2">
+        <div class="reservation_flex2_left">
+          <a href="../common/images/counseling.pdf" target="_blank"><img src="../common/images/Interview_bnr.jpg"
+              alt="ご予約されたお客様へ"></a>
+        </div><!-- /.reservation_flex2_left -->
+        <div class="reservation_flex2_right">
+          <a href="../common/images/agreement.pdf" target="_blank"><img src="../common/images/consent_bnr.jpg"
+              alt="未成年のお客様へ"></a>
+        </div><!-- /.reservation_flex2_right -->
+      </div><!-- /.reservation_flex2 -->
+    </div><!-- /.inner -->
+  </section><!-- /.reservation -->
+
+  <footer>
+    <div class="inner">
+      <div class="footer_flex">
+        <div class="footer_logo">
+          <h2><img src="../common/images/footer-logo.svg" alt="ロゴ"></h2>
+        </div><!-- /.footer_logo -->
+        <div class="footer_list">
+          <p class="footer_about"><a href="../about/index.html"><img src="../common/images/hana.png" alt="花">
+              <span>SAKURA beauty
+                studioについて</span></a></p>
+          <div class="footer_list_flex">
+            <div class="footer_list_flex_left">
+              <ul>
+                <li><a href="../epitation/index.html"><img src="../common/images/hana.png" alt="花"> レディース/メンズ脱毛</a></li>
+                <li><a href="../bbl/index.html"><img src="../common/images/hana.png" alt="花"> BBL</a></li>
+                <li><a href="../hifu/index.html"><img src="../common/images/hana.png" alt="花"> HIFU</a></li>
+                <li><a href="../whitening/index.html"><img src="../common/images/hana.png" alt="花"> セルフホワイトニング</a></li>
+              </ul>
+            </div><!-- /.footer_list_flex_left -->
+            <div class="footer_list_flex_right">
+              <ul>
+                <li><a href="../campaign/index.html"><img src="../common/images/hana.png" alt="花"> キャンペーン</a></li>
+                <li><a href="../news/index.html"><img src="../common/images/hana.png" alt="花"> お知らせ／コラム</a></li>
+                <li><a href="../access/index.html"><img src="../common/images/hana.png" alt="花"> サロン情報</a></li>
+                <li><a href="#"><img src="../common/images/hana.png" alt="花"> お問い合わせ</a></li>
+              </ul>
+            </div><!-- /.footer_list_flex_right -->
+          </div><!-- /.footer_list_flex -->
+        </div><!-- /.footer_list -->
+        <div class="sns">
+          <a href="#"><img src="../common/images/Instagram_btn.png" alt="インスタグラム"></a>
+          <a href="#"><img src="../common/images/twitter_btn.png" alt="ツイッター"></a>
+          <a href="#"><img src="../common/images/facebook_btn.png" alt="インスタグラム"></a>
+          <a href="#"><img src="../common/images/youtube_btn.png" alt="ユーチューブ"></a>
+        </div><!-- /.sns -->
+      </div><!-- /.footer_flex -->
+      <p class="footer_reserved"><small lang="en">©SAKURA beauty studio. All Rights Reserved.</small></p>
+    </div><!-- /.inner -->
+  </footer>
+
+  <script src="../common/js/index.js"></script>
+</body>
+
+</html>
