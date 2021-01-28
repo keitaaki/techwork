@@ -6,6 +6,11 @@
   margin-top: 170px;
   position: relative;
 
+
+  @include mq(md) {
+    margin: 0;
+  }
+
   .news_area_bk {
     background: url("../common/images/hana-bk2-right.png") no-repeat right bottom;
     padding: 60px 0;
@@ -28,6 +33,11 @@
     @include mq(lg) {
       width: 100%;
       text-align: center;
+    }
+
+    @include mq(md) {
+      display: flex;
+      justify-content: space-around;
     }
 
     .icons_box{
@@ -69,12 +79,7 @@
 
     @include mq(md){
       width: 95%;
-    }
-  }
-
-  @media (max-width: 767px) {
-    .news_area__items {
-      margin-top: 38px;
+      margin: 10px auto 0;
     }
   }
 
@@ -308,7 +313,7 @@
 
   @include mq(md) {
     margin: 0;
-    padding: 30px 0;
+    padding: 20px 0;
   }
 
   .news_area_detail_bk {

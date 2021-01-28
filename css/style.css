@@ -2604,6 +2604,7 @@ footer .footer_reserved {
 .reservation {
   background-size: cover;
   background-position: center center;
+  padding: 20px 0;
 }
 
 .reservation .inner {
@@ -4992,7 +4993,7 @@ footer .footer_reserved {
 }
 
 .campaign_area .campaign_area_title {
-  width: 30%;
+  width: 20%;
 }
 
 @media screen and (max-width: 768px) {
@@ -5184,6 +5185,12 @@ footer .footer_reserved {
   position: relative;
 }
 
+@media screen and (max-width: 768px) {
+  .news_area {
+    margin: 0;
+  }
+}
+
 .news_area .news_area_bk {
   background: url("../common/images/hana-bk2-right.png") no-repeat right bottom;
   padding: 60px 0;
@@ -5214,6 +5221,16 @@ footer .footer_reserved {
   .news_area .news_area_logo {
     width: 100%;
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .news_area .news_area_logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
@@ -5259,12 +5276,7 @@ footer .footer_reserved {
 @media screen and (max-width: 768px) {
   .news_area .news_area__items {
     width: 95%;
-  }
-}
-
-@media (max-width: 767px) {
-  .news_area .news_area__items {
-    margin-top: 38px;
+    margin: 10px auto 0;
   }
 }
 
@@ -5507,7 +5519,7 @@ footer .footer_reserved {
 @media screen and (max-width: 768px) {
   .news_area_detail {
     margin: 0;
-    padding: 30px 0;
+    padding: 20px 0;
   }
 }
 
@@ -5743,4 +5755,173 @@ footer .footer_reserved {
 .news_area_detail .campaign_area_link .campaign_area_link_flex .campaign_area_link_right .campaign_area_link_right_flex .btn__move:hover .right__arrow {
   -webkit-transform: translateX(10px);
           transform: translateX(10px);
+}
+
+.access_area {
+  background: #e6396a url("../common/images/hana-bk2-left.png") no-repeat left bottom;
+  margin-top: 170px;
+  z-index: -5;
+  padding: 56px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .access_area {
+    margin: 0;
+    padding: 30px 0;
+  }
+}
+
+.access_area .access_area_bk {
+  background: url("../common/images/hana-bk2-right.png") no-repeat right bottom;
+}
+
+.access_area .access_area_box {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .access_area .access_area_box {
+    margin: 0 10px;
+  }
+}
+
+.access_area .access_area_box .access_area_box_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.access_area .access_area_box .access_area_box_flex .access_area_box_left {
+  width: 45%;
+}
+
+@media screen and (max-width: 768px) {
+  .access_area .access_area_box .access_area_box_flex .access_area_box_left {
+    width: 100%;
+  }
+}
+
+.access_area .access_area_box .access_area_box_flex .access_area_box_left .access_area_box_left_title {
+  color: #eb6794;
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .access_area .access_area_box .access_area_box_flex .access_area_box_left .access_area_box_left_title {
+    font-size: 1.5rem;
+    margin: 10px 0;
+  }
+}
+
+.access_area .access_area_box .access_area_box_flex .access_area_box_left h3 {
+  width: 300px;
+  color: #fff;
+  font-weight: bold;
+  background-color: #eb6794;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.access_area .access_area_box .access_area_box_flex .access_area_box_left .access_area_box_message_top {
+  padding: 10px 0 20px;
+}
+
+.access_area .access_area_box .access_area_box_flex .access_area_box_left .access_area_box_message_top p {
+  font-weight: bold;
+}
+
+.access_area .access_area_box .access_area_box_flex .access_area_box_right {
+  width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .access_area .access_area_box .access_area_box_flex .access_area_box_right {
+    width: 100%;
+  }
+}
+
+.access_area .access_area_box .access_area_box_under {
+  margin: 20px 0;
+}
+
+.access_area .access_area_box .access_area_box_under h3 {
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .access_area .access_area_box .access_area_box_under h3 {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+
+.access_area .access_area_box .access_area_box_under_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-weight: bold;
+}
+
+.access_area .access_area_box .access_area_box_under_flex .access_area_box_under_left {
+  width: 45%;
+  padding: 20px 20px 20px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .access_area .access_area_box .access_area_box_under_flex .access_area_box_under_left {
+    width: 100%;
+  }
+}
+
+.access_area .access_area_box .access_area_box_under_flex .access_area_box_under_right {
+  width: 50%;
+  text-align: left;
+  padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .access_area .access_area_box .access_area_box_under_flex .access_area_box_under_right {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.access_area .access_area_box .access_area_box_under_flex .access_sub_title {
+  font-size: 1.2rem;
+}
+
+.access_area .access_area_box .iframe-wrap {
+  position: relative;
+  width: 100%;
+  padding-top: 66.6%;
+}
+
+.access_area .access_area_box .iframe-wrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .access_area .access_area_box .iframe-wrap iframe {
+    height: 100%;
+  }
 }
