@@ -1,12 +1,3 @@
-var swiper = new Swiper('.swiper-container', {
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  loop: true,
-  speed: 300,
-  slidesPerView: 2,
-});
 
 // ハンバーガーからバツへ
 $(function () {
@@ -24,24 +15,6 @@ $(function () {
   });
 });
 
-
-// 別の画面をクリックした際にサブメニューが消える処理
-document.addEventListener('click', (e) => {
-  if (!e.target.closest('#pc_global_menus')) {
-    var obj = document.getElementById("sub_menu_pc");
-    obj.classList.add("hidden");
-    //別画面をクリックした際に矢印の上下が変わる
-    $('.bottom-arrow').removeClass('hidden');
-    $('.top-arrow').addClass('hidden');
-  }
-});
-
-// スクロールしたら、開いていたサブメニューが閉じる処理
-$(window).scroll(function () {
-  if($(window).scrollTop() > 20) {
-    $('#sub_menu_pc').addClass('hidden');
-  } 
-});
 
 // ヘッダーの中のサブメニュー（SP）
 $(function () {

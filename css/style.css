@@ -5937,7 +5937,7 @@ footer .footer_reserved {
 @media screen and (max-width: 768px) {
   .contact {
     margin: 0;
-    padding: 0;
+    padding: 10px;
   }
 }
 
@@ -6260,6 +6260,13 @@ footer .footer_reserved {
   padding: 55px 0;
 }
 
+@media screen and (max-width: 768px) {
+  .personal_information {
+    margin: 0;
+    padding: 10px;
+  }
+}
+
 .personal_information .personal_information_bk {
   background: url("../common/images/hana-bk4-left.png") no-repeat left bottom;
 }
@@ -6272,6 +6279,13 @@ footer .footer_reserved {
   -webkit-box-shadow: 0 0 8px gray;
           box-shadow: 0 0 8px gray;
   margin: 0 auto;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .personal_information .personal_information_box {
+    padding: 20px;
+  }
 }
 
 .personal_information .personal_information_title_box {

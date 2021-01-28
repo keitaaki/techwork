@@ -6,7 +6,7 @@
 
   @include mq(md) {
     margin: 0;
-    padding: 0;
+    padding: 10px;
   }
 
   .contact_bk {
@@ -340,6 +340,11 @@
   background: #ffffee url("../common/images/hana-bk4-right.png") no-repeat right top;
   padding: 55px 0;
 
+  @include mq(md) {
+    margin: 0;
+    padding: 10px;
+  }
+
   .personal_information_bk{
     background: url("../common/images/hana-bk4-left.png") no-repeat left bottom;
   }
@@ -351,6 +356,11 @@
     padding: 30px;
     box-shadow: 0 0 8px gray;
     margin: 0 auto;
+    max-width: 100%;
+
+    @include mq(md) {
+      padding: 20px;
+    }
   }
 
   .personal_information_title_box{
