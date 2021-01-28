@@ -5863,6 +5863,7 @@ footer .footer_reserved {
   .access_area .access_area_box .access_area_box_under h3 {
     margin-left: 0;
     margin-top: 20px;
+    width: 150px;
   }
 }
 
@@ -5880,7 +5881,7 @@ footer .footer_reserved {
 
 .access_area .access_area_box .access_area_box_under_flex .access_area_box_under_left {
   width: 45%;
-  padding: 20px 20px 20px 0;
+  padding: 10px 20px 20px 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -5892,7 +5893,7 @@ footer .footer_reserved {
 .access_area .access_area_box .access_area_box_under_flex .access_area_box_under_right {
   width: 50%;
   text-align: left;
-  padding: 20px;
+  padding: 10px 20px 20px 20px;
 }
 
 @media screen and (max-width: 768px) {

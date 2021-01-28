@@ -82,6 +82,7 @@
         @include mq(md){
           margin-left: 0;
           margin-top: 20px;
+          width: 150px;
         }
       }
     }
@@ -94,7 +95,7 @@
 
       .access_area_box_under_left{
         width: 45%;
-        padding: 20px 20px 20px 0;
+        padding: 10px 20px 20px 0;
 
         @include mq(md){
           width: 100%;
@@ -104,7 +105,7 @@
       .access_area_box_under_right{
         width: 50%;
         text-align: left;
-        padding: 20px;
+        padding:  10px 20px 20px 20px;
 
         @include mq(md){
           width: 100%;
