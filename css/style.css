@@ -5957,6 +5957,7 @@ footer .footer_reserved {
   background: #fff;
   width: 800px;
   max-width: 100%;
+  border-radius: 5px;
 }
 
 @media (max-width: 767px) {
