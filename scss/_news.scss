@@ -297,3 +297,212 @@
     width: auto;
   }
 }
+
+// =============================================
+// ニュース詳細 部分
+// =============================================
+.news_area_detail {
+  background: #e6396a url("../common/images/hana-bk2-left.png") no-repeat left bottom;
+  margin-top: 170px;
+  position: relative;
+
+  @include mq(md) {
+    margin: 0;
+    padding: 30px 0;
+  }
+
+  .news_area_detail_bk {
+    background: url("../common/images/hana-bk2-right.png") no-repeat right bottom;
+    padding: 60px 0;
+
+    @include mq(md) {
+      padding: 10px;
+    }
+  }
+
+  .news_area_detail_flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .news_area_detail_logo {
+    width: 20%;
+    text-align: center;
+
+    @include mq(lg) {
+      width: 100%;
+      text-align: center;
+    }
+
+    @include mq(md) {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .icons_box {
+      margin-top: 20px;
+
+      a {
+        display: block;
+      }
+
+      .icons_news {
+        width: 120px;
+        margin: 0 auto;
+        background: #e5004f;
+        color: #fff;
+        border-radius: 5px;
+      }
+
+      .icons_column {
+        width: 120px;
+        margin: 10px auto;
+        background: #e9578b;
+        color: #fff;
+        border-radius: 5px;
+      }
+    }
+  }
+
+  .news_area_detail__items {
+    margin: 60px auto 0;
+    width: 80%;
+    max-width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+
+    @include mq(md) {
+      width: 100%;
+      margin: 20px auto 0;
+      padding: 10px;
+    }
+  }
+
+  .news_area_detail__info__meta {
+    display: flex;
+    justify-content: left;
+
+    a {
+      width: 120px;
+      background: #e5004f;
+      color: #fff;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    .news_area_detail__info__published {
+      width: 150px;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+  }
+
+  .news_area_detail__item_title {
+    margin: 20px 0;
+  }
+
+  .news_area_detail__item_message {
+    padding: 10px;
+    font-weight: bold;
+  }
+
+  // ==============================================
+  // リンク 部分
+  // ==============================================
+  .campaign_area_link {
+    margin-top: 20px;
+
+    .campaign_area_link_flex {
+      display: flex;
+      justify-content: space-around;
+
+      .campaign_area_link_left {
+        width: 110px;
+
+        .campaign_area_link_left_flex {
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+
+          .campaign_area_link_left_flex_top {
+            width: 100%;
+          }
+
+          a {
+            font-weight: bold;
+            line-height: 2.2rem;
+          }
+
+          .left__arrow {
+            transition: all 0.3s ease 0s;
+            vertical-align: text-top;
+
+            &:hover {
+              transform: translateX(-10px)
+            }
+          }
+
+          .btn__move:hover .left__arrow {
+            transform: translateX(-10px)
+          }
+        }
+      }
+
+      .campaign_area_link_center {
+
+        width: 110px;
+
+        .campaign_area_link_center_area {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+
+          .campaign_area_link_center_area_top {
+            width: 100%;
+            text-align: center;
+
+            a {
+              font-weight: bold;
+              line-height: 2.2rem;
+            }
+          }
+        }
+      }
+
+      .campaign_area_link_right {
+        width: 110px;
+
+        .campaign_area_link_right_flex {
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+
+          .campaign_area_link_right_flex_top {
+            width: 100%;
+            text-align: right;
+          }
+
+          a {
+            font-weight: bold;
+            line-height: 2.2rem;
+          }
+
+          .right__arrow {
+            transition: all 0.3s ease 0s;
+            vertical-align: text-top;
+
+            &:hover {
+              transform: translateX(-10px)
+            }
+          }
+
+          .btn__move:hover .right__arrow {
+            transform: translateX(10px)
+          }
+        }
+      }
+    }
+  }
+}

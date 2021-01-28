@@ -14,7 +14,7 @@
   <!-- jqueryの読み込み -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-  <title>女性・男性・脱毛</title>
+  <title>ニュース一覧</title>
   <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
   <link rel="stylesheet" href="../common/css/style.css">
   <link rel="stylesheet" href="../css/style.css">
@@ -85,7 +85,7 @@
         <ul class="header-nav">
           <li class="nav-items"><a href="../index.html">TOP</a></li>
           <li class="nav-items is-active"><a href="../about/index.html">SAKURA Beauty studio<br>について</a></li>
-          <li class="nav-items drop_down is-selected" id="pc_global_menus"><a href="#3">メニュー・料金 <img
+          <li class="nav-items drop_down" id="pc_global_menus"><a href="#3">メニュー・料金 <img
                 src="../common/images/bottom_arrow.png" alt="下矢印" class="bottom-arrow"><img
                 src="../common/images/top_arrow.png" alt="上矢印" class="top-arrow hidden"> </a>
             <ul class="sub_menu hidden" id="sub_menu_pc">
@@ -184,7 +184,7 @@
         <ul class="header-nav">
           <li class="nav-items"><a href="../index.html">TOP</a></li>
           <li class="nav-items is-active"><a href="../about/index.html">SAKURA Beauty studioについて</a></li>
-          <li class="nav-items drop_down"><a href="#3"  id="global_menus_open">メニュー・料金 <img
+          <li class="nav-items drop_down"><a href="#3" id="global_menus_open">メニュー・料金 <img
                 src="../common/images/bottom_arrow.png" alt="下矢印"> </a>
             <ul class="sub_menu sub_menu_scroll hidden">
               <li class="nav-items"><a href="../epitation/index.html">脱毛</a></li>
@@ -234,246 +234,83 @@
     </div><!-- /.inner -->
   </div><!-- /.scroll_menu -->
 
+  <!-- ここからがニュース部分 -->
 
-
-  <!-- ここまでがヘッダー・メニュー部分 -->
-  <!-- ここからがメインコンテンツ -->
-
-  <section class="menu_epitation">
-    <div class="epitation_bk">
+  <section class="news_area_detail">
+    <div class="news_area_detail_bk">
       <div class="inner">
-        <div class="menu_epitation_box">
-          <div class="menu_epitation_box_flex">
-            <div class="menu_epitation_box_flex_left">
-              <h2><img src="../common/images/contents02_ttl@2.png" alt="脱毛"></h2>
-              <p class="menu_epitation_box_flex_left_message">
-                SAKURA beauty studioでは、最新の脱⽑機【LUMIX-A9】を導⼊!
-              </p><!-- /.menu_epitation_box_flex_left_message -->
-              <ul class="epitation_list">
-                <li class="epitation_lists">日本製なので、安心・安全の認定脱毛器</li><!-- /.epitation_lists -->
-                <li class="epitation_lists">毛周期に関係なく通えちゃいます！</li><!-- /.epitation_lists -->
-                <li class="epitation_lists">肌質・毛質を選ばず、日焼け肌・産毛・金髪でもOK！</li><!-- /.epitation_lists -->
-                <li class="epitation_lists">連続照射で施術時間も短縮</li><!-- /.epitation_lists -->
-              </ul><!-- /.epitation_list -->
-            </div><!-- /.menu_epitation_box_flex_left -->
-            <div class="menu_epitation_box_flex_right">
-              <img src="../epitation/images/machine.png" alt="機材">
-            </div><!-- /.menu_epitation_box_flex_right -->
-          </div><!-- /.menu_epitation_box_flex -->
-        </div><!-- /.menu_epitation_box -->
+        <div class="news_area_detail_flex">
+          <div class="news_area_detail_logo">
+            <img src="../common/images/column.png" alt="news_area_detail">
+            <div class="icons_box">
+              <a href="#" class="icons_news">お知らせ</a>
+              <a href="#" class="icons_column">コラム</a>
+            </div><!-- /.icons_box -->
+          </div><!-- /.news_area_detail_logo -->
+          <div class="news_area_detail__items">
+
+            <div class="news_area_detail__item">
+              <div class="news_area_detail__item_info">
+                <div class="news_area_detail__info__meta">
+                  <a href="">お知らせ</a>
+                  <time class="news_area_detail__info__published" datetime="2019-01-30">2019-01-30</time>
+                  <!-- /.info__published -->
+                </div><!-- /.info__meta -->
+                <h2 class="news_area_detail__item_title">タイトルが入ります</h2><!-- /.news_area_detail__item_title -->
+                <div class="news_area_detail__item_img">
+                  <img src="images/news_img.JPG" alt="ニュース写真">
+                </div><!-- /.news_area_detail__item_img -->
+                <p class="news_area_detail__item_message">
+                  テキストが⼊ります。テキストが⼊ります。テキストが⼊ります。テキストが⼊ります。テキストが⼊ります。テキスト
+                  が⼊ります。テキストが⼊ります。テキストが⼊ります。テキストが⼊ります。テキストが⼊ります。
+                </p><!-- /.news_area_detail__item_message -->
+              </div><!-- /.info -->
+            </div><!-- /.news_area_detail__item -->
+
+          </div><!-- /.news_area_detail__items -->
+        </div><!-- /.news_area_detail_flex -->
+        <!-- リンク部分 -->
+        <div class="campaign_area_link">
+          <div class="campaign_area_link_flex">
+
+            <div class="campaign_area_link_left">
+              <div class="campaign_area_link_left_flex">
+                <div class="campaign_area_link_left_flex_top btn__move">
+                  <a href="#"><img src="../campaign/images/arrow_left.png" alt="左矢印" class="left__arrow"></a>
+                  <a href="#"> 前の記事へ</a>
+                </div><!-- /.campaign_area_link_left_flex_left -->
+                <img src="../campaign/images/zebra_pink_cam.png" alt="ピンクしましま">
+              </div><!-- /.campaign_area_link_left_flex -->
+            </div><!-- /.campaign_area_link_left -->
+
+            <div class="campaign_area_link_center">
+              <div class="campaign_area_link_center_area">
+                <div class="campaign_area_link_center_area_top">
+                  <a href="#"> 一覧に戻る</a>
+                </div><!-- /.campaign_area_link_center_area_top -->
+                <img src="../campaign/images/zebra_pink_cam.png" alt="ピンクしましま">
+              </div><!-- /.campaign_area_link_center_area -->
+            </div><!-- /.campaign_area_link_center -->
+
+            <div class="campaign_area_link_right">
+              <div class="campaign_area_link_right_flex">
+                <div class="campaign_area_link_right_flex_top btn__move">
+                  <a href="#"> 次の記事へ</a>
+                  <a href="#"><img src="../campaign/images/arrow_right.png" alt="右矢印" class="right__arrow"></a>
+                </div><!-- /.campaign_area_link_right_flex_right -->
+                <img src="../campaign/images/zebra_pink_cam.png" alt="ピンクしましま">
+              </div><!-- /.campaign_area_link_right_flex -->
+            </div><!-- /.campaign_area_link_right -->
+          </div><!-- /.campaign_area_link_flex -->
+        </div><!-- /.campaign_area_link -->
       </div><!-- /.inner -->
-    </div>
-  </section><!-- /.menu_epitation -->
-
-  <section class="shr">
-    <div class="shr_bk">
-      <div class="inner">
-        <div class="shr_box">
-          <div class="shr_flex">
-            <div class="shr_flex_left">
-              <img src="../epitation/images/shr2.png" alt="SHR方式">
-            </div><!-- /.shr_flex_left -->
-            <div class="shr_flex_right">
-              <h3 class="shr_flex_right_title">痛くない！？<br class="dis-sp">ルミクスSHR方式の脱毛</h3><!-- /.shr_flex_right_title -->
-              <p class="shr_flex_right_message">
-                ルミクス脱毛のSHR方式は毛包全体に蓄熱させ毛を作る工場のバルジ領域にアプローチ！そのため毛周期関係なく脱毛が可能！暑さや痛みも感じにくく確かな効果を期待できます。
-              </p><!-- /.shr_flex_right_message -->
-            </div><!-- /.shr_flex_right -->
-          </div><!-- /.shr_flex -->
-        </div><!-- /.shr_box -->
-      </div><!-- /.inner -->
-    </div><!-- /.shr_bk -->
-  </section><!-- /.shr -->
-
-
-
-  <section class="menu_schedule">
-    <div class="menu_schedule_bk">
-      <div class="inner">
-        <div class="menu_schedule_box">
-          <div class="menu_schedule_flex">
-            <div class="menu_schedule_flex_left">
-              <h3 class="menu_schedule_flex_left_title">いつでも通えるから<br class="dis-sp">短期間に脱毛できちゃう！</h3>
-              <!-- /.menu_schedule_flex_left_title -->
-              <p class="menu_schedule_flex_left_message">
-                従来のマシンは全身脱毛の完了まで2〜3年が必要でしたが、ルミクスA9なら毛周期に関係なく施術できるので最短半年で完了する方も多くいらっしゃいます。
-                また、これまで難しかった日焼け肌や産毛、金髪の脱毛も可能になっているのも人気の理由です！
-              </p><!-- /.menu_schedule_flex_left_message -->
-            </div><!-- /.menu_schedule_flex_left -->
-            <div class="menu_schedule_flex_right">
-              <img src="../epitation/images/migista.png" alt="スケジュール">
-            </div><!-- /.menu_schedule_flex_right -->
-          </div><!-- /.menu_schedule_flex -->
-        </div><!-- /.menu_schedule_box -->
-      </div><!-- /.inner -->
-    </div><!-- /.menu_schedule_bk -->
-  </section><!-- /.menu_schedule -->
-
-
-
-
-  <section class="menu_short">
-    <div class="menu_short_bk">
-      <div class="inner">
-        <div class="menu_short_box">
-          <div class="menu_short_box_flex">
-            <div class="menu_short_box_flex_left">
-              <img src="../epitation/images/three-box2.png" alt="フロー図">
-            </div><!-- /.menu_short_box_flex_left -->
-            <div class="menu_short_box_flex_right">
-              <h3 class="menu_short_box_flex_right_title">
-                全身脱毛60分！<br class="dis-sp">施術時間MAX1/2に時間短縮！
-              </h3><!-- /.menu_short_box_flex_right_title -->
-              <p class="menu_short_box_flex_right_message">
-                SHR方式は、超高速連射式。10秒間で約1000本もの毛を同時に処理ができます。 今まで2時間かかっていた全身脱毛も、最短60分で処理が可能！
-              </p><!-- /.menu_short_box_flex_right_message -->
-            </div><!-- /.menu_short_box_flex_right -->
-          </div><!-- /.menu_short_box_flex -->
-        </div><!-- /.menu_short_box -->
-      </div><!-- /.inner -->
-    </div><!-- /.menu_short_bk -->
-  </section><!-- /.menu_short -->
-
-
-
-
-  <section class="epitation_parts">
-    <div class="inner">
-      <img src="../epitation/images/woman-price.png" alt="施術可能" class="dis-pc">
-      <div class="sp_back">
-        <img src="../epitation/images/woman-sp.png" alt="施術可能" class="dis-sp">
-      </div><!-- /.sp_back -->
-      <div class="epitation_banner">
-        <a href="#end">
-          <img src="./images/banner.png" alt="バナー">
-        </a>
-      </div><!-- /.epitation_banner -->
-    </div><!-- /.inner -->
-  </section><!-- /.epitation_parts -->
-
-
-
-  <!-- ここから下が、ＭＥＮＳ部分 -->
-  
-
-  <section class="menu_mens_epitation">
-    <div id="mens_epitation_area-box"></div>
-    <div class="mens_bk">
-      <div class="inner">
-        <div class="menu_mens_epitation_box">
-          <div class="menu_mens_epitation_box_flex">
-            <div class="menu_mens_epitation_box_flex_left">
-              <h2><img src="../common/images/contents04_ttl@2.png" alt="BBl"></h2>
-              <p class="menu_mens_epitation_box_flex_left_message">
-                SAKURA beauty studioでは、最新の脱⽑機【LUMIX-A9】を導⼊!
-              </p>
-              <ul class="menu_mens_epitation_list">
-                <li class="menu_mens_epitation_lists">日本製なので、安心・安全の認定脱毛器</li><!-- /.menu_mens_epitation_lists -->
-                <li class="menu_mens_epitation_lists">毛周期に関係なく通えちゃいます！</li><!-- /.menu_mens_epitation_lists -->
-                <li class="menu_mens_epitation_lists">肌質・毛質を選ばず、日焼け肌・産毛・金髪でもOK！</li><!-- /.menu_mens_epitation_lists -->
-                <li class="menu_mens_epitation_lists">連続照射で施術時間も短縮</li><!-- /.menu_mens_epitation_lists -->
-              </ul><!-- /.menu_mens_epitation_lists -->
-            </div><!-- /.menu_mens_epitation_box_flex_left -->
-            <div class="menu_mens_epitation_box_flex_right">
-              <img src="../epitation/images/mens-epitation.png" alt="男性の脱毛">
-            </div><!-- /.menu_mens_epitation_box_flex_right -->
-          </div><!-- /.menu_mens_epitation_box_flex -->
-        </div><!-- /.menu_mens_epitation_box -->
-
-        <!-- 安心な専用入り口 -->
-        <div class="menu_mens_epitation_entrance">
-          <div class="menu_mens_epitation_entrance_box">
-            <div class="menu_mens_epitation_entrance_box_flex">
-              <div class="menu_mens_epitation_entrance_box_flex_left">
-                <img src="../epitation/images/mes-only2.png" alt="男性専用の入り口">
-              </div><!-- /.menu_mens_epitation_entrance_box_flex_left -->
-              <div class="menu_mens_epitation_entrance_box_flex_right">
-                <h3 class="menu_mens_epitation_entrance_box_flex_right_title">
-                  人目を気にしないでご来店可能！
-                </h3><!-- /.menu_mens_epitation_entrance_box_flex_right_title -->
-                <p class="menu_mens_epitation_entrance_box_flex_right_message">
-                  男性向け専用入り口を設けておりますので、<br class="dis-pc">お気軽にご来店ください！
-                </p><!-- /.menu_mens_epitation_entrance_box_flex_right_message -->
-              </div><!-- /.menu_mens_epitation_entrance_box_flex_right -->
-            </div><!-- /.menu_mens_epitation_entrance_box_flex -->
-          </div><!-- /.menu_mens_epitation_entrance_box -->
-        </div><!-- /.menu_mens_epitation_entrance -->
-      </div><!-- /.inner -->
-    </div><!-- /.mens_bk -->
-  </section><!-- /.menu_mens_epitation_area -->
-
-  <section class="mens_points">
-    <div class="inner">
-      <img src="../epitation/images/man-price.png" alt="施術可能箇所" class="dis-pc">
-      <img src="../epitation/images/man-price-sp.png" alt="施術可能箇所" class="dis-sp">
-    </div><!-- /.inner -->
-  </section><!-- /.mens_points -->
-
-
-  <!-- 男性の脱毛 流れ -->
-  <section class="mens_flow" id="end">
-    <h2 class="mens_flow__title"><img src="../common/images/flow-title.png" alt="施術の流れ"></h2>
-    <div class="inner">
-      <div class="mens_contents">
-        <div class="mens_innerArea">
-          <div class="mens_innerArea_flex">
-            <div class="mens_innerArea_flex_cards">
-              <img src="../epitation/images/flow1.jpg" alt="施術１">
-              <h3>01. ご予約</h3>
-              <p>当HP、Hot Pepper、お電話にてご予約をお願いいたします。</p>
-            </div><!-- /.innerArea_flex_cards -->
-
-            <div class="mens_innerArea_flex_cards">
-              <img src="../epitation/images/flow2.jpg" alt="施術２">
-              <h3>02. 事前のお手入れ</h3>
-              <p>脱毛予定の箇所を1~2日前までにシェーバーなどで自己処理の上、ご来店ください。</p>
-            </div><!-- /.innerArea_flex_cards -->
-
-            <div class="mens_innerArea_flex_cards">
-              <img src="../epitation/images/flow3.jpg" alt="施術３">
-              <h3>03. ご来店・受付</h3>
-              <p>ご予約の日時にご来店ください。予約キャンセルや時間変更等の場合はお気軽にお問合せください。</p>
-            </div><!-- /.innerArea_flex_cards -->
-
-            <div class="mens_innerArea_flex_cards">
-              <img src="../epitation/images/flow4-2.jpg" alt="施術４">
-              <h3>04. カウンセリング</h3>
-              <p>知識豊かな担当スタッフが、脱毛法についての説明や肌状態の診断を丁寧にカウンセリングいたします。</p>
-            </div><!-- /.innerArea_flex_cards -->
-
-            <div class="mens_innerArea_flex_cards">
-              <img src="../epitation/images/flow5.jpg" alt="施術５">
-              <h3>05. お着替え</h3>
-              <p>個室に移動しお着替えしていただきます。</p>
-            </div><!-- /.innerArea_flex_cards -->
-
-            <div class="mens_innerArea_flex_cards">
-              <img src="../epitation/images/flow6-2.jpg" alt="施術６">
-              <h3>06. ジェル塗布・照射</h3>
-              <p>ジェルで肌へのダメージを軽減。 脱毛箇所を数回照射。短時間で完了します。</p>
-            </div><!-- /.innerArea_flex_cards -->
-
-            <div class="mens_innerArea_flex_cards">
-              <img src="../epitation/images/flow7-2.jpg" alt="施術７">
-              <h3>07. 仕上げのお肌ケア</h3>
-              <p>抑毛成分配合のローションで施術後のお肌を優しく保湿します。</p>
-            </div><!-- /.innerArea_flex_cards -->
-
-            <div class="mens_innerArea_flex_cards">
-              <img src="../epitation/images/flow8.jpg" alt="施術８">
-              <h3>08. 施術終了・お着替え</h3>
-              <p>施術終了です。<br>メイク直し用にご使用いただける専用のパウダールームもご用意しています。</p>
-            </div><!-- /.mens_innerArea_flex_cards -->
-          </div><!-- /.mens_innerArea_flex -->
-        </div>
-      </div>
-      <!--mens_contents-->
-    </div><!-- /.inner -->
-  </section><!-- /.flow -->
-
+    </div><!-- /.news_area_bk -->
+  </section><!-- /.news_area -->
 
 
   <!-- ここからが予約画面・共通部分 -->
+
+
 
   <section class="reservation">
     <div class="inner">
@@ -497,15 +334,18 @@
           </a>
         </div><!-- /.reservation_flex_left -->
         <div class="reservation_flex_right">
-          <a href="https://beauty.hotpepper.jp/kr/slnH000514348/" target="_blank"><img src="../common/images/net_img.jpg" alt="ネット"></a>
+          <a href="https://beauty.hotpepper.jp/kr/slnH000514348/" target="_blank"><img
+              src="../common/images/net_img.jpg" alt="ネット"></a>
         </div><!-- /.reservation_flex_right -->
       </div><!-- /.reservation_flex -->
       <div class="reservation_flex2">
         <div class="reservation_flex2_left">
-          <a href="../common/images/counseling.pdf" target="_blank"><img src="../common/images/Interview_bnr.jpg" alt="ご予約されたお客様へ"></a>
+          <a href="../common/images/counseling.pdf" target="_blank"><img src="../common/images/Interview_bnr.jpg"
+              alt="ご予約されたお客様へ"></a>
         </div><!-- /.reservation_flex2_left -->
         <div class="reservation_flex2_right">
-          <a href="../common/images/agreement.pdf" target="_blank"><img src="../common/images/consent_bnr.jpg" alt="未成年のお客様へ"></a>
+          <a href="../common/images/agreement.pdf" target="_blank"><img src="../common/images/consent_bnr.jpg"
+              alt="未成年のお客様へ"></a>
         </div><!-- /.reservation_flex2_right -->
       </div><!-- /.reservation_flex2 -->
     </div><!-- /.inner -->
@@ -518,7 +358,8 @@
           <h2><img src="../common/images/footer-logo.svg" alt="ロゴ"></h2>
         </div><!-- /.footer_logo -->
         <div class="footer_list">
-          <p class="footer_about"><a href="../about/index.html"><img src="../common/images/hana.png" alt="花"> <span>SAKURA beauty
+          <p class="footer_about"><a href="../about/index.html"><img src="../common/images/hana.png" alt="花">
+              <span>SAKURA beauty
                 studioについて</span></a></p>
           <div class="footer_list_flex">
             <div class="footer_list_flex_left">
