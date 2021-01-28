@@ -1,0 +1,183 @@
+// ==============================================
+// キャンペーン一覧 部分
+// ==============================================
+
+.campaign_area {
+  background-image: url(../common/images/back_yellow.png);
+  background-size: cover;
+  background-position: center center;
+  margin-top: 170px;
+  z-index: -5;
+  padding: 56px 0;
+
+  @include mq(md) {
+    margin: 0;
+    padding: 30px 0;
+  }
+
+  .campaign_area_flex {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .campaign_area_title {
+    width: 30%;
+
+    @include mq(md) {
+      width: 40%;
+      margin-left: 50px;
+      margin-right: auto;
+      margin-bottom: 20px;
+    }
+
+    @include mq() {
+      width: 60%;
+      margin-left: 50px;
+      margin-right: auto;
+      margin-bottom: 0;
+    }
+  }
+
+  .campaign_area_box {
+    width: 65%;
+
+    @include mq(md) {
+      width: 90%;
+      ;
+    }
+  }
+
+  .campaign_area_box_flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .campaign_area_box_cards {
+      width: 45%;
+      margin-bottom: 20px;
+
+      &:hover {
+        opacity: 0.7;
+      }
+
+      @include mq() {
+        width: 90%;
+        margin: 20px auto;
+      }
+    }
+  }
+}
+
+// ==============================================
+// キャンペーン詳細 部分
+// ==============================================
+
+.campaign_detail_cards {
+  .campaign_detail_title {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .campaign_detail_message {
+    padding: 20px 0;
+    font-size: 1.3rem;
+  }
+}
+
+// ==============================================
+// リンク 部分
+// ==============================================
+.campaign_area_link {
+  margin-top: 20px;
+  .campaign_area_link_flex {
+    display: flex;
+    justify-content: space-around;
+
+    .campaign_area_link_left {
+      width: 115px;
+
+      .campaign_area_link_left_flex {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .campaign_area_link_left_flex_top {
+          width: 100%;
+        }
+
+        a {
+          font-weight: bold;
+          line-height: 2.2rem;
+        }
+
+        .left__arrow {
+          transition: all 0.3s ease 0s;
+          vertical-align: middle;
+
+          &:hover {
+            transform: translateX(-10px)
+          }
+        }
+
+        .btn__move:hover .left__arrow {
+          transform: translateX(-10px)
+        }
+      }
+    }
+
+    .campaign_area_link_center {
+
+      width: 115px;
+
+      .campaign_area_link_center_area {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .campaign_area_link_center_area_top {
+          width: 100%;
+          text-align: center;
+
+          a {
+            font-weight: bold;
+            line-height: 2.2rem;
+          }
+        }
+      }
+    }
+
+    .campaign_area_link_right {
+      width: 115px;
+
+      .campaign_area_link_right_flex {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .campaign_area_link_right_flex_top {
+          width: 100%;
+          text-align: right;
+        }
+
+        a {
+          font-weight: bold;
+          line-height: 2.2rem;
+        }
+
+        .right__arrow {
+          transition: all 0.3s ease 0s;
+          vertical-align: middle;
+
+          &:hover {
+            transform: translateX(-10px)
+          }
+        }
+
+        .btn__move:hover .right__arrow {
+          transform: translateX(10px)
+        }
+      }
+    }
+  }
+}
