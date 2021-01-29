@@ -736,3 +736,137 @@ header {
     }
   }
 }
+
+
+// =============================================
+// ＳＰ headerの下部分に固定
+// =============================================
+.under_fixed{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000;
+
+
+  .contact_box {
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.8rem;
+    background-color: #ffdcec;
+    padding: 10px 0;
+    color: #d60e4c;
+    position: relative;
+  
+    @include mq(lg) {
+      padding: 3px;
+    }
+  
+    @include mq(md) {
+      padding: 0;
+    }
+  
+    .contact_box_flex {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-end;
+  
+      // 電話の部分
+      .contact_box_tel {
+        padding: 0 10px;
+        width: 280px;
+  
+        @include mq() {
+          width: 60%;
+          padding: 0 0 5px 0;
+          font-size: 0.6rem;
+        }
+  
+        .contact_box_tel_flex {
+          display: flex;
+          justify-content: center;
+  
+          @include mq(md) {
+            justify-content: center;
+          }
+  
+          @include mq() {
+            align-items: center;
+          }
+        }
+      }
+  
+      .contact_box_tel_flex_hour {
+        color: #d60e4c;
+  
+        .contact_time {
+  
+          span {
+            color: #59493f
+          }
+        }
+  
+        .contact_box_tel_flex_number {
+          font-size: 1.5rem;
+  
+          @include mq(lg) {
+            font-size: 1.2rem;
+          }
+  
+          @include mq() {
+            font-size: 1.2rem;
+          }
+        }
+      }
+  
+      // ネットで予約の部分
+      .contact_box_com {
+        border-right: 2px solid #f19ec2;
+        border-left: 2px solid #f19ec2;
+        width: 130px;
+  
+        @include mq(md) {
+          padding: 5px;
+          font-size: 0.5rem;
+          width: 25%;
+        }
+  
+        .contact_box_com_message {
+          color: #d60e4c;
+        }
+      }
+  
+      // アクセスの部分
+      .contact_box_home {
+        width: 120px;
+  
+        @include mq(md) {
+          border-right: none;
+          width: 20%;
+          padding: 5px;
+        }
+  
+        @include mq() {
+          font-size: 0.5rem;
+        }
+  
+        .contact_box_home_message {
+          color: #d60e4c;
+        }
+      }
+  
+      // ハンバーガーメニューの部分
+      .contact_box_hum {
+        padding: 0 10px;
+  
+        @include mq(md) {
+          padding: 4px 12px;
+        }
+  
+        .contact_box_hum_message {
+          margin-bottom: 8px;
+          color: #d60e4c;
+        }
+      }
+    }
+  }
+}

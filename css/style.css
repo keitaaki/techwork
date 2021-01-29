@@ -898,6 +898,163 @@ header .header_flex {
   color: #d60e4c;
 }
 
+.under_fixed {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.under_fixed .contact_box {
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.8rem;
+  background-color: #ffdcec;
+  padding: 10px 0;
+  color: #d60e4c;
+  position: relative;
+}
+
+@media screen and (max-width: 1187px) {
+  .under_fixed .contact_box {
+    padding: 3px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .under_fixed .contact_box {
+    padding: 0;
+  }
+}
+
+.under_fixed .contact_box .contact_box_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.under_fixed .contact_box .contact_box_flex .contact_box_tel {
+  padding: 0 10px;
+  width: 280px;
+}
+
+@media screen and (max-width: 600px) {
+  .under_fixed .contact_box .contact_box_flex .contact_box_tel {
+    width: 60%;
+    padding: 0 0 5px 0;
+    font-size: 0.6rem;
+  }
+}
+
+.under_fixed .contact_box .contact_box_flex .contact_box_tel .contact_box_tel_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .under_fixed .contact_box .contact_box_flex .contact_box_tel .contact_box_tel_flex {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .under_fixed .contact_box .contact_box_flex .contact_box_tel .contact_box_tel_flex {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.under_fixed .contact_box .contact_box_flex .contact_box_tel_flex_hour {
+  color: #d60e4c;
+}
+
+.under_fixed .contact_box .contact_box_flex .contact_box_tel_flex_hour .contact_time span {
+  color: #59493f;
+}
+
+.under_fixed .contact_box .contact_box_flex .contact_box_tel_flex_hour .contact_box_tel_flex_number {
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1187px) {
+  .under_fixed .contact_box .contact_box_flex .contact_box_tel_flex_hour .contact_box_tel_flex_number {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .under_fixed .contact_box .contact_box_flex .contact_box_tel_flex_hour .contact_box_tel_flex_number {
+    font-size: 1.2rem;
+  }
+}
+
+.under_fixed .contact_box .contact_box_flex .contact_box_com {
+  border-right: 2px solid #f19ec2;
+  border-left: 2px solid #f19ec2;
+  width: 130px;
+}
+
+@media screen and (max-width: 768px) {
+  .under_fixed .contact_box .contact_box_flex .contact_box_com {
+    padding: 5px;
+    font-size: 0.5rem;
+    width: 25%;
+  }
+}
+
+.under_fixed .contact_box .contact_box_flex .contact_box_com .contact_box_com_message {
+  color: #d60e4c;
+}
+
+.under_fixed .contact_box .contact_box_flex .contact_box_home {
+  width: 120px;
+}
+
+@media screen and (max-width: 768px) {
+  .under_fixed .contact_box .contact_box_flex .contact_box_home {
+    border-right: none;
+    width: 20%;
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .under_fixed .contact_box .contact_box_flex .contact_box_home {
+    font-size: 0.5rem;
+  }
+}
+
+.under_fixed .contact_box .contact_box_flex .contact_box_home .contact_box_home_message {
+  color: #d60e4c;
+}
+
+.under_fixed .contact_box .contact_box_flex .contact_box_hum {
+  padding: 0 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .under_fixed .contact_box .contact_box_flex .contact_box_hum {
+    padding: 4px 12px;
+  }
+}
+
+.under_fixed .contact_box .contact_box_flex .contact_box_hum .contact_box_hum_message {
+  margin-bottom: 8px;
+  color: #d60e4c;
+}
+
 footer .footer_flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4705,6 +4862,7 @@ footer .footer_reserved {
 @media screen and (max-width: 768px) {
   .about_sakura {
     margin: 0;
+    padding: 30px 0;
   }
 }
 
@@ -4772,6 +4930,13 @@ footer .footer_reserved {
 .about_concept_power {
   background: #ffffee url("../common/images/hana-bk4-right.png") no-repeat right top;
   padding: 55px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .about_concept_power {
+    margin: 0;
+    padding: 30px 0;
+  }
 }
 
 .about_concept_power .about_concept_power_bk {
@@ -4875,6 +5040,13 @@ footer .footer_reserved {
   padding: 55px 0;
 }
 
+@media screen and (max-width: 768px) {
+  .faq_area {
+    margin: 0;
+    padding: 30px 0;
+  }
+}
+
 .faq_area .faq_area_box {
   background-color: #fff;
   border-radius: 10px;
@@ -4919,6 +5091,7 @@ footer .footer_reserved {
   text-align: center;
   background: url("../about/images/hana.png") no-repeat center center;
   padding: 10px 0;
+  line-height: 18px;
 }
 
 @media screen and (max-width: 768px) {

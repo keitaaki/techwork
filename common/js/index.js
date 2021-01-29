@@ -4,7 +4,6 @@ $(function () {
   $('.navbar_toggle').on('click', function () {
     $('.menu-trigger').toggleClass('active');
     $('#sp_global_nav').toggleClass('hidden');
-    $('#sp_contact_box').toggleClass('hidden');
   });
 });
 
