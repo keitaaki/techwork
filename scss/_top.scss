@@ -1159,14 +1159,15 @@
   }
 
   .details {
-    width: 275px;
+    width: 265px;
     margin-left: auto;
     margin-right: 0px;
     padding-top: 20px;
 
-    @include mq() {
-      width: 220px;
+    @include mq(md) {
+      width: 225px;
     }
+
 
     .details_flex {
       display: flex;
