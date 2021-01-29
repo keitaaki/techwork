@@ -5390,13 +5390,6 @@ footer .footer_reserved {
   text-align: center;
 }
 
-@media screen and (max-width: 1187px) {
-  .news_area .news_area_logo {
-    width: 100%;
-    text-align: center;
-  }
-}
-
 @media screen and (max-width: 768px) {
   .news_area .news_area_logo {
     display: -webkit-box;
@@ -5404,11 +5397,18 @@ footer .footer_reserved {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    width: 100%;
   }
 }
 
 .news_area .news_area_logo .icons_box {
   margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .news_area .news_area_logo .icons_box {
+    width: 30%;
+  }
 }
 
 .news_area .news_area_logo .icons_box a {
@@ -6101,7 +6101,7 @@ footer .footer_reserved {
 }
 
 .contact {
-  background: #e6396a url("../common/images/hana-bk2-left.png") no-repeat left top;
+  background: #e6396a url("../common/images/hana-bk5-left.png") no-repeat left top;
   margin-top: 170px;
   z-index: -5;
   padding: 56px 0;
