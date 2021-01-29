@@ -251,7 +251,7 @@
 
   @media (max-width: 767px) {
     .form-checkbox+span {
-      padding-left: 46px;
+      padding-left: 25px;
     }
   }
 
@@ -334,6 +334,10 @@
 
   .atention {
     margin-top: 5px;
+
+    @include mq(md){
+      font-size: 0.8rem;
+    }
   }
 }
 

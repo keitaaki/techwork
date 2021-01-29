@@ -6350,7 +6350,7 @@ footer .footer_reserved {
 
 @media (max-width: 767px) {
   .contact .form-checkbox + span {
-    padding-left: 46px;
+    padding-left: 25px;
   }
 }
 
@@ -6431,6 +6431,12 @@ footer .footer_reserved {
 
 .contact .atention {
   margin-top: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .contact .atention {
+    font-size: 0.8rem;
+  }
 }
 
 .personal_information {
