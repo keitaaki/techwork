@@ -1,5 +1,5 @@
-.contact {
-  background: #e6396a url("../common/images/hana-bk2-left.png") no-repeat left top;
+.error {
+  background: #e6396a url("../common/images/hana-bk5-left.png") no-repeat left top;
   margin-top: 170px;
   z-index: -5;
   padding: 56px 0;
@@ -49,7 +49,7 @@
   @media (max-width: 767px) {
     .contact__control {
       display: block;
-      margin-bottom: 24px;
+      margin-bottom: 40px;
     }
   }
 
@@ -79,6 +79,19 @@
     width: 500px;
     padding: 0;
     margin: 0;
+  }
+
+  .non-input{
+    position: relative;
+  }
+
+  .non-input:after{
+    content: '入力されていません';
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    color: red;
+    font-weight: bold;
   }
 
   @media (max-width: 767px) {
@@ -159,12 +172,6 @@
     text-align: center;
   }
 
-  @media (max-width: 767px) {
-    .contact__check {
-      margin-top: 24px;
-    }
-  }
-
   .contact__check a {
     color: #333;
     -webkit-transition: all 0.3s ease 0s;
@@ -188,7 +195,8 @@
 
   .form-input {
     width: 100%;
-    border: 1px solid #707070;
+    border: 1px solid red;
+    background-color: pink;
     padding: 4px 16px;
     -moz-appearance: none;
     -webkit-appearance: none;
@@ -215,7 +223,7 @@
   .form-textarea {
     width: 100%;
     height: 240px;
-    border: 1px solid #707070;
+    border: 1px solid red;
     resize: none;
     padding: 10px 16px;
     line-height: 1.625;
@@ -251,7 +259,7 @@
 
   @media (max-width: 767px) {
     .form-checkbox+span {
-      padding-left: 46px;
+      padding-left: 25px;
     }
   }
 
@@ -334,283 +342,9 @@
 
   .atention {
     margin-top: 5px;
-  }
-}
 
-
-// ==============================================
-// 個人情報関連 部分
-// ==============================================
-.personal_information {
-  background: #ffffee url("../common/images/hana-bk4-right.png") no-repeat right top;
-  padding: 55px 0;
-
-  @include mq(md) {
-    margin: 0;
-    padding: 10px;
-  }
-
-  .personal_information_bk {
-    background: url("../common/images/hana-bk4-left.png") no-repeat left bottom;
-  }
-
-  .personal_information_box {
-    width: 800px;
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 30px;
-    box-shadow: 0 0 8px gray;
-    margin: 0 auto;
-    max-width: 100%;
-
-    @include mq(md) {
-      padding: 20px;
-    }
-  }
-
-  .personal_information_title_box {
-    margin: 10px;
-  }
-
-  .personal_information_attention {
-    margin: 10px;
-  }
-
-  h3 {
-    margin: 15px 10px;
-  }
-
-  .personal_information_boxes1 {
-    margin: 10px;
-  }
-
-  .personal_information_boxes1_1 {
-    margin: 10px;
-  }
-
-  .personal_information_boxes1_2 {
-    margin: 10px;
-
-    ul {
-      margin: 10px;
-    }
-
-    li {
-      list-style-type: disc;
-    }
-  }
-
-  .personal_information_boxes2 {
-    margin: 10px;
-  }
-
-  .personal_information_boxes2_1 {
-    margin: 10px;
-
-    ul {
-      margin: 0 10px;
-    }
-
-    li {
-      list-style-type: disc;
-    }
-  }
-
-  .personal_information_boxes3 {
-    margin: 10px;
-  }
-}
-
-// ==============================================
-// 送信完了 部分
-// ==============================================
-.completion_area {
-  background: #e6396a url("../common/images/hana-bk2-left.png") no-repeat left top;
-  margin-top: 170px;
-  z-index: -5;
-  padding: 56px 0;
-
-  @include mq(md) {
-    margin: 0;
-    padding: 10px;
-  }
-
-  .completion_area_bk {
-    background: url("../common/images/hana-bk2-right.png") no-repeat right top;
-  }
-
-  .completion_box {
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 40px 20px;
-
-    @include mq(md) {
-      margin: 0 10px;
-      padding: 10px;
-    }
-
-    .completion_title {
-      text-align: center;
-      font-size: 2rem;
-      margin: 10px 0;
-      color: #eb6794;
-    }
-
-    p {
-      text-align: center;
-      font-weight: bold;
-      padding: 5px;
-      font-size: 1.2rem;
-
-      @include mq(md) {
-        font-size: 1rem;
-      }
-    }
-
-    .completion_btn {
-      margin-top: 50px;
-      text-align: center;
-      background: #f19ec2;
-      width: 250px;
-      margin: 30px auto;
-      padding: 20px 0;
-      font-weight: bold;
-      border-radius: 5px;
-
-      @include mq(md) {
-        padding: 10px;
-      }
-
-
-      &:hover {
-        opacity: 0.7;
-      }
-    }
-  }
-}
-
-// ==============================================
-// 確認 部分
-// ==============================================
-.confirm_area {
-  background: #e6396a url("../common/images/hana-bk5-left.png") no-repeat left top;
-  margin-top: 170px;
-  z-index: -5;
-  padding: 56px 0;
-
-  @include mq(md) {
-    margin: 0;
-    padding: 10px;
-  }
-
-  .confirm_area_bk {
-    background: url("../common/images/hana-bk2-right.png") no-repeat right top;
-  }
-
-  .confirm_box {
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 40px 20px;
-
-    @include mq(md) {
-      margin: 0 10px;
-      padding: 10px;
-    }
-
-    .confirm_title {
-      text-align: center;
-      font-size: 2rem;
-      margin: 10px 0;
-      color: #eb6794;
-    }
-
-    table {
-      margin: 20px auto;
-      width: 800px;
-      border-collapse: collapse;
-    }
-
-    .tbl-r02 th {
-      background: #ffdcec;
-      border: solid 1px #ccc;
-      padding: 10px;
-      width: 200px;
-
-      @include mq(md) {
-        width: 100%;
-      }
-    }
-
-    .tbl-r02 td {
-      border: solid 1px #ccc;
-      padding: 10px;
-    }
-
-    @include mq(md) {
-      .last td:last-child {
-        border-bottom: solid 1px #ccc;
-        width: 100%;
-      }
-
-      .tbl-r02 {
-        width: 90%;
-      }
-
-      .tbl-r02 th,
-      .tbl-r02 td {
-        border-bottom: none;
-        display: block;
-        width: 100%;
-      }
-    }
-
-    .btn_area{
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-    }
-
-    .confirm_btn1 {
-      margin-top: 50px;
-      text-align: center;
-      background: #AAAAAA;
-      color: #fff;
-      width: 300px;
-      margin: 30px auto;
-      padding: 20px 0;
-      font-weight: bold;
-      border-radius: 5px;
-
-      @include mq(md) {
-        padding: 10px;
-        margin: 10px 0;
-      }
-
-
-      &:hover {
-        opacity: 0.7;
-      }
-    }
-
-    .confirm_btn2 {
-      margin-top: 50px;
-      text-align: center;
-      background: #f19ec2;
-      width: 300px;
-      margin: 30px auto;
-      padding: 20px 0;
-      font-weight: bold;
-      border-radius: 5px;
-
-      @include mq(md) {
-        padding: 10px;
-        margin-top: 10px;
-      }
-
-
-      &:hover {
-        opacity: 0.7;
-      }
+    @include mq(md){
+      font-size: 0.8rem;
     }
   }
 }
