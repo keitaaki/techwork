@@ -73,15 +73,23 @@
 // キャンペーン詳細 部分
 // ==============================================
 
+.campaign_area_box_detail{
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
 .campaign_detail_cards {
   .campaign_detail_title {
     font-size: 2rem;
     font-weight: bold;
+    padding: 10px;
   }
 
   .campaign_detail_message {
     padding: 20px 0;
-    font-size: 1.3rem;
+    font-size: 1rem;
+    padding: 10px;
   }
 }
 
@@ -90,6 +98,7 @@
 // ==============================================
 .campaign_area_link {
   margin-top: 20px;
+
   .campaign_area_link_flex {
     display: flex;
     justify-content: space-around;
