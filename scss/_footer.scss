@@ -2,6 +2,12 @@
 // footer 部分
 // =============================================
 footer {
+
+  @include mq(md){
+    margin-bottom: 90px;
+  }
+
+
   .footer_flex {
     display: flex;
     justify-content: center;

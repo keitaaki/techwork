@@ -368,7 +368,7 @@
     max-width: 100%;
 
     @include mq(md) {
-      padding: 20px;
+      padding: 10px;
     }
   }
 
@@ -382,6 +382,10 @@
 
   h3 {
     margin: 15px 10px;
+
+    @include mq(md){
+      margin: 15px 0;
+    }
   }
 
   .personal_information_boxes1 {
