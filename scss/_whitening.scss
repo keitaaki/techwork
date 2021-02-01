@@ -162,6 +162,7 @@
   background-size: cover;
   background-position: center center;
   padding: 56px 0;
+  text-align: center;
 
   @include mq(md) {
     margin: 0;

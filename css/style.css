@@ -4040,11 +4040,21 @@ footer .footer_reserved {
   background-size: cover;
   background-position: center center;
   padding: 56px 0;
+  text-align: center;
+}
+
+.bbl_points .dis-sp1 {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .bbl_points .dis-sp1 {
+    display: inline-block;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .bbl_points {
-    margin: 0;
     padding: 30px 0;
   }
 }
@@ -4739,6 +4749,7 @@ footer .footer_reserved {
   background-size: cover;
   background-position: center center;
   padding: 56px 0;
+  text-align: center;
 }
 
 @media screen and (max-width: 768px) {
