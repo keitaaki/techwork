@@ -5114,6 +5114,7 @@ footer .footer_reserved {
 @media screen and (max-width: 768px) {
   .faq_area .faq_area_box .faq_area_menu .faq_area_menu_flex li {
     width: 40%;
+    padding: 15px 0;
   }
 }
 
@@ -5123,7 +5124,13 @@ footer .footer_reserved {
 
 .faq_area .faq_area_box h4 {
   font-size: 1.5rem;
-  margin-top: 50px;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .faq_area .faq_area_box h4 {
+    margin-top: 10px;
+  }
 }
 
 .faq_area .faq_area_box .faq_area_box_contents .faq_area_box_contents_each {
@@ -5378,24 +5385,17 @@ footer .footer_reserved {
 }
 
 .news_area {
-  background: #e6396a url("../common/images/hana-bk2-left.png") no-repeat left bottom;
+  background-image: url(../common/images/back_yellow.png);
+  background-size: cover;
+  background-position: center center;
   margin-top: 170px;
+  padding: 60px 0;
   position: relative;
 }
 
 @media screen and (max-width: 768px) {
   .news_area {
     margin: 0;
-  }
-}
-
-.news_area .news_area_bk {
-  background: url("../common/images/hana-bk2-right.png") no-repeat right bottom;
-  padding: 60px 0;
-}
-
-@media screen and (max-width: 600px) {
-  .news_area .news_area_bk {
     padding: 20px;
   }
 }
@@ -5709,8 +5709,11 @@ footer .footer_reserved {
 }
 
 .news_area_detail {
-  background: #e6396a url("../common/images/hana-bk2-left.png") no-repeat left bottom;
+  background-image: url(../common/images/back_yellow.png);
+  background-size: cover;
+  background-position: center center;
   margin-top: 170px;
+  padding: 60px 0;
   position: relative;
 }
 
@@ -5718,17 +5721,6 @@ footer .footer_reserved {
   .news_area_detail {
     margin: 0;
     padding: 20px 0;
-  }
-}
-
-.news_area_detail .news_area_detail_bk {
-  background: url("../common/images/hana-bk2-right.png") no-repeat right bottom;
-  padding: 60px 0;
-}
-
-@media screen and (max-width: 768px) {
-  .news_area_detail .news_area_detail_bk {
-    padding: 10px;
   }
 }
 
@@ -5815,11 +5807,13 @@ footer .footer_reserved {
 }
 
 .news_area_detail .news_area_detail__info__meta a {
-  width: 120px;
+  width: 90px;
   background: #e5004f;
   color: #fff;
-  border-radius: 5px;
+  border-radius: 4px;
   text-align: center;
+  font-size: 14px;
+  padding: 3px 3px 1px 3px;
 }
 
 .news_area_detail .news_area_detail__info__meta .news_area_detail__info__published {
@@ -6170,7 +6164,7 @@ footer .footer_reserved {
 }
 
 .contact .contact__control {
-  margin-bottom: 50px;
+  margin-bottom: 24px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6281,7 +6275,7 @@ footer .footer_reserved {
 }
 
 .contact .contact__check {
-  margin-top: 40px;
+  margin-top: 20px;
   text-align: center;
 }
 
@@ -6805,7 +6799,7 @@ footer .footer_reserved {
 }
 
 .error .contact__control {
-  margin-bottom: 50px;
+  margin-bottom: 24px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6852,7 +6846,7 @@ footer .footer_reserved {
 .error .non-input:after {
   content: '入力されていません';
   position: absolute;
-  bottom: -30px;
+  bottom: -25px;
   left: 0;
   color: red;
   font-weight: bold;
@@ -7033,7 +7027,7 @@ footer .footer_reserved {
 
 .error .form-checkbox + span::before {
   background: #fff;
-  border: 1px solid #707070;
+  border: 1px solid red;
   display: block;
   left: 0;
   width: 25px;
@@ -7105,4 +7099,9 @@ footer .footer_reserved {
   .error .atention {
     font-size: 0.8rem;
   }
+}
+
+.error .check_error {
+  color: red;
+  font-weight: bold;
 }

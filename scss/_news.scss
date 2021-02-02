@@ -2,23 +2,19 @@
 // ニュース 部分
 // =============================================
 .news_area {
-  background: #e6396a url("../common/images/hana-bk2-left.png") no-repeat left bottom;
+  background-image: url(../common/images/back_yellow.png);
+  background-size: cover;
+  background-position: center center;
   margin-top: 170px;
+  padding: 60px 0;
   position: relative;
 
 
   @include mq(md) {
     margin: 0;
+    padding: 20px;
   }
 
-  .news_area_bk {
-    background: url("../common/images/hana-bk2-right.png") no-repeat right bottom;
-    padding: 60px 0;
-
-    @include mq() {
-      padding: 20px;
-    }
-  }
 
   .news_area_flex {
     display: flex;
@@ -307,22 +303,16 @@
 // ニュース詳細 部分
 // =============================================
 .news_area_detail {
-  background: #e6396a url("../common/images/hana-bk2-left.png") no-repeat left bottom;
+  background-image: url(../common/images/back_yellow.png);
+  background-size: cover;
+  background-position: center center;
   margin-top: 170px;
+  padding: 60px 0;
   position: relative;
 
   @include mq(md) {
     margin: 0;
     padding: 20px 0;
-  }
-
-  .news_area_detail_bk {
-    background: url("../common/images/hana-bk2-right.png") no-repeat right bottom;
-    padding: 60px 0;
-
-    @include mq(md) {
-      padding: 10px;
-    }
   }
 
   .news_area_detail_flex {
@@ -390,11 +380,13 @@
     justify-content: left;
 
     a {
-      width: 120px;
+      width: 90px;
       background: #e5004f;
       color: #fff;
-      border-radius: 5px;
+      border-radius: 4px;
       text-align: center;
+      font-size: 14px;
+      padding: 3px 3px 1px 3px;
     }
 
     .news_area_detail__info__published {
