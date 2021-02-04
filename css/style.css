@@ -4924,6 +4924,7 @@ footer .footer_reserved {
 @media screen and (max-width: 768px) {
   .about_sakura .about_sakura_box .about_sakura_box_flex .about_sakura_box_flex_left {
     width: 100%;
+    margin-bottom: 5px;
   }
 }
 
@@ -5019,6 +5020,7 @@ footer .footer_reserved {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
+    margin-bottom: 5px;
   }
 }
 
