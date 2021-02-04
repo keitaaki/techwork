@@ -24,7 +24,7 @@
 
     .access_area_box_flex {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       flex-wrap: wrap;
       align-items: center;
 
@@ -77,10 +77,8 @@
       margin: 20px 0 ;      
 
       h3{
-        margin-left: 20px;
 
         @include mq(md){
-          margin-left: 0;
           margin-top: 20px;
           width: 150px;
         }
@@ -89,7 +87,7 @@
 
     .access_area_box_under_flex {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       flex-wrap: wrap;
       font-weight: bold;
 

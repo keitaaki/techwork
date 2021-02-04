@@ -540,6 +540,9 @@
 
         .list_last{
           margin-bottom: 0;
+          @include mq(md) {
+            margin-bottom: 20px;
+          }
         }
       }
 
