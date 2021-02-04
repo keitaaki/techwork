@@ -20,7 +20,7 @@
   .menu__hifu_box {
     background-color: #fff;
     border-radius: 10px;
-    padding: 10px;
+    padding: 20px;
 
     @include mq(md) {
       margin: 0 10px;
@@ -34,11 +34,9 @@
 
       .menu__hifu_box_flex_left {
         width: 50%;
-        padding: 20px;
 
         @include mq() {
           width: 100%;
-          padding: 10px;
         }
 
         h2 {
@@ -92,28 +90,26 @@
   .no_pain_box {
     background-color: #fff;
     border-radius: 10px;
-    padding: 10px;
+    padding: 20px;
     box-shadow: 0 0 8px gray;
 
     @include mq(md) {
       margin: 0 20px;
-      padding: 10px 0;
     }
 
     @include mq() {
       margin: 0 10px;
-      padding: 10px 0;
     }
 
     .no_pain_flex {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       flex-wrap: wrap;
       align-items: center;
 
       .no_pain_flex_left {
         width: 50%;
-        padding: 10px;
+        
 
         @include mq(md) {
           width: 100%;
@@ -123,7 +119,7 @@
 
       .no_pain_flex_right {
         width: 50%;
-        padding: 10px;
+        
 
         @include mq(md) {
           width: 100%;
@@ -135,6 +131,7 @@
           color: #eb6794;
           font-size: 1.3rem;
           padding: 20px 0;
+          padding-left: 10px;
 
           @include mq(md) {
             padding: 5px 0;
@@ -144,9 +141,10 @@
 
         .no_pain_flex_right_message {
           font-weight: bold;
+          padding-left: 10px;
 
           @include mq(md) {
-            padding: 5px;
+            padding: 5px 0;
           }
         }
       }
@@ -173,39 +171,35 @@
   .usual_hifu_box {
     background-color: #fff;
     border-radius: 10px;
-    padding: 10px;
+    padding: 20px;
     box-shadow: 0 0 8px gray;
 
     @include mq(md) {
       margin: 0 20px;
-      padding: 10px 0;
     }
 
     @include mq() {
       margin: 0 10px;
-      padding: 10px 0;
     }
 
     .usual_hifu_flex {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       flex-wrap: wrap;
       align-items: center;
 
       .usual_hifu_flex_left {
         width: 50%;
-        padding: 10px;
 
         @include mq(md) {
           width: 100%;
-          padding: 10px;
           text-align: center;
         }
 
         .usual_hifu_flex_left_title {
           color: #eb6794;
           font-size: 1.3rem;
-          padding: 20px 10px;
+          padding: 20px 0;
 
           @include mq(md) {
             padding: 5px 0;
@@ -215,7 +209,8 @@
 
         .usual_hifu_flex_left_message {
           font-weight: bold;
-          padding: 10px;
+          padding: 10px 0;
+          padding-right: 10px;
 
           @include mq(md){
             padding :5px;
@@ -225,7 +220,6 @@
 
       .usual_hifu_flex_right {
         width: 50%;
-        padding: 10px;
 
         @include mq(md) {
           width: 100%;

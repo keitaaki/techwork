@@ -20,7 +20,7 @@
   .menu_bbl_box {
     background-color: #fff;
     border-radius: 10px;
-    padding: 10px;
+    padding: 20px;
 
     @include mq(md) {
       margin: 0 10px;
@@ -28,17 +28,15 @@
 
     .menu_bbl_box_flex {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       flex-wrap: wrap;
       align-items: center;
 
       .menu_bbl_box_flex_left {
         width: 50%;
-        padding: 20px;
 
         @include mq() {
           width: 100%;
-          padding: 10px;
         }
 
         h2 {
@@ -91,38 +89,38 @@
   .bbl_light_power_box {
     background-color: #fff;
     border-radius: 10px;
-    padding: 10px;
+    padding: 20px;
     box-shadow: 0 0 8px gray;
 
     @include mq(md) {
       margin: 0 20px;
-      padding: 10px 0;
     }
 
     @include mq() {
       margin: 0 10px;
-      padding: 10px 0;
     }
 
     .bbl_light_power_flex {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       flex-wrap: wrap;
       align-items: center;
 
       .bbl_light_power_flex_left {
         width: 50%;
-        padding: 10px;
 
         @include mq(md) {
           width: 100%;
           order: 2;
         }
+
+        img{
+          vertical-align: bottom;
+        }
       }
 
       .bbl_light_power_flex_right {
         width: 50%;
-        padding: 10px;
 
         @include mq(md) {
           width: 100%;
@@ -133,6 +131,7 @@
           color: #eb6794;
           font-size: 1.3rem;
           padding: 20px 0;
+          padding-left: 10px;
 
           @include mq(md) {
             padding: 5px 0;
@@ -142,9 +141,10 @@
 
         .bbl_light_power_flex_right_message {
           font-weight: bold;
+          padding-left: 10px;
 
           @include mq(md) {
-            padding: 10px;
+            padding: 10px 0;
           }
         }
       }
@@ -171,38 +171,36 @@
   .bbl_tits_box {
     background-color: #fff;
     border-radius: 10px;
-    padding: 10px;
+    padding: 20px;
     box-shadow: 0 0 8px gray;
 
     @include mq(md) {
       margin: 0 20px;
-      padding: 10px 0;
+     
     }
 
     @include mq() {
       margin: 0 10px;
-      padding: 10px 0;
+      
     }
 
     .bbl_tits_flex {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       flex-wrap: wrap;
       align-items: center;
 
       .bbl_tits_flex_left {
         width: 50%;
-        padding: 10px;
 
         @include mq(md) {
           width: 100%;
-          padding: 10px;
         }
 
         .bbl_tits_flex_left_title {
           color: #eb6794;
           font-size: 1.3rem;
-          padding: 20px 10px;
+          padding: 20px 0;
 
           @include mq(md) {
             padding: 5px 0;
@@ -212,7 +210,6 @@
 
         .bbl_tits_flex_left_message {
           font-weight: bold;
-          padding: 10px;
         }
       }
 
@@ -222,6 +219,7 @@
 
         @include mq(md) {
           width: 100%;
+          padding: 0;
         }
       }
     }

@@ -20,7 +20,7 @@
   .menu__whitening_box {
     background-color: #fff;
     border-radius: 10px;
-    padding: 10px;
+    padding: 20px;
 
     @include mq(md) {
       margin: 0 10px;
@@ -28,17 +28,17 @@
 
     .menu__whitening_box_flex {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       flex-wrap: wrap;
       align-items: center;
 
       .menu__whitening_box_flex_left {
         width: 50%;
-        padding: 20px;
+        padding-right: 10px;
 
         @include mq() {
           width: 100%;
-          padding: 10px;
+          padding: 0;
         }
 
         h2 {
@@ -59,11 +59,15 @@
           margin: 20px 0;
           font-weight: bold;
         }
+
+        .list_last{
+          margin-bottom: 0;
+        }
       }
 
       .menu__whitening_box_flex_right {
         width: 50%;
-        text-align: center;
+        
 
         @include mq() {
           width: 100%;
@@ -92,29 +96,26 @@
   .five-minutes_box {
     background-color: #fff;
     border-radius: 10px;
-    padding: 10px;
+    padding: 20px;
     box-shadow: 0 0 8px gray;
 
     @include mq(md) {
       margin: 0 20px;
-      padding: 10px 0;
     }
 
     @include mq() {
       margin: 0 10px;
-      padding: 10px 0;
     }
 
     .five-minutes_flex {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       flex-wrap: wrap;
       align-items: center;
 
       .five-minutes_flex_left {
         width: 50%;
-        padding: 10px;
-
+        
         @include mq(md) {
           width: 100%;
           order: 2;
@@ -123,7 +124,6 @@
 
       .five-minutes_flex_right {
         width: 50%;
-        padding: 10px;
 
         @include mq(md) {
           width: 100%;
@@ -134,6 +134,7 @@
           color: #eb6794;
           font-size: 1.3rem;
           padding: 20px 0;
+          padding-left: 10px;
 
           @include mq(md) {
             padding: 5px 0;
@@ -143,9 +144,10 @@
 
         .five-minutes_flex_right_message {
           font-weight: bold;
+          padding-left: 10px;
 
           @include mq(md) {
-            padding: 10px;
+            padding: 10px 0;
           }
         }
       }

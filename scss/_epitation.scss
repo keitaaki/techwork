@@ -16,26 +16,25 @@
   .menu_epitation_box {
     background-color: #fff;
     border-radius: 10px;
-    padding: 10px;
+    padding: 20px;
 
     @include mq(md) {
       margin: 0 10px;
+      padding: 20px;
     }
 
 
     .menu_epitation_box_flex {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       flex-wrap: wrap;
       align-items: center;
 
       .menu_epitation_box_flex_left {
         width: 50%;
-        padding: 20px;
 
         @include mq() {
           width: 100%;
-          padding: 10px;
         }
 
         h2 {
@@ -60,6 +59,7 @@
 
       .menu_epitation_box_flex_right {
         width: 45%;
+        text-align: right;
 
         @include mq() {
           width: 100%;
@@ -89,27 +89,26 @@
   .shr_box {
     background-color: #fff;
     border-radius: 10px;
-    padding: 10px;
+    padding: 20px;
     box-shadow: 0 0 8px gray;
 
     @include mq(md) {
       margin: 0 20px;
-      padding: 10px 0;
     }
 
     @include mq() {
       margin: 0 10px;
-      padding: 10px 0;
     }
 
     .shr_flex {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       flex-wrap: wrap;
       align-items: center;
 
       .shr_flex_left {
         width: 50%;
+        text-align: left;
 
         @include mq(md) {
           width: 100%;
@@ -119,7 +118,6 @@
 
       .shr_flex_right {
         width: 50%;
-        padding: 10px;
 
         @include mq(md) {
           width: 100%;
@@ -140,9 +138,7 @@
         .shr_flex_right_message {
           font-weight: bold;
 
-          @include mq(md) {
-            padding: 10px;
-          }
+          
         }
       }
     }
@@ -168,38 +164,35 @@
   .menu_schedule_box {
     background-color: #fff;
     border-radius: 10px;
-    padding: 10px;
+    padding: 20px;
     box-shadow: 0 0 8px gray;
 
     @include mq(md) {
       margin: 0 20px;
-      padding: 10px 0;
     }
 
     @include mq() {
       margin: 0 10px;
-      padding: 10px 0;
     }
 
     .menu_schedule_flex {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       flex-wrap: wrap;
       align-items: center;
 
       .menu_schedule_flex_left {
         width: 50%;
-        padding: 10px;
 
         @include mq(md) {
           width: 100%;
-          padding: 10px;
+          padding: 0;
         }
 
         .menu_schedule_flex_left_title {
           color: #eb6794;
           font-size: 1.3rem;
-          padding: 20px 10px;
+          padding: 20px 0;
 
           @include mq(md) {
             padding: 5px 0;
@@ -209,7 +202,9 @@
 
         .menu_schedule_flex_left_message {
           font-weight: bold;
-          padding: 10px;
+          @include mq(md){
+            padding: 10px 0;
+          }
         }
       }
 
@@ -217,7 +212,7 @@
         width: 50%;
 
         @include mq(md) {
-          padding: 20px;
+          padding: 0;
           width: 100%;
         }
       }
@@ -245,17 +240,15 @@
   .menu_short_box {
     background-color: #fff;
     border-radius: 10px;
-    padding: 10px;
+    padding: 20px;
     box-shadow: 0 0 8px gray;
 
     @include mq(md) {
       margin: 0 20px;
-      padding: 10px 0;
     }
 
     @include mq() {
       margin: 0 10px;
-      padding: 10px 0;
     }
 
     .menu_short_box_flex {
@@ -276,18 +269,18 @@
 
       .menu_short_box_flex_right {
         width: 50%;
-        padding: 10px;
 
         @include mq(md) {
           width: 100%;
           order: 1;
-          padding: 10px;
+
         }
 
         .menu_short_box_flex_right_title {
           color: #eb6794;
           font-size: 1.3rem;
-          padding: 20px 10px;
+          padding: 20px 0;
+          padding-left: 10px;
 
           @include mq(md) {
             padding: 5px 0;
@@ -297,7 +290,11 @@
 
         .menu_short_box_flex_right_message {
           font-weight: bold;
-          padding: 10px;
+          padding-left: 10px;
+
+          @include mq(md){
+            padding: 0;
+          }
         }
       }
     }
@@ -503,7 +500,7 @@
   .menu_mens_epitation_box {
     background-color: #fff;
     border-radius: 10px;
-    padding: 10px;
+    padding: 20px;
 
     @include mq(md) {
       margin: 0 10px;
@@ -511,13 +508,12 @@
 
     .menu_mens_epitation_box_flex {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       flex-wrap: wrap;
       align-items: center;
 
       .menu_mens_epitation_box_flex_left {
         width: 50%;
-        padding: 20px;
 
         @include mq() {
           width: 100%;
@@ -541,6 +537,10 @@
           margin: 20px 0;
           font-weight: bold;
         }
+
+        .list_last{
+          margin-bottom: 0;
+        }
       }
 
       .menu_mens_epitation_box_flex_right {
@@ -555,7 +555,6 @@
 
   .menu_mens_epitation_entrance {
     background-color: #fff;
-    padding: 30px 0;
     border-radius: 10px;
     margin-top: 20px;
 
@@ -567,43 +566,37 @@
 
     .menu_mens_epitation_entrance_box {
       background-color: #fff;
-      padding: 10px;
+      padding: 20px;
       border-radius: 10px;
-
-      @include mq() {
-        padding: 10px 0;
-      }
 
       .menu_mens_epitation_entrance_box_flex {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         flex-wrap: wrap;
 
         .menu_mens_epitation_entrance_box_flex_left {
           width: 55%;
+          text-align: left;
 
           @include mq(md) {
             width: 100%;
             order: 2;
-            padding: 0 5px;
           }
         }
 
         .menu_mens_epitation_entrance_box_flex_right {
           width: 40%;
-          padding: 10px;
 
           @include mq(md) {
             width: 100%;
             order: 1;
-            padding: 10px;
             text-align: center;
           }
 
           .menu_mens_epitation_entrance_box_flex_right_title {
             color: #6b8dd9;
             font-size: 1.4rem;
-            padding: 20px 10px;
+            padding: 20px 0;
 
             @include mq(md) {
               padding: 5px 0;
@@ -614,10 +607,9 @@
 
           .menu_mens_epitation_entrance_box_flex_right_message {
             font-weight: bold;
-            padding: 10px;
 
             @include mq(md) {
-              padding: 0;
+              padding: 10px 0;
             }
           }
         }
