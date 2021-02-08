@@ -13,16 +13,25 @@
     padding: 30px 0;
   }
 
-  .hifu_bk{
+  .hifu_bk {
     background: url("../common/images/hana-bk2-right.png") no-repeat right bottom;
   }
 
   .menu__hifu_box {
     background-color: #fff;
     border-radius: 10px;
-    padding: 20px;
+    /* 2021/02/08 */
+    padding: 32px;
 
+    /* 2021/02/08 */
     @include mq(md) {
+      margin: 0 20px;
+      /* 2021/02/08 */
+      padding: 16px;
+    }
+
+    /* 2021/02/08 */
+    @include mq() {
       margin: 0 10px;
     }
 
@@ -40,7 +49,16 @@
         }
 
         h2 {
-          margin-bottom: 10px;
+          /* 2021/02/08 */
+          margin-bottom: 16px;
+
+          /* 2021/02/08 */
+          img{
+            height: 70px;
+            @include mq(md){
+              height: 50px;
+            }
+          }
         }
 
         .menu__hifu_box_flex_left_message {
@@ -83,18 +101,21 @@
     padding: 30px 0;
   }
 
-  .no_pain_bk{
+  .no_pain_bk {
     background: url("../common/images/hana-bk4-left.png") no-repeat left bottom;
   }
 
   .no_pain_box {
     background-color: #fff;
     border-radius: 10px;
-    padding: 20px;
+    /* 2021/02/08 */
+    padding: 32px;
     box-shadow: 0 0 8px gray;
 
     @include mq(md) {
       margin: 0 20px;
+      /* 2021/02/08 */
+      padding: 16px;
     }
 
     @include mq() {
@@ -109,7 +130,9 @@
 
       .no_pain_flex_left {
         width: 50%;
-        
+         /* 2021/02/08 */
+         margin-top: 16px;
+
 
         @include mq(md) {
           width: 100%;
@@ -119,7 +142,7 @@
 
       .no_pain_flex_right {
         width: 50%;
-        
+
 
         @include mq(md) {
           width: 100%;
@@ -130,7 +153,8 @@
         .no_pain_flex_right_title {
           color: #eb6794;
           font-size: 1.3rem;
-          padding: 20px 0;
+          /* 2021/02/08 */
+          padding: 0 0 20px;
           padding-left: 10px;
 
           @include mq(md) {
@@ -164,18 +188,21 @@
     padding: 30px 0;
   }
 
-  .usual_hifu_bk{
+  .usual_hifu_bk {
     background: url("../common/images/hana-bk.png") no-repeat right top;
   }
 
   .usual_hifu_box {
     background-color: #fff;
     border-radius: 10px;
-    padding: 20px;
+    /* 2021/02/08 */
+    padding: 32px;
     box-shadow: 0 0 8px gray;
 
     @include mq(md) {
       margin: 0 20px;
+      /* 2021/02/08 */
+      padding: 16px;
     }
 
     @include mq() {
@@ -199,7 +226,8 @@
         .usual_hifu_flex_left_title {
           color: #eb6794;
           font-size: 1.3rem;
-          padding: 20px 0;
+           /* 2021/02/08 */
+           padding: 0 0 20px;
 
           @include mq(md) {
             padding: 5px 0;
@@ -212,8 +240,8 @@
           padding: 10px 0;
           padding-right: 10px;
 
-          @include mq(md){
-            padding :5px;
+          @include mq(md) {
+            padding: 5px;
           }
         }
       }
@@ -240,9 +268,12 @@
   background-position: center center;
   padding: 56px 0;
 
-  @include mq(md) {
-    margin: 0;
-    padding: 30px 0;
+  @include mq(md){
+    padding: 30px 15px;
+  }
+
+  @include mq() {
+    padding: 30px 10px;
   }
 }
 
@@ -261,6 +292,8 @@
   h2 {
     margin: 10px auto 0;
     width: 10%;
+    /* 2021/02/08 */
+    text-align: center;
 
     @include mq(md) {
       width: 30%;
@@ -273,9 +306,11 @@
     justify-content: left;
     flex-wrap: wrap;
 
-    @include mq(md) {
-      justify-content: space-around;
+    @include mq() {
+      justify-content: space-between;
     }
+
+
 
     .hifu__innerArea_flex_cards {
       width: 23%;
@@ -283,7 +318,7 @@
       margin-bottom: 10px;
 
       @include mq(md) {
-        width: 48%;
+        width: 50%;
         text-align: center;
         margin: 0 0 10px 0;
       }

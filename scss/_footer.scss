@@ -26,6 +26,12 @@ footer {
       width: 40%;
       padding: 10px;
 
+
+      /* 2021/02/08 追加 */
+      img{
+        vertical-align: middle;
+      }
+
       @include mq(md) {
         padding: 0;
         width: 60%;

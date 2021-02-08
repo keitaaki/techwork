@@ -20,9 +20,18 @@
   .menu_bbl_box {
     background-color: #fff;
     border-radius: 10px;
-    padding: 20px;
+    /* 2021/02/08 */
+    padding: 32px;
 
     @include mq(md) {
+      /* 2021/02/08 */
+      margin: 0 20px;
+      /* 2021/02/08 */
+      padding: 16px;
+    }
+
+    /* 2021/02/08 */
+    @include mq(){
       margin: 0 10px;
     }
 
@@ -40,7 +49,16 @@
         }
 
         h2 {
-          margin-bottom: 10px;
+          /* 2021/02/08 */
+          margin-bottom: 16px;
+
+          /* 2021/02/08 */
+          img{
+            height: 70px;
+            @include mq(md){
+              height: 50px;
+            }
+          }
         }
 
         .menu_bbl_box_flex_left_message {
@@ -89,11 +107,14 @@
   .bbl_light_power_box {
     background-color: #fff;
     border-radius: 10px;
-    padding: 20px;
+    /* 2021/02/08 */
+    padding: 32px;
     box-shadow: 0 0 8px gray;
 
     @include mq(md) {
       margin: 0 20px;
+      /* 2021/02/08 */
+      padding: 16px;
     }
 
     @include mq() {
@@ -108,6 +129,8 @@
 
       .bbl_light_power_flex_left {
         width: 50%;
+        /* 2021/02/08 */
+        margin-top: 16px;
 
         @include mq(md) {
           width: 100%;
@@ -171,17 +194,18 @@
   .bbl_tits_box {
     background-color: #fff;
     border-radius: 10px;
-    padding: 20px;
+    /* 2021/02/08 */
+    padding: 32px;
     box-shadow: 0 0 8px gray;
 
     @include mq(md) {
       margin: 0 20px;
-     
+      /* 2021/02/08 */
+      padding: 16px;
     }
 
     @include mq() {
       margin: 0 10px;
-      
     }
 
     .bbl_tits_flex {
@@ -200,7 +224,8 @@
         .bbl_tits_flex_left_title {
           color: #eb6794;
           font-size: 1.3rem;
-          padding: 20px 0;
+          /* 2021/02/08 */
+          padding: 0 0 20px;
 
           @include mq(md) {
             padding: 5px 0;
@@ -210,6 +235,7 @@
 
         .bbl_tits_flex_left_message {
           font-weight: bold;
+          margin-bottom: 16px;
         }
       }
 
@@ -265,6 +291,8 @@
   h2 {
     margin: 10px auto 0;
     width: 10%;
+    /* 2021/02/08 */
+    text-align: center;
 
     @include mq(md) {
       width: 30%;

@@ -586,6 +586,10 @@ header {
         margin: 0 5px;
       }
 
+      img{
+        vertical-align: middle;
+      }
+
       a {
         color: #d60e4c;
         font-weight: bold;
@@ -726,8 +730,12 @@ header {
     font-weight: bold;
   }
 
-  .sub_menu {
+  /* 2021/02/08 a img を追加 */
+  a img{
+    vertical-align: middle;
+  }
 
+  .sub_menu {
     padding-left: 30px;
 
     .nav-items {

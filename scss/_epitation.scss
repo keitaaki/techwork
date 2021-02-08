@@ -16,11 +16,19 @@
   .menu_epitation_box {
     background-color: #fff;
     border-radius: 10px;
-    padding: 20px;
+    /* 2021/02/08 */
+    padding: 32px;
 
+    /* 2021/02/08 */
     @include mq(md) {
+      margin: 0 20px;
+      /* 2021/02/08 */
+      padding: 16px;
+    }
+
+    /* 2021/02/08 */
+    @include mq(){
       margin: 0 10px;
-      padding: 20px;
     }
 
 
@@ -31,14 +39,24 @@
       align-items: center;
 
       .menu_epitation_box_flex_left {
-        width: 50%;
+        /* 2021/02/08 */
+        width: 52%;
 
         @include mq() {
           width: 100%;
         }
 
         h2 {
-          margin-bottom: 10px;
+          /* 2021/02/08 */
+          margin-bottom: 16px;
+
+          /* 2021/02/08 */
+          img{
+            height: 70px;
+            @include mq(md){
+              height: 50px;
+            }
+          }
         }
 
         p {
@@ -89,11 +107,14 @@
   .shr_box {
     background-color: #fff;
     border-radius: 10px;
-    padding: 20px;
+    /* 2021/02/08 */
+    padding: 32px;
     box-shadow: 0 0 8px gray;
 
     @include mq(md) {
       margin: 0 20px;
+      /* 2021/02/08 */
+      padding: 16px;
     }
 
     @include mq() {
@@ -109,6 +130,8 @@
       .shr_flex_left {
         width: 50%;
         text-align: left;
+        /* 2021/02/08 */
+        margin-top: 16px;
 
         @include mq(md) {
           width: 100%;
@@ -117,7 +140,7 @@
       }
 
       .shr_flex_right {
-        width: 50%;
+        width: 49%;
 
         @include mq(md) {
           width: 100%;
@@ -127,7 +150,8 @@
         .shr_flex_right_title {
           color: #eb6794;
           font-size: 1.3rem;
-          padding: 20px 0;
+          /* 2021/02/08 */
+          padding: 0 0 20px;
 
           @include mq(md) {
             padding: 5px 0;
@@ -164,11 +188,14 @@
   .menu_schedule_box {
     background-color: #fff;
     border-radius: 10px;
-    padding: 20px;
+    /* 2021/02/08 */
+    padding: 32px;
     box-shadow: 0 0 8px gray;
 
     @include mq(md) {
       margin: 0 20px;
+      /* 2021/02/08 */
+      padding: 16px;
     }
 
     @include mq() {
@@ -182,7 +209,8 @@
       align-items: center;
 
       .menu_schedule_flex_left {
-        width: 50%;
+        /* 2021/02/08 */
+        width: 47%;
 
         @include mq(md) {
           width: 100%;
@@ -192,7 +220,8 @@
         .menu_schedule_flex_left_title {
           color: #eb6794;
           font-size: 1.3rem;
-          padding: 20px 0;
+          /* 2021/02/08 */
+          padding: 0 0 20px;
 
           @include mq(md) {
             padding: 5px 0;
@@ -240,11 +269,14 @@
   .menu_short_box {
     background-color: #fff;
     border-radius: 10px;
-    padding: 20px;
+    /* 2021/02/08 */
+    padding: 32px;
     box-shadow: 0 0 8px gray;
 
     @include mq(md) {
       margin: 0 20px;
+      /* 2021/02/08 */
+      padding: 16px;
     }
 
     @include mq() {
@@ -264,11 +296,14 @@
           width: 100%;
           order: 2;
           padding: 0 5px;
+          /* 2021/02/08 */
+          margin-top: 16px;
         }
       }
 
       .menu_short_box_flex_right {
-        width: 50%;
+        /* 2021/02/08 */
+        width: 47%;
 
         @include mq(md) {
           width: 100%;
@@ -279,7 +314,8 @@
         .menu_short_box_flex_right_title {
           color: #eb6794;
           font-size: 1.3rem;
-          padding: 20px 0;
+          /* 2021/02/08 */
+          padding: 0 0 20px;
           padding-left: 10px;
 
           @include mq(md) {
@@ -310,9 +346,12 @@
   background-position: center center;
   padding: 56px 0 30px;
 
-  @include mq(md) {
-    margin: 0;
-    padding: 30px 0;
+  @include mq(md){
+    padding: 30px 15px;
+  }
+
+  @include mq() {
+    padding: 30px 10px;
   }
 
   
@@ -336,6 +375,7 @@
   h2 {
     margin: 10px auto 0;
     width: 10%;
+    text-align: center;
 
     @include mq(md) {
       width: 30%;
@@ -484,7 +524,6 @@
   padding: 56px 0;
 
   @include mq(md) {
-    margin: 0;
     padding: 30px 0;
   }
 
@@ -500,9 +539,18 @@
   .menu_mens_epitation_box {
     background-color: #fff;
     border-radius: 10px;
-    padding: 20px;
+    /* 2021/02/08 */
+    padding: 32px;
 
+     /* 2021/02/08 */
     @include mq(md) {
+      margin: 0 20px;
+      /* 2021/02/08 */
+      padding: 16px;
+    }
+
+     /* 2021/02/08 */
+    @include mq(){
       margin: 0 10px;
     }
 
@@ -513,14 +561,24 @@
       align-items: center;
 
       .menu_mens_epitation_box_flex_left {
-        width: 50%;
+        /* 2021/02/08 */
+        width: 52%;
 
         @include mq() {
           width: 100%;
         }
 
         h2 {
-          margin-bottom: 10px;
+          /* 2021/02/08 */
+          margin-bottom: 16px;
+
+          /* 2021/02/08 */
+          img{
+            height: 70px;
+            @include mq(md){
+              height: 50px;
+            }
+          }
         }
 
         .menu_mens_epitation_box_flex_left_message {
@@ -562,15 +620,28 @@
     margin-top: 20px;
 
     @include mq(md) {
-      margin: 20px 10px 10px 10px;
-      padding: 0;
-      border-radius: 10px;
+      /* 2021/02/08 */
+      margin: 20px;
+      /* 2021/02/08 */
+      padding: 16px;
+      margin-bottom: 0;
+    }
+
+    @include mq(){
+      margin: 10px;
+      margin-bottom: 0;
     }
 
     .menu_mens_epitation_entrance_box {
       background-color: #fff;
-      padding: 20px;
+      /* 2021/02/08 */
+      padding: 32px;
       border-radius: 10px;
+
+      /* 2021/02/08 */
+      @include mq(md){
+        padding: 16px;
+      }
 
       .menu_mens_epitation_entrance_box_flex {
         display: flex;
@@ -588,7 +659,7 @@
         }
 
         .menu_mens_epitation_entrance_box_flex_right {
-          width: 40%;
+          width: 42%;
 
           @include mq(md) {
             width: 100%;
@@ -599,7 +670,8 @@
           .menu_mens_epitation_entrance_box_flex_right_title {
             color: #6b8dd9;
             font-size: 1.4rem;
-            padding: 20px 0;
+            /* 2021/02/08 */
+            padding: 0 0 20px;
 
             @include mq(md) {
               padding: 5px 0;
@@ -633,9 +705,18 @@
 
   padding: 56px 0;
 
-  @include mq(md) {
+  @include mq(md){
     margin: 0;
-    padding: 30px 0;
+    /* 2021/02/08 */
+    padding: 30px 15px;
+  }
+
+
+
+  @include mq() {
+    margin: 0;
+    /* 2021/02/08 */
+    padding: 30px 10px;
   }
 }
 
@@ -646,19 +727,25 @@
 
 .mens_flow {
 
-  padding: 56px 0;
+  /* 2021/02/08 */
+  padding: 56px 0 0;
 
   @include mq(md) {
     margin: 0;
-    padding: 30px 0;
+    /* 2021/02/08 */
+    padding: 30px 0 0;
   }
 
   h2 {
-    margin: 10px auto 0;
+    /* 2021/02/08 */
+    margin: 0 auto 24px;
     width: 10%;
+    /* 2021/02/08 */
+    text-align: center;
 
     @include mq(md) {
-      width: 30%;
+      /* 2021/02/08 */
+      width: 20%;
     }
   }
 
@@ -675,7 +762,8 @@
     .mens_innerArea_flex_cards {
       width: 23%;
       text-align: left;
-      margin-bottom: 10px;
+      /* 2021/02/08 */
+      margin-bottom: 24px;
 
       @include mq(md) {
         width: 48%;
@@ -709,6 +797,8 @@
 
       img {
         border: 1px solid #868686;
+        /* 2021/02/08 */
+        margin-bottom: 8px;
       }
     }
   }

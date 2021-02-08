@@ -16,7 +16,8 @@
   .access_area_box {
     background-color: #fff;
     border-radius: 10px;
-    padding: 20px;
+    /* 2021/02/08 */
+    padding: 32px;
 
     @include mq(md) {
       margin: 0 10px;

@@ -65,10 +65,12 @@ body {
   overflow-wrap: break-word;
 }
 
+/* 2021/02/08 vertical-align: bottom; 追加 */
 img {
   max-width: 100%;
   height: auto;
   border: none;
+  vertical-align: bottom;
 }
 
 a {
