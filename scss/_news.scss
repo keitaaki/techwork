@@ -12,7 +12,6 @@
 
   @include mq(md) {
     margin: 0;
-    padding: 20px;
   }
 
 
@@ -399,7 +398,7 @@
     border-radius: 10px;
 
     @include mq(md) {
-      width: 100%;
+      width: 95%;
       margin: 20px auto 0;
       padding: 10px;
     }

@@ -5495,7 +5495,7 @@ footer .footer_reserved {
 
 @media screen and (max-width: 768px) {
   .campaign_area .campaign_area_box {
-    width: 90%;
+    width: 95%;
   }
 }
 
@@ -5693,7 +5693,6 @@ footer .footer_reserved {
 @media screen and (max-width: 768px) {
   .news_area {
     margin: 0;
-    padding: 20px;
   }
 }
 
@@ -6116,7 +6115,7 @@ footer .footer_reserved {
 
 @media screen and (max-width: 768px) {
   .news_area_detail .news_area_detail__items {
-    width: 100%;
+    width: 95%;
     margin: 20px auto 0;
     padding: 10px;
   }
