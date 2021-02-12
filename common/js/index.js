@@ -38,7 +38,6 @@ $(function () {
   });
 });
 
-
 //  スクロールしたらついてくるメニューの実装
 $(function () {
   var topBtn = $('.scroll_menu_open');
@@ -73,7 +72,6 @@ $(function () {
 // 上スクロールで表示、下スクロールで非表示にする処理
 var menuHeight = $(".site-header").height();
 var headerHeight = $("#header").height();
-
 var startPos = 0;
 $(window).scroll(function(){
   var currentPos = $(this).scrollTop();
