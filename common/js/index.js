@@ -78,7 +78,7 @@ $(window).on('scroll', function () {
     if (winScrollTop >= 200) {
       $('.site-header').addClass('hide');
     }
-  } else if (winScrollTop >= 200) {
+  } else if (startPos > winScrollTop) {
     $('.site-header').removeClass('hide');
   }
   startPos = winScrollTop;
