@@ -5532,10 +5532,29 @@ footer .footer_reserved {
   border-radius: 5px;
 }
 
-.campaign_detail_cards .campaign_detail_title {
-  font-size: 2rem;
-  font-weight: bold;
-  padding: 10px;
+.campaign_detail_cards h1 {
+  padding: 0.5em;
+  margin-top: 10px;
+  background: #ffdcec;
+  border-left: solid 5px #f19ec2;
+  font-size: 24px;
+}
+
+.campaign_detail_cards h2 {
+  color: #eb6794;
+  border: solid 3px #eb6794;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  font-size: 22px;
+}
+
+.campaign_detail_cards h3 {
+  color: #eb6794;
+  font-size: 20px;
+}
+
+.campaign_detail_cards h4 {
+  font-size: 18px;
 }
 
 .campaign_detail_cards .campaign_detail_message {
@@ -6060,6 +6079,31 @@ footer .footer_reserved {
   border-radius: 5px;
 }
 
+.news_area_detail .news_area_detail__item h1 {
+  padding: 0.5em;
+  margin: 10px 0;
+  background: #ffdcec;
+  border-left: solid 5px #f19ec2;
+  font-size: 24px;
+}
+
+.news_area_detail .news_area_detail__item h2 {
+  color: #eb6794;
+  border: solid 3px #eb6794;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  font-size: 22px;
+}
+
+.news_area_detail .news_area_detail__item h3 {
+  color: #eb6794;
+  font-size: 20px;
+}
+
+.news_area_detail .news_area_detail__item h4 {
+  font-size: 18px;
+}
+
 .news_area_detail .news_area_detail__items {
   margin: 60px auto 0;
   width: 80%;
@@ -6101,10 +6145,6 @@ footer .footer_reserved {
   width: 150px;
   margin-left: 20px;
   font-weight: bold;
-}
-
-.news_area_detail .news_area_detail__item_title {
-  margin: 20px 0;
 }
 
 .news_area_detail .news_area_detail__item_message {

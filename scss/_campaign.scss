@@ -73,17 +73,36 @@
 // キャンペーン詳細 部分
 // ==============================================
 
-.campaign_area_box_detail{
+.campaign_area_box_detail {
   background-color: #fff;
   padding: 10px;
   border-radius: 5px;
 }
 
 .campaign_detail_cards {
-  .campaign_detail_title {
-    font-size: 2rem;
-    font-weight: bold;
-    padding: 10px;
+  h1 {
+    padding: 0.5em;
+    margin-top: 10px;
+    background: #ffdcec;
+    border-left: solid 5px #f19ec2;
+    font-size: 24px;
+  }
+
+  h2{
+    color: #eb6794;
+    border: solid 3px #eb6794;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    font-size: 22px;
+  }
+
+  h3{
+    color: #eb6794;
+    font-size: 20px;
+  }
+  
+  h4{
+    font-size: 18px;
   }
 
   .campaign_detail_message {

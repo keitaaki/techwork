@@ -1,4 +1,3 @@
-
 // ハンバーガーからバツへ
 $(function () {
   $('.navbar_toggle').on('click', function () {
