@@ -71,18 +71,22 @@ $(function () {
 
 
 // 上スクロールで表示、下スクロールで非表示にする処理
-var startPos = 0, winScrollTop = 0;
-$(window).on('scroll', function () {
-  winScrollTop = $(this).scrollTop();
-  if (winScrollTop >= startPos) {
-    if (winScrollTop >= 200) {
-      $('.site-header').addClass('hide');
+var menuHeight = $(".site-header").height();
+var headerHeight = $("#header").height();
+
+var startPos = 0;
+$(window).scroll(function(){
+  var currentPos = $(this).scrollTop();
+  if (currentPos > startPos) {
+    if($(window).scrollTop() >= 200) {
+      $(".site-header").css("top", "-" + menuHeight + "px");
     }
-  } else if (startPos > winScrollTop) {
-    $('.site-header').removeClass('hide');
+  } else if(startPos > currentPos) {
+    $(".site-header").css("top", headerHeight + "px");
   }
-  startPos = winScrollTop;
+  startPos = currentPos;
 });
+
 
 // スムーススクロール(バナーをクリックしたらflowへ)
 $(function(){
