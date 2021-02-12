@@ -80,6 +80,25 @@ li {
   display: none;
 }
 
+.rules {
+  padding: 55px 0;
+  margin-top: 170px;
+}
+
+.rules .rules_box {
+  margin-bottom: 40px;
+}
+
+h3 {
+  color: #eb6794;
+  font-size: 1.3rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+  color: #59493f;
+}
+
 header {
   padding: 10px 0 5px 0;
   position: fixed;
@@ -5382,7 +5401,7 @@ footer .footer_reserved {
 }
 
 .faq_area .faq_area_box h4 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-top: 30px;
 }
 
