@@ -326,7 +326,7 @@
     width: 20%;
     text-align: center;
 
-    @include mq(lg) {
+    @include mq(md) {
       width: 100%;
       text-align: center;
     }
@@ -364,7 +364,7 @@
   .news_area_detail__item{
     h1 {
       padding: 0.5em;
-      margin: 10px 0;
+      margin: 20px 0 10px;
       background: #ffdcec;
       border-left: solid 5px #f19ec2;
       font-size: 24px;
@@ -385,6 +385,10 @@
     
     h4{
       font-size: 18px;
+    }
+
+    p{
+      margin: 10px 0 20px;
     }
   }
 

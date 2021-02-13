@@ -80,25 +80,6 @@ li {
   display: none;
 }
 
-.rules {
-  padding: 55px 0;
-  margin-top: 170px;
-}
-
-.rules .rules_box {
-  margin-bottom: 40px;
-}
-
-h3 {
-  color: #eb6794;
-  font-size: 1.3rem;
-}
-
-h4 {
-  font-size: 1.2rem;
-  color: #59493f;
-}
-
 header {
   padding: 10px 0 5px 0;
   position: fixed;
@@ -5557,6 +5538,10 @@ footer .footer_reserved {
   font-size: 18px;
 }
 
+.campaign_detail_cards p {
+  margin: 5px 0 20px;
+}
+
 .campaign_detail_cards .campaign_detail_message {
   padding: 20px 0;
   font-size: 1rem;
@@ -6037,7 +6022,7 @@ footer .footer_reserved {
   text-align: center;
 }
 
-@media screen and (max-width: 1187px) {
+@media screen and (max-width: 768px) {
   .news_area_detail .news_area_detail_logo {
     width: 100%;
     text-align: center;
@@ -6080,7 +6065,7 @@ footer .footer_reserved {
 
 .news_area_detail .news_area_detail__item h1 {
   padding: 0.5em;
-  margin: 10px 0;
+  margin: 20px 0 10px;
   background: #ffdcec;
   border-left: solid 5px #f19ec2;
   font-size: 24px;
@@ -6101,6 +6086,10 @@ footer .footer_reserved {
 
 .news_area_detail .news_area_detail__item h4 {
   font-size: 18px;
+}
+
+.news_area_detail .news_area_detail__item p {
+  margin: 10px 0 20px;
 }
 
 .news_area_detail .news_area_detail__items {
